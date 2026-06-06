@@ -41,6 +41,7 @@ export default function ResultPage() {
   }, [autoPaused, matchCursor, result, secondHalfStarted]);
 
   const currentMatch = result && matchCursor > 0 ? result.matches[matchCursor - 1] : null;
+  const upcomingMatch = result && matchCursor < result.matches.length ? result.matches[matchCursor] : null;
   const currentSnapshot = result && matchCursor > 0 ? result.snapshots[matchCursor - 1] : null;
   const seasonFinished = !!result && matchCursor >= result.matches.length;
   const currentScorers = matchCursor > 0 ? currentSnapshot?.teamScorers ?? [] : [];
@@ -287,6 +288,13 @@ export default function ResultPage() {
                     <p className="mt-4 text-6xl font-bold text-[var(--gold-soft)]">
                       {currentMatch.goalsFor}-{currentMatch.goalsAgainst}
                     </p>
+                    {upcomingMatch ? (
+                      <p className="mt-3 text-xs uppercase tracking-[0.18em] text-[var(--muted)]">
+                        {locale === "nl"
+                          ? `Volgende wedstrijd: ${upcomingMatch.venue === "home" ? "thuis vs" : "uit bij"} ${upcomingMatch.opponent.name}`
+                          : `Next match: ${upcomingMatch.venue === "home" ? "home vs" : "away at"} ${upcomingMatch.opponent.name}`}
+                      </p>
+                    ) : null}
                     <div className="mt-4 rounded-3xl border border-[var(--line)] p-4">
                       <p className="text-sm uppercase tracking-[0.18em] text-[var(--muted)]">{t.result.scorers}</p>
                       <GoalEvents match={currentMatch} locale={locale} />
@@ -340,6 +348,13 @@ export default function ResultPage() {
                       <p className="mt-1 text-4xl font-bold leading-none text-white">
                         {currentMatch ? `${currentMatch.goalsFor}-${currentMatch.goalsAgainst}` : "0-0"}
                       </p>
+                      {upcomingMatch ? (
+                        <p className="mt-2 text-[11px] uppercase tracking-[0.16em] text-[var(--muted)]">
+                          {locale === "nl"
+                            ? `Volgende: ${upcomingMatch.venue === "home" ? "thuis vs" : "uit bij"} ${upcomingMatch.opponent.name}`
+                            : `Next: ${upcomingMatch.venue === "home" ? "home vs" : "away at"} ${upcomingMatch.opponent.name}`}
+                        </p>
+                      ) : null}
                     </div>
                     <div className="flex flex-col items-end gap-2">
                       {result.context.simulationMode === "auto" && matchCursor < result.matches.length ? (

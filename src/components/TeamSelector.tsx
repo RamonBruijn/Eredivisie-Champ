@@ -78,7 +78,6 @@ export function TeamSelector() {
   const [rolledTeam, setRolledTeam] = useState<TeamRecord | null>(null);
   const [pendingPlayer, setPendingPlayer] = useState<PlayerRecord | null>(null);
   const [rerollUsed, setRerollUsed] = useState(false);
-  const [activeSlotIndex, setActiveSlotIndex] = useState(0);
   const [isRolling, setIsRolling] = useState(false);
   const availableDecades = useMemo(
     () => [...new Set(teams.map(getTeamDecade))].sort((a, b) => a.localeCompare(b)),
@@ -103,8 +102,6 @@ export function TeamSelector() {
         .filter(({ index }) => !slotAssignments[index]),
     [formationShape.slots, slotAssignments],
   );
-  const activeSlotPosition = formationShape.slots[activeSlotIndex] ?? null;
-  const activeSlotPlayer = slotAssignments[activeSlotIndex] ?? null;
   const filteredTeams = useMemo(
     () => teams.filter((team) => selectedDecades.includes(getTeamDecade(team))),
     [selectedDecades],
@@ -150,8 +147,6 @@ export function TeamSelector() {
     if (saved.length > 0) {
       const padded = Array.from({ length: 11 }, (_, index) => saved[index] ?? null);
       setSlotAssignments(padded);
-      const nextOpenIndex = getNextOpenSlotIndex(padded);
-      setActiveSlotIndex(nextOpenIndex >= 0 ? nextOpenIndex : 0);
     }
   }, [availableDecades]);
 
@@ -210,7 +205,6 @@ export function TeamSelector() {
     setMode(nextMode);
     setPendingPlayer(null);
     setRerollUsed(false);
-    setActiveSlotIndex(0);
     setIsRolling(false);
     const nextSlots = getFormation(nextFormation).slots;
     const viableTeams = filteredTeams
@@ -243,7 +237,6 @@ export function TeamSelector() {
     const nextOpenIndex = getNextOpenSlotIndex(nextAssignments);
 
     if (nextOpenIndex >= 0) {
-      setActiveSlotIndex(nextOpenIndex);
       const nextOpenSlots = formationShape.slots
         .map((slot, index) => ({ slot, index }))
         .filter(({ index }) => !nextAssignments[index]);
@@ -269,8 +262,6 @@ export function TeamSelector() {
       }
       return;
     }
-
-    setActiveSlotIndex(slotIndex);
   }
 
   return (
@@ -296,11 +287,6 @@ export function TeamSelector() {
                   <p className="inline-flex rounded-full border border-[rgba(228,197,106,0.22)] bg-[rgba(228,197,106,0.08)] px-3 py-1 text-xs uppercase tracking-[0.16em] text-[var(--gold-soft)]">
                     {t.teamSelector.turnOf(selectedPlayers.length + 1, 11)}
                   </p>
-                  {activeSlotPosition ? (
-                    <p className="inline-flex rounded-full border border-[rgba(255,255,255,0.12)] bg-[rgba(255,255,255,0.03)] px-3 py-1 text-xs uppercase tracking-[0.16em] text-white">
-                      {locale === "nl" ? "Actief" : "Active"} {activeSlotPosition.toUpperCase()}
-                    </p>
-                  ) : null}
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-2 sm:flex sm:gap-3">
@@ -342,9 +328,6 @@ export function TeamSelector() {
                   {rolledTeam.club} {rolledTeam.season}
                 </h3>
                 <p className="mt-2 text-sm text-[var(--muted)]">{rolledTeam.description}</p>
-                <p className="mt-3 text-xs uppercase tracking-[0.16em] text-[rgba(255,255,255,0.58)]">
-                  {activeSlotPosition ? `${locale === "nl" ? "Actieve focus" : "Active focus"} ${activeSlotPosition.toUpperCase()}` : ""}
-                </p>
                 <p className="mt-4 text-sm text-[var(--gold-soft)]">
                   {isRolling
                     ? locale === "nl"
@@ -481,7 +464,6 @@ export function TeamSelector() {
             formation={formation}
             slotAssignments={slotAssignments}
             pendingPlayer={pendingPlayer}
-            activeSlotIndex={activeSlotIndex}
             onSlotClick={handleSlotSelection}
           />
           <SeasonSimulator mode={mode} formation={formation} slotAssignments={slotAssignments} />

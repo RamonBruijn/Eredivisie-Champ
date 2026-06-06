@@ -308,23 +308,23 @@ export function simulateMatch(
   const compressedOpponentAttack = compressRatingEdge(opponent.attack);
   const compressedOpponentMidfield = compressRatingEdge(opponent.midfield);
   const compressedOpponentDefense = compressRatingEdge(opponent.defense);
-  const venueBoost = venue === "home" ? 1.35 : -2.35;
+  const venueBoost = venue === "home" ? 0.95 : -3.45;
   const strengthDelta =
     compressedOverall -
     compressedOpponentRating +
     (compressedAttack - compressedOpponentDefense) * 0.07 +
     (compressedMidfield - compressedOpponentMidfield) * 0.06 +
     (compressedDefense - compressedOpponentAttack) * 0.05 +
-    momentum * 0.6 +
+    momentum * 0.46 +
     venueBoost;
 
-  const randomSwing = (Math.random() - 0.5) * 9.8 * opponent.volatility;
-  const upsetSwing = venue === "away" && Math.random() < 0.16 ? randomInt(-4, 3) : 0;
+  const randomSwing = (Math.random() - 0.5) * 11.2 * opponent.volatility;
+  const upsetSwing = venue === "away" && Math.random() < 0.24 ? randomInt(-5, 2) : 0;
   const resultScore = strengthDelta + randomSwing + upsetSwing;
 
   let goalsFor = clamp(Math.round(1.0 + (compressedAttack - compressedOpponentDefense) / 13 + resultScore / 18), 0, 5);
   let goalsAgainst = clamp(
-    Math.round(0.95 + (compressedOpponentAttack - compressedDefense) / 14 - resultScore / 21 + (venue === "away" ? 0.35 : 0)),
+    Math.round(0.98 + (compressedOpponentAttack - compressedDefense) / 14 - resultScore / 21 + (venue === "away" ? 0.55 : 0)),
     0,
     5,
   );
@@ -338,6 +338,10 @@ export function simulateMatch(
     ]);
     goalsFor = grind.goalsFor;
     goalsAgainst = grind.goalsAgainst;
+  }
+
+  if (venue === "away" && resultScore < 2 && Math.random() < 0.22) {
+    goalsAgainst = clamp(goalsAgainst + 1, 0, 5);
   }
 
   if (resultScore > 7 && goalsFor <= goalsAgainst) goalsFor += 1;

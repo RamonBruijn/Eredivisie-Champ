@@ -15,7 +15,10 @@ export default function RootLayout({
   return (
     <html lang="nl">
       <body>
-        <I18nProvider>{children}</I18nProvider>
+        <I18nProvider>
+          {children}
+          <div className="prod-by-joop">ProdByJoopKarnemelk</div>
+        </I18nProvider>
       </body>
     </html>
   );

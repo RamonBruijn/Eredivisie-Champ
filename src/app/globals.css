@@ -123,6 +123,24 @@ select {
   filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.18));
 }
 
+.prod-by-joop {
+  position: fixed;
+  right: 0.9rem;
+  bottom: 0.75rem;
+  z-index: 50;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(10, 16, 38, 0.72);
+  color: rgba(245, 244, 237, 0.72);
+  padding: 0.38rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+  pointer-events: none;
+}
+
 @keyframes feed-in {
   from {
     opacity: 0;

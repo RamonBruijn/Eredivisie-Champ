@@ -1,6 +1,5 @@
 "use client";
 
-import { teams } from "@/data";
 import { getFormation } from "@/lib/formations";
 import { localizedModeLabel, useI18n } from "@/lib/i18n";
 import { loadSelection } from "@/lib/storage";
@@ -16,7 +15,6 @@ interface ResultCardProps {
 
 export function ResultCard({ result, isChampion = false, finalPlacement }: ResultCardProps) {
   const { t, locale } = useI18n();
-  const featuredTeam = teams.find((team) => team.id === result.context.featuredTeamId);
   const [savedSelection, setSavedSelection] = useState<Array<PlayerRecord | null>>([]);
   const formation = getFormation(result.context.formation);
 
@@ -82,7 +80,6 @@ export function ResultCard({ result, isChampion = false, finalPlacement }: Resul
           </h1>
           <p className="mt-2 text-sm text-[var(--gold-soft)]">
             {result.context.formation} • {localizedModeLabel(locale, result.context.mode)}
-            {featuredTeam ? ` • ${t.result.rolled(`${featuredTeam.club} ${featuredTeam.season}`)}` : ""}
           </p>
           <p className="mt-2 max-w-2xl text-sm text-[var(--muted)]">
             {result.went340
