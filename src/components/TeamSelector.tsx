@@ -232,9 +232,8 @@ export function TeamSelector() {
     const assignedPlayer = pendingPlayer;
     const nextAssignments = [...slotAssignments];
     nextAssignments[slotIndex] = assignedPlayer;
-    setSlotAssignments(nextAssignments);
-    setPendingPlayer(null);
     const nextOpenIndex = getNextOpenSlotIndex(nextAssignments);
+    let nextEligibleTeamIds: string[] = [];
 
     if (nextOpenIndex >= 0) {
       const nextOpenSlots = formationShape.slots
@@ -242,14 +241,27 @@ export function TeamSelector() {
         .filter(({ index }) => !nextAssignments[index]);
       const nextUsedIds = new Set([...selectedPlayerIds, assignedPlayer.id]);
       const nextUsedNames = new Set([...selectedPlayerNames, assignedPlayer.name.trim().toLocaleLowerCase()]);
-      const nextEligibleTeamIds = getEligibleTeamIdsForState(filteredTeams, nextOpenSlots, nextUsedIds, nextUsedNames);
+      nextEligibleTeamIds = getEligibleTeamIdsForState(filteredTeams, nextOpenSlots, nextUsedIds, nextUsedNames);
+    }
 
+    const shouldRollNext = nextOpenIndex >= 0 && nextEligibleTeamIds.length > 0;
+
+    if (shouldRollNext) {
+      setIsRolling(true);
+    }
+
+    setSlotAssignments(nextAssignments);
+    setPendingPlayer(null);
+
+    if (nextOpenIndex >= 0) {
       if (nextEligibleTeamIds.length > 0) {
         runRollAnimationWithIds(nextEligibleTeamIds, rolledTeam?.id);
       } else {
+        setIsRolling(false);
         setRolledTeam(null);
       }
     } else {
+      setIsRolling(false);
       setRolledTeam(null);
     }
   }
