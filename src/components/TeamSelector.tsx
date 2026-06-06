@@ -13,7 +13,7 @@ import type {
   Position,
   TeamRecord,
 } from "@/types/game";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 function randomTeamIdFrom(ids: string[], previousId?: string) {
   const pool = ids.filter((id) => id !== previousId);
@@ -70,6 +70,8 @@ function getEligibleTeamIdsForState(
 
 export function TeamSelector() {
   const { locale, t } = useI18n();
+  const formationSectionRef = useRef<HTMLDivElement | null>(null);
+  const completionScrolledRef = useRef(false);
   const [mode, setMode] = useState<GameMode>("classic");
   const [formation, setFormation] = useState<FormationId>("4-3-3");
   const [slotAssignments, setSlotAssignments] = useState<Array<PlayerRecord | null>>(
@@ -153,6 +155,21 @@ export function TeamSelector() {
   useEffect(() => {
     saveSelection(slotAssignments);
   }, [slotAssignments]);
+
+  useEffect(() => {
+    const isComplete = selectedPlayers.length === 11;
+
+    if (isComplete && !completionScrolledRef.current) {
+      completionScrolledRef.current = true;
+      window.setTimeout(() => {
+        formationSectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 120);
+    }
+
+    if (!isComplete) {
+      completionScrolledRef.current = false;
+    }
+  }, [selectedPlayers.length]);
 
   useEffect(() => {
     if (openSlots.length === 0 || eligibleTeamIds.length === 0) {
@@ -481,7 +498,7 @@ export function TeamSelector() {
           </section>
         </div>
 
-        <div className="space-y-6 xl:sticky xl:top-6 xl:self-start">
+        <div ref={formationSectionRef} className="space-y-6 xl:sticky xl:top-6 xl:self-start">
           <FormationBuilder
             mode={mode}
             formation={formation}
@@ -489,7 +506,28 @@ export function TeamSelector() {
             pendingPlayer={pendingPlayer}
             onSlotClick={handleSlotSelection}
           />
-          <SeasonSimulator mode={mode} formation={formation} slotAssignments={slotAssignments} />
+          {selectedPlayers.length === 11 ? (
+            <div className="glass rounded-[1.55rem] p-4 md:hidden">
+              <p className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">
+                {locale === "nl" ? "Team compleet" : "Team complete"}
+              </p>
+              <h3 className="mt-2 text-xl font-semibold text-white">
+                {locale === "nl" ? "Speel direct je seizoen" : "Play your season now"}
+              </h3>
+              <button
+                type="button"
+                onClick={() => {
+                  document.getElementById("season-simulator")?.scrollIntoView({ behavior: "smooth", block: "start" });
+                }}
+                className="mt-4 inline-flex min-h-14 w-full items-center justify-center rounded-[1.25rem] bg-[linear-gradient(180deg,var(--gold-soft),var(--gold))] px-5 py-4 text-base font-bold text-[#171b3a] shadow-[0_16px_36px_rgba(0,0,0,0.22)]"
+              >
+                {locale === "nl" ? "Speel seizoen" : "Play season"}
+              </button>
+            </div>
+          ) : null}
+          <div id="season-simulator">
+            <SeasonSimulator mode={mode} formation={formation} slotAssignments={slotAssignments} />
+          </div>
         </div>
       </section>
     </div>
