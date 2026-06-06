@@ -1,7 +1,8 @@
-import type { PlayerRecord, SeasonSummary } from "@/types/game";
+import type { DraftSetup, PlayerRecord, SeasonSummary } from "@/types/game";
 
 const SELECTION_KEY = "eredivisie-champ-selection";
 const RESULT_KEY = "eredivisie-champ-result";
+const DRAFT_SETUP_KEY = "eredivisie-champ-draft-setup";
 
 type StoredSelection = Array<PlayerRecord | null>;
 
@@ -38,6 +39,23 @@ export function loadResult(): SeasonSummary | null {
 
   try {
     return JSON.parse(raw) as SeasonSummary;
+  } catch {
+    return null;
+  }
+}
+
+export function saveDraftSetup(setup: DraftSetup) {
+  if (!hasWindow()) return;
+  window.localStorage.setItem(DRAFT_SETUP_KEY, JSON.stringify(setup));
+}
+
+export function loadDraftSetup(): DraftSetup | null {
+  if (!hasWindow()) return null;
+  const raw = window.localStorage.getItem(DRAFT_SETUP_KEY);
+  if (!raw) return null;
+
+  try {
+    return JSON.parse(raw) as DraftSetup;
   } catch {
     return null;
   }

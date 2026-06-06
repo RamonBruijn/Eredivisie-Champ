@@ -30,6 +30,12 @@ export type GameMode = "classic" | "from-memory";
 export type Locale = "nl" | "en";
 export type SimulationMode = "auto" | "manual";
 
+export interface DraftSetup {
+  mode: GameMode;
+  formation: FormationId;
+  decades: string[];
+}
+
 export interface TeamRecord {
   id: string;
   club: string;

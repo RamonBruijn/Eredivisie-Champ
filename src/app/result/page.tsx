@@ -115,7 +115,7 @@ export default function ResultPage() {
             </section>
           )}
           <section className="mt-6 grid gap-6 xl:grid-cols-[0.92fr_1.08fr]">
-            <div className="space-y-6">
+            <div className="order-2 space-y-6 xl:order-1">
               <section className="glass rounded-[2rem] p-5 md:p-6">
                 <div className="flex items-center justify-between gap-4">
                   <div>
@@ -212,24 +212,75 @@ export default function ResultPage() {
               </section>
             </div>
 
-            <div className="space-y-6">
-              {seasonFinished ? (
-                <section className="glass rounded-[2rem] p-5 md:p-6">
-                  <div className="flex items-center justify-between gap-3">
-                    <h2 className="text-xl font-semibold text-white">
-                      {locale === "nl" ? "Eindstand" : "Final table"}
-                    </h2>
-                    <p className="text-sm text-[var(--gold-soft)]">
-                      {locale === "nl" ? "Na 34" : "After 34"}
-                    </p>
-                  </div>
-                  <div className="mt-4 space-y-2">
-                    {finalStandings.map((entry, index) => (
-                      <HalftimeRow key={entry.teamId} entry={entry} index={index} locale={locale} />
-                    ))}
-                  </div>
-                </section>
-              ) : null}
+            <div className="order-1 space-y-6 xl:order-2">
+              <section className="glass rounded-[2rem] p-5 md:hidden">
+                <div className="flex items-center justify-between gap-3">
+                  <h2 className="text-xl font-semibold text-white">
+                    {locale === "nl" ? "Wedstrijdfeed" : "Match feed"}
+                  </h2>
+                  <p className="text-sm text-[var(--muted)]">
+                    {locale === "nl" ? "Gespeeld" : "Played"} {matchCursor}/34
+                  </p>
+                </div>
+                <div className="mt-4 space-y-3">
+                  {playedMatches.length > 0 ? (
+                    playedMatches.map((match, index) => (
+                      <article
+                        key={`mobile-${match.round}-${match.opponent.id}-${match.venue}`}
+                        className={`match-feed-card relative overflow-hidden rounded-[1.5rem] border p-4 transition ${
+                          index === 0
+                            ? "border-[rgba(228,197,106,0.32)] bg-[linear-gradient(180deg,rgba(228,197,106,0.1),rgba(255,255,255,0.04))] shadow-[0_18px_50px_rgba(0,0,0,0.22)]"
+                            : "border-[var(--line)] bg-[rgba(255,255,255,0.03)] opacity-95"
+                        }`}
+                      >
+                        <div className="absolute left-5 top-0 h-full w-px bg-[linear-gradient(180deg,rgba(228,197,106,0.26),rgba(255,255,255,0.06))]" />
+                        <div className="relative pl-5">
+                          <div className="absolute left-[-0.12rem] top-1.5 h-3.5 w-3.5 rounded-full border border-[rgba(245,228,166,0.5)] bg-[var(--gold-soft)] shadow-[0_0_0_4px_rgba(245,228,166,0.12)]" />
+                          <div className="flex items-start justify-between gap-3">
+                            <div>
+                              <p className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">
+                                {t.result.matchday(match.matchNumber)}
+                              </p>
+                              <h3 className="mt-1 text-lg font-semibold text-white">
+                                {match.venue === "home"
+                                  ? locale === "nl"
+                                    ? `Thuis vs ${match.opponent.name}`
+                                    : `Home vs ${match.opponent.name}`
+                                  : locale === "nl"
+                                    ? `Uit bij ${match.opponent.name}`
+                                    : `Away at ${match.opponent.name}`}
+                              </h3>
+                            </div>
+                            <div className="text-right">
+                              <span className={`inline-flex rounded-full px-3 py-1 text-xs font-semibold ${
+                                match.result === "W"
+                                  ? "bg-[rgba(68,201,128,0.18)] text-[#8ff0b5]"
+                                  : match.result === "D"
+                                    ? "bg-[rgba(245,228,166,0.14)] text-[var(--gold-soft)]"
+                                    : "bg-[rgba(217,93,57,0.16)] text-[#ffb09a]"
+                              }`}>
+                                {match.result}
+                              </span>
+                              <p className="mt-2 text-3xl font-bold text-white">
+                                {match.goalsFor}-{match.goalsAgainst}
+                              </p>
+                            </div>
+                          </div>
+                          <div className="mt-3">
+                            <GoalEvents match={match} locale={locale} />
+                          </div>
+                        </div>
+                      </article>
+                    ))
+                  ) : (
+                    <div className="rounded-2xl border border-dashed border-[var(--line)] px-4 py-4 text-sm text-[var(--muted)]">
+                      {locale === "nl"
+                        ? "Nog geen gespeelde wedstrijden in de feed."
+                        : "No played matches in the feed yet."}
+                    </div>
+                  )}
+                </div>
+              </section>
 
               {showHalftimeTable ? (
                 <section className="glass rounded-[2rem] p-5 md:p-6">
@@ -249,7 +300,25 @@ export default function ResultPage() {
                 </section>
               ) : null}
 
-              <section className="glass rounded-[2rem] p-5 md:p-6">
+              {seasonFinished ? (
+                <section className="glass rounded-[2rem] p-5 md:p-6">
+                  <div className="flex items-center justify-between gap-3">
+                    <h2 className="text-xl font-semibold text-white">
+                      {locale === "nl" ? "Eindstand" : "Final table"}
+                    </h2>
+                    <p className="text-sm text-[var(--gold-soft)]">
+                      {locale === "nl" ? "Na 34" : "After 34"}
+                    </p>
+                  </div>
+                  <div className="mt-4 space-y-2">
+                    {finalStandings.map((entry, index) => (
+                      <HalftimeRow key={entry.teamId} entry={entry} index={index} locale={locale} />
+                    ))}
+                  </div>
+                </section>
+              ) : null}
+
+              <section className="hidden rounded-[2rem] p-5 md:block md:glass md:p-6">
                 <div className="flex items-center justify-between gap-3">
                   <h2 className="text-xl font-semibold text-white">
                     {locale === "nl" ? "Wedstrijdfeed" : "Match feed"}

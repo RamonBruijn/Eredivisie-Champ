@@ -39,7 +39,7 @@ export function FormationBuilder({
     .filter(({ index }) => !slotAssignments[index]);
 
   return (
-    <section className="glass rounded-[1.75rem] p-4 md:rounded-[2rem] md:p-6">
+    <section className="glass rounded-[1.55rem] p-3 md:rounded-[2rem] md:p-6">
       <div className="flex items-center justify-between gap-4">
         <div>
           <p className="text-sm uppercase tracking-[0.22em] text-[var(--muted)]">{t.formationBuilder.yourXi}</p>
@@ -56,12 +56,12 @@ export function FormationBuilder({
         ) : null}
       </div>
 
-      <div className="mt-4 rounded-[1.5rem] border border-[var(--line)] p-4">
+      <div className="mt-3 rounded-[1.2rem] border border-[var(--line)] px-3 py-2.5">
         <p className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">{t.formationBuilder.draftFlow}</p>
-        <div className="mt-2 flex items-center justify-between gap-3">
+        <div className="mt-1.5 flex items-center justify-between gap-3">
           <div>
-            <p className="font-semibold text-white">{t.formationBuilder.pickOnePerRoll}</p>
-            <p className="text-sm text-[var(--muted)]">
+            <p className="text-sm font-semibold text-white">{t.formationBuilder.pickOnePerRoll}</p>
+            <p className="text-xs text-[var(--muted)]">
               {pendingPlayer
                 ? locale === "nl"
                   ? `Wijs ${pendingPlayer.name} nu toe aan een vrije passende positie.`
@@ -71,12 +71,12 @@ export function FormationBuilder({
           </div>
           <div className="text-right">
             <p className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">{t.common.picked}</p>
-            <p className="text-2xl font-bold text-[var(--gold-soft)]">{selectedPlayers.length}/11</p>
+            <p className="text-xl font-bold text-[var(--gold-soft)]">{selectedPlayers.length}/11</p>
           </div>
         </div>
       </div>
 
-      <div className="mt-4 rounded-[1.65rem] border border-[rgba(255,255,255,0.14)] bg-[linear-gradient(180deg,rgba(122,92,255,0.2)_0%,rgba(11,16,38,0.3)_100%)] p-2.5 shadow-[inset_0_1px_0_rgba(255,255,255,0.12)] md:rounded-[2rem] md:p-3">
+      <div className="mt-2.5 rounded-[1.45rem] border border-[rgba(255,255,255,0.14)] bg-[linear-gradient(180deg,rgba(122,92,255,0.2)_0%,rgba(11,16,38,0.3)_100%)] p-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.12)] md:mt-4 md:rounded-[2rem] md:p-3">
         <div className="pitch relative mx-auto aspect-[4/5] max-w-[22rem] overflow-hidden rounded-[1.25rem] border border-[rgba(255,255,255,0.22)] bg-[linear-gradient(180deg,#32206f_0%,#1a1d57_46%,#111739_100%)] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.05),0_22px_60px_rgba(0,0,0,0.35)] md:max-w-[26rem] md:rounded-[1.5rem]">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_16%,rgba(245,228,166,0.18),transparent_22%),radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.06),transparent_18%),repeating-linear-gradient(180deg,rgba(255,255,255,0.045)_0_10%,rgba(0,0,0,0.1)_10%_20%)]" />
           <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.04),transparent_16%,transparent_84%,rgba(255,255,255,0.04))]" />
@@ -168,7 +168,7 @@ export function FormationBuilder({
         </div>
       ) : null}
 
-      <div className="mt-4 grid gap-2.5">
+      <div className="mt-3 grid gap-2">
         {selectedPlayers.length === 0 ? (
           <div className="rounded-[1.5rem] border border-dashed border-[var(--line)] p-4 text-sm text-[var(--muted)]">
             {t.formationBuilder.startRolling}

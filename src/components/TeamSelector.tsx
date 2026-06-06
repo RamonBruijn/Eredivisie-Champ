@@ -1,12 +1,11 @@
 "use client";
 
 import { FormationBuilder } from "@/components/FormationBuilder";
-import { LanguageToggle } from "@/components/LanguageToggle";
 import { SeasonSimulator } from "@/components/SeasonSimulator";
 import { players, teams } from "@/data";
-import { getFormation, FORMATIONS } from "@/lib/formations";
+import { getFormation } from "@/lib/formations";
 import { useI18n } from "@/lib/i18n";
-import { loadSelection, saveSelection } from "@/lib/storage";
+import { loadDraftSetup, loadSelection, saveSelection } from "@/lib/storage";
 import type {
   FormationId,
   GameMode,
@@ -92,7 +91,6 @@ export function TeamSelector() {
     () => slotAssignments.filter((player): player is PlayerRecord => Boolean(player)),
     [slotAssignments],
   );
-  const draftLocked = selectedPlayers.length > 0 || pendingPlayer !== null;
   const selectedPlayerIds = useMemo(() => new Set(selectedPlayers.map((player) => player.id)), [selectedPlayers]);
   const selectedPlayerNames = useMemo(
     () => new Set(selectedPlayers.map((player) => player.name.trim().toLocaleLowerCase())),
@@ -141,13 +139,21 @@ export function TeamSelector() {
 
   useEffect(() => {
     const saved = loadSelection();
+    const savedSetup = loadDraftSetup();
+
+    if (savedSetup) {
+      setMode(savedSetup.mode);
+      setFormation(savedSetup.formation);
+      setSelectedDecades(savedSetup.decades.length > 0 ? savedSetup.decades : availableDecades);
+    }
+
     if (saved.length > 0) {
       const padded = Array.from({ length: 11 }, (_, index) => saved[index] ?? null);
       setSlotAssignments(padded);
       const nextOpenIndex = getNextOpenSlotIndex(padded);
       setActiveSlotIndex(nextOpenIndex >= 0 ? nextOpenIndex : 0);
     }
-  }, []);
+  }, [availableDecades]);
 
   useEffect(() => {
     saveSelection(slotAssignments);
@@ -217,28 +223,6 @@ export function TeamSelector() {
     setRolledTeam(filteredTeams.find((team) => team.id === randomTeamIdFrom(viableTeams)) ?? null);
   }
 
-  function handleModeChange(modeOption: GameMode) {
-    if (draftLocked && mode !== modeOption) return;
-    resetDraft(formation, modeOption);
-  }
-
-  function handleFormationChange(formationOption: FormationId) {
-    if (draftLocked) return;
-    resetDraft(formationOption, mode);
-  }
-
-  function handleToggleDecade(decade: string) {
-    if (draftLocked) return;
-
-    setSelectedDecades((current) => {
-      const next = current.includes(decade)
-        ? current.filter((entry) => entry !== decade)
-        : [...current, decade].sort((a, b) => a.localeCompare(b));
-
-      return next.length > 0 ? next : current;
-    });
-  }
-
   function handleRoll() {
     if (eligibleTeamIds.length === 0 || rerollUsed || isRolling) return;
     runRollAnimation(rolledTeam?.id, true);
@@ -289,150 +273,11 @@ export function TeamSelector() {
     setActiveSlotIndex(slotIndex);
   }
 
-  const modeCopy: Record<GameMode, { title: string; description: string }> = {
-    classic: {
-      title: t.common.withRating,
-      description: t.teamSelector.withRatingDescription,
-    },
-    "from-memory": {
-      title: t.common.fromMemory,
-      description: t.teamSelector.fromMemoryDescription,
-    },
-  };
-
   return (
-    <div className="space-y-6">
-      <section className="glass rounded-[2rem] p-5 md:rounded-[2.5rem] md:p-8">
-        <div className="grid gap-6 xl:grid-cols-[1.2fr_0.8fr] xl:items-end">
-          <div>
-            <p className="text-sm uppercase tracking-[0.28em] text-[var(--gold-soft)]">
-              {t.teamSelector.eyebrow}
-            </p>
-            <div className="mt-4 flex items-end gap-2 md:gap-3">
-              <span className="text-4xl font-bold leading-none text-white md:text-7xl">XI</span>
-              <span className="mb-1 text-2xl font-semibold uppercase tracking-[0.24em] text-[var(--gold-soft)] md:text-3xl">
-                {locale === "nl" ? "titel" : "title"}
-              </span>
-            </div>
-            <h1 className="mt-5 max-w-3xl text-3xl font-semibold leading-[1.02] text-white md:text-6xl">
-              {t.teamSelector.title}
-            </h1>
-            <p className="mt-4 max-w-2xl text-sm leading-7 text-[var(--muted)] md:text-lg">
-              {t.teamSelector.description}
-            </p>
-          </div>
-
-          <div className="rounded-[1.6rem] border border-[var(--line)] bg-[rgba(255,255,255,0.03)] p-4 md:rounded-[2rem] md:p-5">
-            <div className="flex items-center justify-between gap-3">
-              <p className="text-sm uppercase tracking-[0.22em] text-[var(--muted)]">{t.teamSelector.howItWorks}</p>
-              <LanguageToggle />
-            </div>
-            <div className="mt-4 grid gap-2 text-sm text-[var(--muted)]">
-              <p><span className="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgba(245,228,166,0.12)] text-[var(--gold-soft)]">01</span>{t.teamSelector.step1}</p>
-              <p><span className="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgba(245,228,166,0.12)] text-[var(--gold-soft)]">02</span>{t.teamSelector.step2}</p>
-              <p><span className="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgba(245,228,166,0.12)] text-[var(--gold-soft)]">03</span>{t.teamSelector.step3}</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="grid gap-6 xl:grid-cols-[1.15fr_0.85fr]">
-        <div className="space-y-6">
-          <section className="glass rounded-[1.75rem] p-4 md:rounded-[2rem] md:p-6">
-            <div className="grid gap-6 lg:grid-cols-2">
-              <div>
-                <p className="text-sm uppercase tracking-[0.22em] text-[var(--muted)]">{t.teamSelector.mode}</p>
-                <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                  {(Object.keys(modeCopy) as GameMode[]).map((modeOption) => (
-                    <button
-                      key={modeOption}
-                      type="button"
-                      onClick={() => handleModeChange(modeOption)}
-                      disabled={draftLocked && mode !== modeOption}
-                      className={`rounded-[1.5rem] border p-4 text-left transition ${
-                        mode === modeOption
-                          ? "border-[var(--gold)] bg-[rgba(217,185,110,0.12)]"
-                          : "border-[var(--line)] hover:border-[rgba(217,185,110,0.4)]"
-                      } ${draftLocked && mode !== modeOption ? "cursor-not-allowed opacity-45" : ""}`}
-                    >
-                      <p className="font-semibold text-white">{modeCopy[modeOption].title}</p>
-                      <p className="mt-2 text-sm text-[var(--muted)]">{modeCopy[modeOption].description}</p>
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              <div>
-                <p className="text-sm uppercase tracking-[0.22em] text-[var(--muted)]">{t.teamSelector.formation}</p>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {FORMATIONS.map((formationOption) => (
-                    <button
-                      key={formationOption.id}
-                      type="button"
-                      onClick={() => handleFormationChange(formationOption.id)}
-                      disabled={draftLocked}
-                      className={`rounded-full border px-4 py-2 text-sm transition ${
-                        formation === formationOption.id
-                          ? "border-[var(--gold)] bg-[rgba(217,185,110,0.12)] text-[var(--gold-soft)]"
-                          : "border-[var(--line)] text-[var(--muted)] hover:border-[rgba(217,185,110,0.4)]"
-                      } ${draftLocked ? "cursor-not-allowed opacity-45" : ""}`}
-                    >
-                      {formationOption.label}
-                    </button>
-                  ))}
-                </div>
-                <p className="mt-4 text-sm text-[var(--muted)]">
-                  {draftLocked
-                    ? locale === "nl"
-                      ? "Formatie staat nu vast. Start een nieuwe draft om die te wijzigen."
-                      : "Formation is now locked. Start a new draft to change it."
-                    : t.teamSelector.changeResets}
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-6 border-t border-[var(--line)] pt-6">
-              <div className="flex items-center justify-between gap-3">
-                <p className="text-sm uppercase tracking-[0.22em] text-[var(--muted)]">
-                  {locale === "nl" ? "Decennia" : "Decades"}
-                </p>
-                <p className="text-xs text-[var(--muted)]">
-                  {selectedDecades.length}/{availableDecades.length}
-                </p>
-              </div>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {availableDecades.map((decade) => {
-                  const active = selectedDecades.includes(decade);
-                  return (
-                    <button
-                      key={decade}
-                      type="button"
-                      onClick={() => handleToggleDecade(decade)}
-                      disabled={draftLocked}
-                      className={`rounded-full border px-4 py-2 text-sm transition ${
-                        active
-                          ? "border-[var(--gold)] bg-[rgba(217,185,110,0.12)] text-[var(--gold-soft)]"
-                          : "border-[var(--line)] text-[var(--muted)] hover:border-[rgba(217,185,110,0.4)]"
-                      } ${draftLocked ? "cursor-not-allowed opacity-45" : ""}`}
-                    >
-                      {decade}
-                    </button>
-                  );
-                })}
-              </div>
-              <p className="mt-4 text-sm text-[var(--muted)]">
-                {draftLocked
-                  ? locale === "nl"
-                    ? "Decenniumfilter staat nu vast. Start een nieuwe draft om hem te wijzigen."
-                    : "Decade filter is now locked. Start a new draft to change it."
-                  : locale === "nl"
-                    ? "Standaard doen alle decennia mee. Beperk hier je draftpool."
-                    : "All decades are included by default. Narrow your draft pool here."}
-              </p>
-            </div>
-          </section>
-
-          <section className="glass rounded-[1.75rem] p-4 md:rounded-[2rem] md:p-6">
+    <div className="space-y-4">
+      <section className="grid gap-4 xl:grid-cols-[1.05fr_0.95fr]">
+        <div className="space-y-4">
+          <section className="glass rounded-[1.55rem] p-4 md:rounded-[2rem] md:p-6">
             <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <div>
                 <p className="text-sm uppercase tracking-[0.22em] text-[var(--muted)]">{t.teamSelector.currentRoll}</p>
@@ -482,7 +327,7 @@ export function TeamSelector() {
             </div>
 
             {rolledTeam ? (
-              <div className="mt-5 rounded-[1.5rem] border border-[var(--line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.02))] p-4 md:rounded-[1.75rem] md:p-5">
+              <div className="mt-4 rounded-[1.35rem] border border-[var(--line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.02))] p-4 md:rounded-[1.75rem] md:p-5">
                 <p className="text-sm uppercase tracking-[0.18em] text-[var(--muted)]">{t.teamSelector.rolledTeam}</p>
                 <h3 className="mt-2 text-2xl font-semibold text-white md:text-3xl">
                   {rolledTeam.club} {rolledTeam.season}
@@ -508,7 +353,7 @@ export function TeamSelector() {
             ) : null}
           </section>
 
-          <section className="glass rounded-[1.75rem] p-4 md:rounded-[2rem] md:p-6">
+          <section className="glass rounded-[1.55rem] p-3 md:rounded-[2rem] md:p-6">
             {pendingPlayer ? (
               <div className="space-y-4">
                 <div className="rounded-[1.5rem] border border-[rgba(217,185,110,0.35)] bg-[rgba(217,185,110,0.08)] p-4">
@@ -553,25 +398,25 @@ export function TeamSelector() {
                 </button>
               </div>
             ) : (
-              <div className="space-y-3">
+              <div className="space-y-2">
                 {rolledCandidates.length > 0 ? (
-                  <div className="max-h-[22rem] overflow-y-auto rounded-[1.3rem] border border-[rgba(122,92,255,0.16)] bg-[linear-gradient(180deg,rgba(74,54,156,0.18),rgba(17,23,57,0.26))] p-2 pr-1">
-                    <div className="space-y-2.5">
+                  <div className="max-h-[18.5rem] overflow-y-auto rounded-[1.15rem] border border-[rgba(122,92,255,0.18)] bg-[linear-gradient(180deg,rgba(61,46,128,0.34),rgba(13,18,42,0.5))] p-1.5 pr-1">
+                    <div className="space-y-1.5">
                       {rolledCandidates.map(({ player, assignableSlotIndexes }) => (
                         <button
                           key={player.id}
                           type="button"
                           onClick={() => handlePick(player)}
                           disabled={isRolling || assignableSlotIndexes.length === 0}
-                          className={`flex min-h-18 w-full items-center justify-between rounded-[1.25rem] border px-4 py-3 text-left transition ${
+                          className={`flex min-h-[3.75rem] w-full items-center justify-between rounded-[1rem] border px-3 py-2.5 text-left transition ${
                             assignableSlotIndexes.length === 0
                               ? "border-[rgba(255,255,255,0.08)] bg-[rgba(10,16,38,0.32)] opacity-45"
                               : "border-[rgba(255,255,255,0.12)] bg-[rgba(9,13,31,0.48)] hover:border-[rgba(217,185,110,0.45)] hover:bg-[rgba(255,255,255,0.05)]"
                           } disabled:cursor-not-allowed`}
                         >
                           <div className="min-w-0 pr-3">
-                            <p className="truncate text-base font-semibold text-white">{player.name}</p>
-                            <p className="mt-1 text-[11px] uppercase tracking-[0.16em] text-[rgba(255,255,255,0.58)]">
+                            <p className="truncate text-[15px] font-semibold leading-tight text-white">{player.name}</p>
+                            <p className="mt-0.5 text-[10px] uppercase tracking-[0.14em] text-[rgba(255,255,255,0.54)]">
                               {formatPositions(player.positions)}
                             </p>
                           </div>
@@ -579,7 +424,7 @@ export function TeamSelector() {
                             <p className="text-[10px] uppercase tracking-[0.18em] text-[var(--muted)]">
                               {assignableSlotIndexes.length === 0 ? (locale === "nl" ? "VOL" : "FULL") : "OVR"}
                             </p>
-                            <p className="mt-0.5 text-lg font-bold text-[var(--gold-soft)]">
+                            <p className="mt-0.5 text-[1.1rem] font-bold leading-none text-[var(--gold-soft)]">
                               {assignableSlotIndexes.length === 0
                                 ? "—"
                                 : mode === "from-memory" && selectedPlayers.length < formationShape.slots.length
