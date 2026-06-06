@@ -15,6 +15,8 @@ interface FormationBuilderProps {
   formation: FormationId;
   slotAssignments: Array<PlayerRecord | null>;
   pendingPlayer: PlayerRecord | null;
+  activeSlotIndex: number;
+  onSlotClick: (slotIndex: number) => void;
 }
 
 export function FormationBuilder({
@@ -22,6 +24,8 @@ export function FormationBuilder({
   formation,
   slotAssignments,
   pendingPlayer,
+  activeSlotIndex,
+  onSlotClick,
 }: FormationBuilderProps) {
   const selectedPlayers = slotAssignments.filter((player): player is PlayerRecord => Boolean(player));
   const { locale, t } = useI18n();
@@ -97,6 +101,7 @@ export function FormationBuilder({
             const pickedPlayer = slotAssignments[index];
             const isAssignable =
               !!pendingPlayer && !pickedPlayer && pendingPlayer.positions.includes(slot);
+            const isActive = index === activeSlotIndex;
 
             return (
               <div
@@ -104,18 +109,22 @@ export function FormationBuilder({
                 className="absolute -translate-x-1/2 -translate-y-1/2"
                 style={{ left: `${point.x}%`, top: `${point.y}%` }}
               >
-                <div
-                  className={`flex min-w-[4.7rem] flex-col items-center text-center ${
-                    isAssignable ? "scale-105" : ""
+                <button
+                  type="button"
+                  onClick={() => onSlotClick(index)}
+                  className={`flex min-w-[4.7rem] flex-col items-center text-center transition ${
+                    isAssignable || isActive ? "scale-105" : ""
                   }`}
                 >
                   <div
                     className={`relative flex h-10 w-10 items-center justify-center rounded-full border-2 text-xs font-bold shadow-lg transition md:h-12 md:w-12 md:text-sm ${
                       isAssignable
                         ? "border-[var(--gold)] bg-[rgba(245,228,166,0.98)] text-[#261b57] shadow-[0_0_0_6px_rgba(245,228,166,0.12)]"
-                        : pickedPlayer
-                          ? "border-[rgba(0,0,0,0.55)] bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(236,230,247,0.94))] text-[#171b3a]"
-                          : "border-[rgba(255,255,255,0.22)] bg-[linear-gradient(180deg,rgba(31,40,93,0.9),rgba(17,23,57,0.86))] text-[rgba(255,255,255,0.82)]"
+                        : isActive
+                          ? "border-[rgba(255,255,255,0.9)] bg-[linear-gradient(180deg,rgba(122,92,255,0.95),rgba(60,44,133,0.9))] text-white shadow-[0_0_0_6px_rgba(122,92,255,0.18)]"
+                          : pickedPlayer
+                            ? "border-[rgba(0,0,0,0.55)] bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(236,230,247,0.94))] text-[#171b3a]"
+                            : "border-[rgba(255,255,255,0.22)] bg-[linear-gradient(180deg,rgba(31,40,93,0.9),rgba(17,23,57,0.86))] text-[rgba(255,255,255,0.82)]"
                     }`}
                   >
                     {pickedPlayer ? (
@@ -125,10 +134,12 @@ export function FormationBuilder({
                     ) : null}
                     {pickedPlayer ? (revealRatings ? pickedPlayer.rating : "?") : slot.toUpperCase()}
                   </div>
-                  <p className="mt-1.5 max-w-[4.7rem] text-[9px] font-semibold uppercase tracking-[0.12em] text-[rgba(255,255,255,0.96)] drop-shadow-[0_1px_2px_rgba(0,0,0,0.55)] md:mt-2 md:max-w-[5.8rem] md:text-[10px] md:tracking-[0.14em]">
+                  <p className={`mt-1.5 max-w-[4.7rem] text-[9px] font-semibold uppercase tracking-[0.12em] drop-shadow-[0_1px_2px_rgba(0,0,0,0.55)] md:mt-2 md:max-w-[5.8rem] md:text-[10px] md:tracking-[0.14em] ${
+                    isActive ? "text-[var(--gold-soft)]" : "text-[rgba(255,255,255,0.96)]"
+                  }`}>
                     {pickedPlayer ? pickedPlayer.name : localizedSlotLabel(slot, index)}
                   </p>
-                </div>
+                </button>
               </div>
             );
           })}
