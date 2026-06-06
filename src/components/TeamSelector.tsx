@@ -46,6 +46,10 @@ function getNextOpenSlotIndex(assignments: Array<PlayerRecord | null>) {
   return assignments.findIndex((player) => player === null);
 }
 
+function getAssignableSlotIndexes(player: PlayerRecord, slots: Array<{ slot: Position; index: number }>) {
+  return slots.filter(({ slot }) => player.positions.includes(slot)).map(({ index }) => index);
+}
+
 export function TeamSelector() {
   const { locale, t } = useI18n();
   const [mode, setMode] = useState<GameMode>("classic");
@@ -90,20 +94,18 @@ export function TeamSelector() {
   );
 
   const eligibleTeamIds = useMemo(() => {
-    if (!activeSlotPosition || activeSlotPlayer) return [];
-
     return filteredTeams
       .filter((team) =>
-        players.some(
-          (player) =>
-            player.teamId === team.id &&
-            !selectedPlayerIds.has(player.id) &&
-            !selectedPlayerNames.has(player.name.trim().toLocaleLowerCase()) &&
-            player.positions.includes(activeSlotPosition),
-        ),
+        players.some((player) => {
+          if (player.teamId !== team.id) return false;
+          if (selectedPlayerIds.has(player.id)) return false;
+          if (selectedPlayerNames.has(player.name.trim().toLocaleLowerCase())) return false;
+
+          return getAssignableSlotIndexes(player, openSlots).length > 0;
+        }),
       )
       .map((team) => team.id);
-  }, [activeSlotPlayer, activeSlotPosition, filteredTeams, selectedPlayerIds, selectedPlayerNames]);
+  }, [filteredTeams, openSlots, selectedPlayerIds, selectedPlayerNames]);
 
   const rolledCandidates = useMemo(() => {
     if (!rolledTeam) return [];
@@ -112,14 +114,18 @@ export function TeamSelector() {
         (player) =>
           player.teamId === rolledTeam.id &&
           !selectedPlayerIds.has(player.id) &&
-          !selectedPlayerNames.has(player.name.trim().toLocaleLowerCase()) &&
-          (!!activeSlotPosition && player.positions.includes(activeSlotPosition)),
+          !selectedPlayerNames.has(player.name.trim().toLocaleLowerCase()),
       )
+      .map((player) => ({
+        player,
+        assignableSlotIndexes: getAssignableSlotIndexes(player, openSlots),
+      }))
       .sort(
         (a, b) =>
-          getPrimaryPositionOrder(a) - getPrimaryPositionOrder(b) ||
-          b.rating - a.rating ||
-          a.name.localeCompare(b.name),
+          Number(b.assignableSlotIndexes.length > 0) - Number(a.assignableSlotIndexes.length > 0) ||
+          getPrimaryPositionOrder(a.player) - getPrimaryPositionOrder(b.player) ||
+          b.player.rating - a.player.rating ||
+          a.player.name.localeCompare(b.player.name),
       );
   }, [openSlots, rolledTeam, selectedPlayerIds, selectedPlayerNames]);
 
@@ -138,7 +144,7 @@ export function TeamSelector() {
   }, [slotAssignments]);
 
   useEffect(() => {
-    if (openSlots.length === 0 || activeSlotPlayer || eligibleTeamIds.length === 0) {
+    if (openSlots.length === 0 || eligibleTeamIds.length === 0) {
       setRolledTeam(null);
       return;
     }
@@ -150,10 +156,10 @@ export function TeamSelector() {
 
     setRolledTeam(filteredTeams.find((team) => team.id === nextId) ?? null);
     setIsRolling(false);
-  }, [activeSlotPlayer, eligibleTeamIds, filteredTeams, openSlots.length, rolledTeam]);
+  }, [eligibleTeamIds, filteredTeams, openSlots.length, rolledTeam]);
 
   function runRollAnimation(previousId?: string, consumeReroll = false) {
-    if (!activeSlotPosition || activeSlotPlayer || eligibleTeamIds.length === 0) return;
+    if (eligibleTeamIds.length === 0) return;
 
     const finalId = randomTeamIdFrom(eligibleTeamIds, previousId);
     const previewIds = Array.from({ length: 4 }, (_, index) =>
@@ -409,13 +415,9 @@ export function TeamSelector() {
                     ? locale === "nl"
                       ? `Wijs ${pendingPlayer.name} toe`
                       : `Assign ${pendingPlayer.name}`
-                    : activeSlotPlayer
-                      ? locale === "nl"
-                        ? `${activeSlotPlayer.name} staat vast op ${activeSlotPosition?.toUpperCase()}`
-                        : `${activeSlotPlayer.name} is locked at ${activeSlotPosition?.toUpperCase()}`
                     : openSlots.length > 0
                       ? locale === "nl"
-                        ? `Kies je ${activeSlotPosition?.toUpperCase()}`
+                        ? "Kies een speler uit dit team"
                         : "Choose a player from this team"
                       : t.teamSelector.xiComplete}
                 </h2>
@@ -434,7 +436,7 @@ export function TeamSelector() {
                 <button
                   type="button"
                   onClick={handleRoll}
-                  disabled={eligibleTeamIds.length <= 1 || rerollUsed || isRolling || !!activeSlotPlayer}
+                  disabled={eligibleTeamIds.length <= 1 || rerollUsed || isRolling}
                   className="min-h-12 rounded-[1rem] border border-[rgba(217,185,110,0.45)] px-4 py-2 text-sm text-[var(--gold-soft)] disabled:opacity-40"
                 >
                   {rerollUsed
@@ -461,7 +463,7 @@ export function TeamSelector() {
                 </h3>
                 <p className="mt-2 text-sm text-[var(--muted)]">{rolledTeam.description}</p>
                 <p className="mt-3 text-xs uppercase tracking-[0.16em] text-[rgba(255,255,255,0.58)]">
-                  {activeSlotPosition ? `${locale === "nl" ? "Voor positie" : "For slot"} ${activeSlotPosition.toUpperCase()}` : ""}
+                  {activeSlotPosition ? `${locale === "nl" ? "Actieve focus" : "Active focus"} ${activeSlotPosition.toUpperCase()}` : ""}
                 </p>
                 <p className="mt-4 text-sm text-[var(--gold-soft)]">
                   {isRolling
@@ -526,22 +528,20 @@ export function TeamSelector() {
               </div>
             ) : (
               <div className="space-y-3">
-                {activeSlotPlayer ? (
-                  <div className="rounded-[1.5rem] border border-[var(--line)] bg-[rgba(255,255,255,0.02)] p-4 text-sm text-[var(--muted)]">
-                    {locale === "nl"
-                      ? "Deze positie is al bezet. Klik een vrije positie op het veld om verder te draften."
-                      : "This slot is already filled. Tap an open position on the pitch to continue drafting."}
-                  </div>
-                ) : rolledCandidates.length > 0 ? (
+                {rolledCandidates.length > 0 ? (
                   <div className="max-h-[23.5rem] overflow-y-auto pr-1">
                     <div className="space-y-2.5">
-                      {rolledCandidates.map((player) => (
+                      {rolledCandidates.map(({ player, assignableSlotIndexes }) => (
                         <button
                           key={player.id}
                           type="button"
                           onClick={() => handlePick(player)}
-                          disabled={isRolling}
-                          className="flex min-h-18 w-full items-center justify-between rounded-[1.25rem] border border-[var(--line)] bg-[rgba(255,255,255,0.02)] px-4 py-3 text-left transition hover:border-[rgba(217,185,110,0.45)] hover:bg-[rgba(255,255,255,0.04)] disabled:cursor-not-allowed disabled:opacity-45"
+                          disabled={isRolling || assignableSlotIndexes.length === 0}
+                          className={`flex min-h-18 w-full items-center justify-between rounded-[1.25rem] border px-4 py-3 text-left transition ${
+                            assignableSlotIndexes.length === 0
+                              ? "border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.01)] opacity-45"
+                              : "border-[var(--line)] bg-[rgba(255,255,255,0.02)] hover:border-[rgba(217,185,110,0.45)] hover:bg-[rgba(255,255,255,0.04)]"
+                          } disabled:cursor-not-allowed`}
                         >
                           <div className="min-w-0 pr-3">
                             <p className="truncate text-base font-semibold text-white">{player.name}</p>
@@ -550,9 +550,13 @@ export function TeamSelector() {
                             </p>
                           </div>
                           <div className="shrink-0 text-right">
-                            <p className="text-[10px] uppercase tracking-[0.18em] text-[var(--muted)]">OVR</p>
+                            <p className="text-[10px] uppercase tracking-[0.18em] text-[var(--muted)]">
+                              {assignableSlotIndexes.length === 0 ? (locale === "nl" ? "VOL" : "FULL") : "OVR"}
+                            </p>
                             <p className="mt-0.5 text-xl font-bold text-[var(--gold-soft)]">
-                              {mode === "from-memory" && selectedPlayers.length < formationShape.slots.length
+                              {assignableSlotIndexes.length === 0
+                                ? "—"
+                                : mode === "from-memory" && selectedPlayers.length < formationShape.slots.length
                                 ? "?"
                                 : player.rating}
                             </p>
