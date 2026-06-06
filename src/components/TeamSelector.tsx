@@ -214,34 +214,34 @@ export function TeamSelector() {
 
   return (
     <div className="space-y-6">
-      <section className="glass rounded-[2.5rem] p-6 md:p-8">
-        <div className="grid gap-8 xl:grid-cols-[1.2fr_0.8fr] xl:items-end">
+      <section className="glass rounded-[2rem] p-5 md:rounded-[2.5rem] md:p-8">
+        <div className="grid gap-6 xl:grid-cols-[1.2fr_0.8fr] xl:items-end">
           <div>
             <p className="text-sm uppercase tracking-[0.28em] text-[var(--gold-soft)]">
               {t.teamSelector.eyebrow}
             </p>
-            <div className="mt-4 flex items-end gap-3">
-              <span className="text-6xl font-bold text-white md:text-8xl">34</span>
-              <span className="mb-2 text-4xl font-semibold text-[var(--gold-soft)]">–</span>
-              <span className="text-6xl font-bold text-white md:text-8xl">0</span>
+            <div className="mt-4 flex items-end gap-2 md:gap-3">
+              <span className="text-5xl font-bold leading-none text-white md:text-8xl">34</span>
+              <span className="mb-1 text-3xl font-semibold text-[var(--gold-soft)] md:mb-2 md:text-4xl">–</span>
+              <span className="text-5xl font-bold leading-none text-white md:text-8xl">0</span>
             </div>
-            <h1 className="mt-5 max-w-3xl text-4xl font-semibold leading-tight text-white md:text-6xl">
+            <h1 className="mt-5 max-w-3xl text-3xl font-semibold leading-[1.02] text-white md:text-6xl">
               {t.teamSelector.title}
             </h1>
-            <p className="mt-4 max-w-2xl text-base text-[var(--muted)] md:text-lg">
+            <p className="mt-4 max-w-2xl text-sm leading-7 text-[var(--muted)] md:text-lg">
               {t.teamSelector.description}
             </p>
           </div>
 
-          <div className="rounded-[2rem] border border-[var(--line)] bg-[rgba(255,255,255,0.03)] p-5">
+          <div className="rounded-[1.6rem] border border-[var(--line)] bg-[rgba(255,255,255,0.03)] p-4 md:rounded-[2rem] md:p-5">
             <div className="flex items-center justify-between gap-3">
               <p className="text-sm uppercase tracking-[0.22em] text-[var(--muted)]">{t.teamSelector.howItWorks}</p>
               <LanguageToggle />
             </div>
-            <div className="mt-4 grid gap-3 text-sm text-[var(--muted)]">
-              <p><span className="text-[var(--gold-soft)]">01</span> {t.teamSelector.step1}</p>
-              <p><span className="text-[var(--gold-soft)]">02</span> {t.teamSelector.step2}</p>
-              <p><span className="text-[var(--gold-soft)]">03</span> {t.teamSelector.step3}</p>
+            <div className="mt-4 grid gap-2 text-sm text-[var(--muted)]">
+              <p><span className="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgba(245,228,166,0.12)] text-[var(--gold-soft)]">01</span>{t.teamSelector.step1}</p>
+              <p><span className="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgba(245,228,166,0.12)] text-[var(--gold-soft)]">02</span>{t.teamSelector.step2}</p>
+              <p><span className="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgba(245,228,166,0.12)] text-[var(--gold-soft)]">03</span>{t.teamSelector.step3}</p>
             </div>
           </div>
         </div>
@@ -249,7 +249,7 @@ export function TeamSelector() {
 
       <section className="grid gap-6 xl:grid-cols-[1.15fr_0.85fr]">
         <div className="space-y-6">
-          <section className="glass rounded-[2rem] p-5 md:p-6">
+          <section className="glass rounded-[1.75rem] p-4 md:rounded-[2rem] md:p-6">
             <div className="grid gap-6 lg:grid-cols-2">
               <div>
                 <p className="text-sm uppercase tracking-[0.22em] text-[var(--muted)]">{t.teamSelector.mode}</p>
@@ -343,11 +343,11 @@ export function TeamSelector() {
             </div>
           </section>
 
-          <section className="glass rounded-[2rem] p-5 md:p-6">
+          <section className="glass rounded-[1.75rem] p-4 md:rounded-[2rem] md:p-6">
             <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <div>
                 <p className="text-sm uppercase tracking-[0.22em] text-[var(--muted)]">{t.teamSelector.currentRoll}</p>
-                <h2 className="mt-2 text-3xl font-semibold text-white">
+                <h2 className="mt-2 text-2xl font-semibold leading-tight text-white md:text-3xl">
                   {pendingPlayer
                     ? locale === "nl"
                       ? `Wijs ${pendingPlayer.name} toe`
@@ -358,16 +358,16 @@ export function TeamSelector() {
                         : "Choose a player from this team"
                       : t.teamSelector.xiComplete}
                 </h2>
-                <p className="mt-2 text-sm text-[var(--muted)]">
+                <p className="mt-3 inline-flex rounded-full border border-[rgba(228,197,106,0.22)] bg-[rgba(228,197,106,0.08)] px-3 py-1 text-xs uppercase tracking-[0.16em] text-[var(--gold-soft)]">
                   {t.teamSelector.turnOf(selectedPlayers.length + 1, 11)}
                 </p>
               </div>
-              <div className="flex gap-3">
+              <div className="grid grid-cols-2 gap-2 sm:flex sm:gap-3">
                 <button
                   type="button"
                   onClick={handleRoll}
                   disabled={eligibleTeamIds.length <= 1 || rerollUsed}
-                  className="rounded-full border border-[rgba(217,185,110,0.45)] px-4 py-2 text-sm text-[var(--gold-soft)] disabled:opacity-40"
+                  className="min-h-12 rounded-[1rem] border border-[rgba(217,185,110,0.45)] px-4 py-2 text-sm text-[var(--gold-soft)] disabled:opacity-40"
                 >
                   {rerollUsed
                     ? locale === "nl"
@@ -378,7 +378,7 @@ export function TeamSelector() {
                 <button
                   type="button"
                   onClick={() => resetDraft()}
-                  className="rounded-full border border-[rgba(255,123,114,0.4)] bg-[linear-gradient(180deg,rgba(255,123,114,0.18),rgba(255,123,114,0.08))] px-4 py-2 text-sm font-semibold text-[#ffd3cf] shadow-[0_12px_28px_rgba(0,0,0,0.18)] transition hover:border-[rgba(255,123,114,0.6)] hover:bg-[linear-gradient(180deg,rgba(255,123,114,0.24),rgba(255,123,114,0.12))]"
+                  className="min-h-12 rounded-[1rem] border border-[rgba(255,123,114,0.4)] bg-[linear-gradient(180deg,rgba(255,123,114,0.18),rgba(255,123,114,0.08))] px-4 py-2 text-sm font-semibold text-[#ffd3cf] shadow-[0_12px_28px_rgba(0,0,0,0.18)] transition hover:border-[rgba(255,123,114,0.6)] hover:bg-[linear-gradient(180deg,rgba(255,123,114,0.24),rgba(255,123,114,0.12))]"
                 >
                   {t.common.newDraft}
                 </button>
@@ -386,9 +386,9 @@ export function TeamSelector() {
             </div>
 
             {rolledTeam ? (
-              <div className="mt-5 rounded-[1.75rem] border border-[var(--line)] bg-[rgba(255,255,255,0.03)] p-5">
+              <div className="mt-5 rounded-[1.5rem] border border-[var(--line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.02))] p-4 md:rounded-[1.75rem] md:p-5">
                 <p className="text-sm uppercase tracking-[0.18em] text-[var(--muted)]">{t.teamSelector.rolledTeam}</p>
-                <h3 className="mt-2 text-2xl font-semibold text-white">
+                <h3 className="mt-2 text-2xl font-semibold text-white md:text-3xl">
                   {rolledTeam.club} {rolledTeam.season}
                 </h3>
                 <p className="mt-2 text-sm text-[var(--muted)]">{rolledTeam.description}</p>
@@ -405,10 +405,10 @@ export function TeamSelector() {
             ) : null}
           </section>
 
-          <section className="glass rounded-[2rem] p-5 md:p-6">
+          <section className="glass rounded-[1.75rem] p-4 md:rounded-[2rem] md:p-6">
             {pendingPlayer ? (
               <div className="space-y-4">
-                <div className="rounded-3xl border border-[rgba(217,185,110,0.35)] bg-[rgba(217,185,110,0.08)] p-4">
+                <div className="rounded-[1.5rem] border border-[rgba(217,185,110,0.35)] bg-[rgba(217,185,110,0.08)] p-4">
                   <p className="text-sm text-[var(--muted)]">
                     {locale === "nl"
                       ? "Gekozen speler"
@@ -430,13 +430,13 @@ export function TeamSelector() {
                         key={`${slot}-${slotIndex}-assign-card`}
                         type="button"
                         onClick={() => handleAssignToSlot(slotIndex)}
-                        className="rounded-3xl border border-[var(--line)] px-4 py-4 text-left transition hover:border-[rgba(217,185,110,0.45)]"
+                        className="min-h-20 rounded-[1.35rem] border border-[var(--line)] px-4 py-4 text-left transition hover:border-[rgba(217,185,110,0.45)] hover:bg-[rgba(255,255,255,0.03)]"
                       >
                         <p className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">
                           {locale === "nl" ? "Vrije positie" : "Open position"}
                         </p>
                         <p className="mt-2 text-lg font-semibold text-white">
-                          {slotIndex + 1}. {slot}
+                          {slotIndex + 1}. {slot.toUpperCase()}
                         </p>
                       </button>
                     ))}
@@ -457,10 +457,10 @@ export function TeamSelector() {
                       key={player.id}
                       type="button"
                       onClick={() => handlePick(player)}
-                      className="flex w-full items-center justify-between rounded-2xl border border-[var(--line)] px-4 py-3 text-left transition hover:border-[rgba(217,185,110,0.45)] hover:bg-[rgba(255,255,255,0.03)]"
+                      className="flex min-h-24 w-full items-center justify-between rounded-[1.4rem] border border-[var(--line)] bg-[rgba(255,255,255,0.02)] px-4 py-4 text-left transition hover:border-[rgba(217,185,110,0.45)] hover:bg-[rgba(255,255,255,0.04)]"
                     >
-                      <div>
-                        <p className="font-semibold text-white">{player.name}</p>
+                      <div className="min-w-0 pr-3">
+                        <p className="truncate text-lg font-semibold text-white">{player.name}</p>
                         <p className="mt-1 text-sm text-[var(--muted)]">
                           <span className="text-[11px] uppercase tracking-[0.16em] text-[rgba(255,255,255,0.58)]">
                             {formatPositions(player.positions)}
@@ -468,7 +468,7 @@ export function TeamSelector() {
                           <span className="mx-2">•</span>
                           {player.club} {player.season}
                         </p>
-                        <div className="mt-2 flex flex-wrap gap-2">
+                        <div className="mt-3 flex flex-wrap gap-2">
                           {openSlots
                             .filter(({ slot }) => player.positions.includes(slot))
                             .map(({ slot, index }) => (
@@ -476,14 +476,14 @@ export function TeamSelector() {
                                 key={`${player.id}-${slot}-${index}`}
                                 className="rounded-full border border-[rgba(217,185,110,0.35)] px-2 py-1 text-[11px] uppercase tracking-[0.12em] text-[var(--gold-soft)]"
                               >
-                                {slot}
+                                {slot.toUpperCase()}
                               </span>
                             ))}
                         </div>
                       </div>
-                      <div className="text-right">
+                      <div className="shrink-0 text-right">
                         <p className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">OVR</p>
-                        <p className="text-2xl font-bold text-[var(--gold-soft)]">
+                        <p className="mt-1 text-3xl font-bold text-[var(--gold-soft)]">
                           {mode === "from-memory" && selectedPlayers.length < formationShape.slots.length
                             ? "?"
                             : player.rating}

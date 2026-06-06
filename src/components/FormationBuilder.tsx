@@ -35,24 +35,24 @@ export function FormationBuilder({
     .filter(({ index }) => !slotAssignments[index]);
 
   return (
-    <section className="glass rounded-[2rem] p-5 md:p-6">
+    <section className="glass rounded-[1.75rem] p-4 md:rounded-[2rem] md:p-6">
       <div className="flex items-center justify-between gap-4">
         <div>
           <p className="text-sm uppercase tracking-[0.22em] text-[var(--muted)]">{t.formationBuilder.yourXi}</p>
-          <h2 className="text-2xl font-semibold text-white">{selectedPlayers.length} / 11 {t.common.selected}</h2>
+          <h2 className="text-xl font-semibold text-white md:text-2xl">{selectedPlayers.length} / 11 {t.common.selected}</h2>
           <p className="mt-1 text-sm text-[var(--muted)]">
             {formation} • {localizedModeLabel(locale, mode)}
           </p>
         </div>
         {strength ? (
-          <div className="rounded-2xl border border-[rgba(217,185,110,0.4)] px-4 py-3 text-right">
+          <div className="rounded-[1.25rem] border border-[rgba(217,185,110,0.4)] px-3 py-2 text-right md:px-4 md:py-3">
             <p className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">{t.formationBuilder.teamStrength}</p>
-            <p className="text-3xl font-bold text-[var(--gold-soft)]">{strength.overall}</p>
+            <p className="text-2xl font-bold text-[var(--gold-soft)] md:text-3xl">{strength.overall}</p>
           </div>
         ) : null}
       </div>
 
-      <div className="mt-4 rounded-3xl border border-[var(--line)] p-4">
+      <div className="mt-4 rounded-[1.5rem] border border-[var(--line)] p-4">
         <p className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">{t.formationBuilder.draftFlow}</p>
         <div className="mt-2 flex items-center justify-between gap-3">
           <div>
@@ -72,8 +72,8 @@ export function FormationBuilder({
         </div>
       </div>
 
-      <div className="mt-4 rounded-[2rem] border border-[rgba(255,255,255,0.14)] bg-[linear-gradient(180deg,rgba(122,92,255,0.2)_0%,rgba(11,16,38,0.3)_100%)] p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.12)]">
-        <div className="pitch relative mx-auto aspect-[4/5] max-w-[26rem] overflow-hidden rounded-[1.5rem] border border-[rgba(255,255,255,0.22)] bg-[linear-gradient(180deg,#32206f_0%,#1a1d57_46%,#111739_100%)] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.05),0_22px_60px_rgba(0,0,0,0.35)]">
+      <div className="mt-4 rounded-[1.65rem] border border-[rgba(255,255,255,0.14)] bg-[linear-gradient(180deg,rgba(122,92,255,0.2)_0%,rgba(11,16,38,0.3)_100%)] p-2.5 shadow-[inset_0_1px_0_rgba(255,255,255,0.12)] md:rounded-[2rem] md:p-3">
+        <div className="pitch relative mx-auto aspect-[4/5] max-w-[22rem] overflow-hidden rounded-[1.25rem] border border-[rgba(255,255,255,0.22)] bg-[linear-gradient(180deg,#32206f_0%,#1a1d57_46%,#111739_100%)] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.05),0_22px_60px_rgba(0,0,0,0.35)] md:max-w-[26rem] md:rounded-[1.5rem]">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_16%,rgba(245,228,166,0.18),transparent_22%),radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.06),transparent_18%),repeating-linear-gradient(180deg,rgba(255,255,255,0.045)_0_10%,rgba(0,0,0,0.1)_10%_20%)]" />
           <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.04),transparent_16%,transparent_84%,rgba(255,255,255,0.04))]" />
           <div className="absolute inset-0 rounded-[1.5rem] shadow-[inset_0_0_40px_rgba(0,0,0,0.26)]" />
@@ -110,7 +110,7 @@ export function FormationBuilder({
                   }`}
                 >
                   <div
-                    className={`relative flex h-12 w-12 items-center justify-center rounded-full border-2 text-sm font-bold shadow-lg transition ${
+                    className={`relative flex h-10 w-10 items-center justify-center rounded-full border-2 text-xs font-bold shadow-lg transition md:h-12 md:w-12 md:text-sm ${
                       isAssignable
                         ? "border-[var(--gold)] bg-[rgba(245,228,166,0.98)] text-[#261b57] shadow-[0_0_0_6px_rgba(245,228,166,0.12)]"
                         : pickedPlayer
@@ -119,13 +119,13 @@ export function FormationBuilder({
                     }`}
                   >
                     {pickedPlayer ? (
-                      <span className="absolute -top-1.5 right-0 rounded-full bg-[var(--gold)] px-1.5 py-0.5 text-[9px] font-bold leading-none text-[#171b3a]">
+                      <span className="absolute -top-1.5 right-0 rounded-full bg-[var(--gold)] px-1.5 py-0.5 text-[8px] font-bold leading-none text-[#171b3a] md:text-[9px]">
                         {slot.toUpperCase()}
                       </span>
                     ) : null}
                     {pickedPlayer ? (revealRatings ? pickedPlayer.rating : "?") : slot.toUpperCase()}
                   </div>
-                  <p className="mt-2 max-w-[5.8rem] text-[10px] font-semibold uppercase tracking-[0.14em] text-[rgba(255,255,255,0.96)] drop-shadow-[0_1px_2px_rgba(0,0,0,0.55)]">
+                  <p className="mt-1.5 max-w-[4.7rem] text-[9px] font-semibold uppercase tracking-[0.12em] text-[rgba(255,255,255,0.96)] drop-shadow-[0_1px_2px_rgba(0,0,0,0.55)] md:mt-2 md:max-w-[5.8rem] md:text-[10px] md:tracking-[0.14em]">
                     {pickedPlayer ? pickedPlayer.name : localizedSlotLabel(slot, index)}
                   </p>
                 </div>
@@ -136,7 +136,7 @@ export function FormationBuilder({
       </div>
 
       {pendingPlayer ? (
-        <div className="mt-4 rounded-3xl border border-[rgba(217,185,110,0.35)] bg-[rgba(217,185,110,0.08)] p-4">
+        <div className="mt-4 rounded-[1.5rem] border border-[rgba(217,185,110,0.35)] bg-[rgba(217,185,110,0.08)] p-4">
             <p className="text-sm font-semibold text-white">
               {locale === "nl" ? `Kies positie voor ${pendingPlayer.name}` : `Choose a position for ${pendingPlayer.name}`}
             </p>
@@ -157,9 +157,9 @@ export function FormationBuilder({
         </div>
       ) : null}
 
-      <div className="mt-4 grid gap-3">
+      <div className="mt-4 grid gap-2.5">
         {selectedPlayers.length === 0 ? (
-          <div className="rounded-3xl border border-dashed border-[var(--line)] p-4 text-sm text-[var(--muted)]">
+          <div className="rounded-[1.5rem] border border-dashed border-[var(--line)] p-4 text-sm text-[var(--muted)]">
             {t.formationBuilder.startRolling}
           </div>
         ) : (
@@ -167,10 +167,10 @@ export function FormationBuilder({
             player ? (
             <div
               key={player.id}
-              className="flex items-center justify-between rounded-2xl border border-[var(--line)] px-4 py-3 text-left hover:border-[rgba(217,185,110,0.45)]"
+              className="flex items-center justify-between rounded-[1.2rem] border border-[var(--line)] bg-[rgba(255,255,255,0.02)] px-3 py-3 text-left hover:border-[rgba(217,185,110,0.45)] md:px-4"
             >
               <div>
-                <p className="font-medium text-white">
+                <p className="text-sm font-medium text-white md:text-base">
                   {localizedSlotLabel(formationShape.slots[index], index)} · {player.name}
                 </p>
                 <p className="text-sm text-[var(--muted)]">
@@ -180,7 +180,7 @@ export function FormationBuilder({
                   </span>
                 </p>
               </div>
-              <span className="text-sm text-[var(--gold-soft)]">
+              <span className="shrink-0 pl-3 text-sm text-[var(--gold-soft)]">
                 {revealRatings ? player.rating : "?"}
               </span>
             </div>
@@ -190,20 +190,20 @@ export function FormationBuilder({
       </div>
 
       {strength ? (
-        <div className="mt-5 grid grid-cols-2 gap-3 text-sm md:grid-cols-4">
-          <div className="rounded-2xl border border-[var(--line)] p-3">
+        <div className="mt-5 grid grid-cols-2 gap-2.5 text-sm md:grid-cols-4 md:gap-3">
+          <div className="rounded-[1.2rem] border border-[var(--line)] p-3">
             <p className="text-[var(--muted)]">{t.formationBuilder.attack}</p>
             <p className="mt-1 text-xl font-semibold text-white">{strength.attack}</p>
           </div>
-          <div className="rounded-2xl border border-[var(--line)] p-3">
+          <div className="rounded-[1.2rem] border border-[var(--line)] p-3">
             <p className="text-[var(--muted)]">{t.formationBuilder.midfield}</p>
             <p className="mt-1 text-xl font-semibold text-white">{strength.midfield}</p>
           </div>
-          <div className="rounded-2xl border border-[var(--line)] p-3">
+          <div className="rounded-[1.2rem] border border-[var(--line)] p-3">
             <p className="text-[var(--muted)]">{t.formationBuilder.defense}</p>
             <p className="mt-1 text-xl font-semibold text-white">{strength.defense}</p>
           </div>
-          <div className="rounded-2xl border border-[var(--line)] p-3">
+          <div className="rounded-[1.2rem] border border-[var(--line)] p-3">
             <p className="text-[var(--muted)]">{locale === "nl" ? "Historisch" : "Historical"}</p>
             <p className="mt-1 text-xl font-semibold text-white">+{strength.historicalBonus}</p>
           </div>

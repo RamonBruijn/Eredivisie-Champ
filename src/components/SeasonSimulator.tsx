@@ -44,9 +44,9 @@ export function SeasonSimulator({
   }
 
   return (
-    <section className="glass rounded-[2rem] p-5 md:p-6">
+    <section className="glass rounded-[1.75rem] p-4 md:rounded-[2rem] md:p-6">
       <p className="text-sm uppercase tracking-[0.24em] text-[var(--muted)]">{t.season.run}</p>
-      <h2 className="mt-2 text-2xl font-semibold text-white">{t.season.title}</h2>
+      <h2 className="mt-2 text-xl font-semibold leading-tight text-white md:text-2xl">{t.season.title}</h2>
       <p className="mt-2 max-w-xl text-sm text-[var(--muted)]">
         {t.season.description}
       </p>
@@ -58,7 +58,7 @@ export function SeasonSimulator({
           type="button"
           onClick={() => handleSimulate("auto")}
           disabled={!validation.valid || loadingMode !== null}
-          className="rounded-[1.25rem] bg-[var(--gold)] px-5 py-4 text-left font-semibold text-[#171b3a] transition hover:brightness-105 disabled:cursor-not-allowed disabled:opacity-50"
+          className="min-h-24 rounded-[1.35rem] bg-[linear-gradient(180deg,var(--gold-soft),var(--gold))] px-5 py-4 text-left font-semibold text-[#171b3a] shadow-[0_16px_40px_rgba(0,0,0,0.2)] transition hover:brightness-105 disabled:cursor-not-allowed disabled:opacity-50"
         >
           <span className="block">
             {locale === "nl" ? "Automatisch" : "Automatic"}
@@ -73,7 +73,7 @@ export function SeasonSimulator({
           type="button"
           onClick={() => handleSimulate("manual")}
           disabled={!validation.valid || loadingMode !== null}
-          className="rounded-[1.25rem] border border-[rgba(228,197,106,0.45)] px-5 py-4 text-left text-[var(--gold-soft)] transition hover:bg-[rgba(228,197,106,0.08)] disabled:cursor-not-allowed disabled:opacity-50"
+          className="min-h-24 rounded-[1.35rem] border border-[rgba(228,197,106,0.45)] bg-[rgba(255,255,255,0.02)] px-5 py-4 text-left text-[var(--gold-soft)] transition hover:bg-[rgba(228,197,106,0.08)] disabled:cursor-not-allowed disabled:opacity-50"
         >
           <span className="block font-semibold">
             {locale === "nl" ? "Handmatig" : "Manual"}
