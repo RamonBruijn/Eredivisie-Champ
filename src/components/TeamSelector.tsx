@@ -50,6 +50,25 @@ function getAssignableSlotIndexes(player: PlayerRecord, slots: Array<{ slot: Pos
   return slots.filter(({ slot }) => player.positions.includes(slot)).map(({ index }) => index);
 }
 
+function getEligibleTeamIdsForState(
+  teamPool: TeamRecord[],
+  slots: Array<{ slot: Position; index: number }>,
+  usedIds: Set<string>,
+  usedNames: Set<string>,
+) {
+  return teamPool
+    .filter((team) =>
+      players.some((player) => {
+        if (player.teamId !== team.id) return false;
+        if (usedIds.has(player.id)) return false;
+        if (usedNames.has(player.name.trim().toLocaleLowerCase())) return false;
+
+        return getAssignableSlotIndexes(player, slots).length > 0;
+      }),
+    )
+    .map((team) => team.id);
+}
+
 export function TeamSelector() {
   const { locale, t } = useI18n();
   const [mode, setMode] = useState<GameMode>("classic");
@@ -93,19 +112,10 @@ export function TeamSelector() {
     [selectedDecades],
   );
 
-  const eligibleTeamIds = useMemo(() => {
-    return filteredTeams
-      .filter((team) =>
-        players.some((player) => {
-          if (player.teamId !== team.id) return false;
-          if (selectedPlayerIds.has(player.id)) return false;
-          if (selectedPlayerNames.has(player.name.trim().toLocaleLowerCase())) return false;
-
-          return getAssignableSlotIndexes(player, openSlots).length > 0;
-        }),
-      )
-      .map((team) => team.id);
-  }, [filteredTeams, openSlots, selectedPlayerIds, selectedPlayerNames]);
+  const eligibleTeamIds = useMemo(
+    () => getEligibleTeamIdsForState(filteredTeams, openSlots, selectedPlayerIds, selectedPlayerNames),
+    [filteredTeams, openSlots, selectedPlayerIds, selectedPlayerNames],
+  );
 
   const rolledCandidates = useMemo(() => {
     if (!rolledTeam) return [];
@@ -158,12 +168,12 @@ export function TeamSelector() {
     setIsRolling(false);
   }, [eligibleTeamIds, filteredTeams, openSlots.length, rolledTeam]);
 
-  function runRollAnimation(previousId?: string, consumeReroll = false) {
-    if (eligibleTeamIds.length === 0) return;
+  function runRollAnimationWithIds(teamIds: string[], previousId?: string, consumeReroll = false) {
+    if (teamIds.length === 0) return;
 
-    const finalId = randomTeamIdFrom(eligibleTeamIds, previousId);
+    const finalId = randomTeamIdFrom(teamIds, previousId);
     const previewIds = Array.from({ length: 4 }, (_, index) =>
-      randomTeamIdFrom(eligibleTeamIds, index === 0 ? previousId : undefined),
+      randomTeamIdFrom(teamIds, index === 0 ? previousId : undefined),
     );
     const sequence = [...previewIds, finalId];
 
@@ -181,6 +191,10 @@ export function TeamSelector() {
         }
       }, index * 200);
     });
+  }
+
+  function runRollAnimation(previousId?: string, consumeReroll = false) {
+    runRollAnimationWithIds(eligibleTeamIds, previousId, consumeReroll);
   }
 
   function resetDraft(nextFormation = formation, nextMode = mode) {
@@ -237,17 +251,29 @@ export function TeamSelector() {
 
   function handleAssignToSlot(slotIndex: number) {
     if (!pendingPlayer) return;
-    setSlotAssignments((current) => {
-      const next = [...current];
-      next[slotIndex] = pendingPlayer;
-      return next;
-    });
-    setPendingPlayer(null);
+    const assignedPlayer = pendingPlayer;
     const nextAssignments = [...slotAssignments];
-    nextAssignments[slotIndex] = pendingPlayer;
+    nextAssignments[slotIndex] = assignedPlayer;
+    setSlotAssignments(nextAssignments);
+    setPendingPlayer(null);
     const nextOpenIndex = getNextOpenSlotIndex(nextAssignments);
+
     if (nextOpenIndex >= 0) {
       setActiveSlotIndex(nextOpenIndex);
+      const nextOpenSlots = formationShape.slots
+        .map((slot, index) => ({ slot, index }))
+        .filter(({ index }) => !nextAssignments[index]);
+      const nextUsedIds = new Set([...selectedPlayerIds, assignedPlayer.id]);
+      const nextUsedNames = new Set([...selectedPlayerNames, assignedPlayer.name.trim().toLocaleLowerCase()]);
+      const nextEligibleTeamIds = getEligibleTeamIdsForState(filteredTeams, nextOpenSlots, nextUsedIds, nextUsedNames);
+
+      if (nextEligibleTeamIds.length > 0) {
+        runRollAnimationWithIds(nextEligibleTeamIds, rolledTeam?.id);
+      } else {
+        setRolledTeam(null);
+      }
+    } else {
+      setRolledTeam(null);
     }
   }
 
@@ -529,7 +555,7 @@ export function TeamSelector() {
             ) : (
               <div className="space-y-3">
                 {rolledCandidates.length > 0 ? (
-                  <div className="max-h-[23.5rem] overflow-y-auto pr-1">
+                  <div className="max-h-[22rem] overflow-y-auto rounded-[1.3rem] border border-[rgba(122,92,255,0.16)] bg-[linear-gradient(180deg,rgba(74,54,156,0.18),rgba(17,23,57,0.26))] p-2 pr-1">
                     <div className="space-y-2.5">
                       {rolledCandidates.map(({ player, assignableSlotIndexes }) => (
                         <button
@@ -539,8 +565,8 @@ export function TeamSelector() {
                           disabled={isRolling || assignableSlotIndexes.length === 0}
                           className={`flex min-h-18 w-full items-center justify-between rounded-[1.25rem] border px-4 py-3 text-left transition ${
                             assignableSlotIndexes.length === 0
-                              ? "border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.01)] opacity-45"
-                              : "border-[var(--line)] bg-[rgba(255,255,255,0.02)] hover:border-[rgba(217,185,110,0.45)] hover:bg-[rgba(255,255,255,0.04)]"
+                              ? "border-[rgba(255,255,255,0.08)] bg-[rgba(10,16,38,0.32)] opacity-45"
+                              : "border-[rgba(255,255,255,0.12)] bg-[rgba(9,13,31,0.48)] hover:border-[rgba(217,185,110,0.45)] hover:bg-[rgba(255,255,255,0.05)]"
                           } disabled:cursor-not-allowed`}
                         >
                           <div className="min-w-0 pr-3">
@@ -553,7 +579,7 @@ export function TeamSelector() {
                             <p className="text-[10px] uppercase tracking-[0.18em] text-[var(--muted)]">
                               {assignableSlotIndexes.length === 0 ? (locale === "nl" ? "VOL" : "FULL") : "OVR"}
                             </p>
-                            <p className="mt-0.5 text-xl font-bold text-[var(--gold-soft)]">
+                            <p className="mt-0.5 text-lg font-bold text-[var(--gold-soft)]">
                               {assignableSlotIndexes.length === 0
                                 ? "—"
                                 : mode === "from-memory" && selectedPlayers.length < formationShape.slots.length
