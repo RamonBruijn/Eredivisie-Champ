@@ -248,6 +248,17 @@ export function TeamSelector() {
 
     if (shouldRollNext) {
       setIsRolling(true);
+      setRolledTeam((current) =>
+        current
+          ? {
+              ...current,
+              description:
+                locale === "nl"
+                  ? "Even wachten, het volgende team wordt geloot."
+                  : "Hold on, the next team is being drawn.",
+            }
+          : current,
+      );
     }
 
     setSlotAssignments(nextAssignments);
