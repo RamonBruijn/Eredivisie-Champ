@@ -11,9 +11,10 @@ import { useEffect, useMemo, useState } from "react";
 interface ResultCardProps {
   result: SeasonSummary;
   isChampion?: boolean;
+  finalPlacement?: number;
 }
 
-export function ResultCard({ result, isChampion = false }: ResultCardProps) {
+export function ResultCard({ result, isChampion = false, finalPlacement }: ResultCardProps) {
   const { t, locale } = useI18n();
   const featuredTeam = teams.find((team) => team.id === result.context.featuredTeamId);
   const [savedSelection, setSavedSelection] = useState<Array<PlayerRecord | null>>([]);
@@ -119,8 +120,19 @@ export function ResultCard({ result, isChampion = false }: ResultCardProps) {
                 {result.context.formation} • {locale === "nl" ? "einde seizoen" : "season recap"}
               </p>
             </div>
-            <div className="rounded-full border border-[rgba(228,197,106,0.25)] bg-[rgba(228,197,106,0.08)] px-4 py-2 text-sm font-semibold text-[var(--gold-soft)]">
-              {t.result.runRating} {result.runRating}
+            <div className="flex flex-col items-end gap-2">
+              <Link
+                href="#final-standings"
+                className="rounded-full border border-[rgba(228,197,106,0.25)] bg-[rgba(228,197,106,0.08)] px-4 py-2 text-sm font-semibold text-[var(--gold-soft)] transition hover:bg-[rgba(228,197,106,0.14)]"
+              >
+                {locale === "nl" ? "Naar eindstand" : "View final table"}
+              </Link>
+              <Link
+                href="#topscorers"
+                className="rounded-full border border-[rgba(255,255,255,0.12)] bg-[rgba(255,255,255,0.04)] px-3 py-1.5 text-xs font-semibold text-[var(--muted)] transition hover:bg-[rgba(255,255,255,0.08)] hover:text-white"
+              >
+                {locale === "nl" ? "Naar topscorers" : "View top scorers"}
+              </Link>
             </div>
           </div>
 
@@ -147,6 +159,7 @@ export function ResultCard({ result, isChampion = false }: ResultCardProps) {
 
         <div className="space-y-4">
           <div className="grid grid-cols-2 gap-4 md:grid-cols-3 xl:grid-cols-2">
+            <Stat label={locale === "nl" ? "Eindklassering" : "Final place"} value={finalPlacement ?? "—"} tone="gold" />
             <Stat label={locale === "nl" ? "Overwinningen" : "Wins"} value={result.wins} tone="success" />
             <Stat label={locale === "nl" ? "Gelijke spelen" : "Draws"} value={result.draws} tone="gold" />
             <Stat label={locale === "nl" ? "Nederlagen" : "Losses"} value={result.losses} tone="danger" />

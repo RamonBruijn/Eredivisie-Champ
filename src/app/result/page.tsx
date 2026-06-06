@@ -47,6 +47,7 @@ export default function ResultPage() {
   const finalStandings = result?.snapshots[result.snapshots.length - 1]?.standings ?? [];
   const finalScorers = result?.snapshots[result.snapshots.length - 1]?.teamScorers ?? [];
   const isChampion = finalStandings[0]?.teamId === "user-xi";
+  const finalPlacement = finalStandings.findIndex((entry) => entry.teamId === "user-xi");
   const liveSummary = useMemo(
     () => (result ? createLiveSummary(result.matches.slice(0, matchCursor)) : null),
     [matchCursor, result],
@@ -99,7 +100,7 @@ export default function ResultPage() {
       {result ? (
         <>
           {seasonFinished ? (
-            <ResultCard result={result} isChampion={isChampion} />
+            <ResultCard result={result} isChampion={isChampion} finalPlacement={finalPlacement >= 0 ? finalPlacement + 1 : undefined} />
           ) : showHalftimeTable ? (
             <section className="hidden glass rounded-[2rem] p-5 md:block md:p-6">
               <div className="flex items-center justify-between gap-3">
@@ -498,7 +499,7 @@ export default function ResultPage() {
               </section>
 
               {seasonFinished ? (
-                <section className="glass rounded-[2rem] p-5 md:p-6">
+                <section id="final-standings" className="glass rounded-[2rem] p-5 md:p-6">
                   <div className="flex items-center justify-between gap-3">
                     <h2 className="text-xl font-semibold text-white">
                       {locale === "nl" ? "Eindstand" : "Final table"}
@@ -515,7 +516,7 @@ export default function ResultPage() {
                 </section>
               ) : null}
 
-              <section className="glass rounded-[2rem] p-5 md:p-6">
+              <section id="topscorers" className="glass rounded-[2rem] p-5 md:p-6">
                 <div className="flex items-center justify-between gap-3">
                   <h2 className="text-xl font-semibold text-white">
                     {seasonFinished

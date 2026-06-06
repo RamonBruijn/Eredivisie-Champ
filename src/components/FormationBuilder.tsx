@@ -215,8 +215,8 @@ export function FormationBuilder({
             <p className="mt-1 text-xl font-semibold text-white">{strength.defense}</p>
           </div>
           <div className="rounded-[1.2rem] border border-[var(--line)] p-3">
-            <p className="text-[var(--muted)]">{locale === "nl" ? "Historisch" : "Historical"}</p>
-            <p className="mt-1 text-xl font-semibold text-white">+{strength.historicalBonus}</p>
+            <p className="text-[var(--muted)]">{locale === "nl" ? "Keeper" : "Keeper"}</p>
+            <p className="mt-1 text-xl font-semibold text-white">{strength.keeper}</p>
           </div>
         </div>
       ) : mode === "from-memory" && selectedPlayers.length > 0 && selectedPlayers.length < formationShape.slots.length ? (
