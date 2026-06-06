@@ -10,9 +10,10 @@ import { useEffect, useMemo, useState } from "react";
 
 interface ResultCardProps {
   result: SeasonSummary;
+  isChampion?: boolean;
 }
 
-export function ResultCard({ result }: ResultCardProps) {
+export function ResultCard({ result, isChampion = false }: ResultCardProps) {
   const { t, locale } = useI18n();
   const featuredTeam = teams.find((team) => team.id === result.context.featuredTeamId);
   const [savedSelection, setSavedSelection] = useState<Array<PlayerRecord | null>>([]);
@@ -42,8 +43,38 @@ export function ResultCard({ result }: ResultCardProps) {
   return (
     <section className="glass overflow-hidden rounded-[2rem] p-6 md:p-8">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-[radial-gradient(circle_at_top,rgba(122,92,255,0.22),transparent_58%)]" />
+      {isChampion ? (
+        <>
+          <div className="champion-burst pointer-events-none absolute inset-x-0 top-0 h-52" />
+          <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-44 overflow-hidden">
+            {Array.from({ length: 24 }).map((_, index) => (
+              <span
+                key={index}
+                className="champion-confetti absolute top-[-10%] h-4 w-2 rounded-full"
+                style={{
+                  left: `${4 + index * 4}%`,
+                  animationDelay: `${(index % 6) * 110}ms`,
+                  animationDuration: `${2800 + (index % 5) * 240}ms`,
+                  background:
+                    index % 3 === 0
+                      ? "linear-gradient(180deg, rgba(245,228,166,1), rgba(228,197,106,0.66))"
+                      : index % 3 === 1
+                        ? "linear-gradient(180deg, rgba(122,92,255,0.95), rgba(171,147,255,0.56))"
+                        : "linear-gradient(180deg, rgba(255,123,143,0.95), rgba(255,174,142,0.58))",
+                }}
+              />
+            ))}
+          </div>
+        </>
+      ) : null}
       <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <div>
+          {isChampion ? (
+            <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-[rgba(245,228,166,0.28)] bg-[rgba(245,228,166,0.1)] px-4 py-2 text-sm font-semibold text-[var(--gold-soft)] shadow-[0_10px_28px_rgba(0,0,0,0.18)]">
+              <span aria-hidden="true">🏆</span>
+              <span>{locale === "nl" ? "Kampioen van Nederland" : "Champions of the Netherlands"}</span>
+            </div>
+          ) : null}
           <p className="text-sm uppercase tracking-[0.22em] text-[var(--muted)]">{t.result.finalRecord}</p>
           <h1 className="mt-2 text-4xl font-bold text-white">
             {result.wins}-{result.draws}-{result.losses}

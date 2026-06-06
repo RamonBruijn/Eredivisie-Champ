@@ -328,7 +328,16 @@ export function TeamSelector() {
 
             {rolledTeam ? (
               <div className="mt-4 rounded-[1.35rem] border border-[var(--line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.02))] p-4 md:rounded-[1.75rem] md:p-5">
-                <p className="text-sm uppercase tracking-[0.18em] text-[var(--muted)]">{t.teamSelector.rolledTeam}</p>
+                <div className="flex items-start justify-between gap-3">
+                  <p className="text-sm uppercase tracking-[0.18em] text-[var(--muted)]">{t.teamSelector.rolledTeam}</p>
+                  {isRolling ? (
+                    <div className="roll-dice flex items-center gap-1.5 rounded-full border border-[rgba(228,197,106,0.24)] bg-[rgba(228,197,106,0.08)] px-3 py-1 text-[11px] uppercase tracking-[0.16em] text-[var(--gold-soft)]">
+                      <span className="roll-pip h-1.5 w-1.5 rounded-full bg-[var(--gold-soft)]" />
+                      <span className="roll-pip h-1.5 w-1.5 rounded-full bg-[var(--gold-soft)] [animation-delay:120ms]" />
+                      <span className="roll-pip h-1.5 w-1.5 rounded-full bg-[var(--gold-soft)] [animation-delay:240ms]" />
+                    </div>
+                  ) : null}
+                </div>
                 <h3 className="mt-2 text-2xl font-semibold text-white md:text-3xl">
                   {rolledTeam.club} {rolledTeam.season}
                 </h3>
@@ -399,7 +408,25 @@ export function TeamSelector() {
               </div>
             ) : (
               <div className="space-y-2">
-                {rolledCandidates.length > 0 ? (
+                {isRolling ? (
+                  <div className="flex min-h-[18.5rem] items-center justify-center rounded-[1.15rem] border border-[rgba(122,92,255,0.18)] bg-[linear-gradient(180deg,rgba(61,46,128,0.34),rgba(13,18,42,0.5))] px-5 text-center">
+                    <div>
+                      <div className="mx-auto flex items-center justify-center gap-2">
+                        <span className="roll-pip h-2 w-2 rounded-full bg-[var(--gold-soft)]" />
+                        <span className="roll-pip h-2 w-2 rounded-full bg-[var(--gold-soft)] [animation-delay:120ms]" />
+                        <span className="roll-pip h-2 w-2 rounded-full bg-[var(--gold-soft)] [animation-delay:240ms]" />
+                      </div>
+                      <p className="mt-4 text-sm uppercase tracking-[0.22em] text-[var(--gold-soft)]">
+                        {locale === "nl" ? "Nieuwe roll..." : "New roll..."}
+                      </p>
+                      <p className="mt-2 text-sm text-[var(--muted)]">
+                        {locale === "nl"
+                          ? "Even wachten, het volgende team wordt geloot."
+                          : "Hold on, the next team is being drawn."}
+                      </p>
+                    </div>
+                  </div>
+                ) : rolledCandidates.length > 0 ? (
                   <div className="max-h-[18.5rem] overflow-y-auto rounded-[1.15rem] border border-[rgba(122,92,255,0.18)] bg-[linear-gradient(180deg,rgba(61,46,128,0.34),rgba(13,18,42,0.5))] p-1.5 pr-1">
                     <div className="space-y-1.5">
                       {rolledCandidates.map(({ player, assignableSlotIndexes }) => (

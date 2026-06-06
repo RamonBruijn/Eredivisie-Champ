@@ -13,6 +13,7 @@ export default function ResultPage() {
   const [result, setResult] = useState<SeasonSummary | null>(null);
   const [matchCursor, setMatchCursor] = useState(0);
   const [secondHalfStarted, setSecondHalfStarted] = useState(false);
+  const [autoPaused, setAutoPaused] = useState(false);
 
   useEffect(() => {
     setResult(loadResult());
@@ -21,6 +22,7 @@ export default function ResultPage() {
   useEffect(() => {
     setMatchCursor(0);
     setSecondHalfStarted(false);
+    setAutoPaused(false);
   }, [result]);
 
   useEffect(() => {
@@ -29,14 +31,14 @@ export default function ResultPage() {
     const shouldRun =
       (matchCursor < 17 && !secondHalfStarted) || (secondHalfStarted && matchCursor < result.matches.length);
 
-    if (!shouldRun || (firstHalfDone && !secondHalfStarted)) return;
+    if (!shouldRun || (firstHalfDone && !secondHalfStarted) || autoPaused) return;
 
     const timer = window.setTimeout(() => {
       setMatchCursor((current) => Math.min(current + 1, result.matches.length));
     }, 1765);
 
     return () => window.clearTimeout(timer);
-  }, [matchCursor, result, secondHalfStarted]);
+  }, [autoPaused, matchCursor, result, secondHalfStarted]);
 
   const currentMatch = result && matchCursor > 0 ? result.matches[matchCursor - 1] : null;
   const currentSnapshot = result && matchCursor > 0 ? result.snapshots[matchCursor - 1] : null;
@@ -44,6 +46,7 @@ export default function ResultPage() {
   const currentScorers = matchCursor > 0 ? currentSnapshot?.teamScorers ?? [] : [];
   const finalStandings = result?.snapshots[result.snapshots.length - 1]?.standings ?? [];
   const finalScorers = result?.snapshots[result.snapshots.length - 1]?.teamScorers ?? [];
+  const isChampion = finalStandings[0]?.teamId === "user-xi";
   const liveSummary = useMemo(
     () => (result ? createLiveSummary(result.matches.slice(0, matchCursor)) : null),
     [matchCursor, result],
@@ -54,6 +57,25 @@ export default function ResultPage() {
     () => (result ? [...result.matches.slice(0, matchCursor)].reverse() : []),
     [matchCursor, result],
   );
+  const mobileStatusLabel = seasonFinished
+    ? locale === "nl"
+      ? "Seizoen klaar"
+      : "Season complete"
+    : result?.context.simulationMode === "manual"
+      ? locale === "nl"
+        ? "Handmatig"
+        : "Manual"
+      : matchCursor < 17
+        ? locale === "nl"
+          ? "Helft 1 loopt"
+          : "First half live"
+        : secondHalfStarted
+          ? locale === "nl"
+            ? "Helft 2 loopt"
+            : "Second half live"
+          : locale === "nl"
+            ? "Klaar voor helft 2"
+            : "Ready for half two";
 
   function handleNextMatch() {
     if (!result) return;
@@ -62,6 +84,11 @@ export default function ResultPage() {
 
   function handleStartSecondHalf() {
     setSecondHalfStarted(true);
+    setAutoPaused(false);
+  }
+
+  function handleToggleAutoPause() {
+    setAutoPaused((current) => !current);
   }
 
   return (
@@ -72,51 +99,118 @@ export default function ResultPage() {
       {result ? (
         <>
           {seasonFinished ? (
-            <ResultCard result={result} />
-          ) : (
-            <section className="glass rounded-[2rem] p-6 md:p-8">
-              <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <ResultCard result={result} isChampion={isChampion} />
+          ) : showHalftimeTable ? (
+            <section className="hidden glass rounded-[2rem] p-5 md:block md:p-6">
+              <div className="flex items-center justify-between gap-3">
                 <div>
                   <p className="text-sm uppercase tracking-[0.22em] text-[var(--muted)]">
-                    {locale === "nl" ? "Seizoen live" : "Season live"}
+                    {locale === "nl" ? "Tussenstand" : "Mid-season table"}
                   </p>
-                  <h1 className="mt-2 text-4xl font-bold text-white">
-                    {liveSummary?.wins ?? 0}-{liveSummary?.draws ?? 0}-{liveSummary?.losses ?? 0}
+                  <h1 className="mt-2 text-3xl font-semibold text-white md:text-4xl">
+                    {locale === "nl" ? "Na 17 speelrondes" : "After 17 matchdays"}
                   </h1>
-                  <p className="mt-2 text-sm text-[var(--gold-soft)]">
-                    {result.context.formation} • {matchCursor}/34
-                  </p>
-                  <p className="mt-2 max-w-2xl text-sm text-[var(--muted)]">
-                    {locale === "nl"
-                      ? "De eindkaart blijft verborgen tot je het hele seizoen hebt uitgespeeld."
-                      : "The final recap stays hidden until you finish the full season."}
-                  </p>
                 </div>
+                <p className="rounded-full border border-[rgba(228,197,106,0.25)] bg-[rgba(228,197,106,0.08)] px-4 py-2 text-sm text-[var(--gold-soft)]">
+                  {locale === "nl" ? "Halverwege" : "Halfway"}
+                </p>
               </div>
-
-              <div className="mt-6 grid gap-4 md:grid-cols-4">
-                <StatCard
-                  label={locale === "nl" ? "Punten" : "Points"}
-                  value={liveSummary?.points ?? 0}
-                />
-                <StatCard
-                  label={locale === "nl" ? "Doelpunten voor" : "Goals for"}
-                  value={liveSummary?.goalsFor ?? 0}
-                />
-                <StatCard
-                  label={locale === "nl" ? "Doelpunten tegen" : "Goals against"}
-                  value={liveSummary?.goalsAgainst ?? 0}
-                />
-                <StatCard
-                  label={locale === "nl" ? "Doelsaldo" : "Goal difference"}
-                  value={(liveSummary?.goalsFor ?? 0) - (liveSummary?.goalsAgainst ?? 0)}
-                />
+              <div className="mt-4 space-y-2">
+                {halftimeStandings.map((entry, index) => (
+                  <HalftimeRow key={entry.teamId} entry={entry} index={index} locale={locale} />
+                ))}
               </div>
             </section>
-          )}
+          ) : null}
           <section className="mt-6 grid gap-6 xl:grid-cols-[0.92fr_1.08fr]">
             <div className="order-2 space-y-6 xl:order-1">
-              <section className="glass rounded-[2rem] p-5 md:p-6">
+              <section className="hidden glass rounded-[2rem] p-5 md:block md:p-6">
+                <div className="flex items-center justify-between gap-3">
+                  <h2 className="text-xl font-semibold text-white">
+                    {locale === "nl" ? "Wedstrijdfeed" : "Match feed"}
+                  </h2>
+                  <div className="flex items-center gap-2">
+                    {result.context.simulationMode === "auto" && matchCursor < result.matches.length ? (
+                      <button
+                        type="button"
+                        onClick={handleToggleAutoPause}
+                        className="rounded-full border border-[rgba(228,197,106,0.28)] bg-[rgba(228,197,106,0.08)] px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--gold-soft)]"
+                      >
+                        {autoPaused
+                          ? locale === "nl"
+                            ? "Play"
+                            : "Play"
+                          : locale === "nl"
+                            ? "Pauze"
+                            : "Pause"}
+                      </button>
+                    ) : null}
+                    <p className="text-sm text-[var(--muted)]">
+                      {locale === "nl" ? "Gespeeld" : "Played"} {matchCursor}/34
+                    </p>
+                  </div>
+                </div>
+                <div className="mt-4 space-y-3">
+                  {playedMatches.length > 0 ? (
+                    playedMatches.map((match, index) => (
+                      <article
+                        key={`desktop-${match.round}-${match.opponent.id}-${match.venue}`}
+                        className={`match-feed-card relative overflow-hidden rounded-[1.5rem] border p-4 transition ${
+                          index === 0
+                            ? "border-[rgba(228,197,106,0.32)] bg-[linear-gradient(180deg,rgba(228,197,106,0.1),rgba(255,255,255,0.04))] shadow-[0_18px_50px_rgba(0,0,0,0.22)]"
+                            : "border-[var(--line)] bg-[rgba(255,255,255,0.03)] opacity-95"
+                        }`}
+                      >
+                        <div className="absolute left-5 top-0 h-full w-px bg-[linear-gradient(180deg,rgba(228,197,106,0.26),rgba(255,255,255,0.06))]" />
+                        <div className="relative pl-5">
+                          <div className="absolute left-[-0.12rem] top-1.5 h-3.5 w-3.5 rounded-full border border-[rgba(245,228,166,0.5)] bg-[var(--gold-soft)] shadow-[0_0_0_4px_rgba(245,228,166,0.12)]" />
+                          <div className="flex items-start justify-between gap-3">
+                            <div>
+                              <p className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">
+                                {t.result.matchday(match.matchNumber)}
+                              </p>
+                              <h3 className="mt-1 text-lg font-semibold text-white">
+                                {match.venue === "home"
+                                  ? locale === "nl"
+                                    ? `Thuis vs ${match.opponent.name}`
+                                    : `Home vs ${match.opponent.name}`
+                                  : locale === "nl"
+                                    ? `Uit bij ${match.opponent.name}`
+                                    : `Away at ${match.opponent.name}`}
+                              </h3>
+                            </div>
+                            <div className="text-right">
+                              <span className={`inline-flex rounded-full px-3 py-1 text-xs font-semibold ${
+                                match.result === "W"
+                                  ? "bg-[rgba(68,201,128,0.18)] text-[#8ff0b5]"
+                                  : match.result === "D"
+                                    ? "bg-[rgba(245,228,166,0.14)] text-[var(--gold-soft)]"
+                                    : "bg-[rgba(217,93,57,0.16)] text-[#ffb09a]"
+                              }`}>
+                                {match.result}
+                              </span>
+                              <p className="mt-2 text-3xl font-bold text-white">
+                                {match.goalsFor}-{match.goalsAgainst}
+                              </p>
+                            </div>
+                          </div>
+                          <div className="mt-3">
+                            <GoalEvents match={match} locale={locale} />
+                          </div>
+                        </div>
+                      </article>
+                    ))
+                  ) : (
+                    <div className="rounded-2xl border border-dashed border-[var(--line)] px-4 py-4 text-sm text-[var(--muted)]">
+                      {locale === "nl"
+                        ? "Nog geen gespeelde wedstrijden in de feed."
+                        : "No played matches in the feed yet."}
+                    </div>
+                  )}
+                </div>
+              </section>
+
+              <section className="hidden glass rounded-[2rem] p-5 md:block md:p-6">
                 <div className="flex items-center justify-between gap-4">
                   <div>
                     <p className="text-sm uppercase tracking-[0.18em] text-[var(--muted)]">
@@ -174,7 +268,7 @@ export default function ResultPage() {
                 )}
               </section>
 
-              <section className="glass rounded-[2rem] p-5 md:p-6">
+              <section className="hidden glass rounded-[2rem] p-5 md:block md:p-6">
                 {currentMatch ? (
                   <>
                     <p className="text-sm uppercase tracking-[0.18em] text-[var(--muted)]">
@@ -213,21 +307,142 @@ export default function ResultPage() {
             </div>
 
             <div className="order-1 space-y-6 xl:order-2">
-              <section className="glass rounded-[2rem] p-5 md:hidden">
+              {!seasonFinished ? (
+                <section className="glass sticky top-3 z-20 rounded-[1.6rem] p-4 md:hidden">
+                  <div className="flex items-start justify-between gap-3">
+                    <div>
+                      <p className="text-[11px] uppercase tracking-[0.22em] text-[var(--muted)]">
+                        {locale === "nl" ? "Seizoen live" : "Season live"}
+                      </p>
+                      <h2 className="mt-1 text-lg font-semibold leading-tight text-white">
+                        {currentMatch
+                          ? currentMatch.venue === "home"
+                            ? locale === "nl"
+                              ? `Thuis vs ${currentMatch.opponent.name}`
+                              : `Home vs ${currentMatch.opponent.name}`
+                            : locale === "nl"
+                              ? `Uit bij ${currentMatch.opponent.name}`
+                              : `Away at ${currentMatch.opponent.name}`
+                          : locale === "nl"
+                            ? "Klaar voor de aftrap"
+                            : "Ready for kickoff"}
+                      </h2>
+                    </div>
+                    <div className="rounded-full border border-[rgba(228,197,106,0.24)] bg-[rgba(228,197,106,0.08)] px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-[var(--gold-soft)]">
+                      {matchCursor}/34
+                    </div>
+                  </div>
+
+                  <div className="mt-3 flex items-end justify-between gap-3">
+                    <div>
+                      <p className="text-xs text-[var(--muted)]">{mobileStatusLabel}</p>
+                      <p className="mt-1 text-4xl font-bold leading-none text-white">
+                        {currentMatch ? `${currentMatch.goalsFor}-${currentMatch.goalsAgainst}` : "0-0"}
+                      </p>
+                    </div>
+                    <div className="flex flex-col items-end gap-2">
+                      {result.context.simulationMode === "auto" && matchCursor < result.matches.length ? (
+                        <button
+                          type="button"
+                          onClick={handleToggleAutoPause}
+                          className="rounded-full border border-[rgba(228,197,106,0.28)] bg-[rgba(228,197,106,0.08)] px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--gold-soft)]"
+                        >
+                          {autoPaused
+                            ? locale === "nl"
+                              ? "Play"
+                              : "Play"
+                            : locale === "nl"
+                              ? "Pauze"
+                              : "Pause"}
+                        </button>
+                      ) : null}
+                      {result.context.simulationMode === "manual" ? (
+                        <button
+                          type="button"
+                          onClick={handleNextMatch}
+                          disabled={matchCursor >= result.matches.length}
+                          className="rounded-full bg-[var(--gold)] px-4 py-2.5 text-sm font-semibold text-[#171b3a] disabled:opacity-50"
+                        >
+                          {locale === "nl" ? "Volgende" : "Next"}
+                        </button>
+                      ) : matchCursor >= 17 && !secondHalfStarted && matchCursor < result.matches.length ? (
+                        <button
+                          type="button"
+                          onClick={handleStartSecondHalf}
+                          className="rounded-full bg-[var(--gold)] px-4 py-2.5 text-sm font-semibold text-[#171b3a]"
+                        >
+                          {locale === "nl" ? "Start helft 2" : "Start half 2"}
+                        </button>
+                      ) : null}
+                    </div>
+                  </div>
+
+                  {liveSummary ? (
+                    <div className="mt-4 grid grid-cols-4 gap-2">
+                      <MiniStat label="Pts" value={liveSummary.points} />
+                      <MiniStat label="W-D-L" value={`${liveSummary.wins}-${liveSummary.draws}-${liveSummary.losses}`} />
+                      <MiniStat label="GF" value={liveSummary.goalsFor} />
+                      <MiniStat label="GA" value={liveSummary.goalsAgainst} />
+                    </div>
+                  ) : null}
+                </section>
+              ) : null}
+
+              {showHalftimeTable ? (
+                <section className="glass rounded-[2rem] p-4 md:hidden">
+                  <div className="flex items-center justify-between gap-3">
+                    <div>
+                      <p className="text-[11px] uppercase tracking-[0.22em] text-[var(--muted)]">
+                        {locale === "nl" ? "Winterstop" : "Halfway point"}
+                      </p>
+                      <h2 className="mt-1 text-xl font-semibold text-white">
+                        {locale === "nl" ? "Tussenstand na 17" : "Table after 17"}
+                      </h2>
+                    </div>
+                    <p className="rounded-full border border-[rgba(228,197,106,0.22)] bg-[rgba(228,197,106,0.08)] px-3 py-1.5 text-xs uppercase tracking-[0.14em] text-[var(--gold-soft)]">
+                      {locale === "nl" ? "Halverwege" : "Halfway"}
+                    </p>
+                  </div>
+                  <div className="mt-4 space-y-2">
+                    {halftimeStandings.map((entry, index) => (
+                      <HalftimeRow key={entry.teamId} entry={entry} index={index} locale={locale} />
+                    ))}
+                  </div>
+                </section>
+              ) : null}
+
+              <section className="glass rounded-[1.8rem] p-4 md:hidden">
                 <div className="flex items-center justify-between gap-3">
                   <h2 className="text-xl font-semibold text-white">
                     {locale === "nl" ? "Wedstrijdfeed" : "Match feed"}
                   </h2>
-                  <p className="text-sm text-[var(--muted)]">
-                    {locale === "nl" ? "Gespeeld" : "Played"} {matchCursor}/34
-                  </p>
+                  <div className="flex items-center gap-2">
+                    {result.context.simulationMode === "auto" && matchCursor < result.matches.length ? (
+                      <button
+                        type="button"
+                        onClick={handleToggleAutoPause}
+                        className="rounded-full border border-[rgba(228,197,106,0.28)] bg-[rgba(228,197,106,0.08)] px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--gold-soft)]"
+                      >
+                        {autoPaused
+                          ? locale === "nl"
+                            ? "Play"
+                            : "Play"
+                          : locale === "nl"
+                            ? "Pauze"
+                            : "Pause"}
+                      </button>
+                    ) : null}
+                    <p className="text-sm text-[var(--muted)]">
+                      {locale === "nl" ? "Gespeeld" : "Played"} {matchCursor}/34
+                    </p>
+                  </div>
                 </div>
                 <div className="mt-4 space-y-3">
                   {playedMatches.length > 0 ? (
                     playedMatches.map((match, index) => (
                       <article
                         key={`mobile-${match.round}-${match.opponent.id}-${match.venue}`}
-                        className={`match-feed-card relative overflow-hidden rounded-[1.5rem] border p-4 transition ${
+                        className={`match-feed-card relative overflow-hidden rounded-[1.35rem] border p-3.5 transition ${
                           index === 0
                             ? "border-[rgba(228,197,106,0.32)] bg-[linear-gradient(180deg,rgba(228,197,106,0.1),rgba(255,255,255,0.04))] shadow-[0_18px_50px_rgba(0,0,0,0.22)]"
                             : "border-[var(--line)] bg-[rgba(255,255,255,0.03)] opacity-95"
@@ -241,7 +456,7 @@ export default function ResultPage() {
                               <p className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">
                                 {t.result.matchday(match.matchNumber)}
                               </p>
-                              <h3 className="mt-1 text-lg font-semibold text-white">
+                              <h3 className="mt-1 text-base font-semibold text-white">
                                 {match.venue === "home"
                                   ? locale === "nl"
                                     ? `Thuis vs ${match.opponent.name}`
@@ -261,12 +476,12 @@ export default function ResultPage() {
                               }`}>
                                 {match.result}
                               </span>
-                              <p className="mt-2 text-3xl font-bold text-white">
+                              <p className="mt-1.5 text-[1.7rem] font-bold leading-none text-white">
                                 {match.goalsFor}-{match.goalsAgainst}
                               </p>
                             </div>
                           </div>
-                          <div className="mt-3">
+                          <div className="mt-2.5">
                             <GoalEvents match={match} locale={locale} />
                           </div>
                         </div>
@@ -281,24 +496,6 @@ export default function ResultPage() {
                   )}
                 </div>
               </section>
-
-              {showHalftimeTable ? (
-                <section className="glass rounded-[2rem] p-5 md:p-6">
-                  <div className="flex items-center justify-between gap-3">
-                    <h2 className="text-xl font-semibold text-white">
-                      {locale === "nl" ? "Tussenstand na 17" : "Table after 17"}
-                    </h2>
-                    <p className="text-sm text-[var(--gold-soft)]">
-                      {locale === "nl" ? "Halverwege" : "Halfway"}
-                    </p>
-                  </div>
-                  <div className="mt-4 space-y-2">
-                    {halftimeStandings.map((entry, index) => (
-                      <HalftimeRow key={entry.teamId} entry={entry} index={index} locale={locale} />
-                    ))}
-                  </div>
-                </section>
-              ) : null}
 
               {seasonFinished ? (
                 <section className="glass rounded-[2rem] p-5 md:p-6">
@@ -317,84 +514,6 @@ export default function ResultPage() {
                   </div>
                 </section>
               ) : null}
-
-              <section className="hidden rounded-[2rem] p-5 md:block md:glass md:p-6">
-                <div className="flex items-center justify-between gap-3">
-                  <h2 className="text-xl font-semibold text-white">
-                    {locale === "nl" ? "Wedstrijdfeed" : "Match feed"}
-                  </h2>
-                  <p className="text-sm text-[var(--muted)]">
-                    {locale === "nl" ? "Gespeeld" : "Played"} {matchCursor}/34
-                  </p>
-                </div>
-                <div className="mt-4 space-y-3">
-                  {playedMatches.length > 0 ? (
-                    playedMatches.map((match, index) => (
-                      <article
-                        key={`${match.round}-${match.opponent.id}-${match.venue}`}
-                        className={`match-feed-card relative overflow-hidden rounded-[1.5rem] border p-4 transition ${
-                          index === 0
-                            ? "border-[rgba(228,197,106,0.32)] bg-[linear-gradient(180deg,rgba(228,197,106,0.1),rgba(255,255,255,0.04))] shadow-[0_18px_50px_rgba(0,0,0,0.22)]"
-                            : "border-[var(--line)] bg-[rgba(255,255,255,0.03)] opacity-95"
-                        }`}
-                      >
-                        <div className="absolute left-5 top-0 h-full w-px bg-[linear-gradient(180deg,rgba(228,197,106,0.26),rgba(255,255,255,0.06))]" />
-                        <div className="relative pl-5">
-                          <div className="absolute left-[-0.12rem] top-1.5 h-3.5 w-3.5 rounded-full border border-[rgba(245,228,166,0.5)] bg-[var(--gold-soft)] shadow-[0_0_0_4px_rgba(245,228,166,0.12)]" />
-                          <div className="flex items-start justify-between gap-3">
-                          <div>
-                            <p className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">
-                              {t.result.matchday(match.matchNumber)}
-                            </p>
-                            <h3 className="mt-1 text-lg font-semibold text-white">
-                              {match.venue === "home"
-                                ? locale === "nl"
-                                  ? `Thuis vs ${match.opponent.name}`
-                                  : `Home vs ${match.opponent.name}`
-                                : locale === "nl"
-                                  ? `Uit bij ${match.opponent.name}`
-                                  : `Away at ${match.opponent.name}`}
-                            </h3>
-                            <p className="mt-1 text-xs uppercase tracking-[0.16em] text-[var(--muted)]">
-                              {match.venue === "home"
-                                ? locale === "nl"
-                                  ? "Thuiswedstrijd"
-                                  : "Home fixture"
-                                : locale === "nl"
-                                  ? "Uitwedstrijd"
-                                  : "Away fixture"}
-                            </p>
-                          </div>
-                          <div className="text-right">
-                            <span className={`inline-flex rounded-full px-3 py-1 text-xs font-semibold ${
-                              match.result === "W"
-                                ? "bg-[rgba(68,201,128,0.18)] text-[#8ff0b5]"
-                                : match.result === "D"
-                                  ? "bg-[rgba(245,228,166,0.14)] text-[var(--gold-soft)]"
-                                  : "bg-[rgba(217,93,57,0.16)] text-[#ffb09a]"
-                            }`}>
-                              {match.result}
-                            </span>
-                            <p className="mt-2 text-3xl font-bold text-white">
-                              {match.goalsFor}-{match.goalsAgainst}
-                            </p>
-                          </div>
-                        </div>
-                          <div className="mt-3">
-                            <GoalEvents match={match} locale={locale} />
-                          </div>
-                        </div>
-                      </article>
-                    ))
-                  ) : (
-                    <div className="rounded-2xl border border-dashed border-[var(--line)] px-4 py-4 text-sm text-[var(--muted)]">
-                      {locale === "nl"
-                        ? "Nog geen gespeelde wedstrijden in de feed."
-                        : "No played matches in the feed yet."}
-                    </div>
-                  )}
-                </div>
-              </section>
 
               <section className="glass rounded-[2rem] p-5 md:p-6">
                 <div className="flex items-center justify-between gap-3">
@@ -528,6 +647,15 @@ function StatCard({ label, value }: { label: string; value: string | number }) {
     <div className="rounded-3xl border border-[var(--line)] p-4">
       <p className="text-sm text-[var(--muted)]">{label}</p>
       <p className="mt-1 text-3xl font-semibold text-white">{value}</p>
+    </div>
+  );
+}
+
+function MiniStat({ label, value }: { label: string; value: string | number }) {
+  return (
+    <div className="rounded-[1rem] border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.035)] px-2.5 py-2">
+      <p className="text-[10px] uppercase tracking-[0.16em] text-[var(--muted)]">{label}</p>
+      <p className="mt-1 truncate text-sm font-semibold text-white">{value}</p>
     </div>
   );
 }
