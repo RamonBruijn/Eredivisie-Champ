@@ -1,0 +1,516 @@
+[
+  {
+    "id": "ado-den-haag-2010-11",
+    "club": "ADO Den Haag",
+    "season": "2010/11",
+    "teamRating": 74,
+    "description": "Europa play-offs, Bulykin/Verhoek/Kubik-seizoen.",
+    "tags": [
+      "ado-den-haag",
+      "historic"
+    ]
+  },
+  {
+    "id": "az-1980-81",
+    "club": "AZ",
+    "season": "1980/81",
+    "teamRating": 85,
+    "description": "Titelploeg en UEFA Cup-finalist.",
+    "tags": [
+      "title",
+      "az",
+      "historic"
+    ]
+  },
+  {
+    "id": "az-2004-05",
+    "club": "AZ",
+    "season": "2004/05",
+    "teamRating": 82,
+    "description": "Co Adriaanse-ploeg, UEFA Cup halve finale.",
+    "tags": [
+      "az",
+      "historic"
+    ]
+  },
+  {
+    "id": "az-2008-09",
+    "club": "AZ",
+    "season": "2008/09",
+    "teamRating": 83,
+    "description": "Van Gaal-kampioen.",
+    "tags": [
+      "title",
+      "az",
+      "historic"
+    ]
+  },
+  {
+    "id": "az-2022-23",
+    "club": "AZ",
+    "season": "2022/23",
+    "teamRating": 78,
+    "description": "Conference League halvefinalist.",
+    "tags": [
+      "az",
+      "historic"
+    ]
+  },
+  {
+    "id": "ajax-1966-67",
+    "club": "Ajax",
+    "season": "1966/67",
+    "teamRating": 85,
+    "description": "Kampioensploeg met jonge Cruijff en 122 competitiegoals.",
+    "tags": [
+      "title",
+      "attacking",
+      "ajax",
+      "historic"
+    ]
+  },
+  {
+    "id": "ajax-1971-72",
+    "club": "Ajax",
+    "season": "1971/72",
+    "teamRating": 92,
+    "description": "Europese topploeg, Cruijff als enige 99.",
+    "tags": [
+      "ajax",
+      "historic"
+    ]
+  },
+  {
+    "id": "ajax-1994-95",
+    "club": "Ajax",
+    "season": "1994/95",
+    "teamRating": 91,
+    "description": "Ongeslagen kampioen en Champions League-winnaar.",
+    "tags": [
+      "champions-league",
+      "unbeaten",
+      "title",
+      "ajax"
+    ]
+  },
+  {
+    "id": "ajax-1997-98",
+    "club": "Ajax",
+    "season": "1997/98",
+    "teamRating": 88,
+    "description": "Dominante dubbelploeg onder Morten Olsen.",
+    "tags": [
+      "ajax",
+      "historic"
+    ]
+  },
+  {
+    "id": "ajax-2018-19",
+    "club": "Ajax",
+    "season": "2018/19",
+    "teamRating": 88,
+    "description": "Champions League-halvefinalist en kampioen.",
+    "tags": [
+      "champions-league",
+      "title",
+      "ajax",
+      "historic"
+    ]
+  },
+  {
+    "id": "ajax-2020-21",
+    "club": "Ajax",
+    "season": "2020/21",
+    "teamRating": 84,
+    "description": "Sterke Ten Hag-ploeg met brede aanval en veel diepte.",
+    "tags": [
+      "attacking",
+      "ajax",
+      "historic"
+    ]
+  },
+  {
+    "id": "fc-groningen-1990-91",
+    "club": "FC Groningen",
+    "season": "1990/91",
+    "teamRating": 75,
+    "description": "Sterk klassiek subtopseizoen.",
+    "tags": [
+      "fc-groningen",
+      "historic"
+    ]
+  },
+  {
+    "id": "fc-groningen-2014-15",
+    "club": "FC Groningen",
+    "season": "2014/15",
+    "teamRating": 75,
+    "description": "Bekerwinnaar.",
+    "tags": [
+      "fc-groningen",
+      "historic"
+    ]
+  },
+  {
+    "id": "fc-twente-1974-75",
+    "club": "FC Twente",
+    "season": "1974/75",
+    "teamRating": 82,
+    "description": "UEFA Cup-finalist.",
+    "tags": [
+      "fc-twente",
+      "historic"
+    ]
+  },
+  {
+    "id": "fc-twente-2009-10",
+    "club": "FC Twente",
+    "season": "2009/10",
+    "teamRating": 82,
+    "description": "Kampioensselectie.",
+    "tags": [
+      "title",
+      "fc-twente",
+      "historic"
+    ]
+  },
+  {
+    "id": "fc-twente-2023-24",
+    "club": "FC Twente",
+    "season": "2023/24",
+    "teamRating": 78,
+    "description": "Moderne top-3 ploeg.",
+    "tags": [
+      "modern",
+      "fc-twente",
+      "historic"
+    ]
+  },
+  {
+    "id": "fc-utrecht-2016-17",
+    "club": "FC Utrecht",
+    "season": "2016/17",
+    "teamRating": 75,
+    "description": "Sterke moderne subtopselectie.",
+    "tags": [
+      "modern",
+      "fc-utrecht",
+      "historic"
+    ]
+  },
+  {
+    "id": "fc-utrecht-2024-25",
+    "club": "FC Utrecht",
+    "season": "2024/25",
+    "teamRating": 74,
+    "description": "Sterk modern seizoen met Europees ticket.",
+    "tags": [
+      "modern",
+      "fc-utrecht",
+      "historic"
+    ]
+  },
+  {
+    "id": "fc-volendam-2022-23",
+    "club": "FC Volendam",
+    "season": "2022/23",
+    "teamRating": 70,
+    "description": "Promovendus die zich handhaafde, moderne selectie makkelijker te controleren.",
+    "tags": [
+      "modern",
+      "fc-volendam",
+      "historic"
+    ]
+  },
+  {
+    "id": "feyenoord-1969-70",
+    "club": "Feyenoord",
+    "season": "1969/70",
+    "teamRating": 89,
+    "description": "Europa Cup I-winnaar.",
+    "tags": [
+      "european-cup",
+      "feyenoord",
+      "historic"
+    ]
+  },
+  {
+    "id": "feyenoord-1973-74",
+    "club": "Feyenoord",
+    "season": "1973/74",
+    "teamRating": 87,
+    "description": "UEFA Cup-winnaar.",
+    "tags": [
+      "feyenoord",
+      "historic"
+    ]
+  },
+  {
+    "id": "feyenoord-1983-84",
+    "club": "Feyenoord",
+    "season": "1983/84",
+    "teamRating": 86,
+    "description": "Dubbel met Cruijff en Gullit.",
+    "tags": [
+      "feyenoord",
+      "historic"
+    ]
+  },
+  {
+    "id": "feyenoord-1998-99",
+    "club": "Feyenoord",
+    "season": "1998/99",
+    "teamRating": 83,
+    "description": "Sterke titelploeg onder Leo Beenhakker.",
+    "tags": [
+      "title",
+      "feyenoord",
+      "historic"
+    ]
+  },
+  {
+    "id": "feyenoord-2016-17",
+    "club": "Feyenoord",
+    "season": "2016/17",
+    "teamRating": 82,
+    "description": "Kampioen na 18 jaar.",
+    "tags": [
+      "title",
+      "feyenoord",
+      "historic"
+    ]
+  },
+  {
+    "id": "feyenoord-2022-23",
+    "club": "Feyenoord",
+    "season": "2022/23",
+    "teamRating": 83,
+    "description": "Moderne pressingkampioen onder Arne Slot.",
+    "tags": [
+      "title",
+      "modern",
+      "feyenoord",
+      "historic"
+    ]
+  },
+  {
+    "id": "fortuna-sittard-1998-99",
+    "club": "Fortuna Sittard",
+    "season": "1998/99",
+    "teamRating": 77,
+    "description": "Selectie met Van Bommel, Hofland en Hamming.",
+    "tags": [
+      "fortuna-sittard",
+      "historic"
+    ]
+  },
+  {
+    "id": "go-ahead-eagles-2024-25",
+    "club": "Go Ahead Eagles",
+    "season": "2024/25",
+    "teamRating": 73,
+    "description": "Bekerwinnaar, moderne cultselectie.",
+    "tags": [
+      "modern",
+      "go-ahead-eagles",
+      "historic"
+    ]
+  },
+  {
+    "id": "heracles-almelo-2015-16",
+    "club": "Heracles Almelo",
+    "season": "2015/16",
+    "teamRating": 73,
+    "description": "Zesde plaats en Europees ticket via play-offs.",
+    "tags": [
+      "heracles-almelo",
+      "historic"
+    ]
+  },
+  {
+    "id": "nac-breda-2007-08",
+    "club": "NAC Breda",
+    "season": "2007/08",
+    "teamRating": 74,
+    "description": "Derde na reguliere competitie.",
+    "tags": [
+      "nac-breda",
+      "historic"
+    ]
+  },
+  {
+    "id": "nec-2023-24",
+    "club": "NEC",
+    "season": "2023/24",
+    "teamRating": 75,
+    "description": "Bekerfinalist en sterk modern seizoen.",
+    "tags": [
+      "modern",
+      "nec",
+      "historic"
+    ]
+  },
+  {
+    "id": "pec-zwolle-2013-14",
+    "club": "PEC Zwolle",
+    "season": "2013/14",
+    "teamRating": 74,
+    "description": "Bekerwinnaar, 5-1 tegen Ajax.",
+    "tags": [
+      "pec-zwolle",
+      "historic"
+    ]
+  },
+  {
+    "id": "psv-1977-78",
+    "club": "PSV",
+    "season": "1977/78",
+    "teamRating": 86,
+    "description": "UEFA Cup-winnaar en kampioenwaardig Europees PSV.",
+    "tags": [
+      "title",
+      "psv",
+      "historic"
+    ]
+  },
+  {
+    "id": "psv-1987-88",
+    "club": "PSV",
+    "season": "1987/88",
+    "teamRating": 91,
+    "description": "Trebleploeg, Europa Cup I-winnaar.",
+    "tags": [
+      "european-cup",
+      "treble",
+      "psv",
+      "historic"
+    ]
+  },
+  {
+    "id": "psv-1994-95",
+    "club": "PSV",
+    "season": "1994/95",
+    "teamRating": 82,
+    "description": "Ronaldo-seizoen, extreem aanvallend talent.",
+    "tags": [
+      "attacking",
+      "psv",
+      "historic"
+    ]
+  },
+  {
+    "id": "psv-2004-05",
+    "club": "PSV",
+    "season": "2004/05",
+    "teamRating": 88,
+    "description": "Hiddink-ploeg, halve finale Champions League.",
+    "tags": [
+      "champions-league",
+      "psv",
+      "historic"
+    ]
+  },
+  {
+    "id": "psv-2015-16",
+    "club": "PSV",
+    "season": "2015/16",
+    "teamRating": 83,
+    "description": "Kampioensploeg met Guardado, Moreno en Luuk de Jong.",
+    "tags": [
+      "title",
+      "psv",
+      "historic"
+    ]
+  },
+  {
+    "id": "psv-2023-24",
+    "club": "PSV",
+    "season": "2023/24",
+    "teamRating": 86,
+    "description": "Extreem dominante Bosz-ploeg.",
+    "tags": [
+      "psv",
+      "historic"
+    ]
+  },
+  {
+    "id": "roda-jc-1994-95",
+    "club": "Roda JC",
+    "season": "1994/95",
+    "teamRating": 77,
+    "description": "Tweede plaats achter Ajax 1994/95.",
+    "tags": [
+      "roda-jc",
+      "historic"
+    ]
+  },
+  {
+    "id": "sparta-rotterdam-2022-23",
+    "club": "Sparta Rotterdam",
+    "season": "2022/23",
+    "teamRating": 73,
+    "description": "Zesde plaats, moderne overperformer.",
+    "tags": [
+      "modern",
+      "sparta-rotterdam",
+      "historic"
+    ]
+  },
+  {
+    "id": "vitesse-2016-17",
+    "club": "Vitesse",
+    "season": "2016/17",
+    "teamRating": 74,
+    "description": "Bekerwinnaar.",
+    "tags": [
+      "vitesse",
+      "historic"
+    ]
+  },
+  {
+    "id": "vitesse-2020-21",
+    "club": "Vitesse",
+    "season": "2020/21",
+    "teamRating": 76,
+    "description": "Vierde plaats en bekerfinale onder Thomas Letsch.",
+    "tags": [
+      "vitesse",
+      "historic"
+    ]
+  },
+  {
+    "id": "willem-ii-1998-99",
+    "club": "Willem II",
+    "season": "1998/99",
+    "teamRating": 76,
+    "description": "Tweede plaats en Champions League-kwalificatie.",
+    "tags": [
+      "champions-league",
+      "willem-ii",
+      "historic"
+    ]
+  },
+  {
+    "id": "sc-heerenveen-1999-00",
+    "club": "SC Heerenveen",
+    "season": "1999/00",
+    "teamRating": 78,
+    "description": "Tweede plaats, Champions League-ticket.",
+    "tags": [
+      "champions-league",
+      "sc-heerenveen",
+      "historic"
+    ]
+  },
+  {
+    "id": "sc-heerenveen-2008-09",
+    "club": "SC Heerenveen",
+    "season": "2008/09",
+    "teamRating": 78,
+    "description": "Bekerwinnaar.",
+    "tags": [
+      "sc-heerenveen",
+      "historic"
+    ]
+  }
+]

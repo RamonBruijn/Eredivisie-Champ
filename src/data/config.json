@@ -1,0 +1,6 @@
+{
+  "maxSquadSize": 11,
+  "seasonMatches": 34,
+  "onlyPlayerAllowedRating99": "Johan Cruijff",
+  "allowedPositions": ["gk", "rb", "cb", "lb", "cm", "lm", "rm", "lw", "rw", "st"]
+}

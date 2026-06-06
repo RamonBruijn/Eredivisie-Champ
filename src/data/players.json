@@ -1,0 +1,8661 @@
+[
+  {
+    "id": "gino-coutinho-ado-den-haag-2010-11",
+    "name": "Gino Coutinho",
+    "teamId": "ado-den-haag-2010-11",
+    "club": "ADO Den Haag",
+    "season": "2010/11",
+    "positions": [
+      "gk"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "wesley-verhoek-ado-den-haag-2010-11",
+    "name": "Wesley Verhoek",
+    "teamId": "ado-den-haag-2010-11",
+    "club": "ADO Den Haag",
+    "season": "2010/11",
+    "positions": [
+      "rw"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "dmitry-bulykin-ado-den-haag-2010-11",
+    "name": "Dmitry Bulykin",
+    "teamId": "ado-den-haag-2010-11",
+    "club": "ADO Den Haag",
+    "season": "2010/11",
+    "positions": [
+      "st"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "frantisek-kubik-ado-den-haag-2010-11",
+    "name": "František Kubík",
+    "teamId": "ado-den-haag-2010-11",
+    "club": "ADO Den Haag",
+    "season": "2010/11",
+    "positions": [
+      "lw"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "lex-immers-ado-den-haag-2010-11",
+    "name": "Lex Immers",
+    "teamId": "ado-den-haag-2010-11",
+    "club": "ADO Den Haag",
+    "season": "2010/11",
+    "positions": [
+      "cm",
+      "st"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "timothy-derijck-ado-den-haag-2010-11",
+    "name": "Timothy Derijck",
+    "teamId": "ado-den-haag-2010-11",
+    "club": "ADO Den Haag",
+    "season": "2010/11",
+    "positions": [
+      "cb"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "christian-kum-ado-den-haag-2010-11",
+    "name": "Christian Kum",
+    "teamId": "ado-den-haag-2010-11",
+    "club": "ADO Den Haag",
+    "season": "2010/11",
+    "positions": [
+      "cb",
+      "rb"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "aleksandar-radosavljevic-ado-den-haag-2010-11",
+    "name": "Aleksandar Radosavljević",
+    "teamId": "ado-den-haag-2010-11",
+    "club": "ADO Den Haag",
+    "season": "2010/11",
+    "positions": [
+      "cm"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "jens-toornstra-ado-den-haag-2010-11",
+    "name": "Jens Toornstra",
+    "teamId": "ado-den-haag-2010-11",
+    "club": "ADO Den Haag",
+    "season": "2010/11",
+    "positions": [
+      "cm"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "ahmed-ammi-ado-den-haag-2010-11",
+    "name": "Ahmed Ammi",
+    "teamId": "ado-den-haag-2010-11",
+    "club": "ADO Den Haag",
+    "season": "2010/11",
+    "positions": [
+      "rb"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "danny-buijs-ado-den-haag-2010-11",
+    "name": "Danny Buijs",
+    "teamId": "ado-den-haag-2010-11",
+    "club": "ADO Den Haag",
+    "season": "2010/11",
+    "positions": [
+      "cm",
+      "rb"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "pascal-bosschaart-ado-den-haag-2010-11",
+    "name": "Pascal Bosschaart",
+    "teamId": "ado-den-haag-2010-11",
+    "club": "ADO Den Haag",
+    "season": "2010/11",
+    "positions": [
+      "lb",
+      "cb"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "charlton-vicento-ado-den-haag-2010-11",
+    "name": "Charlton Vicento",
+    "teamId": "ado-den-haag-2010-11",
+    "club": "ADO Den Haag",
+    "season": "2010/11",
+    "positions": [
+      "lw",
+      "st"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "bogdan-milic-ado-den-haag-2010-11",
+    "name": "Bogdan Milic",
+    "teamId": "ado-den-haag-2010-11",
+    "club": "ADO Den Haag",
+    "season": "2010/11",
+    "positions": [
+      "st"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "ramon-leeuwin-ado-den-haag-2010-11",
+    "name": "Ramon Leeuwin",
+    "teamId": "ado-den-haag-2010-11",
+    "club": "ADO Den Haag",
+    "season": "2010/11",
+    "positions": [
+      "cb",
+      "rb"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "mitchell-pique-ado-den-haag-2010-11",
+    "name": "Mitchell Piqué",
+    "teamId": "ado-den-haag-2010-11",
+    "club": "ADO Den Haag",
+    "season": "2010/11",
+    "positions": [
+      "lb"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "eddy-treijtel-az-1980-81",
+    "name": "Eddy Treijtel",
+    "teamId": "az-1980-81",
+    "club": "AZ",
+    "season": "1980/81",
+    "positions": [
+      "gk"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "hans-de-koning-az-1980-81",
+    "name": "Hans de Koning",
+    "teamId": "az-1980-81",
+    "club": "AZ",
+    "season": "1980/81",
+    "positions": [
+      "gk"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "ronald-spelbos-az-1980-81",
+    "name": "Ronald Spelbos",
+    "teamId": "az-1980-81",
+    "club": "AZ",
+    "season": "1980/81",
+    "positions": [
+      "cb"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "hugo-hovenkamp-az-1980-81",
+    "name": "Hugo Hovenkamp",
+    "teamId": "az-1980-81",
+    "club": "AZ",
+    "season": "1980/81",
+    "positions": [
+      "lb"
+    ],
+    "rating": 88,
+    "legendary": false
+  },
+  {
+    "id": "john-metgod-az-1980-81",
+    "name": "John Metgod",
+    "teamId": "az-1980-81",
+    "club": "AZ",
+    "season": "1980/81",
+    "positions": [
+      "cb",
+      "cm"
+    ],
+    "rating": 88,
+    "legendary": false
+  },
+  {
+    "id": "richard-van-der-meer-az-1980-81",
+    "name": "Richard van der Meer",
+    "teamId": "az-1980-81",
+    "club": "AZ",
+    "season": "1980/81",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "peter-arntz-az-1980-81",
+    "name": "Peter Arntz",
+    "teamId": "az-1980-81",
+    "club": "AZ",
+    "season": "1980/81",
+    "positions": [
+      "cm"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "jos-jonker-az-1980-81",
+    "name": "Jos Jonker",
+    "teamId": "az-1980-81",
+    "club": "AZ",
+    "season": "1980/81",
+    "positions": [
+      "cm"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "jan-peters-az-1980-81",
+    "name": "Jan Peters",
+    "teamId": "az-1980-81",
+    "club": "AZ",
+    "season": "1980/81",
+    "positions": [
+      "cm"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "kristen-nygaard-az-1980-81",
+    "name": "Kristen Nygaard",
+    "teamId": "az-1980-81",
+    "club": "AZ",
+    "season": "1980/81",
+    "positions": [
+      "cm"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "pier-tol-az-1980-81",
+    "name": "Pier Tol",
+    "teamId": "az-1980-81",
+    "club": "AZ",
+    "season": "1980/81",
+    "positions": [
+      "st",
+      "rw"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "kees-kist-az-1980-81",
+    "name": "Kees Kist",
+    "teamId": "az-1980-81",
+    "club": "AZ",
+    "season": "1980/81",
+    "positions": [
+      "st"
+    ],
+    "rating": 90,
+    "legendary": true
+  },
+  {
+    "id": "kurt-welzl-az-1980-81",
+    "name": "Kurt Welzl",
+    "teamId": "az-1980-81",
+    "club": "AZ",
+    "season": "1980/81",
+    "positions": [
+      "st"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "gijs-steinmann-az-1980-81",
+    "name": "Gijs Steinmann",
+    "teamId": "az-1980-81",
+    "club": "AZ",
+    "season": "1980/81",
+    "positions": [
+      "cb"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "hans-reijnders-az-1980-81",
+    "name": "Hans Reijnders",
+    "teamId": "az-1980-81",
+    "club": "AZ",
+    "season": "1980/81",
+    "positions": [
+      "cb"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "ronald-weysters-az-1980-81",
+    "name": "Ronald Weysters",
+    "teamId": "az-1980-81",
+    "club": "AZ",
+    "season": "1980/81",
+    "positions": [
+      "rw"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "henk-timmer-az-2004-05",
+    "name": "Henk Timmer",
+    "teamId": "az-2004-05",
+    "club": "AZ",
+    "season": "2004/05",
+    "positions": [
+      "gk"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "kew-jaliens-az-2004-05",
+    "name": "Kew Jaliens",
+    "teamId": "az-2004-05",
+    "club": "AZ",
+    "season": "2004/05",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "barry-opdam-az-2004-05",
+    "name": "Barry Opdam",
+    "teamId": "az-2004-05",
+    "club": "AZ",
+    "season": "2004/05",
+    "positions": [
+      "cb"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "joris-mathijsen-az-2004-05",
+    "name": "Joris Mathijsen",
+    "teamId": "az-2004-05",
+    "club": "AZ",
+    "season": "2004/05",
+    "positions": [
+      "cb"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "tim-de-cler-az-2004-05",
+    "name": "Tim de Cler",
+    "teamId": "az-2004-05",
+    "club": "AZ",
+    "season": "2004/05",
+    "positions": [
+      "lb"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "denny-landzaat-az-2004-05",
+    "name": "Denny Landzaat",
+    "teamId": "az-2004-05",
+    "club": "AZ",
+    "season": "2004/05",
+    "positions": [
+      "cm"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "stijn-schaars-az-2004-05",
+    "name": "Stijn Schaars",
+    "teamId": "az-2004-05",
+    "club": "AZ",
+    "season": "2004/05",
+    "positions": [
+      "cm"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "kenneth-perez-az-2004-05",
+    "name": "Kenneth Perez",
+    "teamId": "az-2004-05",
+    "club": "AZ",
+    "season": "2004/05",
+    "positions": [
+      "cm",
+      "lw"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "martijn-meerdink-az-2004-05",
+    "name": "Martijn Meerdink",
+    "teamId": "az-2004-05",
+    "club": "AZ",
+    "season": "2004/05",
+    "positions": [
+      "rw"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "barry-van-galen-az-2004-05",
+    "name": "Barry van Galen",
+    "teamId": "az-2004-05",
+    "club": "AZ",
+    "season": "2004/05",
+    "positions": [
+      "cm",
+      "lw"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "shota-arveladze-az-2004-05",
+    "name": "Shota Arveladze",
+    "teamId": "az-2004-05",
+    "club": "AZ",
+    "season": "2004/05",
+    "positions": [
+      "st"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "robin-nelisse-az-2004-05",
+    "name": "Robin Nelisse",
+    "teamId": "az-2004-05",
+    "club": "AZ",
+    "season": "2004/05",
+    "positions": [
+      "st"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "tarik-sektioui-az-2004-05",
+    "name": "Tarik Sektioui",
+    "teamId": "az-2004-05",
+    "club": "AZ",
+    "season": "2004/05",
+    "positions": [
+      "rw"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "olaf-lindenbergh-az-2004-05",
+    "name": "Olaf Lindenbergh",
+    "teamId": "az-2004-05",
+    "club": "AZ",
+    "season": "2004/05",
+    "positions": [
+      "cm",
+      "lb"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "jan-kromkamp-az-2004-05",
+    "name": "Jan Kromkamp",
+    "teamId": "az-2004-05",
+    "club": "AZ",
+    "season": "2004/05",
+    "positions": [
+      "rb"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "mounir-el-hamdaoui-az-2004-05",
+    "name": "Mounir El Hamdaoui",
+    "teamId": "az-2004-05",
+    "club": "AZ",
+    "season": "2004/05",
+    "positions": [
+      "st"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "sergio-romero-az-2008-09",
+    "name": "Sergio Romero",
+    "teamId": "az-2008-09",
+    "club": "AZ",
+    "season": "2008/09",
+    "positions": [
+      "gk"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "joey-didulica-az-2008-09",
+    "name": "Joey Didulica",
+    "teamId": "az-2008-09",
+    "club": "AZ",
+    "season": "2008/09",
+    "positions": [
+      "gk"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "graziano-pelle-az-2008-09",
+    "name": "Graziano Pellè",
+    "teamId": "az-2008-09",
+    "club": "AZ",
+    "season": "2008/09",
+    "positions": [
+      "st"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "kew-jaliens-az-2008-09",
+    "name": "Kew Jaliens",
+    "teamId": "az-2008-09",
+    "club": "AZ",
+    "season": "2008/09",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "hector-moreno-az-2008-09",
+    "name": "Héctor Moreno",
+    "teamId": "az-2008-09",
+    "club": "AZ",
+    "season": "2008/09",
+    "positions": [
+      "cb"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "niklas-moisander-az-2008-09",
+    "name": "Niklas Moisander",
+    "teamId": "az-2008-09",
+    "club": "AZ",
+    "season": "2008/09",
+    "positions": [
+      "cb"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "sebastien-pocognoli-az-2008-09",
+    "name": "Sébastien Pocognoli",
+    "teamId": "az-2008-09",
+    "club": "AZ",
+    "season": "2008/09",
+    "positions": [
+      "lb"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "david-mendes-da-silva-az-2008-09",
+    "name": "David Mendes da Silva",
+    "teamId": "az-2008-09",
+    "club": "AZ",
+    "season": "2008/09",
+    "positions": [
+      "cm",
+      "rb"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "stijn-schaars-az-2008-09",
+    "name": "Stijn Schaars",
+    "teamId": "az-2008-09",
+    "club": "AZ",
+    "season": "2008/09",
+    "positions": [
+      "cm"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "maarten-martens-az-2008-09",
+    "name": "Maarten Martens",
+    "teamId": "az-2008-09",
+    "club": "AZ",
+    "season": "2008/09",
+    "positions": [
+      "cm",
+      "lw"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "moussa-dembele-az-2008-09",
+    "name": "Moussa Dembélé",
+    "teamId": "az-2008-09",
+    "club": "AZ",
+    "season": "2008/09",
+    "positions": [
+      "st",
+      "rw"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "mounir-el-hamdaoui-az-2008-09",
+    "name": "Mounir El Hamdaoui",
+    "teamId": "az-2008-09",
+    "club": "AZ",
+    "season": "2008/09",
+    "positions": [
+      "st"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "ari-az-2008-09",
+    "name": "Ari",
+    "teamId": "az-2008-09",
+    "club": "AZ",
+    "season": "2008/09",
+    "positions": [
+      "st"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "brett-holman-az-2008-09",
+    "name": "Brett Holman",
+    "teamId": "az-2008-09",
+    "club": "AZ",
+    "season": "2008/09",
+    "positions": [
+      "lw",
+      "cm"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "jeremain-lens-az-2008-09",
+    "name": "Jeremain Lens",
+    "teamId": "az-2008-09",
+    "club": "AZ",
+    "season": "2008/09",
+    "positions": [
+      "rw",
+      "st"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "simon-poulsen-az-2008-09",
+    "name": "Simon Poulsen",
+    "teamId": "az-2008-09",
+    "club": "AZ",
+    "season": "2008/09",
+    "positions": [
+      "lb",
+      "lw"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "mathew-ryan-az-2022-23",
+    "name": "Mathew Ryan",
+    "teamId": "az-2022-23",
+    "club": "AZ",
+    "season": "2022/23",
+    "positions": [
+      "gk"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "hobie-verhulst-az-2022-23",
+    "name": "Hobie Verhulst",
+    "teamId": "az-2022-23",
+    "club": "AZ",
+    "season": "2022/23",
+    "positions": [
+      "gk"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "yukinari-sugawara-az-2022-23",
+    "name": "Yukinari Sugawara",
+    "teamId": "az-2022-23",
+    "club": "AZ",
+    "season": "2022/23",
+    "positions": [
+      "rb"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "sam-beukema-az-2022-23",
+    "name": "Sam Beukema",
+    "teamId": "az-2022-23",
+    "club": "AZ",
+    "season": "2022/23",
+    "positions": [
+      "cb"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "bruno-martins-indi-az-2022-23",
+    "name": "Bruno Martins Indi",
+    "teamId": "az-2022-23",
+    "club": "AZ",
+    "season": "2022/23",
+    "positions": [
+      "cb",
+      "lb"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "pantelis-hatzidiakos-az-2022-23",
+    "name": "Pantelis Hatzidiakos",
+    "teamId": "az-2022-23",
+    "club": "AZ",
+    "season": "2022/23",
+    "positions": [
+      "cb",
+      "rb"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "milos-kerkez-az-2022-23",
+    "name": "Milos Kerkez",
+    "teamId": "az-2022-23",
+    "club": "AZ",
+    "season": "2022/23",
+    "positions": [
+      "lb"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "tijjani-reijnders-az-2022-23",
+    "name": "Tijjani Reijnders",
+    "teamId": "az-2022-23",
+    "club": "AZ",
+    "season": "2022/23",
+    "positions": [
+      "cm"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "dani-de-wit-az-2022-23",
+    "name": "Dani de Wit",
+    "teamId": "az-2022-23",
+    "club": "AZ",
+    "season": "2022/23",
+    "positions": [
+      "cm"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "jordy-clasie-az-2022-23",
+    "name": "Jordy Clasie",
+    "teamId": "az-2022-23",
+    "club": "AZ",
+    "season": "2022/23",
+    "positions": [
+      "cm"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "sven-mijnans-az-2022-23",
+    "name": "Sven Mijnans",
+    "teamId": "az-2022-23",
+    "club": "AZ",
+    "season": "2022/23",
+    "positions": [
+      "cm",
+      "rw"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "jesper-karlsson-az-2022-23",
+    "name": "Jesper Karlsson",
+    "teamId": "az-2022-23",
+    "club": "AZ",
+    "season": "2022/23",
+    "positions": [
+      "lw"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "myron-van-brederode-az-2022-23",
+    "name": "Myron van Brederode",
+    "teamId": "az-2022-23",
+    "club": "AZ",
+    "season": "2022/23",
+    "positions": [
+      "lw"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "vangelis-pavlidis-az-2022-23",
+    "name": "Vangelis Pavlidis",
+    "teamId": "az-2022-23",
+    "club": "AZ",
+    "season": "2022/23",
+    "positions": [
+      "st"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "jens-odgaard-az-2022-23",
+    "name": "Jens Odgaard",
+    "teamId": "az-2022-23",
+    "club": "AZ",
+    "season": "2022/23",
+    "positions": [
+      "rw",
+      "st"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "mayckel-lahdo-az-2022-23",
+    "name": "Mayckel Lahdo",
+    "teamId": "az-2022-23",
+    "club": "AZ",
+    "season": "2022/23",
+    "positions": [
+      "rw"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "gert-bals-ajax-1966-67",
+    "name": "Gert Bals",
+    "teamId": "ajax-1966-67",
+    "club": "Ajax",
+    "season": "1966/67",
+    "positions": [
+      "gk"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "ton-pronk-ajax-1966-67",
+    "name": "Ton Pronk",
+    "teamId": "ajax-1966-67",
+    "club": "Ajax",
+    "season": "1966/67",
+    "positions": [
+      "cb"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "theo-van-duivenbode-ajax-1966-67",
+    "name": "Theo van Duivenbode",
+    "teamId": "ajax-1966-67",
+    "club": "Ajax",
+    "season": "1966/67",
+    "positions": [
+      "lb"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "wim-suurbier-ajax-1966-67",
+    "name": "Wim Suurbier",
+    "teamId": "ajax-1966-67",
+    "club": "Ajax",
+    "season": "1966/67",
+    "positions": [
+      "rb"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "frits-soetekouw-ajax-1966-67",
+    "name": "Frits Soetekouw",
+    "teamId": "ajax-1966-67",
+    "club": "Ajax",
+    "season": "1966/67",
+    "positions": [
+      "cb"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "bennie-muller-ajax-1966-67",
+    "name": "Bennie Muller",
+    "teamId": "ajax-1966-67",
+    "club": "Ajax",
+    "season": "1966/67",
+    "positions": [
+      "cm"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "henk-groot-ajax-1966-67",
+    "name": "Henk Groot",
+    "teamId": "ajax-1966-67",
+    "club": "Ajax",
+    "season": "1966/67",
+    "positions": [
+      "cm",
+      "st"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "johan-cruijff-ajax-1966-67",
+    "name": "Johan Cruijff",
+    "teamId": "ajax-1966-67",
+    "club": "Ajax",
+    "season": "1966/67",
+    "positions": [
+      "st",
+      "rw",
+      "cm"
+    ],
+    "rating": 96,
+    "legendary": true
+  },
+  {
+    "id": "piet-keizer-ajax-1966-67",
+    "name": "Piet Keizer",
+    "teamId": "ajax-1966-67",
+    "club": "Ajax",
+    "season": "1966/67",
+    "positions": [
+      "lw"
+    ],
+    "rating": 92,
+    "legendary": true
+  },
+  {
+    "id": "sjaak-swart-ajax-1966-67",
+    "name": "Sjaak Swart",
+    "teamId": "ajax-1966-67",
+    "club": "Ajax",
+    "season": "1966/67",
+    "positions": [
+      "rw"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "klaas-nuninga-ajax-1966-67",
+    "name": "Klaas Nuninga",
+    "teamId": "ajax-1966-67",
+    "club": "Ajax",
+    "season": "1966/67",
+    "positions": [
+      "st"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "cees-de-wolf-ajax-1966-67",
+    "name": "Cees de Wolf",
+    "teamId": "ajax-1966-67",
+    "club": "Ajax",
+    "season": "1966/67",
+    "positions": [
+      "lw"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "barry-hulshoff-ajax-1966-67",
+    "name": "Barry Hulshoff",
+    "teamId": "ajax-1966-67",
+    "club": "Ajax",
+    "season": "1966/67",
+    "positions": [
+      "cb"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "inge-danielsson-ajax-1966-67",
+    "name": "Inge Danielsson",
+    "teamId": "ajax-1966-67",
+    "club": "Ajax",
+    "season": "1966/67",
+    "positions": [
+      "st"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "dick-van-dijk-ajax-1966-67",
+    "name": "Dick van Dijk",
+    "teamId": "ajax-1966-67",
+    "club": "Ajax",
+    "season": "1966/67",
+    "positions": [
+      "st"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "heinz-stuy-ajax-1971-72",
+    "name": "Heinz Stuy",
+    "teamId": "ajax-1971-72",
+    "club": "Ajax",
+    "season": "1971/72",
+    "positions": [
+      "gk"
+    ],
+    "rating": 91,
+    "legendary": true
+  },
+  {
+    "id": "wim-suurbier-ajax-1971-72",
+    "name": "Wim Suurbier",
+    "teamId": "ajax-1971-72",
+    "club": "Ajax",
+    "season": "1971/72",
+    "positions": [
+      "rb"
+    ],
+    "rating": 89,
+    "legendary": false
+  },
+  {
+    "id": "barry-hulshoff-ajax-1971-72",
+    "name": "Barry Hulshoff",
+    "teamId": "ajax-1971-72",
+    "club": "Ajax",
+    "season": "1971/72",
+    "positions": [
+      "cb"
+    ],
+    "rating": 91,
+    "legendary": true
+  },
+  {
+    "id": "horst-blankenburg-ajax-1971-72",
+    "name": "Horst Blankenburg",
+    "teamId": "ajax-1971-72",
+    "club": "Ajax",
+    "season": "1971/72",
+    "positions": [
+      "cb"
+    ],
+    "rating": 91,
+    "legendary": true
+  },
+  {
+    "id": "ruud-krol-ajax-1971-72",
+    "name": "Ruud Krol",
+    "teamId": "ajax-1971-72",
+    "club": "Ajax",
+    "season": "1971/72",
+    "positions": [
+      "lb",
+      "cb"
+    ],
+    "rating": 93,
+    "legendary": true
+  },
+  {
+    "id": "johan-neeskens-ajax-1971-72",
+    "name": "Johan Neeskens",
+    "teamId": "ajax-1971-72",
+    "club": "Ajax",
+    "season": "1971/72",
+    "positions": [
+      "cm",
+      "rm"
+    ],
+    "rating": 94,
+    "legendary": true
+  },
+  {
+    "id": "arie-haan-ajax-1971-72",
+    "name": "Arie Haan",
+    "teamId": "ajax-1971-72",
+    "club": "Ajax",
+    "season": "1971/72",
+    "positions": [
+      "cm",
+      "cb"
+    ],
+    "rating": 91,
+    "legendary": true
+  },
+  {
+    "id": "gerrie-muhren-ajax-1971-72",
+    "name": "Gerrie Mühren",
+    "teamId": "ajax-1971-72",
+    "club": "Ajax",
+    "season": "1971/72",
+    "positions": [
+      "cm"
+    ],
+    "rating": 94,
+    "legendary": true
+  },
+  {
+    "id": "johan-cruijff-ajax-1971-72",
+    "name": "Johan Cruijff",
+    "teamId": "ajax-1971-72",
+    "club": "Ajax",
+    "season": "1971/72",
+    "positions": [
+      "st",
+      "rw",
+      "cm"
+    ],
+    "rating": 99,
+    "legendary": true
+  },
+  {
+    "id": "piet-keizer-ajax-1971-72",
+    "name": "Piet Keizer",
+    "teamId": "ajax-1971-72",
+    "club": "Ajax",
+    "season": "1971/72",
+    "positions": [
+      "lw"
+    ],
+    "rating": 94,
+    "legendary": true
+  },
+  {
+    "id": "sjaak-swart-ajax-1971-72",
+    "name": "Sjaak Swart",
+    "teamId": "ajax-1971-72",
+    "club": "Ajax",
+    "season": "1971/72",
+    "positions": [
+      "rw"
+    ],
+    "rating": 91,
+    "legendary": true
+  },
+  {
+    "id": "johnny-rep-ajax-1971-72",
+    "name": "Johnny Rep",
+    "teamId": "ajax-1971-72",
+    "club": "Ajax",
+    "season": "1971/72",
+    "positions": [
+      "rw",
+      "st"
+    ],
+    "rating": 88,
+    "legendary": false
+  },
+  {
+    "id": "dick-van-dijk-ajax-1971-72",
+    "name": "Dick van Dijk",
+    "teamId": "ajax-1971-72",
+    "club": "Ajax",
+    "season": "1971/72",
+    "positions": [
+      "st"
+    ],
+    "rating": 92,
+    "legendary": true
+  },
+  {
+    "id": "arnold-muhren-ajax-1971-72",
+    "name": "Arnold Mühren",
+    "teamId": "ajax-1971-72",
+    "club": "Ajax",
+    "season": "1971/72",
+    "positions": [
+      "cm",
+      "lm"
+    ],
+    "rating": 93,
+    "legendary": true
+  },
+  {
+    "id": "heinz-schilcher-ajax-1971-72",
+    "name": "Heinz Schilcher",
+    "teamId": "ajax-1971-72",
+    "club": "Ajax",
+    "season": "1971/72",
+    "positions": [
+      "cm"
+    ],
+    "rating": 91,
+    "legendary": true
+  },
+  {
+    "id": "jan-everse-ajax-1971-72",
+    "name": "Jan Everse",
+    "teamId": "ajax-1971-72",
+    "club": "Ajax",
+    "season": "1971/72",
+    "positions": [
+      "cb",
+      "lb"
+    ],
+    "rating": 92,
+    "legendary": true
+  },
+  {
+    "id": "edwin-van-der-sar-ajax-1994-95",
+    "name": "Edwin van der Sar",
+    "teamId": "ajax-1994-95",
+    "club": "Ajax",
+    "season": "1994/95",
+    "positions": [
+      "gk"
+    ],
+    "rating": 94,
+    "legendary": true
+  },
+  {
+    "id": "fred-grim-ajax-1994-95",
+    "name": "Fred Grim",
+    "teamId": "ajax-1994-95",
+    "club": "Ajax",
+    "season": "1994/95",
+    "positions": [
+      "gk"
+    ],
+    "rating": 88,
+    "legendary": false
+  },
+  {
+    "id": "michael-reiziger-ajax-1994-95",
+    "name": "Michael Reiziger",
+    "teamId": "ajax-1994-95",
+    "club": "Ajax",
+    "season": "1994/95",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 89,
+    "legendary": false
+  },
+  {
+    "id": "danny-blind-ajax-1994-95",
+    "name": "Danny Blind",
+    "teamId": "ajax-1994-95",
+    "club": "Ajax",
+    "season": "1994/95",
+    "positions": [
+      "cb"
+    ],
+    "rating": 91,
+    "legendary": true
+  },
+  {
+    "id": "frank-de-boer-ajax-1994-95",
+    "name": "Frank de Boer",
+    "teamId": "ajax-1994-95",
+    "club": "Ajax",
+    "season": "1994/95",
+    "positions": [
+      "cb",
+      "lb"
+    ],
+    "rating": 92,
+    "legendary": true
+  },
+  {
+    "id": "frank-rijkaard-ajax-1994-95",
+    "name": "Frank Rijkaard",
+    "teamId": "ajax-1994-95",
+    "club": "Ajax",
+    "season": "1994/95",
+    "positions": [
+      "cb",
+      "cm"
+    ],
+    "rating": 95,
+    "legendary": true
+  },
+  {
+    "id": "winston-bogarde-ajax-1994-95",
+    "name": "Winston Bogarde",
+    "teamId": "ajax-1994-95",
+    "club": "Ajax",
+    "season": "1994/95",
+    "positions": [
+      "lb",
+      "cb"
+    ],
+    "rating": 88,
+    "legendary": false
+  },
+  {
+    "id": "sonny-silooy-ajax-1994-95",
+    "name": "Sonny Silooy",
+    "teamId": "ajax-1994-95",
+    "club": "Ajax",
+    "season": "1994/95",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 88,
+    "legendary": false
+  },
+  {
+    "id": "edgar-davids-ajax-1994-95",
+    "name": "Edgar Davids",
+    "teamId": "ajax-1994-95",
+    "club": "Ajax",
+    "season": "1994/95",
+    "positions": [
+      "cm",
+      "lm"
+    ],
+    "rating": 91,
+    "legendary": true
+  },
+  {
+    "id": "clarence-seedorf-ajax-1994-95",
+    "name": "Clarence Seedorf",
+    "teamId": "ajax-1994-95",
+    "club": "Ajax",
+    "season": "1994/95",
+    "positions": [
+      "cm",
+      "rm"
+    ],
+    "rating": 91,
+    "legendary": true
+  },
+  {
+    "id": "ronald-de-boer-ajax-1994-95",
+    "name": "Ronald de Boer",
+    "teamId": "ajax-1994-95",
+    "club": "Ajax",
+    "season": "1994/95",
+    "positions": [
+      "cm",
+      "rw"
+    ],
+    "rating": 88,
+    "legendary": false
+  },
+  {
+    "id": "jari-litmanen-ajax-1994-95",
+    "name": "Jari Litmanen",
+    "teamId": "ajax-1994-95",
+    "club": "Ajax",
+    "season": "1994/95",
+    "positions": [
+      "cm",
+      "st"
+    ],
+    "rating": 94,
+    "legendary": true
+  },
+  {
+    "id": "finidi-george-ajax-1994-95",
+    "name": "Finidi George",
+    "teamId": "ajax-1994-95",
+    "club": "Ajax",
+    "season": "1994/95",
+    "positions": [
+      "rw"
+    ],
+    "rating": 89,
+    "legendary": false
+  },
+  {
+    "id": "marc-overmars-ajax-1994-95",
+    "name": "Marc Overmars",
+    "teamId": "ajax-1994-95",
+    "club": "Ajax",
+    "season": "1994/95",
+    "positions": [
+      "lw"
+    ],
+    "rating": 92,
+    "legendary": true
+  },
+  {
+    "id": "patrick-kluivert-ajax-1994-95",
+    "name": "Patrick Kluivert",
+    "teamId": "ajax-1994-95",
+    "club": "Ajax",
+    "season": "1994/95",
+    "positions": [
+      "st"
+    ],
+    "rating": 91,
+    "legendary": true
+  },
+  {
+    "id": "nwankwo-kanu-ajax-1994-95",
+    "name": "Nwankwo Kanu",
+    "teamId": "ajax-1994-95",
+    "club": "Ajax",
+    "season": "1994/95",
+    "positions": [
+      "st"
+    ],
+    "rating": 92,
+    "legendary": true
+  },
+  {
+    "id": "peter-van-vossen-ajax-1994-95",
+    "name": "Peter van Vossen",
+    "teamId": "ajax-1994-95",
+    "club": "Ajax",
+    "season": "1994/95",
+    "positions": [
+      "lw",
+      "st"
+    ],
+    "rating": 94,
+    "legendary": true
+  },
+  {
+    "id": "kiki-musampa-ajax-1994-95",
+    "name": "Kiki Musampa",
+    "teamId": "ajax-1994-95",
+    "club": "Ajax",
+    "season": "1994/95",
+    "positions": [
+      "lm",
+      "lw"
+    ],
+    "rating": 89,
+    "legendary": false
+  },
+  {
+    "id": "edwin-van-der-sar-ajax-1997-98",
+    "name": "Edwin van der Sar",
+    "teamId": "ajax-1997-98",
+    "club": "Ajax",
+    "season": "1997/98",
+    "positions": [
+      "gk"
+    ],
+    "rating": 92,
+    "legendary": true
+  },
+  {
+    "id": "mario-melchiot-ajax-1997-98",
+    "name": "Mario Melchiot",
+    "teamId": "ajax-1997-98",
+    "club": "Ajax",
+    "season": "1997/98",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "danny-blind-ajax-1997-98",
+    "name": "Danny Blind",
+    "teamId": "ajax-1997-98",
+    "club": "Ajax",
+    "season": "1997/98",
+    "positions": [
+      "cb"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "frank-de-boer-ajax-1997-98",
+    "name": "Frank de Boer",
+    "teamId": "ajax-1997-98",
+    "club": "Ajax",
+    "season": "1997/98",
+    "positions": [
+      "cb",
+      "lb"
+    ],
+    "rating": 90,
+    "legendary": true
+  },
+  {
+    "id": "benni-mccarthy-ajax-1997-98",
+    "name": "Benni McCarthy",
+    "teamId": "ajax-1997-98",
+    "club": "Ajax",
+    "season": "1997/98",
+    "positions": [
+      "st"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "winston-bogarde-ajax-1997-98",
+    "name": "Winston Bogarde",
+    "teamId": "ajax-1997-98",
+    "club": "Ajax",
+    "season": "1997/98",
+    "positions": [
+      "lb",
+      "cb"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "olaf-lindenbergh-ajax-1997-98",
+    "name": "Olaf Lindenbergh",
+    "teamId": "ajax-1997-98",
+    "club": "Ajax",
+    "season": "1997/98",
+    "positions": [
+      "lb",
+      "cm"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "sunday-oliseh-ajax-1997-98",
+    "name": "Sunday Oliseh",
+    "teamId": "ajax-1997-98",
+    "club": "Ajax",
+    "season": "1997/98",
+    "positions": [
+      "cm"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "richard-witschge-ajax-1997-98",
+    "name": "Richard Witschge",
+    "teamId": "ajax-1997-98",
+    "club": "Ajax",
+    "season": "1997/98",
+    "positions": [
+      "cm",
+      "lm"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "jari-litmanen-ajax-1997-98",
+    "name": "Jari Litmanen",
+    "teamId": "ajax-1997-98",
+    "club": "Ajax",
+    "season": "1997/98",
+    "positions": [
+      "cm",
+      "st"
+    ],
+    "rating": 92,
+    "legendary": true
+  },
+  {
+    "id": "ronald-de-boer-ajax-1997-98",
+    "name": "Ronald de Boer",
+    "teamId": "ajax-1997-98",
+    "club": "Ajax",
+    "season": "1997/98",
+    "positions": [
+      "cm",
+      "rw"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "michael-laudrup-ajax-1997-98",
+    "name": "Michael Laudrup",
+    "teamId": "ajax-1997-98",
+    "club": "Ajax",
+    "season": "1997/98",
+    "positions": [
+      "cm",
+      "lw"
+    ],
+    "rating": 92,
+    "legendary": true
+  },
+  {
+    "id": "tijani-babangida-ajax-1997-98",
+    "name": "Tijani Babangida",
+    "teamId": "ajax-1997-98",
+    "club": "Ajax",
+    "season": "1997/98",
+    "positions": [
+      "rw"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "jesper-grnkjr-ajax-1997-98",
+    "name": "Jesper Grønkjær",
+    "teamId": "ajax-1997-98",
+    "club": "Ajax",
+    "season": "1997/98",
+    "positions": [
+      "lw",
+      "rw"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "shota-arveladze-ajax-1997-98",
+    "name": "Shota Arveladze",
+    "teamId": "ajax-1997-98",
+    "club": "Ajax",
+    "season": "1997/98",
+    "positions": [
+      "st"
+    ],
+    "rating": 88,
+    "legendary": false
+  },
+  {
+    "id": "dani-ajax-1997-98",
+    "name": "Dani",
+    "teamId": "ajax-1997-98",
+    "club": "Ajax",
+    "season": "1997/98",
+    "positions": [
+      "st",
+      "cm"
+    ],
+    "rating": 90,
+    "legendary": true
+  },
+  {
+    "id": "ferdi-vierklau-ajax-1997-98",
+    "name": "Ferdi Vierklau",
+    "teamId": "ajax-1997-98",
+    "club": "Ajax",
+    "season": "1997/98",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "dean-gorre-ajax-1997-98",
+    "name": "Dean Gorré",
+    "teamId": "ajax-1997-98",
+    "club": "Ajax",
+    "season": "1997/98",
+    "positions": [
+      "cm"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "andre-onana-ajax-2018-19",
+    "name": "André Onana",
+    "teamId": "ajax-2018-19",
+    "club": "Ajax",
+    "season": "2018/19",
+    "positions": [
+      "gk"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "noussair-mazraoui-ajax-2018-19",
+    "name": "Noussair Mazraoui",
+    "teamId": "ajax-2018-19",
+    "club": "Ajax",
+    "season": "2018/19",
+    "positions": [
+      "rb"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "matthijs-de-ligt-ajax-2018-19",
+    "name": "Matthijs de Ligt",
+    "teamId": "ajax-2018-19",
+    "club": "Ajax",
+    "season": "2018/19",
+    "positions": [
+      "cb"
+    ],
+    "rating": 91,
+    "legendary": true
+  },
+  {
+    "id": "daley-blind-ajax-2018-19",
+    "name": "Daley Blind",
+    "teamId": "ajax-2018-19",
+    "club": "Ajax",
+    "season": "2018/19",
+    "positions": [
+      "cb",
+      "lb",
+      "cm"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "nicolas-tagliafico-ajax-2018-19",
+    "name": "Nicolás Tagliafico",
+    "teamId": "ajax-2018-19",
+    "club": "Ajax",
+    "season": "2018/19",
+    "positions": [
+      "lb"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "lasse-schone-ajax-2018-19",
+    "name": "Lasse Schöne",
+    "teamId": "ajax-2018-19",
+    "club": "Ajax",
+    "season": "2018/19",
+    "positions": [
+      "cm"
+    ],
+    "rating": 88,
+    "legendary": false
+  },
+  {
+    "id": "frenkie-de-jong-ajax-2018-19",
+    "name": "Frenkie de Jong",
+    "teamId": "ajax-2018-19",
+    "club": "Ajax",
+    "season": "2018/19",
+    "positions": [
+      "cm",
+      "cb"
+    ],
+    "rating": 92,
+    "legendary": true
+  },
+  {
+    "id": "donny-van-de-beek-ajax-2018-19",
+    "name": "Donny van de Beek",
+    "teamId": "ajax-2018-19",
+    "club": "Ajax",
+    "season": "2018/19",
+    "positions": [
+      "cm"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "hakim-ziyech-ajax-2018-19",
+    "name": "Hakim Ziyech",
+    "teamId": "ajax-2018-19",
+    "club": "Ajax",
+    "season": "2018/19",
+    "positions": [
+      "rw",
+      "cm"
+    ],
+    "rating": 90,
+    "legendary": true
+  },
+  {
+    "id": "dusan-tadic-ajax-2018-19",
+    "name": "Dušan Tadić",
+    "teamId": "ajax-2018-19",
+    "club": "Ajax",
+    "season": "2018/19",
+    "positions": [
+      "lw",
+      "st",
+      "rw"
+    ],
+    "rating": 91,
+    "legendary": true
+  },
+  {
+    "id": "david-neres-ajax-2018-19",
+    "name": "David Neres",
+    "teamId": "ajax-2018-19",
+    "club": "Ajax",
+    "season": "2018/19",
+    "positions": [
+      "lw",
+      "rw"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "kasper-dolberg-ajax-2018-19",
+    "name": "Kasper Dolberg",
+    "teamId": "ajax-2018-19",
+    "club": "Ajax",
+    "season": "2018/19",
+    "positions": [
+      "st"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "klaas-jan-huntelaar-ajax-2018-19",
+    "name": "Klaas-Jan Huntelaar",
+    "teamId": "ajax-2018-19",
+    "club": "Ajax",
+    "season": "2018/19",
+    "positions": [
+      "st"
+    ],
+    "rating": 88,
+    "legendary": false
+  },
+  {
+    "id": "joel-veltman-ajax-2018-19",
+    "name": "Joël Veltman",
+    "teamId": "ajax-2018-19",
+    "club": "Ajax",
+    "season": "2018/19",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "maximilian-wober-ajax-2018-19",
+    "name": "Maximilian Wöber",
+    "teamId": "ajax-2018-19",
+    "club": "Ajax",
+    "season": "2018/19",
+    "positions": [
+      "cb",
+      "lb"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "carel-eiting-ajax-2018-19",
+    "name": "Carel Eiting",
+    "teamId": "ajax-2018-19",
+    "club": "Ajax",
+    "season": "2018/19",
+    "positions": [
+      "cm"
+    ],
+    "rating": 90,
+    "legendary": true
+  },
+  {
+    "id": "daley-sinkgraven-ajax-2018-19",
+    "name": "Daley Sinkgraven",
+    "teamId": "ajax-2018-19",
+    "club": "Ajax",
+    "season": "2018/19",
+    "positions": [
+      "lb",
+      "cm"
+    ],
+    "rating": 89,
+    "legendary": false
+  },
+  {
+    "id": "zakaria-labyad-ajax-2018-19",
+    "name": "Zakaria Labyad",
+    "teamId": "ajax-2018-19",
+    "club": "Ajax",
+    "season": "2018/19",
+    "positions": [
+      "cm",
+      "lw"
+    ],
+    "rating": 90,
+    "legendary": true
+  },
+  {
+    "id": "andre-onana-ajax-2020-21",
+    "name": "André Onana",
+    "teamId": "ajax-2020-21",
+    "club": "Ajax",
+    "season": "2020/21",
+    "positions": [
+      "gk"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "maarten-stekelenburg-ajax-2020-21",
+    "name": "Maarten Stekelenburg",
+    "teamId": "ajax-2020-21",
+    "club": "Ajax",
+    "season": "2020/21",
+    "positions": [
+      "gk"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "noussair-mazraoui-ajax-2020-21",
+    "name": "Noussair Mazraoui",
+    "teamId": "ajax-2020-21",
+    "club": "Ajax",
+    "season": "2020/21",
+    "positions": [
+      "rb"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "jurrien-timber-ajax-2020-21",
+    "name": "Jurriën Timber",
+    "teamId": "ajax-2020-21",
+    "club": "Ajax",
+    "season": "2020/21",
+    "positions": [
+      "cb",
+      "rb"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "daley-blind-ajax-2020-21",
+    "name": "Daley Blind",
+    "teamId": "ajax-2020-21",
+    "club": "Ajax",
+    "season": "2020/21",
+    "positions": [
+      "cb",
+      "lb",
+      "cm"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "nicolas-tagliafico-ajax-2020-21",
+    "name": "Nicolás Tagliafico",
+    "teamId": "ajax-2020-21",
+    "club": "Ajax",
+    "season": "2020/21",
+    "positions": [
+      "lb"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "lisandro-martinez-ajax-2020-21",
+    "name": "Lisandro Martínez",
+    "teamId": "ajax-2020-21",
+    "club": "Ajax",
+    "season": "2020/21",
+    "positions": [
+      "cb",
+      "cm"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "ryan-gravenberch-ajax-2020-21",
+    "name": "Ryan Gravenberch",
+    "teamId": "ajax-2020-21",
+    "club": "Ajax",
+    "season": "2020/21",
+    "positions": [
+      "cm"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "edson-alvarez-ajax-2020-21",
+    "name": "Edson Álvarez",
+    "teamId": "ajax-2020-21",
+    "club": "Ajax",
+    "season": "2020/21",
+    "positions": [
+      "cm",
+      "cb"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "davy-klaassen-ajax-2020-21",
+    "name": "Davy Klaassen",
+    "teamId": "ajax-2020-21",
+    "club": "Ajax",
+    "season": "2020/21",
+    "positions": [
+      "cm"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "dusan-tadic-ajax-2020-21",
+    "name": "Dušan Tadić",
+    "teamId": "ajax-2020-21",
+    "club": "Ajax",
+    "season": "2020/21",
+    "positions": [
+      "lw",
+      "st"
+    ],
+    "rating": 90,
+    "legendary": true
+  },
+  {
+    "id": "antony-ajax-2020-21",
+    "name": "Antony",
+    "teamId": "ajax-2020-21",
+    "club": "Ajax",
+    "season": "2020/21",
+    "positions": [
+      "rw"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "sebastien-haller-ajax-2020-21",
+    "name": "Sébastien Haller",
+    "teamId": "ajax-2020-21",
+    "club": "Ajax",
+    "season": "2020/21",
+    "positions": [
+      "st"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "david-neres-ajax-2020-21",
+    "name": "David Neres",
+    "teamId": "ajax-2020-21",
+    "club": "Ajax",
+    "season": "2020/21",
+    "positions": [
+      "lw",
+      "rw"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "brian-brobbey-ajax-2020-21",
+    "name": "Brian Brobbey",
+    "teamId": "ajax-2020-21",
+    "club": "Ajax",
+    "season": "2020/21",
+    "positions": [
+      "st"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "mohammed-kudus-ajax-2020-21",
+    "name": "Mohammed Kudus",
+    "teamId": "ajax-2020-21",
+    "club": "Ajax",
+    "season": "2020/21",
+    "positions": [
+      "cm",
+      "rw"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "perr-schuurs-ajax-2020-21",
+    "name": "Perr Schuurs",
+    "teamId": "ajax-2020-21",
+    "club": "Ajax",
+    "season": "2020/21",
+    "positions": [
+      "cb"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "devyne-rensch-ajax-2020-21",
+    "name": "Devyne Rensch",
+    "teamId": "ajax-2020-21",
+    "club": "Ajax",
+    "season": "2020/21",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "patrick-lodewijks-fc-groningen-1990-91",
+    "name": "Patrick Lodewijks",
+    "teamId": "fc-groningen-1990-91",
+    "club": "FC Groningen",
+    "season": "1990/91",
+    "positions": [
+      "gk"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "erwin-koeman-fc-groningen-1990-91",
+    "name": "Erwin Koeman",
+    "teamId": "fc-groningen-1990-91",
+    "club": "FC Groningen",
+    "season": "1990/91",
+    "positions": [
+      "cm"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "hennie-meijer-fc-groningen-1990-91",
+    "name": "Hennie Meijer",
+    "teamId": "fc-groningen-1990-91",
+    "club": "FC Groningen",
+    "season": "1990/91",
+    "positions": [
+      "st"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "milko-djurovski-fc-groningen-1990-91",
+    "name": "Milko Djurovski",
+    "teamId": "fc-groningen-1990-91",
+    "club": "FC Groningen",
+    "season": "1990/91",
+    "positions": [
+      "st",
+      "cm"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "marcel-groninger-fc-groningen-1990-91",
+    "name": "Marcel Groninger",
+    "teamId": "fc-groningen-1990-91",
+    "club": "FC Groningen",
+    "season": "1990/91",
+    "positions": [
+      "cm"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "martin-drent-fc-groningen-1990-91",
+    "name": "Martin Drent",
+    "teamId": "fc-groningen-1990-91",
+    "club": "FC Groningen",
+    "season": "1990/91",
+    "positions": [
+      "st"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "harris-huizingh-fc-groningen-1990-91",
+    "name": "Harris Huizingh",
+    "teamId": "fc-groningen-1990-91",
+    "club": "FC Groningen",
+    "season": "1990/91",
+    "positions": [
+      "cb"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "ron-groenewoud-fc-groningen-1990-91",
+    "name": "Ron Groenewoud",
+    "teamId": "fc-groningen-1990-91",
+    "club": "FC Groningen",
+    "season": "1990/91",
+    "positions": [
+      "cm"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "jan-van-dijk-fc-groningen-1990-91",
+    "name": "Jan van Dijk",
+    "teamId": "fc-groningen-1990-91",
+    "club": "FC Groningen",
+    "season": "1990/91",
+    "positions": [
+      "cm"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "antoon-verlegh-fc-groningen-1990-91",
+    "name": "Antoon Verlegh",
+    "teamId": "fc-groningen-1990-91",
+    "club": "FC Groningen",
+    "season": "1990/91",
+    "positions": [
+      "cb"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "rene-eijkelkamp-fc-groningen-1990-91",
+    "name": "René Eijkelkamp",
+    "teamId": "fc-groningen-1990-91",
+    "club": "FC Groningen",
+    "season": "1990/91",
+    "positions": [
+      "st"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "henk-de-haan-fc-groningen-1990-91",
+    "name": "Henk de Haan",
+    "teamId": "fc-groningen-1990-91",
+    "club": "FC Groningen",
+    "season": "1990/91",
+    "positions": [
+      "rw"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "jos-roossien-fc-groningen-1990-91",
+    "name": "Jos Roossien",
+    "teamId": "fc-groningen-1990-91",
+    "club": "FC Groningen",
+    "season": "1990/91",
+    "positions": [
+      "cm"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "dick-lukkien-fc-groningen-1990-91",
+    "name": "Dick Lukkien",
+    "teamId": "fc-groningen-1990-91",
+    "club": "FC Groningen",
+    "season": "1990/91",
+    "positions": [
+      "cm"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "gerrit-meijer-fc-groningen-1990-91",
+    "name": "Gerrit Meijer",
+    "teamId": "fc-groningen-1990-91",
+    "club": "FC Groningen",
+    "season": "1990/91",
+    "positions": [
+      "lb"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "sergio-padt-fc-groningen-2014-15",
+    "name": "Sergio Padt",
+    "teamId": "fc-groningen-2014-15",
+    "club": "FC Groningen",
+    "season": "2014/15",
+    "positions": [
+      "gk"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "hans-hateboer-fc-groningen-2014-15",
+    "name": "Hans Hateboer",
+    "teamId": "fc-groningen-2014-15",
+    "club": "FC Groningen",
+    "season": "2014/15",
+    "positions": [
+      "rb"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "eric-botteghin-fc-groningen-2014-15",
+    "name": "Eric Botteghin",
+    "teamId": "fc-groningen-2014-15",
+    "club": "FC Groningen",
+    "season": "2014/15",
+    "positions": [
+      "cb"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "johan-kappelhof-fc-groningen-2014-15",
+    "name": "Johan Kappelhof",
+    "teamId": "fc-groningen-2014-15",
+    "club": "FC Groningen",
+    "season": "2014/15",
+    "positions": [
+      "cb"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "lorenzo-burnet-fc-groningen-2014-15",
+    "name": "Lorenzo Burnet",
+    "teamId": "fc-groningen-2014-15",
+    "club": "FC Groningen",
+    "season": "2014/15",
+    "positions": [
+      "lb"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "rasmus-lindgren-fc-groningen-2014-15",
+    "name": "Rasmus Lindgren",
+    "teamId": "fc-groningen-2014-15",
+    "club": "FC Groningen",
+    "season": "2014/15",
+    "positions": [
+      "cm"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "tjaronn-chery-fc-groningen-2014-15",
+    "name": "Tjaronn Chery",
+    "teamId": "fc-groningen-2014-15",
+    "club": "FC Groningen",
+    "season": "2014/15",
+    "positions": [
+      "cm",
+      "rw"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "maikel-kieftenbeld-fc-groningen-2014-15",
+    "name": "Maikel Kieftenbeld",
+    "teamId": "fc-groningen-2014-15",
+    "club": "FC Groningen",
+    "season": "2014/15",
+    "positions": [
+      "cm"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "albert-rusnak-fc-groningen-2014-15",
+    "name": "Albert Rusnák",
+    "teamId": "fc-groningen-2014-15",
+    "club": "FC Groningen",
+    "season": "2014/15",
+    "positions": [
+      "rw",
+      "cm"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "mimoun-mahi-fc-groningen-2014-15",
+    "name": "Mimoun Mahi",
+    "teamId": "fc-groningen-2014-15",
+    "club": "FC Groningen",
+    "season": "2014/15",
+    "positions": [
+      "lw",
+      "st"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "michael-de-leeuw-fc-groningen-2014-15",
+    "name": "Michael de Leeuw",
+    "teamId": "fc-groningen-2014-15",
+    "club": "FC Groningen",
+    "season": "2014/15",
+    "positions": [
+      "st",
+      "cm"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "nick-van-der-velden-fc-groningen-2014-15",
+    "name": "Nick van der Velden",
+    "teamId": "fc-groningen-2014-15",
+    "club": "FC Groningen",
+    "season": "2014/15",
+    "positions": [
+      "cm",
+      "lw"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "jarchinio-antonia-fc-groningen-2014-15",
+    "name": "Jarchinio Antonia",
+    "teamId": "fc-groningen-2014-15",
+    "club": "FC Groningen",
+    "season": "2014/15",
+    "positions": [
+      "rw"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "danny-hoesen-fc-groningen-2014-15",
+    "name": "Danny Hoesen",
+    "teamId": "fc-groningen-2014-15",
+    "club": "FC Groningen",
+    "season": "2014/15",
+    "positions": [
+      "st"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "tom-hiariej-fc-groningen-2014-15",
+    "name": "Tom Hiariej",
+    "teamId": "fc-groningen-2014-15",
+    "club": "FC Groningen",
+    "season": "2014/15",
+    "positions": [
+      "cm",
+      "rb"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "martijn-van-der-laan-fc-groningen-2014-15",
+    "name": "Martijn van der Laan",
+    "teamId": "fc-groningen-2014-15",
+    "club": "FC Groningen",
+    "season": "2014/15",
+    "positions": [
+      "cb"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "piet-schrijvers-fc-twente-1974-75",
+    "name": "Piet Schrijvers",
+    "teamId": "fc-twente-1974-75",
+    "club": "FC Twente",
+    "season": "1974/75",
+    "positions": [
+      "gk"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "epi-drost-fc-twente-1974-75",
+    "name": "Epi Drost",
+    "teamId": "fc-twente-1974-75",
+    "club": "FC Twente",
+    "season": "1974/75",
+    "positions": [
+      "cb"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "niels-overweg-fc-twente-1974-75",
+    "name": "Niels Overweg",
+    "teamId": "fc-twente-1974-75",
+    "club": "FC Twente",
+    "season": "1974/75",
+    "positions": [
+      "cb"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "kalle-oranen-fc-twente-1974-75",
+    "name": "Kalle Oranen",
+    "teamId": "fc-twente-1974-75",
+    "club": "FC Twente",
+    "season": "1974/75",
+    "positions": [
+      "lb"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "abe-van-den-ban-fc-twente-1974-75",
+    "name": "Abe van den Ban",
+    "teamId": "fc-twente-1974-75",
+    "club": "FC Twente",
+    "season": "1974/75",
+    "positions": [
+      "rb"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "frans-thijssen-fc-twente-1974-75",
+    "name": "Frans Thijssen",
+    "teamId": "fc-twente-1974-75",
+    "club": "FC Twente",
+    "season": "1974/75",
+    "positions": [
+      "cm"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "kick-van-der-vall-fc-twente-1974-75",
+    "name": "Kick van der Vall",
+    "teamId": "fc-twente-1974-75",
+    "club": "FC Twente",
+    "season": "1974/75",
+    "positions": [
+      "cm"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "rene-notten-fc-twente-1974-75",
+    "name": "René Notten",
+    "teamId": "fc-twente-1974-75",
+    "club": "FC Twente",
+    "season": "1974/75",
+    "positions": [
+      "cm"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "willem-de-vries-fc-twente-1974-75",
+    "name": "Willem de Vries",
+    "teamId": "fc-twente-1974-75",
+    "club": "FC Twente",
+    "season": "1974/75",
+    "positions": [
+      "lw"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "jan-jeuring-fc-twente-1974-75",
+    "name": "Jan Jeuring",
+    "teamId": "fc-twente-1974-75",
+    "club": "FC Twente",
+    "season": "1974/75",
+    "positions": [
+      "st"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "theo-pahlplatz-fc-twente-1974-75",
+    "name": "Theo Pahlplatz",
+    "teamId": "fc-twente-1974-75",
+    "club": "FC Twente",
+    "season": "1974/75",
+    "positions": [
+      "rw"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "henk-van-santen-fc-twente-1974-75",
+    "name": "Henk van Santen",
+    "teamId": "fc-twente-1974-75",
+    "club": "FC Twente",
+    "season": "1974/75",
+    "positions": [
+      "cm"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "johan-zuidema-fc-twente-1974-75",
+    "name": "Johan Zuidema",
+    "teamId": "fc-twente-1974-75",
+    "club": "FC Twente",
+    "season": "1974/75",
+    "positions": [
+      "st"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "dick-van-dijk-fc-twente-1974-75",
+    "name": "Dick van Dijk",
+    "teamId": "fc-twente-1974-75",
+    "club": "FC Twente",
+    "season": "1974/75",
+    "positions": [
+      "st"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "hugo-de-vries-fc-twente-1974-75",
+    "name": "Hugo de Vries",
+    "teamId": "fc-twente-1974-75",
+    "club": "FC Twente",
+    "season": "1974/75",
+    "positions": [
+      "cb"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "sander-boschker-fc-twente-2009-10",
+    "name": "Sander Boschker",
+    "teamId": "fc-twente-2009-10",
+    "club": "FC Twente",
+    "season": "2009/10",
+    "positions": [
+      "gk"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "nikolay-mihaylov-fc-twente-2009-10",
+    "name": "Nikolay Mihaylov",
+    "teamId": "fc-twente-2009-10",
+    "club": "FC Twente",
+    "season": "2009/10",
+    "positions": [
+      "gk"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "ronnie-stam-fc-twente-2009-10",
+    "name": "Ronnie Stam",
+    "teamId": "fc-twente-2009-10",
+    "club": "FC Twente",
+    "season": "2009/10",
+    "positions": [
+      "rb"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "peter-wisgerhof-fc-twente-2009-10",
+    "name": "Peter Wisgerhof",
+    "teamId": "fc-twente-2009-10",
+    "club": "FC Twente",
+    "season": "2009/10",
+    "positions": [
+      "cb"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "douglas-fc-twente-2009-10",
+    "name": "Douglas",
+    "teamId": "fc-twente-2009-10",
+    "club": "FC Twente",
+    "season": "2009/10",
+    "positions": [
+      "cb"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "edson-braafheid-fc-twente-2009-10",
+    "name": "Edson Braafheid",
+    "teamId": "fc-twente-2009-10",
+    "club": "FC Twente",
+    "season": "2009/10",
+    "positions": [
+      "lb"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "tiote-fc-twente-2009-10",
+    "name": "Tioté",
+    "teamId": "fc-twente-2009-10",
+    "club": "FC Twente",
+    "season": "2009/10",
+    "positions": [
+      "cm"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "wout-brama-fc-twente-2009-10",
+    "name": "Wout Brama",
+    "teamId": "fc-twente-2009-10",
+    "club": "FC Twente",
+    "season": "2009/10",
+    "positions": [
+      "cm"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "theo-janssen-fc-twente-2009-10",
+    "name": "Theo Janssen",
+    "teamId": "fc-twente-2009-10",
+    "club": "FC Twente",
+    "season": "2009/10",
+    "positions": [
+      "cm",
+      "lm"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "kenneth-perez-fc-twente-2009-10",
+    "name": "Kenneth Perez",
+    "teamId": "fc-twente-2009-10",
+    "club": "FC Twente",
+    "season": "2009/10",
+    "positions": [
+      "cm",
+      "lw"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "bryan-ruiz-fc-twente-2009-10",
+    "name": "Bryan Ruiz",
+    "teamId": "fc-twente-2009-10",
+    "club": "FC Twente",
+    "season": "2009/10",
+    "positions": [
+      "rw",
+      "st"
+    ],
+    "rating": 88,
+    "legendary": false
+  },
+  {
+    "id": "miroslav-stoch-fc-twente-2009-10",
+    "name": "Miroslav Stoch",
+    "teamId": "fc-twente-2009-10",
+    "club": "FC Twente",
+    "season": "2009/10",
+    "positions": [
+      "lw"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "blaise-nkufo-fc-twente-2009-10",
+    "name": "Blaise Nkufo",
+    "teamId": "fc-twente-2009-10",
+    "club": "FC Twente",
+    "season": "2009/10",
+    "positions": [
+      "st"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "luuk-de-jong-fc-twente-2009-10",
+    "name": "Luuk de Jong",
+    "teamId": "fc-twente-2009-10",
+    "club": "FC Twente",
+    "season": "2009/10",
+    "positions": [
+      "st"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "nacer-chadli-fc-twente-2009-10",
+    "name": "Nacer Chadli",
+    "teamId": "fc-twente-2009-10",
+    "club": "FC Twente",
+    "season": "2009/10",
+    "positions": [
+      "lw",
+      "rw"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "dwight-tiendalli-fc-twente-2009-10",
+    "name": "Dwight Tiendalli",
+    "teamId": "fc-twente-2009-10",
+    "club": "FC Twente",
+    "season": "2009/10",
+    "positions": [
+      "rb",
+      "lb"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "lars-unnerstall-fc-twente-2023-24",
+    "name": "Lars Unnerstall",
+    "teamId": "fc-twente-2023-24",
+    "club": "FC Twente",
+    "season": "2023/24",
+    "positions": [
+      "gk"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "joshua-brenet-fc-twente-2023-24",
+    "name": "Joshua Brenet",
+    "teamId": "fc-twente-2023-24",
+    "club": "FC Twente",
+    "season": "2023/24",
+    "positions": [
+      "rb"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "robin-propper-fc-twente-2023-24",
+    "name": "Robin Pröpper",
+    "teamId": "fc-twente-2023-24",
+    "club": "FC Twente",
+    "season": "2023/24",
+    "positions": [
+      "cb"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "mees-hilgers-fc-twente-2023-24",
+    "name": "Mees Hilgers",
+    "teamId": "fc-twente-2023-24",
+    "club": "FC Twente",
+    "season": "2023/24",
+    "positions": [
+      "cb"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "gijs-smal-fc-twente-2023-24",
+    "name": "Gijs Smal",
+    "teamId": "fc-twente-2023-24",
+    "club": "FC Twente",
+    "season": "2023/24",
+    "positions": [
+      "lb"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "michal-sadilek-fc-twente-2023-24",
+    "name": "Michal Sadílek",
+    "teamId": "fc-twente-2023-24",
+    "club": "FC Twente",
+    "season": "2023/24",
+    "positions": [
+      "cm"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "youri-regeer-fc-twente-2023-24",
+    "name": "Youri Regeer",
+    "teamId": "fc-twente-2023-24",
+    "club": "FC Twente",
+    "season": "2023/24",
+    "positions": [
+      "cm",
+      "rb"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "sem-steijn-fc-twente-2023-24",
+    "name": "Sem Steijn",
+    "teamId": "fc-twente-2023-24",
+    "club": "FC Twente",
+    "season": "2023/24",
+    "positions": [
+      "cm"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "michel-vlap-fc-twente-2023-24",
+    "name": "Michel Vlap",
+    "teamId": "fc-twente-2023-24",
+    "club": "FC Twente",
+    "season": "2023/24",
+    "positions": [
+      "cm",
+      "lw"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "daan-rots-fc-twente-2023-24",
+    "name": "Daan Rots",
+    "teamId": "fc-twente-2023-24",
+    "club": "FC Twente",
+    "season": "2023/24",
+    "positions": [
+      "rw"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "manfred-ugalde-fc-twente-2023-24",
+    "name": "Manfred Ugalde",
+    "teamId": "fc-twente-2023-24",
+    "club": "FC Twente",
+    "season": "2023/24",
+    "positions": [
+      "st"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "ricky-van-wolfswinkel-fc-twente-2023-24",
+    "name": "Ricky van Wolfswinkel",
+    "teamId": "fc-twente-2023-24",
+    "club": "FC Twente",
+    "season": "2023/24",
+    "positions": [
+      "st"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "naci-unuvar-fc-twente-2023-24",
+    "name": "Naci Ünüvar",
+    "teamId": "fc-twente-2023-24",
+    "club": "FC Twente",
+    "season": "2023/24",
+    "positions": [
+      "lw"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "alfons-sampsted-fc-twente-2023-24",
+    "name": "Alfons Sampsted",
+    "teamId": "fc-twente-2023-24",
+    "club": "FC Twente",
+    "season": "2023/24",
+    "positions": [
+      "rb"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "mathias-kjl-fc-twente-2023-24",
+    "name": "Mathias Kjølø",
+    "teamId": "fc-twente-2023-24",
+    "club": "FC Twente",
+    "season": "2023/24",
+    "positions": [
+      "cm"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "carel-eiting-fc-twente-2023-24",
+    "name": "Carel Eiting",
+    "teamId": "fc-twente-2023-24",
+    "club": "FC Twente",
+    "season": "2023/24",
+    "positions": [
+      "cm"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "david-jensen-fc-utrecht-2016-17",
+    "name": "David Jensen",
+    "teamId": "fc-utrecht-2016-17",
+    "club": "FC Utrecht",
+    "season": "2016/17",
+    "positions": [
+      "gk"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "sean-klaiber-fc-utrecht-2016-17",
+    "name": "Sean Klaiber",
+    "teamId": "fc-utrecht-2016-17",
+    "club": "FC Utrecht",
+    "season": "2016/17",
+    "positions": [
+      "rb"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "timo-letschert-fc-utrecht-2016-17",
+    "name": "Timo Letschert",
+    "teamId": "fc-utrecht-2016-17",
+    "club": "FC Utrecht",
+    "season": "2016/17",
+    "positions": [
+      "cb"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "willem-janssen-fc-utrecht-2016-17",
+    "name": "Willem Janssen",
+    "teamId": "fc-utrecht-2016-17",
+    "club": "FC Utrecht",
+    "season": "2016/17",
+    "positions": [
+      "cb",
+      "cm"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "mark-van-der-maarel-fc-utrecht-2016-17",
+    "name": "Mark van der Maarel",
+    "teamId": "fc-utrecht-2016-17",
+    "club": "FC Utrecht",
+    "season": "2016/17",
+    "positions": [
+      "rb",
+      "cb",
+      "lb"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "ramon-leeuwin-fc-utrecht-2016-17",
+    "name": "Ramon Leeuwin",
+    "teamId": "fc-utrecht-2016-17",
+    "club": "FC Utrecht",
+    "season": "2016/17",
+    "positions": [
+      "cb"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "sebastien-haller-fc-utrecht-2016-17",
+    "name": "Sébastien Haller",
+    "teamId": "fc-utrecht-2016-17",
+    "club": "FC Utrecht",
+    "season": "2016/17",
+    "positions": [
+      "st"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "nacer-barazite-fc-utrecht-2016-17",
+    "name": "Nacer Barazite",
+    "teamId": "fc-utrecht-2016-17",
+    "club": "FC Utrecht",
+    "season": "2016/17",
+    "positions": [
+      "cm",
+      "st"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "yassin-ayoub-fc-utrecht-2016-17",
+    "name": "Yassin Ayoub",
+    "teamId": "fc-utrecht-2016-17",
+    "club": "FC Utrecht",
+    "season": "2016/17",
+    "positions": [
+      "cm"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "bart-ramselaar-fc-utrecht-2016-17",
+    "name": "Bart Ramselaar",
+    "teamId": "fc-utrecht-2016-17",
+    "club": "FC Utrecht",
+    "season": "2016/17",
+    "positions": [
+      "cm"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "zakaria-labyad-fc-utrecht-2016-17",
+    "name": "Zakaria Labyad",
+    "teamId": "fc-utrecht-2016-17",
+    "club": "FC Utrecht",
+    "season": "2016/17",
+    "positions": [
+      "cm",
+      "lw"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "richairo-zivkovic-fc-utrecht-2016-17",
+    "name": "Richairo Živković",
+    "teamId": "fc-utrecht-2016-17",
+    "club": "FC Utrecht",
+    "season": "2016/17",
+    "positions": [
+      "st"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "patrick-joosten-fc-utrecht-2016-17",
+    "name": "Patrick Joosten",
+    "teamId": "fc-utrecht-2016-17",
+    "club": "FC Utrecht",
+    "season": "2016/17",
+    "positions": [
+      "lw"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "gyrano-kerk-fc-utrecht-2016-17",
+    "name": "Gyrano Kerk",
+    "teamId": "fc-utrecht-2016-17",
+    "club": "FC Utrecht",
+    "season": "2016/17",
+    "positions": [
+      "rw",
+      "st"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "andreas-ludwig-fc-utrecht-2016-17",
+    "name": "Andreas Ludwig",
+    "teamId": "fc-utrecht-2016-17",
+    "club": "FC Utrecht",
+    "season": "2016/17",
+    "positions": [
+      "cm",
+      "rw"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "sander-van-de-streek-fc-utrecht-2016-17",
+    "name": "Sander van de Streek",
+    "teamId": "fc-utrecht-2016-17",
+    "club": "FC Utrecht",
+    "season": "2016/17",
+    "positions": [
+      "cm"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "vasilis-barkas-fc-utrecht-2024-25",
+    "name": "Vasilis Barkas",
+    "teamId": "fc-utrecht-2024-25",
+    "club": "FC Utrecht",
+    "season": "2024/25",
+    "positions": [
+      "gk"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "siebe-horemans-fc-utrecht-2024-25",
+    "name": "Siebe Horemans",
+    "teamId": "fc-utrecht-2024-25",
+    "club": "FC Utrecht",
+    "season": "2024/25",
+    "positions": [
+      "rb"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "nick-viergever-fc-utrecht-2024-25",
+    "name": "Nick Viergever",
+    "teamId": "fc-utrecht-2024-25",
+    "club": "FC Utrecht",
+    "season": "2024/25",
+    "positions": [
+      "cb",
+      "lb"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "mike-van-der-hoorn-fc-utrecht-2024-25",
+    "name": "Mike van der Hoorn",
+    "teamId": "fc-utrecht-2024-25",
+    "club": "FC Utrecht",
+    "season": "2024/25",
+    "positions": [
+      "cb"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "souffian-el-karouani-fc-utrecht-2024-25",
+    "name": "Souffian El Karouani",
+    "teamId": "fc-utrecht-2024-25",
+    "club": "FC Utrecht",
+    "season": "2024/25",
+    "positions": [
+      "lb"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "can-bozdogan-fc-utrecht-2024-25",
+    "name": "Can Bozdogan",
+    "teamId": "fc-utrecht-2024-25",
+    "club": "FC Utrecht",
+    "season": "2024/25",
+    "positions": [
+      "cm"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "oscar-fraulo-fc-utrecht-2024-25",
+    "name": "Oscar Fraulo",
+    "teamId": "fc-utrecht-2024-25",
+    "club": "FC Utrecht",
+    "season": "2024/25",
+    "positions": [
+      "cm"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "jens-toornstra-fc-utrecht-2024-25",
+    "name": "Jens Toornstra",
+    "teamId": "fc-utrecht-2024-25",
+    "club": "FC Utrecht",
+    "season": "2024/25",
+    "positions": [
+      "cm"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "victor-jensen-fc-utrecht-2024-25",
+    "name": "Victor Jensen",
+    "teamId": "fc-utrecht-2024-25",
+    "club": "FC Utrecht",
+    "season": "2024/25",
+    "positions": [
+      "cm",
+      "lw"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "paxten-aaronson-fc-utrecht-2024-25",
+    "name": "Paxten Aaronson",
+    "teamId": "fc-utrecht-2024-25",
+    "club": "FC Utrecht",
+    "season": "2024/25",
+    "positions": [
+      "cm"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "yoann-cathline-fc-utrecht-2024-25",
+    "name": "Yoann Cathline",
+    "teamId": "fc-utrecht-2024-25",
+    "club": "FC Utrecht",
+    "season": "2024/25",
+    "positions": [
+      "lw"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "ole-romeny-fc-utrecht-2024-25",
+    "name": "Ole Romeny",
+    "teamId": "fc-utrecht-2024-25",
+    "club": "FC Utrecht",
+    "season": "2024/25",
+    "positions": [
+      "st",
+      "rw"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "david-min-fc-utrecht-2024-25",
+    "name": "David Min",
+    "teamId": "fc-utrecht-2024-25",
+    "club": "FC Utrecht",
+    "season": "2024/25",
+    "positions": [
+      "st"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "noah-ohio-fc-utrecht-2024-25",
+    "name": "Noah Ohio",
+    "teamId": "fc-utrecht-2024-25",
+    "club": "FC Utrecht",
+    "season": "2024/25",
+    "positions": [
+      "st"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "taylor-booth-fc-utrecht-2024-25",
+    "name": "Taylor Booth",
+    "teamId": "fc-utrecht-2024-25",
+    "club": "FC Utrecht",
+    "season": "2024/25",
+    "positions": [
+      "rw",
+      "cm"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "zidane-iqbal-fc-utrecht-2024-25",
+    "name": "Zidane Iqbal",
+    "teamId": "fc-utrecht-2024-25",
+    "club": "FC Utrecht",
+    "season": "2024/25",
+    "positions": [
+      "cm"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "filip-stankovic-fc-volendam-2022-23",
+    "name": "Filip Stanković",
+    "teamId": "fc-volendam-2022-23",
+    "club": "FC Volendam",
+    "season": "2022/23",
+    "positions": [
+      "gk"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "damon-mirani-fc-volendam-2022-23",
+    "name": "Damon Mirani",
+    "teamId": "fc-volendam-2022-23",
+    "club": "FC Volendam",
+    "season": "2022/23",
+    "positions": [
+      "cb"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "benaissa-benamar-fc-volendam-2022-23",
+    "name": "Benaissa Benamar",
+    "teamId": "fc-volendam-2022-23",
+    "club": "FC Volendam",
+    "season": "2022/23",
+    "positions": [
+      "cb"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "derry-murkin-fc-volendam-2022-23",
+    "name": "Derry Murkin",
+    "teamId": "fc-volendam-2022-23",
+    "club": "FC Volendam",
+    "season": "2022/23",
+    "positions": [
+      "lb"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "brian-plat-fc-volendam-2022-23",
+    "name": "Brian Plat",
+    "teamId": "fc-volendam-2022-23",
+    "club": "FC Volendam",
+    "season": "2022/23",
+    "positions": [
+      "rb"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "carel-eiting-fc-volendam-2022-23",
+    "name": "Carel Eiting",
+    "teamId": "fc-volendam-2022-23",
+    "club": "FC Volendam",
+    "season": "2022/23",
+    "positions": [
+      "cm"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "gaetano-oristanio-fc-volendam-2022-23",
+    "name": "Gaetano Oristanio",
+    "teamId": "fc-volendam-2022-23",
+    "club": "FC Volendam",
+    "season": "2022/23",
+    "positions": [
+      "cm",
+      "rw"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "calvin-twigt-fc-volendam-2022-23",
+    "name": "Calvin Twigt",
+    "teamId": "fc-volendam-2022-23",
+    "club": "FC Volendam",
+    "season": "2022/23",
+    "positions": [
+      "cm"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "bilal-ould-chikh-fc-volendam-2022-23",
+    "name": "Bilal Ould-Chikh",
+    "teamId": "fc-volendam-2022-23",
+    "club": "FC Volendam",
+    "season": "2022/23",
+    "positions": [
+      "rw"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "daryl-van-mieghem-fc-volendam-2022-23",
+    "name": "Daryl van Mieghem",
+    "teamId": "fc-volendam-2022-23",
+    "club": "FC Volendam",
+    "season": "2022/23",
+    "positions": [
+      "lw",
+      "rw"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "robert-muhren-fc-volendam-2022-23",
+    "name": "Robert Mühren",
+    "teamId": "fc-volendam-2022-23",
+    "club": "FC Volendam",
+    "season": "2022/23",
+    "positions": [
+      "st"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "henk-veerman-fc-volendam-2022-23",
+    "name": "Henk Veerman",
+    "teamId": "fc-volendam-2022-23",
+    "club": "FC Volendam",
+    "season": "2022/23",
+    "positions": [
+      "st"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "francesco-antonucci-fc-volendam-2022-23",
+    "name": "Francesco Antonucci",
+    "teamId": "fc-volendam-2022-23",
+    "club": "FC Volendam",
+    "season": "2022/23",
+    "positions": [
+      "cm"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "josh-flint-fc-volendam-2022-23",
+    "name": "Josh Flint",
+    "teamId": "fc-volendam-2022-23",
+    "club": "FC Volendam",
+    "season": "2022/23",
+    "positions": [
+      "cb"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "ibrahim-el-kadiri-fc-volendam-2022-23",
+    "name": "Ibrahim El Kadiri",
+    "teamId": "fc-volendam-2022-23",
+    "club": "FC Volendam",
+    "season": "2022/23",
+    "positions": [
+      "lw"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "florent-sanchez-fc-volendam-2022-23",
+    "name": "Florent Sanchez",
+    "teamId": "fc-volendam-2022-23",
+    "club": "FC Volendam",
+    "season": "2022/23",
+    "positions": [
+      "cm"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "eddy-pieters-graafland-feyenoord-1969-70",
+    "name": "Eddy Pieters Graafland",
+    "teamId": "feyenoord-1969-70",
+    "club": "Feyenoord",
+    "season": "1969/70",
+    "positions": [
+      "gk"
+    ],
+    "rating": 89,
+    "legendary": false
+  },
+  {
+    "id": "eddy-treijtel-feyenoord-1969-70",
+    "name": "Eddy Treijtel",
+    "teamId": "feyenoord-1969-70",
+    "club": "Feyenoord",
+    "season": "1969/70",
+    "positions": [
+      "gk"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "rinus-israel-feyenoord-1969-70",
+    "name": "Rinus Israël",
+    "teamId": "feyenoord-1969-70",
+    "club": "Feyenoord",
+    "season": "1969/70",
+    "positions": [
+      "cb"
+    ],
+    "rating": 92,
+    "legendary": true
+  },
+  {
+    "id": "theo-laseroms-feyenoord-1969-70",
+    "name": "Theo Laseroms",
+    "teamId": "feyenoord-1969-70",
+    "club": "Feyenoord",
+    "season": "1969/70",
+    "positions": [
+      "cb"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "cor-veldhoen-feyenoord-1969-70",
+    "name": "Cor Veldhoen",
+    "teamId": "feyenoord-1969-70",
+    "club": "Feyenoord",
+    "season": "1969/70",
+    "positions": [
+      "lb"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "piet-romeijn-feyenoord-1969-70",
+    "name": "Piet Romeijn",
+    "teamId": "feyenoord-1969-70",
+    "club": "Feyenoord",
+    "season": "1969/70",
+    "positions": [
+      "rb"
+    ],
+    "rating": 89,
+    "legendary": false
+  },
+  {
+    "id": "wim-jansen-feyenoord-1969-70",
+    "name": "Wim Jansen",
+    "teamId": "feyenoord-1969-70",
+    "club": "Feyenoord",
+    "season": "1969/70",
+    "positions": [
+      "cm"
+    ],
+    "rating": 92,
+    "legendary": true
+  },
+  {
+    "id": "willem-van-hanegem-feyenoord-1969-70",
+    "name": "Willem van Hanegem",
+    "teamId": "feyenoord-1969-70",
+    "club": "Feyenoord",
+    "season": "1969/70",
+    "positions": [
+      "cm"
+    ],
+    "rating": 94,
+    "legendary": true
+  },
+  {
+    "id": "henk-wery-feyenoord-1969-70",
+    "name": "Henk Wery",
+    "teamId": "feyenoord-1969-70",
+    "club": "Feyenoord",
+    "season": "1969/70",
+    "positions": [
+      "rw",
+      "cm"
+    ],
+    "rating": 92,
+    "legendary": true
+  },
+  {
+    "id": "franz-hasil-feyenoord-1969-70",
+    "name": "Franz Hasil",
+    "teamId": "feyenoord-1969-70",
+    "club": "Feyenoord",
+    "season": "1969/70",
+    "positions": [
+      "cm"
+    ],
+    "rating": 89,
+    "legendary": false
+  },
+  {
+    "id": "coen-moulijn-feyenoord-1969-70",
+    "name": "Coen Moulijn",
+    "teamId": "feyenoord-1969-70",
+    "club": "Feyenoord",
+    "season": "1969/70",
+    "positions": [
+      "lw"
+    ],
+    "rating": 92,
+    "legendary": true
+  },
+  {
+    "id": "ove-kindvall-feyenoord-1969-70",
+    "name": "Ove Kindvall",
+    "teamId": "feyenoord-1969-70",
+    "club": "Feyenoord",
+    "season": "1969/70",
+    "positions": [
+      "st"
+    ],
+    "rating": 91,
+    "legendary": true
+  },
+  {
+    "id": "jan-boskamp-feyenoord-1969-70",
+    "name": "Jan Boskamp",
+    "teamId": "feyenoord-1969-70",
+    "club": "Feyenoord",
+    "season": "1969/70",
+    "positions": [
+      "cm"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "guus-haak-feyenoord-1969-70",
+    "name": "Guus Haak",
+    "teamId": "feyenoord-1969-70",
+    "club": "Feyenoord",
+    "season": "1969/70",
+    "positions": [
+      "cm",
+      "cb"
+    ],
+    "rating": 90,
+    "legendary": true
+  },
+  {
+    "id": "theo-van-duivenbode-feyenoord-1969-70",
+    "name": "Theo van Duivenbode",
+    "teamId": "feyenoord-1969-70",
+    "club": "Feyenoord",
+    "season": "1969/70",
+    "positions": [
+      "lb"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "dick-schneider-feyenoord-1969-70",
+    "name": "Dick Schneider",
+    "teamId": "feyenoord-1969-70",
+    "club": "Feyenoord",
+    "season": "1969/70",
+    "positions": [
+      "cb"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "eddy-treijtel-feyenoord-1973-74",
+    "name": "Eddy Treijtel",
+    "teamId": "feyenoord-1973-74",
+    "club": "Feyenoord",
+    "season": "1973/74",
+    "positions": [
+      "gk"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "wim-rijsbergen-feyenoord-1973-74",
+    "name": "Wim Rijsbergen",
+    "teamId": "feyenoord-1973-74",
+    "club": "Feyenoord",
+    "season": "1973/74",
+    "positions": [
+      "cb"
+    ],
+    "rating": 89,
+    "legendary": false
+  },
+  {
+    "id": "rinus-israel-feyenoord-1973-74",
+    "name": "Rinus Israël",
+    "teamId": "feyenoord-1973-74",
+    "club": "Feyenoord",
+    "season": "1973/74",
+    "positions": [
+      "cb"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "theo-de-jong-feyenoord-1973-74",
+    "name": "Theo de Jong",
+    "teamId": "feyenoord-1973-74",
+    "club": "Feyenoord",
+    "season": "1973/74",
+    "positions": [
+      "cm"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "wim-jansen-feyenoord-1973-74",
+    "name": "Wim Jansen",
+    "teamId": "feyenoord-1973-74",
+    "club": "Feyenoord",
+    "season": "1973/74",
+    "positions": [
+      "cm",
+      "rb"
+    ],
+    "rating": 90,
+    "legendary": true
+  },
+  {
+    "id": "willem-van-hanegem-feyenoord-1973-74",
+    "name": "Willem van Hanegem",
+    "teamId": "feyenoord-1973-74",
+    "club": "Feyenoord",
+    "season": "1973/74",
+    "positions": [
+      "cm"
+    ],
+    "rating": 93,
+    "legendary": true
+  },
+  {
+    "id": "lex-schoenmaker-feyenoord-1973-74",
+    "name": "Lex Schoenmaker",
+    "teamId": "feyenoord-1973-74",
+    "club": "Feyenoord",
+    "season": "1973/74",
+    "positions": [
+      "st",
+      "cm"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "peter-ressel-feyenoord-1973-74",
+    "name": "Peter Ressel",
+    "teamId": "feyenoord-1973-74",
+    "club": "Feyenoord",
+    "season": "1973/74",
+    "positions": [
+      "rw"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "kristen-nygaard-feyenoord-1973-74",
+    "name": "Kristen Nygaard",
+    "teamId": "feyenoord-1973-74",
+    "club": "Feyenoord",
+    "season": "1973/74",
+    "positions": [
+      "cm"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "jan-boskamp-feyenoord-1973-74",
+    "name": "Jan Boskamp",
+    "teamId": "feyenoord-1973-74",
+    "club": "Feyenoord",
+    "season": "1973/74",
+    "positions": [
+      "cm"
+    ],
+    "rating": 88,
+    "legendary": false
+  },
+  {
+    "id": "harry-vos-feyenoord-1973-74",
+    "name": "Harry Vos",
+    "teamId": "feyenoord-1973-74",
+    "club": "Feyenoord",
+    "season": "1973/74",
+    "positions": [
+      "lb"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "henk-wery-feyenoord-1973-74",
+    "name": "Henk Wery",
+    "teamId": "feyenoord-1973-74",
+    "club": "Feyenoord",
+    "season": "1973/74",
+    "positions": [
+      "rw"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "joop-van-daele-feyenoord-1973-74",
+    "name": "Joop van Daele",
+    "teamId": "feyenoord-1973-74",
+    "club": "Feyenoord",
+    "season": "1973/74",
+    "positions": [
+      "cb"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "dick-schneider-feyenoord-1973-74",
+    "name": "Dick Schneider",
+    "teamId": "feyenoord-1973-74",
+    "club": "Feyenoord",
+    "season": "1973/74",
+    "positions": [
+      "cb"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "jrgen-kristensen-feyenoord-1973-74",
+    "name": "Jørgen Kristensen",
+    "teamId": "feyenoord-1973-74",
+    "club": "Feyenoord",
+    "season": "1973/74",
+    "positions": [
+      "lw",
+      "rw"
+    ],
+    "rating": 89,
+    "legendary": false
+  },
+  {
+    "id": "joop-hiele-feyenoord-1983-84",
+    "name": "Joop Hiele",
+    "teamId": "feyenoord-1983-84",
+    "club": "Feyenoord",
+    "season": "1983/84",
+    "positions": [
+      "gk"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "ben-wijnstekers-feyenoord-1983-84",
+    "name": "Ben Wijnstekers",
+    "teamId": "feyenoord-1983-84",
+    "club": "Feyenoord",
+    "season": "1983/84",
+    "positions": [
+      "rb"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "sjaak-troost-feyenoord-1983-84",
+    "name": "Sjaak Troost",
+    "teamId": "feyenoord-1983-84",
+    "club": "Feyenoord",
+    "season": "1983/84",
+    "positions": [
+      "cb"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "mario-been-feyenoord-1983-84",
+    "name": "Mario Been",
+    "teamId": "feyenoord-1983-84",
+    "club": "Feyenoord",
+    "season": "1983/84",
+    "positions": [
+      "cm"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "ruud-gullit-feyenoord-1983-84",
+    "name": "Ruud Gullit",
+    "teamId": "feyenoord-1983-84",
+    "club": "Feyenoord",
+    "season": "1983/84",
+    "positions": [
+      "cm",
+      "st"
+    ],
+    "rating": 92,
+    "legendary": true
+  },
+  {
+    "id": "johan-cruijff-feyenoord-1983-84",
+    "name": "Johan Cruijff",
+    "teamId": "feyenoord-1983-84",
+    "club": "Feyenoord",
+    "season": "1983/84",
+    "positions": [
+      "cm",
+      "st",
+      "rw"
+    ],
+    "rating": 94,
+    "legendary": true
+  },
+  {
+    "id": "peter-houtman-feyenoord-1983-84",
+    "name": "Peter Houtman",
+    "teamId": "feyenoord-1983-84",
+    "club": "Feyenoord",
+    "season": "1983/84",
+    "positions": [
+      "st"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "andre-hoekstra-feyenoord-1983-84",
+    "name": "André Hoekstra",
+    "teamId": "feyenoord-1983-84",
+    "club": "Feyenoord",
+    "season": "1983/84",
+    "positions": [
+      "lw",
+      "rw"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "michel-valke-feyenoord-1983-84",
+    "name": "Michel Valke",
+    "teamId": "feyenoord-1983-84",
+    "club": "Feyenoord",
+    "season": "1983/84",
+    "positions": [
+      "cm"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "stanley-brard-feyenoord-1983-84",
+    "name": "Stanley Brard",
+    "teamId": "feyenoord-1983-84",
+    "club": "Feyenoord",
+    "season": "1983/84",
+    "positions": [
+      "lb"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "ivan-nielsen-feyenoord-1983-84",
+    "name": "Ivan Nielsen",
+    "teamId": "feyenoord-1983-84",
+    "club": "Feyenoord",
+    "season": "1983/84",
+    "positions": [
+      "cb"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "wim-van-til-feyenoord-1983-84",
+    "name": "Wim van Til",
+    "teamId": "feyenoord-1983-84",
+    "club": "Feyenoord",
+    "season": "1983/84",
+    "positions": [
+      "cm"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "carlo-de-leeuw-feyenoord-1983-84",
+    "name": "Carlo de Leeuw",
+    "teamId": "feyenoord-1983-84",
+    "club": "Feyenoord",
+    "season": "1983/84",
+    "positions": [
+      "cm"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "henk-duut-feyenoord-1983-84",
+    "name": "Henk Duut",
+    "teamId": "feyenoord-1983-84",
+    "club": "Feyenoord",
+    "season": "1983/84",
+    "positions": [
+      "cb"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "rini-van-der-velde-feyenoord-1983-84",
+    "name": "Rini van der Velde",
+    "teamId": "feyenoord-1983-84",
+    "club": "Feyenoord",
+    "season": "1983/84",
+    "positions": [
+      "st"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "jerzy-dudek-feyenoord-1998-99",
+    "name": "Jerzy Dudek",
+    "teamId": "feyenoord-1998-99",
+    "club": "Feyenoord",
+    "season": "1998/99",
+    "positions": [
+      "gk"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "kees-van-wonderen-feyenoord-1998-99",
+    "name": "Kees van Wonderen",
+    "teamId": "feyenoord-1998-99",
+    "club": "Feyenoord",
+    "season": "1998/99",
+    "positions": [
+      "cb"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "jean-paul-van-gastel-feyenoord-1998-99",
+    "name": "Jean-Paul van Gastel",
+    "teamId": "feyenoord-1998-99",
+    "club": "Feyenoord",
+    "season": "1998/99",
+    "positions": [
+      "cm"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "paul-bosvelt-feyenoord-1998-99",
+    "name": "Paul Bosvelt",
+    "teamId": "feyenoord-1998-99",
+    "club": "Feyenoord",
+    "season": "1998/99",
+    "positions": [
+      "cm"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "giovanni-van-bronckhorst-feyenoord-1998-99",
+    "name": "Giovanni van Bronckhorst",
+    "teamId": "feyenoord-1998-99",
+    "club": "Feyenoord",
+    "season": "1998/99",
+    "positions": [
+      "lb",
+      "cm"
+    ],
+    "rating": 88,
+    "legendary": false
+  },
+  {
+    "id": "ulrich-van-gobbel-feyenoord-1998-99",
+    "name": "Ulrich van Gobbel",
+    "teamId": "feyenoord-1998-99",
+    "club": "Feyenoord",
+    "season": "1998/99",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "bert-konterman-feyenoord-1998-99",
+    "name": "Bert Konterman",
+    "teamId": "feyenoord-1998-99",
+    "club": "Feyenoord",
+    "season": "1998/99",
+    "positions": [
+      "cb"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "patrick-paauwe-feyenoord-1998-99",
+    "name": "Patrick Paauwe",
+    "teamId": "feyenoord-1998-99",
+    "club": "Feyenoord",
+    "season": "1998/99",
+    "positions": [
+      "cb",
+      "cm"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "bonaventure-kalou-feyenoord-1998-99",
+    "name": "Bonaventure Kalou",
+    "teamId": "feyenoord-1998-99",
+    "club": "Feyenoord",
+    "season": "1998/99",
+    "positions": [
+      "rw",
+      "st"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "julio-ricardo-cruz-feyenoord-1998-99",
+    "name": "Julio Ricardo Cruz",
+    "teamId": "feyenoord-1998-99",
+    "club": "Feyenoord",
+    "season": "1998/99",
+    "positions": [
+      "st"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "jon-dahl-tomasson-feyenoord-1998-99",
+    "name": "Jon Dahl Tomasson",
+    "teamId": "feyenoord-1998-99",
+    "club": "Feyenoord",
+    "season": "1998/99",
+    "positions": [
+      "st",
+      "cm"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "igor-korneev-feyenoord-1998-99",
+    "name": "Igor Korneev",
+    "teamId": "feyenoord-1998-99",
+    "club": "Feyenoord",
+    "season": "1998/99",
+    "positions": [
+      "cm"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "tininho-feyenoord-1998-99",
+    "name": "Tininho",
+    "teamId": "feyenoord-1998-99",
+    "club": "Feyenoord",
+    "season": "1998/99",
+    "positions": [
+      "lb"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "mike-obiku-feyenoord-1998-99",
+    "name": "Mike Obiku",
+    "teamId": "feyenoord-1998-99",
+    "club": "Feyenoord",
+    "season": "1998/99",
+    "positions": [
+      "st"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "henk-vos-feyenoord-1998-99",
+    "name": "Henk Vos",
+    "teamId": "feyenoord-1998-99",
+    "club": "Feyenoord",
+    "season": "1998/99",
+    "positions": [
+      "st"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "peter-van-vossen-feyenoord-1998-99",
+    "name": "Peter van Vossen",
+    "teamId": "feyenoord-1998-99",
+    "club": "Feyenoord",
+    "season": "1998/99",
+    "positions": [
+      "lw",
+      "st"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "brad-jones-feyenoord-2016-17",
+    "name": "Brad Jones",
+    "teamId": "feyenoord-2016-17",
+    "club": "Feyenoord",
+    "season": "2016/17",
+    "positions": [
+      "gk"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "rick-karsdorp-feyenoord-2016-17",
+    "name": "Rick Karsdorp",
+    "teamId": "feyenoord-2016-17",
+    "club": "Feyenoord",
+    "season": "2016/17",
+    "positions": [
+      "rb"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "eric-botteghin-feyenoord-2016-17",
+    "name": "Eric Botteghin",
+    "teamId": "feyenoord-2016-17",
+    "club": "Feyenoord",
+    "season": "2016/17",
+    "positions": [
+      "cb"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "jan-arie-van-der-heijden-feyenoord-2016-17",
+    "name": "Jan-Arie van der Heijden",
+    "teamId": "feyenoord-2016-17",
+    "club": "Feyenoord",
+    "season": "2016/17",
+    "positions": [
+      "cb"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "terence-kongolo-feyenoord-2016-17",
+    "name": "Terence Kongolo",
+    "teamId": "feyenoord-2016-17",
+    "club": "Feyenoord",
+    "season": "2016/17",
+    "positions": [
+      "lb",
+      "cb"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "karim-el-ahmadi-feyenoord-2016-17",
+    "name": "Karim El Ahmadi",
+    "teamId": "feyenoord-2016-17",
+    "club": "Feyenoord",
+    "season": "2016/17",
+    "positions": [
+      "cm"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "tonny-vilhena-feyenoord-2016-17",
+    "name": "Tonny Vilhena",
+    "teamId": "feyenoord-2016-17",
+    "club": "Feyenoord",
+    "season": "2016/17",
+    "positions": [
+      "cm"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "dirk-kuyt-feyenoord-2016-17",
+    "name": "Dirk Kuyt",
+    "teamId": "feyenoord-2016-17",
+    "club": "Feyenoord",
+    "season": "2016/17",
+    "positions": [
+      "cm",
+      "rw",
+      "st"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "steven-berghuis-feyenoord-2016-17",
+    "name": "Steven Berghuis",
+    "teamId": "feyenoord-2016-17",
+    "club": "Feyenoord",
+    "season": "2016/17",
+    "positions": [
+      "rw"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "eljero-elia-feyenoord-2016-17",
+    "name": "Eljero Elia",
+    "teamId": "feyenoord-2016-17",
+    "club": "Feyenoord",
+    "season": "2016/17",
+    "positions": [
+      "lw"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "nicolai-jrgensen-feyenoord-2016-17",
+    "name": "Nicolai Jørgensen",
+    "teamId": "feyenoord-2016-17",
+    "club": "Feyenoord",
+    "season": "2016/17",
+    "positions": [
+      "st"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "jens-toornstra-feyenoord-2016-17",
+    "name": "Jens Toornstra",
+    "teamId": "feyenoord-2016-17",
+    "club": "Feyenoord",
+    "season": "2016/17",
+    "positions": [
+      "cm",
+      "rm"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "renato-tapia-feyenoord-2016-17",
+    "name": "Renato Tapia",
+    "teamId": "feyenoord-2016-17",
+    "club": "Feyenoord",
+    "season": "2016/17",
+    "positions": [
+      "cm",
+      "cb"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "bilal-basackoglu-feyenoord-2016-17",
+    "name": "Bilal Başaçıkoğlu",
+    "teamId": "feyenoord-2016-17",
+    "club": "Feyenoord",
+    "season": "2016/17",
+    "positions": [
+      "rw"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "kenneth-vermeer-feyenoord-2016-17",
+    "name": "Kenneth Vermeer",
+    "teamId": "feyenoord-2016-17",
+    "club": "Feyenoord",
+    "season": "2016/17",
+    "positions": [
+      "gk"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "miquel-nelom-feyenoord-2016-17",
+    "name": "Miquel Nelom",
+    "teamId": "feyenoord-2016-17",
+    "club": "Feyenoord",
+    "season": "2016/17",
+    "positions": [
+      "lb"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "justin-bijlow-feyenoord-2022-23",
+    "name": "Justin Bijlow",
+    "teamId": "feyenoord-2022-23",
+    "club": "Feyenoord",
+    "season": "2022/23",
+    "positions": [
+      "gk"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "lutsharel-geertruida-feyenoord-2022-23",
+    "name": "Lutsharel Geertruida",
+    "teamId": "feyenoord-2022-23",
+    "club": "Feyenoord",
+    "season": "2022/23",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "gernot-trauner-feyenoord-2022-23",
+    "name": "Gernot Trauner",
+    "teamId": "feyenoord-2022-23",
+    "club": "Feyenoord",
+    "season": "2022/23",
+    "positions": [
+      "cb"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "david-hancko-feyenoord-2022-23",
+    "name": "Dávid Hancko",
+    "teamId": "feyenoord-2022-23",
+    "club": "Feyenoord",
+    "season": "2022/23",
+    "positions": [
+      "cb",
+      "lb"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "quilindschy-hartman-feyenoord-2022-23",
+    "name": "Quilindschy Hartman",
+    "teamId": "feyenoord-2022-23",
+    "club": "Feyenoord",
+    "season": "2022/23",
+    "positions": [
+      "lb"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "orkun-kokcu-feyenoord-2022-23",
+    "name": "Orkun Kökçü",
+    "teamId": "feyenoord-2022-23",
+    "club": "Feyenoord",
+    "season": "2022/23",
+    "positions": [
+      "cm"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "mats-wieffer-feyenoord-2022-23",
+    "name": "Mats Wieffer",
+    "teamId": "feyenoord-2022-23",
+    "club": "Feyenoord",
+    "season": "2022/23",
+    "positions": [
+      "cm"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "sebastian-szymanski-feyenoord-2022-23",
+    "name": "Sebastian Szymański",
+    "teamId": "feyenoord-2022-23",
+    "club": "Feyenoord",
+    "season": "2022/23",
+    "positions": [
+      "cm"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "alireza-jahanbakhsh-feyenoord-2022-23",
+    "name": "Alireza Jahanbakhsh",
+    "teamId": "feyenoord-2022-23",
+    "club": "Feyenoord",
+    "season": "2022/23",
+    "positions": [
+      "rw"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "igor-paixao-feyenoord-2022-23",
+    "name": "Igor Paixão",
+    "teamId": "feyenoord-2022-23",
+    "club": "Feyenoord",
+    "season": "2022/23",
+    "positions": [
+      "lw",
+      "rw"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "oussama-idrissi-feyenoord-2022-23",
+    "name": "Oussama Idrissi",
+    "teamId": "feyenoord-2022-23",
+    "club": "Feyenoord",
+    "season": "2022/23",
+    "positions": [
+      "lw"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "santiago-gimenez-feyenoord-2022-23",
+    "name": "Santiago Giménez",
+    "teamId": "feyenoord-2022-23",
+    "club": "Feyenoord",
+    "season": "2022/23",
+    "positions": [
+      "st"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "danilo-feyenoord-2022-23",
+    "name": "Danilo",
+    "teamId": "feyenoord-2022-23",
+    "club": "Feyenoord",
+    "season": "2022/23",
+    "positions": [
+      "st"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "javairo-dilrosun-feyenoord-2022-23",
+    "name": "Javairô Dilrosun",
+    "teamId": "feyenoord-2022-23",
+    "club": "Feyenoord",
+    "season": "2022/23",
+    "positions": [
+      "rw",
+      "lw"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "marcus-pedersen-feyenoord-2022-23",
+    "name": "Marcus Pedersen",
+    "teamId": "feyenoord-2022-23",
+    "club": "Feyenoord",
+    "season": "2022/23",
+    "positions": [
+      "rb"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "jacob-rasmussen-feyenoord-2022-23",
+    "name": "Jacob Rasmussen",
+    "teamId": "feyenoord-2022-23",
+    "club": "Feyenoord",
+    "season": "2022/23",
+    "positions": [
+      "cb"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "quinten-timber-feyenoord-2022-23",
+    "name": "Quinten Timber",
+    "teamId": "feyenoord-2022-23",
+    "club": "Feyenoord",
+    "season": "2022/23",
+    "positions": [
+      "cm"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "ruud-hesp-fortuna-sittard-1998-99",
+    "name": "Ruud Hesp",
+    "teamId": "fortuna-sittard-1998-99",
+    "club": "Fortuna Sittard",
+    "season": "1998/99",
+    "positions": [
+      "gk"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "kevin-hofland-fortuna-sittard-1998-99",
+    "name": "Kevin Hofland",
+    "teamId": "fortuna-sittard-1998-99",
+    "club": "Fortuna Sittard",
+    "season": "1998/99",
+    "positions": [
+      "cb"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "mark-van-bommel-fortuna-sittard-1998-99",
+    "name": "Mark van Bommel",
+    "teamId": "fortuna-sittard-1998-99",
+    "club": "Fortuna Sittard",
+    "season": "1998/99",
+    "positions": [
+      "cm"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "wilfred-bouma-fortuna-sittard-1998-99",
+    "name": "Wilfred Bouma",
+    "teamId": "fortuna-sittard-1998-99",
+    "club": "Fortuna Sittard",
+    "season": "1998/99",
+    "positions": [
+      "lb",
+      "cb"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "ronald-hamming-fortuna-sittard-1998-99",
+    "name": "Ronald Hamming",
+    "teamId": "fortuna-sittard-1998-99",
+    "club": "Fortuna Sittard",
+    "season": "1998/99",
+    "positions": [
+      "st"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "fernando-ricksen-fortuna-sittard-1998-99",
+    "name": "Fernando Ricksen",
+    "teamId": "fortuna-sittard-1998-99",
+    "club": "Fortuna Sittard",
+    "season": "1998/99",
+    "positions": [
+      "rb",
+      "cm"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "regillio-simons-fortuna-sittard-1998-99",
+    "name": "Regillio Simons",
+    "teamId": "fortuna-sittard-1998-99",
+    "club": "Fortuna Sittard",
+    "season": "1998/99",
+    "positions": [
+      "st"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "patrick-paauwe-fortuna-sittard-1998-99",
+    "name": "Patrick Paauwe",
+    "teamId": "fortuna-sittard-1998-99",
+    "club": "Fortuna Sittard",
+    "season": "1998/99",
+    "positions": [
+      "cb",
+      "cm"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "gerrie-schuman-fortuna-sittard-1998-99",
+    "name": "Gerrie Schuman",
+    "teamId": "fortuna-sittard-1998-99",
+    "club": "Fortuna Sittard",
+    "season": "1998/99",
+    "positions": [
+      "cm"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "jeffrey-talan-fortuna-sittard-1998-99",
+    "name": "Jeffrey Talan",
+    "teamId": "fortuna-sittard-1998-99",
+    "club": "Fortuna Sittard",
+    "season": "1998/99",
+    "positions": [
+      "rw",
+      "st"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "erik-meijer-fortuna-sittard-1998-99",
+    "name": "Erik Meijer",
+    "teamId": "fortuna-sittard-1998-99",
+    "club": "Fortuna Sittard",
+    "season": "1998/99",
+    "positions": [
+      "st"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "kees-van-wonderen-fortuna-sittard-1998-99",
+    "name": "Kees van Wonderen",
+    "teamId": "fortuna-sittard-1998-99",
+    "club": "Fortuna Sittard",
+    "season": "1998/99",
+    "positions": [
+      "cb"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "michael-jeffrey-fortuna-sittard-1998-99",
+    "name": "Michael Jeffrey",
+    "teamId": "fortuna-sittard-1998-99",
+    "club": "Fortuna Sittard",
+    "season": "1998/99",
+    "positions": [
+      "lw"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "chris-dekker-fortuna-sittard-1998-99",
+    "name": "Chris Dekker",
+    "teamId": "fortuna-sittard-1998-99",
+    "club": "Fortuna Sittard",
+    "season": "1998/99",
+    "positions": [
+      "cm"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "jurgen-dirkx-fortuna-sittard-1998-99",
+    "name": "Jürgen Dirkx",
+    "teamId": "fortuna-sittard-1998-99",
+    "club": "Fortuna Sittard",
+    "season": "1998/99",
+    "positions": [
+      "cb"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "jeffrey-de-lange-go-ahead-eagles-2024-25",
+    "name": "Jeffrey de Lange",
+    "teamId": "go-ahead-eagles-2024-25",
+    "club": "Go Ahead Eagles",
+    "season": "2024/25",
+    "positions": [
+      "gk"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "luca-plogmann-go-ahead-eagles-2024-25",
+    "name": "Luca Plogmann",
+    "teamId": "go-ahead-eagles-2024-25",
+    "club": "Go Ahead Eagles",
+    "season": "2024/25",
+    "positions": [
+      "gk"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "mats-deijl-go-ahead-eagles-2024-25",
+    "name": "Mats Deijl",
+    "teamId": "go-ahead-eagles-2024-25",
+    "club": "Go Ahead Eagles",
+    "season": "2024/25",
+    "positions": [
+      "rb"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "gerrit-nauber-go-ahead-eagles-2024-25",
+    "name": "Gerrit Nauber",
+    "teamId": "go-ahead-eagles-2024-25",
+    "club": "Go Ahead Eagles",
+    "season": "2024/25",
+    "positions": [
+      "cb"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "joris-kramer-go-ahead-eagles-2024-25",
+    "name": "Joris Kramer",
+    "teamId": "go-ahead-eagles-2024-25",
+    "club": "Go Ahead Eagles",
+    "season": "2024/25",
+    "positions": [
+      "cb"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "bas-kuipers-go-ahead-eagles-2024-25",
+    "name": "Bas Kuipers",
+    "teamId": "go-ahead-eagles-2024-25",
+    "club": "Go Ahead Eagles",
+    "season": "2024/25",
+    "positions": [
+      "lb"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "evert-linthorst-go-ahead-eagles-2024-25",
+    "name": "Evert Linthorst",
+    "teamId": "go-ahead-eagles-2024-25",
+    "club": "Go Ahead Eagles",
+    "season": "2024/25",
+    "positions": [
+      "cm"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "enric-llansana-go-ahead-eagles-2024-25",
+    "name": "Enric Llansana",
+    "teamId": "go-ahead-eagles-2024-25",
+    "club": "Go Ahead Eagles",
+    "season": "2024/25",
+    "positions": [
+      "cm"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "philippe-rommens-go-ahead-eagles-2024-25",
+    "name": "Philippe Rommens",
+    "teamId": "go-ahead-eagles-2024-25",
+    "club": "Go Ahead Eagles",
+    "season": "2024/25",
+    "positions": [
+      "cm"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "willum-willumsson-go-ahead-eagles-2024-25",
+    "name": "Willum Willumsson",
+    "teamId": "go-ahead-eagles-2024-25",
+    "club": "Go Ahead Eagles",
+    "season": "2024/25",
+    "positions": [
+      "cm",
+      "rw"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "bobby-adekanye-go-ahead-eagles-2024-25",
+    "name": "Bobby Adekanye",
+    "teamId": "go-ahead-eagles-2024-25",
+    "club": "Go Ahead Eagles",
+    "season": "2024/25",
+    "positions": [
+      "rw"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "oliver-edvardsen-go-ahead-eagles-2024-25",
+    "name": "Oliver Edvardsen",
+    "teamId": "go-ahead-eagles-2024-25",
+    "club": "Go Ahead Eagles",
+    "season": "2024/25",
+    "positions": [
+      "lw"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "victor-edvardsen-go-ahead-eagles-2024-25",
+    "name": "Victor Edvardsen",
+    "teamId": "go-ahead-eagles-2024-25",
+    "club": "Go Ahead Eagles",
+    "season": "2024/25",
+    "positions": [
+      "st"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "sylla-sow-go-ahead-eagles-2024-25",
+    "name": "Sylla Sow",
+    "teamId": "go-ahead-eagles-2024-25",
+    "club": "Go Ahead Eagles",
+    "season": "2024/25",
+    "positions": [
+      "st"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "finn-stokkers-go-ahead-eagles-2024-25",
+    "name": "Finn Stokkers",
+    "teamId": "go-ahead-eagles-2024-25",
+    "club": "Go Ahead Eagles",
+    "season": "2024/25",
+    "positions": [
+      "st"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "jakob-breum-go-ahead-eagles-2024-25",
+    "name": "Jakob Breum",
+    "teamId": "go-ahead-eagles-2024-25",
+    "club": "Go Ahead Eagles",
+    "season": "2024/25",
+    "positions": [
+      "lw",
+      "rw"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "bram-castro-heracles-almelo-2015-16",
+    "name": "Bram Castro",
+    "teamId": "heracles-almelo-2015-16",
+    "club": "Heracles Almelo",
+    "season": "2015/16",
+    "positions": [
+      "gk"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "mike-te-wierik-heracles-almelo-2015-16",
+    "name": "Mike te Wierik",
+    "teamId": "heracles-almelo-2015-16",
+    "club": "Heracles Almelo",
+    "season": "2015/16",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "robin-propper-heracles-almelo-2015-16",
+    "name": "Robin Pröpper",
+    "teamId": "heracles-almelo-2015-16",
+    "club": "Heracles Almelo",
+    "season": "2015/16",
+    "positions": [
+      "cb"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "justin-hoogma-heracles-almelo-2015-16",
+    "name": "Justin Hoogma",
+    "teamId": "heracles-almelo-2015-16",
+    "club": "Heracles Almelo",
+    "season": "2015/16",
+    "positions": [
+      "cb"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "mark-jan-fledderus-heracles-almelo-2015-16",
+    "name": "Mark-Jan Fledderus",
+    "teamId": "heracles-almelo-2015-16",
+    "club": "Heracles Almelo",
+    "season": "2015/16",
+    "positions": [
+      "lb",
+      "cm"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "oussama-tannane-heracles-almelo-2015-16",
+    "name": "Oussama Tannane",
+    "teamId": "heracles-almelo-2015-16",
+    "club": "Heracles Almelo",
+    "season": "2015/16",
+    "positions": [
+      "rw",
+      "cm"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "thomas-bruns-heracles-almelo-2015-16",
+    "name": "Thomas Bruns",
+    "teamId": "heracles-almelo-2015-16",
+    "club": "Heracles Almelo",
+    "season": "2015/16",
+    "positions": [
+      "cm"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "wout-droste-heracles-almelo-2015-16",
+    "name": "Wout Droste",
+    "teamId": "heracles-almelo-2015-16",
+    "club": "Heracles Almelo",
+    "season": "2015/16",
+    "positions": [
+      "rb"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "iliass-bel-hassani-heracles-almelo-2015-16",
+    "name": "Iliass Bel Hassani",
+    "teamId": "heracles-almelo-2015-16",
+    "club": "Heracles Almelo",
+    "season": "2015/16",
+    "positions": [
+      "cm",
+      "rw"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "jaroslav-navratil-heracles-almelo-2015-16",
+    "name": "Jaroslav Navrátil",
+    "teamId": "heracles-almelo-2015-16",
+    "club": "Heracles Almelo",
+    "season": "2015/16",
+    "positions": [
+      "rw"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "paul-gladon-heracles-almelo-2015-16",
+    "name": "Paul Gladon",
+    "teamId": "heracles-almelo-2015-16",
+    "club": "Heracles Almelo",
+    "season": "2015/16",
+    "positions": [
+      "st"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "vincent-vermeij-heracles-almelo-2015-16",
+    "name": "Vincent Vermeij",
+    "teamId": "heracles-almelo-2015-16",
+    "club": "Heracles Almelo",
+    "season": "2015/16",
+    "positions": [
+      "st"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "brahim-darri-heracles-almelo-2015-16",
+    "name": "Brahim Darri",
+    "teamId": "heracles-almelo-2015-16",
+    "club": "Heracles Almelo",
+    "season": "2015/16",
+    "positions": [
+      "lw"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "ramon-zomer-heracles-almelo-2015-16",
+    "name": "Ramon Zomer",
+    "teamId": "heracles-almelo-2015-16",
+    "club": "Heracles Almelo",
+    "season": "2015/16",
+    "positions": [
+      "cb"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "tim-breukers-heracles-almelo-2015-16",
+    "name": "Tim Breukers",
+    "teamId": "heracles-almelo-2015-16",
+    "club": "Heracles Almelo",
+    "season": "2015/16",
+    "positions": [
+      "rb"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "joey-pelupessy-heracles-almelo-2015-16",
+    "name": "Joey Pelupessy",
+    "teamId": "heracles-almelo-2015-16",
+    "club": "Heracles Almelo",
+    "season": "2015/16",
+    "positions": [
+      "cm"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "jelle-ten-rouwelaar-nac-breda-2007-08",
+    "name": "Jelle ten Rouwelaar",
+    "teamId": "nac-breda-2007-08",
+    "club": "NAC Breda",
+    "season": "2007/08",
+    "positions": [
+      "gk"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "patrick-mtiliga-nac-breda-2007-08",
+    "name": "Patrick Mtiliga",
+    "teamId": "nac-breda-2007-08",
+    "club": "NAC Breda",
+    "season": "2007/08",
+    "positions": [
+      "lb"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "rob-penders-nac-breda-2007-08",
+    "name": "Rob Penders",
+    "teamId": "nac-breda-2007-08",
+    "club": "NAC Breda",
+    "season": "2007/08",
+    "positions": [
+      "cb"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "kurt-elshot-nac-breda-2007-08",
+    "name": "Kurt Elshot",
+    "teamId": "nac-breda-2007-08",
+    "club": "NAC Breda",
+    "season": "2007/08",
+    "positions": [
+      "rb"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "kees-kwakman-nac-breda-2007-08",
+    "name": "Kees Kwakman",
+    "teamId": "nac-breda-2007-08",
+    "club": "NAC Breda",
+    "season": "2007/08",
+    "positions": [
+      "cm",
+      "cb"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "csaba-feher-nac-breda-2007-08",
+    "name": "Csaba Fehér",
+    "teamId": "nac-breda-2007-08",
+    "club": "NAC Breda",
+    "season": "2007/08",
+    "positions": [
+      "cm",
+      "rb"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "anthony-lurling-nac-breda-2007-08",
+    "name": "Anthony Lurling",
+    "teamId": "nac-breda-2007-08",
+    "club": "NAC Breda",
+    "season": "2007/08",
+    "positions": [
+      "lw",
+      "st"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "matthew-amoah-nac-breda-2007-08",
+    "name": "Matthew Amoah",
+    "teamId": "nac-breda-2007-08",
+    "club": "NAC Breda",
+    "season": "2007/08",
+    "positions": [
+      "st"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "glen-salmon-nac-breda-2007-08",
+    "name": "Glen Salmon",
+    "teamId": "nac-breda-2007-08",
+    "club": "NAC Breda",
+    "season": "2007/08",
+    "positions": [
+      "st"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "edwin-de-graaf-nac-breda-2007-08",
+    "name": "Edwin de Graaf",
+    "teamId": "nac-breda-2007-08",
+    "club": "NAC Breda",
+    "season": "2007/08",
+    "positions": [
+      "cm"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "rogier-molhoek-nac-breda-2007-08",
+    "name": "Rogier Molhoek",
+    "teamId": "nac-breda-2007-08",
+    "club": "NAC Breda",
+    "season": "2007/08",
+    "positions": [
+      "cm"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "ellery-cairo-nac-breda-2007-08",
+    "name": "Ellery Cairo",
+    "teamId": "nac-breda-2007-08",
+    "club": "NAC Breda",
+    "season": "2007/08",
+    "positions": [
+      "rw"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "maceo-rigters-nac-breda-2007-08",
+    "name": "Maceo Rigters",
+    "teamId": "nac-breda-2007-08",
+    "club": "NAC Breda",
+    "season": "2007/08",
+    "positions": [
+      "st"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "donny-gorter-nac-breda-2007-08",
+    "name": "Donny Gorter",
+    "teamId": "nac-breda-2007-08",
+    "club": "NAC Breda",
+    "season": "2007/08",
+    "positions": [
+      "lb",
+      "cm"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "tyrone-loran-nac-breda-2007-08",
+    "name": "Tyrone Loran",
+    "teamId": "nac-breda-2007-08",
+    "club": "NAC Breda",
+    "season": "2007/08",
+    "positions": [
+      "cb"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "jasper-cillessen-nec-2023-24",
+    "name": "Jasper Cillessen",
+    "teamId": "nec-2023-24",
+    "club": "NEC",
+    "season": "2023/24",
+    "positions": [
+      "gk"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "bart-van-rooij-nec-2023-24",
+    "name": "Bart van Rooij",
+    "teamId": "nec-2023-24",
+    "club": "NEC",
+    "season": "2023/24",
+    "positions": [
+      "rb"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "bram-nuytinck-nec-2023-24",
+    "name": "Bram Nuytinck",
+    "teamId": "nec-2023-24",
+    "club": "NEC",
+    "season": "2023/24",
+    "positions": [
+      "cb"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "philippe-sandler-nec-2023-24",
+    "name": "Philippe Sandler",
+    "teamId": "nec-2023-24",
+    "club": "NEC",
+    "season": "2023/24",
+    "positions": [
+      "cb"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "calvin-verdonk-nec-2023-24",
+    "name": "Calvin Verdonk",
+    "teamId": "nec-2023-24",
+    "club": "NEC",
+    "season": "2023/24",
+    "positions": [
+      "lb"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "dirk-proper-nec-2023-24",
+    "name": "Dirk Proper",
+    "teamId": "nec-2023-24",
+    "club": "NEC",
+    "season": "2023/24",
+    "positions": [
+      "cm"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "lasse-schone-nec-2023-24",
+    "name": "Lasse Schöne",
+    "teamId": "nec-2023-24",
+    "club": "NEC",
+    "season": "2023/24",
+    "positions": [
+      "cm"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "mees-hoedemakers-nec-2023-24",
+    "name": "Mees Hoedemakers",
+    "teamId": "nec-2023-24",
+    "club": "NEC",
+    "season": "2023/24",
+    "positions": [
+      "cm"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "magnus-mattsson-nec-2023-24",
+    "name": "Magnus Mattsson",
+    "teamId": "nec-2023-24",
+    "club": "NEC",
+    "season": "2023/24",
+    "positions": [
+      "cm",
+      "lw"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "sontje-hansen-nec-2023-24",
+    "name": "Sontje Hansen",
+    "teamId": "nec-2023-24",
+    "club": "NEC",
+    "season": "2023/24",
+    "positions": [
+      "rw",
+      "lw"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "koki-ogawa-nec-2023-24",
+    "name": "Koki Ogawa",
+    "teamId": "nec-2023-24",
+    "club": "NEC",
+    "season": "2023/24",
+    "positions": [
+      "st"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "bas-dost-nec-2023-24",
+    "name": "Bas Dost",
+    "teamId": "nec-2023-24",
+    "club": "NEC",
+    "season": "2023/24",
+    "positions": [
+      "st"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "tjaronn-chery-nec-2023-24",
+    "name": "Tjaronn Chery",
+    "teamId": "nec-2023-24",
+    "club": "NEC",
+    "season": "2023/24",
+    "positions": [
+      "cm",
+      "rw"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "rober-gonzalez-nec-2023-24",
+    "name": "Rober González",
+    "teamId": "nec-2023-24",
+    "club": "NEC",
+    "season": "2023/24",
+    "positions": [
+      "rw"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "youri-baas-nec-2023-24",
+    "name": "Youri Baas",
+    "teamId": "nec-2023-24",
+    "club": "NEC",
+    "season": "2023/24",
+    "positions": [
+      "lb",
+      "cb"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "kodai-sano-nec-2023-24",
+    "name": "Kodai Sano",
+    "teamId": "nec-2023-24",
+    "club": "NEC",
+    "season": "2023/24",
+    "positions": [
+      "cm"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "diederik-boer-pec-zwolle-2013-14",
+    "name": "Diederik Boer",
+    "teamId": "pec-zwolle-2013-14",
+    "club": "PEC Zwolle",
+    "season": "2013/14",
+    "positions": [
+      "gk"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "bram-van-polen-pec-zwolle-2013-14",
+    "name": "Bram van Polen",
+    "teamId": "pec-zwolle-2013-14",
+    "club": "PEC Zwolle",
+    "season": "2013/14",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "joost-broerse-pec-zwolle-2013-14",
+    "name": "Joost Broerse",
+    "teamId": "pec-zwolle-2013-14",
+    "club": "PEC Zwolle",
+    "season": "2013/14",
+    "positions": [
+      "cb"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "maikel-van-der-werff-pec-zwolle-2013-14",
+    "name": "Maikel van der Werff",
+    "teamId": "pec-zwolle-2013-14",
+    "club": "PEC Zwolle",
+    "season": "2013/14",
+    "positions": [
+      "cb"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "bart-van-hintum-pec-zwolle-2013-14",
+    "name": "Bart van Hintum",
+    "teamId": "pec-zwolle-2013-14",
+    "club": "PEC Zwolle",
+    "season": "2013/14",
+    "positions": [
+      "lb"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "kamohelo-mokotjo-pec-zwolle-2013-14",
+    "name": "Kamohelo Mokotjo",
+    "teamId": "pec-zwolle-2013-14",
+    "club": "PEC Zwolle",
+    "season": "2013/14",
+    "positions": [
+      "cm"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "jesper-drost-pec-zwolle-2013-14",
+    "name": "Jesper Drost",
+    "teamId": "pec-zwolle-2013-14",
+    "club": "PEC Zwolle",
+    "season": "2013/14",
+    "positions": [
+      "cm",
+      "lw"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "mateusz-klich-pec-zwolle-2013-14",
+    "name": "Mateusz Klich",
+    "teamId": "pec-zwolle-2013-14",
+    "club": "PEC Zwolle",
+    "season": "2013/14",
+    "positions": [
+      "cm"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "ryan-thomas-pec-zwolle-2013-14",
+    "name": "Ryan Thomas",
+    "teamId": "pec-zwolle-2013-14",
+    "club": "PEC Zwolle",
+    "season": "2013/14",
+    "positions": [
+      "cm",
+      "rw"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "mustafa-saymak-pec-zwolle-2013-14",
+    "name": "Mustafa Saymak",
+    "teamId": "pec-zwolle-2013-14",
+    "club": "PEC Zwolle",
+    "season": "2013/14",
+    "positions": [
+      "cm",
+      "rw"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "fred-benson-pec-zwolle-2013-14",
+    "name": "Fred Benson",
+    "teamId": "pec-zwolle-2013-14",
+    "club": "PEC Zwolle",
+    "season": "2013/14",
+    "positions": [
+      "st"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "guyon-fernandez-pec-zwolle-2013-14",
+    "name": "Guyon Fernandez",
+    "teamId": "pec-zwolle-2013-14",
+    "club": "PEC Zwolle",
+    "season": "2013/14",
+    "positions": [
+      "st"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "giovanni-gravenbeek-pec-zwolle-2013-14",
+    "name": "Giovanni Gravenbeek",
+    "teamId": "pec-zwolle-2013-14",
+    "club": "PEC Zwolle",
+    "season": "2013/14",
+    "positions": [
+      "rb"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "denni-avdic-pec-zwolle-2013-14",
+    "name": "Denni Avdić",
+    "teamId": "pec-zwolle-2013-14",
+    "club": "PEC Zwolle",
+    "season": "2013/14",
+    "positions": [
+      "st"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "stef-nijland-pec-zwolle-2013-14",
+    "name": "Stef Nijland",
+    "teamId": "pec-zwolle-2013-14",
+    "club": "PEC Zwolle",
+    "season": "2013/14",
+    "positions": [
+      "st",
+      "cm"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "joey-van-den-berg-pec-zwolle-2013-14",
+    "name": "Joey van den Berg",
+    "teamId": "pec-zwolle-2013-14",
+    "club": "PEC Zwolle",
+    "season": "2013/14",
+    "positions": [
+      "cm",
+      "cb"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "jan-van-beveren-psv-1977-78",
+    "name": "Jan van Beveren",
+    "teamId": "psv-1977-78",
+    "club": "PSV",
+    "season": "1977/78",
+    "positions": [
+      "gk"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "jan-poortvliet-psv-1977-78",
+    "name": "Jan Poortvliet",
+    "teamId": "psv-1977-78",
+    "club": "PSV",
+    "season": "1977/78",
+    "positions": [
+      "lb",
+      "cb"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "huub-stevens-psv-1977-78",
+    "name": "Huub Stevens",
+    "teamId": "psv-1977-78",
+    "club": "PSV",
+    "season": "1977/78",
+    "positions": [
+      "cb"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "ernie-brandts-psv-1977-78",
+    "name": "Ernie Brandts",
+    "teamId": "psv-1977-78",
+    "club": "PSV",
+    "season": "1977/78",
+    "positions": [
+      "cb"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "adrie-van-kraaij-psv-1977-78",
+    "name": "Adrie van Kraaij",
+    "teamId": "psv-1977-78",
+    "club": "PSV",
+    "season": "1977/78",
+    "positions": [
+      "cb",
+      "cm"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "willy-van-de-kerkhof-psv-1977-78",
+    "name": "Willy van de Kerkhof",
+    "teamId": "psv-1977-78",
+    "club": "PSV",
+    "season": "1977/78",
+    "positions": [
+      "cm",
+      "rm"
+    ],
+    "rating": 89,
+    "legendary": false
+  },
+  {
+    "id": "rene-van-de-kerkhof-psv-1977-78",
+    "name": "René van de Kerkhof",
+    "teamId": "psv-1977-78",
+    "club": "PSV",
+    "season": "1977/78",
+    "positions": [
+      "rw",
+      "rm"
+    ],
+    "rating": 88,
+    "legendary": false
+  },
+  {
+    "id": "harry-lubse-psv-1977-78",
+    "name": "Harry Lubse",
+    "teamId": "psv-1977-78",
+    "club": "PSV",
+    "season": "1977/78",
+    "positions": [
+      "st"
+    ],
+    "rating": 88,
+    "legendary": false
+  },
+  {
+    "id": "gerrie-deijkers-psv-1977-78",
+    "name": "Gerrie Deijkers",
+    "teamId": "psv-1977-78",
+    "club": "PSV",
+    "season": "1977/78",
+    "positions": [
+      "st"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "kees-krijgh-psv-1977-78",
+    "name": "Kees Krijgh",
+    "teamId": "psv-1977-78",
+    "club": "PSV",
+    "season": "1977/78",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "piet-wildschut-psv-1977-78",
+    "name": "Piet Wildschut",
+    "teamId": "psv-1977-78",
+    "club": "PSV",
+    "season": "1977/78",
+    "positions": [
+      "lb"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "paul-postuma-psv-1977-78",
+    "name": "Paul Postuma",
+    "teamId": "psv-1977-78",
+    "club": "PSV",
+    "season": "1977/78",
+    "positions": [
+      "cm"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "nick-deacy-psv-1977-78",
+    "name": "Nick Deacy",
+    "teamId": "psv-1977-78",
+    "club": "PSV",
+    "season": "1977/78",
+    "positions": [
+      "st"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "jan-reker-psv-1977-78",
+    "name": "Jan Reker",
+    "teamId": "psv-1977-78",
+    "club": "PSV",
+    "season": "1977/78",
+    "positions": [
+      "cm"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "peter-dahlqvist-psv-1977-78",
+    "name": "Peter Dahlqvist",
+    "teamId": "psv-1977-78",
+    "club": "PSV",
+    "season": "1977/78",
+    "positions": [
+      "cm"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "hans-van-breukelen-psv-1987-88",
+    "name": "Hans van Breukelen",
+    "teamId": "psv-1987-88",
+    "club": "PSV",
+    "season": "1987/88",
+    "positions": [
+      "gk"
+    ],
+    "rating": 92,
+    "legendary": true
+  },
+  {
+    "id": "erik-gerets-psv-1987-88",
+    "name": "Erik Gerets",
+    "teamId": "psv-1987-88",
+    "club": "PSV",
+    "season": "1987/88",
+    "positions": [
+      "rb"
+    ],
+    "rating": 88,
+    "legendary": false
+  },
+  {
+    "id": "berry-van-aerle-psv-1987-88",
+    "name": "Berry van Aerle",
+    "teamId": "psv-1987-88",
+    "club": "PSV",
+    "season": "1987/88",
+    "positions": [
+      "rb",
+      "cm"
+    ],
+    "rating": 92,
+    "legendary": true
+  },
+  {
+    "id": "ivan-nielsen-psv-1987-88",
+    "name": "Ivan Nielsen",
+    "teamId": "psv-1987-88",
+    "club": "PSV",
+    "season": "1987/88",
+    "positions": [
+      "cb"
+    ],
+    "rating": 90,
+    "legendary": true
+  },
+  {
+    "id": "ronald-koeman-psv-1987-88",
+    "name": "Ronald Koeman",
+    "teamId": "psv-1987-88",
+    "club": "PSV",
+    "season": "1987/88",
+    "positions": [
+      "cb",
+      "cm"
+    ],
+    "rating": 94,
+    "legendary": true
+  },
+  {
+    "id": "sren-lerby-psv-1987-88",
+    "name": "Søren Lerby",
+    "teamId": "psv-1987-88",
+    "club": "PSV",
+    "season": "1987/88",
+    "positions": [
+      "cm"
+    ],
+    "rating": 91,
+    "legendary": true
+  },
+  {
+    "id": "gerald-vanenburg-psv-1987-88",
+    "name": "Gerald Vanenburg",
+    "teamId": "psv-1987-88",
+    "club": "PSV",
+    "season": "1987/88",
+    "positions": [
+      "rw",
+      "cm"
+    ],
+    "rating": 90,
+    "legendary": true
+  },
+  {
+    "id": "willy-van-de-kerkhof-psv-1987-88",
+    "name": "Willy van de Kerkhof",
+    "teamId": "psv-1987-88",
+    "club": "PSV",
+    "season": "1987/88",
+    "positions": [
+      "cm"
+    ],
+    "rating": 90,
+    "legendary": true
+  },
+  {
+    "id": "hans-gillhaus-psv-1987-88",
+    "name": "Hans Gillhaus",
+    "teamId": "psv-1987-88",
+    "club": "PSV",
+    "season": "1987/88",
+    "positions": [
+      "lw",
+      "st"
+    ],
+    "rating": 91,
+    "legendary": true
+  },
+  {
+    "id": "wim-kieft-psv-1987-88",
+    "name": "Wim Kieft",
+    "teamId": "psv-1987-88",
+    "club": "PSV",
+    "season": "1987/88",
+    "positions": [
+      "st"
+    ],
+    "rating": 89,
+    "legendary": false
+  },
+  {
+    "id": "anton-janssen-psv-1987-88",
+    "name": "Anton Janssen",
+    "teamId": "psv-1987-88",
+    "club": "PSV",
+    "season": "1987/88",
+    "positions": [
+      "cm",
+      "lm"
+    ],
+    "rating": 94,
+    "legendary": true
+  },
+  {
+    "id": "edward-linskens-psv-1987-88",
+    "name": "Edward Linskens",
+    "teamId": "psv-1987-88",
+    "club": "PSV",
+    "season": "1987/88",
+    "positions": [
+      "cm"
+    ],
+    "rating": 89,
+    "legendary": false
+  },
+  {
+    "id": "frank-arnesen-psv-1987-88",
+    "name": "Frank Arnesen",
+    "teamId": "psv-1987-88",
+    "club": "PSV",
+    "season": "1987/88",
+    "positions": [
+      "cm",
+      "rw"
+    ],
+    "rating": 89,
+    "legendary": false
+  },
+  {
+    "id": "rene-van-de-kerkhof-psv-1987-88",
+    "name": "René van de Kerkhof",
+    "teamId": "psv-1987-88",
+    "club": "PSV",
+    "season": "1987/88",
+    "positions": [
+      "rw"
+    ],
+    "rating": 90,
+    "legendary": true
+  },
+  {
+    "id": "dirk-heesen-psv-1987-88",
+    "name": "Dirk Heesen",
+    "teamId": "psv-1987-88",
+    "club": "PSV",
+    "season": "1987/88",
+    "positions": [
+      "cb"
+    ],
+    "rating": 92,
+    "legendary": true
+  },
+  {
+    "id": "eric-pijpers-psv-1987-88",
+    "name": "Eric Pijpers",
+    "teamId": "psv-1987-88",
+    "club": "PSV",
+    "season": "1987/88",
+    "positions": [
+      "cm"
+    ],
+    "rating": 88,
+    "legendary": false
+  },
+  {
+    "id": "stanley-menzo-psv-1994-95",
+    "name": "Stanley Menzo",
+    "teamId": "psv-1994-95",
+    "club": "PSV",
+    "season": "1994/95",
+    "positions": [
+      "gk"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "ronald-waterreus-psv-1994-95",
+    "name": "Ronald Waterreus",
+    "teamId": "psv-1994-95",
+    "club": "PSV",
+    "season": "1994/95",
+    "positions": [
+      "gk"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "ernest-faber-psv-1994-95",
+    "name": "Ernest Faber",
+    "teamId": "psv-1994-95",
+    "club": "PSV",
+    "season": "1994/95",
+    "positions": [
+      "cb"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "arthur-numan-psv-1994-95",
+    "name": "Arthur Numan",
+    "teamId": "psv-1994-95",
+    "club": "PSV",
+    "season": "1994/95",
+    "positions": [
+      "lb"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "boudewijn-zenden-psv-1994-95",
+    "name": "Boudewijn Zenden",
+    "teamId": "psv-1994-95",
+    "club": "PSV",
+    "season": "1994/95",
+    "positions": [
+      "lm",
+      "lb"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "jan-wouters-psv-1994-95",
+    "name": "Jan Wouters",
+    "teamId": "psv-1994-95",
+    "club": "PSV",
+    "season": "1994/95",
+    "positions": [
+      "cm"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "wim-jonk-psv-1994-95",
+    "name": "Wim Jonk",
+    "teamId": "psv-1994-95",
+    "club": "PSV",
+    "season": "1994/95",
+    "positions": [
+      "cm"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "phillip-cocu-psv-1994-95",
+    "name": "Phillip Cocu",
+    "teamId": "psv-1994-95",
+    "club": "PSV",
+    "season": "1994/95",
+    "positions": [
+      "cm",
+      "lb"
+    ],
+    "rating": 88,
+    "legendary": false
+  },
+  {
+    "id": "luc-nilis-psv-1994-95",
+    "name": "Luc Nilis",
+    "teamId": "psv-1994-95",
+    "club": "PSV",
+    "season": "1994/95",
+    "positions": [
+      "st",
+      "rw"
+    ],
+    "rating": 90,
+    "legendary": true
+  },
+  {
+    "id": "ronaldo-psv-1994-95",
+    "name": "Ronaldo",
+    "teamId": "psv-1994-95",
+    "club": "PSV",
+    "season": "1994/95",
+    "positions": [
+      "st"
+    ],
+    "rating": 94,
+    "legendary": true
+  },
+  {
+    "id": "gilles-de-bilde-psv-1994-95",
+    "name": "Gilles De Bilde",
+    "teamId": "psv-1994-95",
+    "club": "PSV",
+    "season": "1994/95",
+    "positions": [
+      "st"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "twanny-van-den-boomen-psv-1994-95",
+    "name": "Twanny van den Boomen",
+    "teamId": "psv-1994-95",
+    "club": "PSV",
+    "season": "1994/95",
+    "positions": [
+      "cm"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "marciano-vink-psv-1994-95",
+    "name": "Marciano Vink",
+    "teamId": "psv-1994-95",
+    "club": "PSV",
+    "season": "1994/95",
+    "positions": [
+      "cm"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "bjorn-van-der-doelen-psv-1994-95",
+    "name": "Björn van der Doelen",
+    "teamId": "psv-1994-95",
+    "club": "PSV",
+    "season": "1994/95",
+    "positions": [
+      "cm"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "andre-ooijer-psv-1994-95",
+    "name": "André Ooijer",
+    "teamId": "psv-1994-95",
+    "club": "PSV",
+    "season": "1994/95",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "heurelho-gomes-psv-2004-05",
+    "name": "Heurelho Gomes",
+    "teamId": "psv-2004-05",
+    "club": "PSV",
+    "season": "2004/05",
+    "positions": [
+      "gk"
+    ],
+    "rating": 88,
+    "legendary": false
+  },
+  {
+    "id": "andre-ooijer-psv-2004-05",
+    "name": "André Ooijer",
+    "teamId": "psv-2004-05",
+    "club": "PSV",
+    "season": "2004/05",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "alex-psv-2004-05",
+    "name": "Alex",
+    "teamId": "psv-2004-05",
+    "club": "PSV",
+    "season": "2004/05",
+    "positions": [
+      "cb"
+    ],
+    "rating": 90,
+    "legendary": true
+  },
+  {
+    "id": "wilfred-bouma-psv-2004-05",
+    "name": "Wilfred Bouma",
+    "teamId": "psv-2004-05",
+    "club": "PSV",
+    "season": "2004/05",
+    "positions": [
+      "cb",
+      "lb"
+    ],
+    "rating": 89,
+    "legendary": false
+  },
+  {
+    "id": "young-pyo-lee-psv-2004-05",
+    "name": "Young-Pyo Lee",
+    "teamId": "psv-2004-05",
+    "club": "PSV",
+    "season": "2004/05",
+    "positions": [
+      "lb"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "mark-van-bommel-psv-2004-05",
+    "name": "Mark van Bommel",
+    "teamId": "psv-2004-05",
+    "club": "PSV",
+    "season": "2004/05",
+    "positions": [
+      "cm"
+    ],
+    "rating": 91,
+    "legendary": true
+  },
+  {
+    "id": "phillip-cocu-psv-2004-05",
+    "name": "Phillip Cocu",
+    "teamId": "psv-2004-05",
+    "club": "PSV",
+    "season": "2004/05",
+    "positions": [
+      "cm",
+      "lb"
+    ],
+    "rating": 90,
+    "legendary": true
+  },
+  {
+    "id": "johann-vogel-psv-2004-05",
+    "name": "Johann Vogel",
+    "teamId": "psv-2004-05",
+    "club": "PSV",
+    "season": "2004/05",
+    "positions": [
+      "cm"
+    ],
+    "rating": 90,
+    "legendary": true
+  },
+  {
+    "id": "park-ji-sung-psv-2004-05",
+    "name": "Park Ji-sung",
+    "teamId": "psv-2004-05",
+    "club": "PSV",
+    "season": "2004/05",
+    "positions": [
+      "cm",
+      "rm"
+    ],
+    "rating": 89,
+    "legendary": false
+  },
+  {
+    "id": "damarcus-beasley-psv-2004-05",
+    "name": "DaMarcus Beasley",
+    "teamId": "psv-2004-05",
+    "club": "PSV",
+    "season": "2004/05",
+    "positions": [
+      "lw"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "jefferson-farfan-psv-2004-05",
+    "name": "Jefferson Farfán",
+    "teamId": "psv-2004-05",
+    "club": "PSV",
+    "season": "2004/05",
+    "positions": [
+      "rw",
+      "st"
+    ],
+    "rating": 88,
+    "legendary": false
+  },
+  {
+    "id": "jan-vennegoor-of-hesselink-psv-2004-05",
+    "name": "Jan Vennegoor of Hesselink",
+    "teamId": "psv-2004-05",
+    "club": "PSV",
+    "season": "2004/05",
+    "positions": [
+      "st"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "robert-de-pinho-psv-2004-05",
+    "name": "Robert de Pinho",
+    "teamId": "psv-2004-05",
+    "club": "PSV",
+    "season": "2004/05",
+    "positions": [
+      "st"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "john-de-jong-psv-2004-05",
+    "name": "John de Jong",
+    "teamId": "psv-2004-05",
+    "club": "PSV",
+    "season": "2004/05",
+    "positions": [
+      "cm"
+    ],
+    "rating": 88,
+    "legendary": false
+  },
+  {
+    "id": "theo-lucius-psv-2004-05",
+    "name": "Theo Lucius",
+    "teamId": "psv-2004-05",
+    "club": "PSV",
+    "season": "2004/05",
+    "positions": [
+      "rb",
+      "cm"
+    ],
+    "rating": 89,
+    "legendary": false
+  },
+  {
+    "id": "michael-lamey-psv-2004-05",
+    "name": "Michael Lamey",
+    "teamId": "psv-2004-05",
+    "club": "PSV",
+    "season": "2004/05",
+    "positions": [
+      "rb"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "jeroen-zoet-psv-2015-16",
+    "name": "Jeroen Zoet",
+    "teamId": "psv-2015-16",
+    "club": "PSV",
+    "season": "2015/16",
+    "positions": [
+      "gk"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "santiago-arias-psv-2015-16",
+    "name": "Santiago Arias",
+    "teamId": "psv-2015-16",
+    "club": "PSV",
+    "season": "2015/16",
+    "positions": [
+      "rb"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "jeffrey-bruma-psv-2015-16",
+    "name": "Jeffrey Bruma",
+    "teamId": "psv-2015-16",
+    "club": "PSV",
+    "season": "2015/16",
+    "positions": [
+      "cb"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "hector-moreno-psv-2015-16",
+    "name": "Héctor Moreno",
+    "teamId": "psv-2015-16",
+    "club": "PSV",
+    "season": "2015/16",
+    "positions": [
+      "cb"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "jetro-willems-psv-2015-16",
+    "name": "Jetro Willems",
+    "teamId": "psv-2015-16",
+    "club": "PSV",
+    "season": "2015/16",
+    "positions": [
+      "lb"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "andres-guardado-psv-2015-16",
+    "name": "Andrés Guardado",
+    "teamId": "psv-2015-16",
+    "club": "PSV",
+    "season": "2015/16",
+    "positions": [
+      "cm"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "davy-propper-psv-2015-16",
+    "name": "Davy Pröpper",
+    "teamId": "psv-2015-16",
+    "club": "PSV",
+    "season": "2015/16",
+    "positions": [
+      "cm"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "jorrit-hendrix-psv-2015-16",
+    "name": "Jorrit Hendrix",
+    "teamId": "psv-2015-16",
+    "club": "PSV",
+    "season": "2015/16",
+    "positions": [
+      "cm",
+      "lb"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "adam-maher-psv-2015-16",
+    "name": "Adam Maher",
+    "teamId": "psv-2015-16",
+    "club": "PSV",
+    "season": "2015/16",
+    "positions": [
+      "cm"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "luciano-narsingh-psv-2015-16",
+    "name": "Luciano Narsingh",
+    "teamId": "psv-2015-16",
+    "club": "PSV",
+    "season": "2015/16",
+    "positions": [
+      "rw"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "jurgen-locadia-psv-2015-16",
+    "name": "Jürgen Locadia",
+    "teamId": "psv-2015-16",
+    "club": "PSV",
+    "season": "2015/16",
+    "positions": [
+      "lw",
+      "st"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "luuk-de-jong-psv-2015-16",
+    "name": "Luuk de Jong",
+    "teamId": "psv-2015-16",
+    "club": "PSV",
+    "season": "2015/16",
+    "positions": [
+      "st"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "gaston-pereiro-psv-2015-16",
+    "name": "Gastón Pereiro",
+    "teamId": "psv-2015-16",
+    "club": "PSV",
+    "season": "2015/16",
+    "positions": [
+      "rw",
+      "cm"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "maxime-lestienne-psv-2015-16",
+    "name": "Maxime Lestienne",
+    "teamId": "psv-2015-16",
+    "club": "PSV",
+    "season": "2015/16",
+    "positions": [
+      "lw"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "joshua-brenet-psv-2015-16",
+    "name": "Joshua Brenet",
+    "teamId": "psv-2015-16",
+    "club": "PSV",
+    "season": "2015/16",
+    "positions": [
+      "rb",
+      "lb"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "nicolas-isimat-mirin-psv-2015-16",
+    "name": "Nicolas Isimat-Mirin",
+    "teamId": "psv-2015-16",
+    "club": "PSV",
+    "season": "2015/16",
+    "positions": [
+      "cb"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "walter-benitez-psv-2023-24",
+    "name": "Walter Benítez",
+    "teamId": "psv-2023-24",
+    "club": "PSV",
+    "season": "2023/24",
+    "positions": [
+      "gk"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "jordan-teze-psv-2023-24",
+    "name": "Jordan Teze",
+    "teamId": "psv-2023-24",
+    "club": "PSV",
+    "season": "2023/24",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "andre-ramalho-psv-2023-24",
+    "name": "André Ramalho",
+    "teamId": "psv-2023-24",
+    "club": "PSV",
+    "season": "2023/24",
+    "positions": [
+      "cb"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "olivier-boscagli-psv-2023-24",
+    "name": "Olivier Boscagli",
+    "teamId": "psv-2023-24",
+    "club": "PSV",
+    "season": "2023/24",
+    "positions": [
+      "cb",
+      "lb"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "sergino-dest-psv-2023-24",
+    "name": "Sergiño Dest",
+    "teamId": "psv-2023-24",
+    "club": "PSV",
+    "season": "2023/24",
+    "positions": [
+      "lb",
+      "rb"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "joey-veerman-psv-2023-24",
+    "name": "Joey Veerman",
+    "teamId": "psv-2023-24",
+    "club": "PSV",
+    "season": "2023/24",
+    "positions": [
+      "cm"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "jerdy-schouten-psv-2023-24",
+    "name": "Jerdy Schouten",
+    "teamId": "psv-2023-24",
+    "club": "PSV",
+    "season": "2023/24",
+    "positions": [
+      "cm",
+      "cb"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "malik-tillman-psv-2023-24",
+    "name": "Malik Tillman",
+    "teamId": "psv-2023-24",
+    "club": "PSV",
+    "season": "2023/24",
+    "positions": [
+      "cm",
+      "lw"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "guus-til-psv-2023-24",
+    "name": "Guus Til",
+    "teamId": "psv-2023-24",
+    "club": "PSV",
+    "season": "2023/24",
+    "positions": [
+      "cm"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "johan-bakayoko-psv-2023-24",
+    "name": "Johan Bakayoko",
+    "teamId": "psv-2023-24",
+    "club": "PSV",
+    "season": "2023/24",
+    "positions": [
+      "rw"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "noa-lang-psv-2023-24",
+    "name": "Noa Lang",
+    "teamId": "psv-2023-24",
+    "club": "PSV",
+    "season": "2023/24",
+    "positions": [
+      "lw"
+    ],
+    "rating": 89,
+    "legendary": false
+  },
+  {
+    "id": "hirving-lozano-psv-2023-24",
+    "name": "Hirving Lozano",
+    "teamId": "psv-2023-24",
+    "club": "PSV",
+    "season": "2023/24",
+    "positions": [
+      "lw",
+      "rw"
+    ],
+    "rating": 88,
+    "legendary": false
+  },
+  {
+    "id": "luuk-de-jong-psv-2023-24",
+    "name": "Luuk de Jong",
+    "teamId": "psv-2023-24",
+    "club": "PSV",
+    "season": "2023/24",
+    "positions": [
+      "st"
+    ],
+    "rating": 89,
+    "legendary": false
+  },
+  {
+    "id": "ricardo-pepi-psv-2023-24",
+    "name": "Ricardo Pepi",
+    "teamId": "psv-2023-24",
+    "club": "PSV",
+    "season": "2023/24",
+    "positions": [
+      "st"
+    ],
+    "rating": 88,
+    "legendary": false
+  },
+  {
+    "id": "ismael-saibari-psv-2023-24",
+    "name": "Ismael Saibari",
+    "teamId": "psv-2023-24",
+    "club": "PSV",
+    "season": "2023/24",
+    "positions": [
+      "cm",
+      "rw"
+    ],
+    "rating": 88,
+    "legendary": false
+  },
+  {
+    "id": "mauro-junior-psv-2023-24",
+    "name": "Mauro Júnior",
+    "teamId": "psv-2023-24",
+    "club": "PSV",
+    "season": "2023/24",
+    "positions": [
+      "lb",
+      "cm"
+    ],
+    "rating": 88,
+    "legendary": false
+  },
+  {
+    "id": "patrick-van-aanholt-psv-2023-24",
+    "name": "Patrick van Aanholt",
+    "teamId": "psv-2023-24",
+    "club": "PSV",
+    "season": "2023/24",
+    "positions": [
+      "lb"
+    ],
+    "rating": 88,
+    "legendary": false
+  },
+  {
+    "id": "yorbe-vertessen-psv-2023-24",
+    "name": "Yorbe Vertessen",
+    "teamId": "psv-2023-24",
+    "club": "PSV",
+    "season": "2023/24",
+    "positions": [
+      "st",
+      "lw"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "zeljko-kalac-roda-jc-1994-95",
+    "name": "Zeljko Kalac",
+    "teamId": "roda-jc-1994-95",
+    "club": "Roda JC",
+    "season": "1994/95",
+    "positions": [
+      "gk"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "ger-senden-roda-jc-1994-95",
+    "name": "Ger Senden",
+    "teamId": "roda-jc-1994-95",
+    "club": "Roda JC",
+    "season": "1994/95",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "eric-van-der-luer-roda-jc-1994-95",
+    "name": "Eric van der Luer",
+    "teamId": "roda-jc-1994-95",
+    "club": "Roda JC",
+    "season": "1994/95",
+    "positions": [
+      "cm"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "harm-van-veldhoven-roda-jc-1994-95",
+    "name": "Harm van Veldhoven",
+    "teamId": "roda-jc-1994-95",
+    "club": "Roda JC",
+    "season": "1994/95",
+    "positions": [
+      "cm"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "raymond-atteveld-roda-jc-1994-95",
+    "name": "Raymond Atteveld",
+    "teamId": "roda-jc-1994-95",
+    "club": "Roda JC",
+    "season": "1994/95",
+    "positions": [
+      "cm"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "regillio-vrede-roda-jc-1994-95",
+    "name": "Regillio Vrede",
+    "teamId": "roda-jc-1994-95",
+    "club": "Roda JC",
+    "season": "1994/95",
+    "positions": [
+      "cb"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "danny-hesp-roda-jc-1994-95",
+    "name": "Danny Hesp",
+    "teamId": "roda-jc-1994-95",
+    "club": "Roda JC",
+    "season": "1994/95",
+    "positions": [
+      "cb"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "mark-luijpers-roda-jc-1994-95",
+    "name": "Mark Luijpers",
+    "teamId": "roda-jc-1994-95",
+    "club": "Roda JC",
+    "season": "1994/95",
+    "positions": [
+      "lb",
+      "cb"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "tomi-petrescu-roda-jc-1994-95",
+    "name": "Tomi Petrescu",
+    "teamId": "roda-jc-1994-95",
+    "club": "Roda JC",
+    "season": "1994/95",
+    "positions": [
+      "rw"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "garry-de-graef-roda-jc-1994-95",
+    "name": "Garry de Graef",
+    "teamId": "roda-jc-1994-95",
+    "club": "Roda JC",
+    "season": "1994/95",
+    "positions": [
+      "st"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "huub-stevens-roda-jc-1994-95",
+    "name": "Huub Stevens",
+    "teamId": "roda-jc-1994-95",
+    "club": "Roda JC",
+    "season": "1994/95",
+    "positions": [
+      "cb"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "maurice-graef-roda-jc-1994-95",
+    "name": "Maurice Graef",
+    "teamId": "roda-jc-1994-95",
+    "club": "Roda JC",
+    "season": "1994/95",
+    "positions": [
+      "st"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "rene-trost-roda-jc-1994-95",
+    "name": "Rene Trost",
+    "teamId": "roda-jc-1994-95",
+    "club": "Roda JC",
+    "season": "1994/95",
+    "positions": [
+      "cm"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "marco-van-hoogdalem-roda-jc-1994-95",
+    "name": "Marco van Hoogdalem",
+    "teamId": "roda-jc-1994-95",
+    "club": "Roda JC",
+    "season": "1994/95",
+    "positions": [
+      "cb",
+      "cm"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "peter-van-houdt-roda-jc-1994-95",
+    "name": "Peter van Houdt",
+    "teamId": "roda-jc-1994-95",
+    "club": "Roda JC",
+    "season": "1994/95",
+    "positions": [
+      "st"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "nick-olij-sparta-rotterdam-2022-23",
+    "name": "Nick Olij",
+    "teamId": "sparta-rotterdam-2022-23",
+    "club": "Sparta Rotterdam",
+    "season": "2022/23",
+    "positions": [
+      "gk"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "shurandy-sambo-sparta-rotterdam-2022-23",
+    "name": "Shurandy Sambo",
+    "teamId": "sparta-rotterdam-2022-23",
+    "club": "Sparta Rotterdam",
+    "season": "2022/23",
+    "positions": [
+      "rb"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "bart-vriends-sparta-rotterdam-2022-23",
+    "name": "Bart Vriends",
+    "teamId": "sparta-rotterdam-2022-23",
+    "club": "Sparta Rotterdam",
+    "season": "2022/23",
+    "positions": [
+      "cb"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "adil-auassar-sparta-rotterdam-2022-23",
+    "name": "Adil Auassar",
+    "teamId": "sparta-rotterdam-2022-23",
+    "club": "Sparta Rotterdam",
+    "season": "2022/23",
+    "positions": [
+      "cb",
+      "cm"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "mica-pinto-sparta-rotterdam-2022-23",
+    "name": "Mica Pinto",
+    "teamId": "sparta-rotterdam-2022-23",
+    "club": "Sparta Rotterdam",
+    "season": "2022/23",
+    "positions": [
+      "lb"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "joshua-kitolano-sparta-rotterdam-2022-23",
+    "name": "Joshua Kitolano",
+    "teamId": "sparta-rotterdam-2022-23",
+    "club": "Sparta Rotterdam",
+    "season": "2022/23",
+    "positions": [
+      "cm"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "jonathan-de-guzman-sparta-rotterdam-2022-23",
+    "name": "Jonathan de Guzmán",
+    "teamId": "sparta-rotterdam-2022-23",
+    "club": "Sparta Rotterdam",
+    "season": "2022/23",
+    "positions": [
+      "cm"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "arno-verschueren-sparta-rotterdam-2022-23",
+    "name": "Arno Verschueren",
+    "teamId": "sparta-rotterdam-2022-23",
+    "club": "Sparta Rotterdam",
+    "season": "2022/23",
+    "positions": [
+      "cm"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "vito-van-crooij-sparta-rotterdam-2022-23",
+    "name": "Vito van Crooij",
+    "teamId": "sparta-rotterdam-2022-23",
+    "club": "Sparta Rotterdam",
+    "season": "2022/23",
+    "positions": [
+      "rw"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "tobias-lauritsen-sparta-rotterdam-2022-23",
+    "name": "Tobias Lauritsen",
+    "teamId": "sparta-rotterdam-2022-23",
+    "club": "Sparta Rotterdam",
+    "season": "2022/23",
+    "positions": [
+      "st"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "koki-saito-sparta-rotterdam-2022-23",
+    "name": "Koki Saito",
+    "teamId": "sparta-rotterdam-2022-23",
+    "club": "Sparta Rotterdam",
+    "season": "2022/23",
+    "positions": [
+      "lw"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "younes-namli-sparta-rotterdam-2022-23",
+    "name": "Younes Namli",
+    "teamId": "sparta-rotterdam-2022-23",
+    "club": "Sparta Rotterdam",
+    "season": "2022/23",
+    "positions": [
+      "rw",
+      "cm"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "sven-mijnans-sparta-rotterdam-2022-23",
+    "name": "Sven Mijnans",
+    "teamId": "sparta-rotterdam-2022-23",
+    "club": "Sparta Rotterdam",
+    "season": "2022/23",
+    "positions": [
+      "cm"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "dirk-abels-sparta-rotterdam-2022-23",
+    "name": "Dirk Abels",
+    "teamId": "sparta-rotterdam-2022-23",
+    "club": "Sparta Rotterdam",
+    "season": "2022/23",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "jeremy-van-mullem-sparta-rotterdam-2022-23",
+    "name": "Jeremy van Mullem",
+    "teamId": "sparta-rotterdam-2022-23",
+    "club": "Sparta Rotterdam",
+    "season": "2022/23",
+    "positions": [
+      "cm"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "aaron-meijers-sparta-rotterdam-2022-23",
+    "name": "Aaron Meijers",
+    "teamId": "sparta-rotterdam-2022-23",
+    "club": "Sparta Rotterdam",
+    "season": "2022/23",
+    "positions": [
+      "lb"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "eloy-room-vitesse-2016-17",
+    "name": "Eloy Room",
+    "teamId": "vitesse-2016-17",
+    "club": "Vitesse",
+    "season": "2016/17",
+    "positions": [
+      "gk"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "kevin-diks-vitesse-2016-17",
+    "name": "Kevin Diks",
+    "teamId": "vitesse-2016-17",
+    "club": "Vitesse",
+    "season": "2016/17",
+    "positions": [
+      "rb"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "guram-kashia-vitesse-2016-17",
+    "name": "Guram Kashia",
+    "teamId": "vitesse-2016-17",
+    "club": "Vitesse",
+    "season": "2016/17",
+    "positions": [
+      "cb"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "matt-miazga-vitesse-2016-17",
+    "name": "Matt Miazga",
+    "teamId": "vitesse-2016-17",
+    "club": "Vitesse",
+    "season": "2016/17",
+    "positions": [
+      "cb"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "kosuke-ota-vitesse-2016-17",
+    "name": "Kosuke Ota",
+    "teamId": "vitesse-2016-17",
+    "club": "Vitesse",
+    "season": "2016/17",
+    "positions": [
+      "lb"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "marvelous-nakamba-vitesse-2016-17",
+    "name": "Marvelous Nakamba",
+    "teamId": "vitesse-2016-17",
+    "club": "Vitesse",
+    "season": "2016/17",
+    "positions": [
+      "cm"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "navarone-foor-vitesse-2016-17",
+    "name": "Navarone Foor",
+    "teamId": "vitesse-2016-17",
+    "club": "Vitesse",
+    "season": "2016/17",
+    "positions": [
+      "cm"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "lewis-baker-vitesse-2016-17",
+    "name": "Lewis Baker",
+    "teamId": "vitesse-2016-17",
+    "club": "Vitesse",
+    "season": "2016/17",
+    "positions": [
+      "cm"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "milot-rashica-vitesse-2016-17",
+    "name": "Milot Rashica",
+    "teamId": "vitesse-2016-17",
+    "club": "Vitesse",
+    "season": "2016/17",
+    "positions": [
+      "rw"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "nathan-vitesse-2016-17",
+    "name": "Nathan",
+    "teamId": "vitesse-2016-17",
+    "club": "Vitesse",
+    "season": "2016/17",
+    "positions": [
+      "lw"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "ricky-van-wolfswinkel-vitesse-2016-17",
+    "name": "Ricky van Wolfswinkel",
+    "teamId": "vitesse-2016-17",
+    "club": "Vitesse",
+    "season": "2016/17",
+    "positions": [
+      "st"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "adnane-tighadouini-vitesse-2016-17",
+    "name": "Adnane Tighadouini",
+    "teamId": "vitesse-2016-17",
+    "club": "Vitesse",
+    "season": "2016/17",
+    "positions": [
+      "lw"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "mason-mount-vitesse-2016-17",
+    "name": "Mason Mount",
+    "teamId": "vitesse-2016-17",
+    "club": "Vitesse",
+    "season": "2016/17",
+    "positions": [
+      "cm"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "arnold-kruiswijk-vitesse-2016-17",
+    "name": "Arnold Kruiswijk",
+    "teamId": "vitesse-2016-17",
+    "club": "Vitesse",
+    "season": "2016/17",
+    "positions": [
+      "cb",
+      "lb"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "maikel-van-der-werff-vitesse-2016-17",
+    "name": "Maikel van der Werff",
+    "teamId": "vitesse-2016-17",
+    "club": "Vitesse",
+    "season": "2016/17",
+    "positions": [
+      "cb"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "alexander-buttner-vitesse-2016-17",
+    "name": "Alexander Büttner",
+    "teamId": "vitesse-2016-17",
+    "club": "Vitesse",
+    "season": "2016/17",
+    "positions": [
+      "lb",
+      "lw"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "remko-pasveer-vitesse-2020-21",
+    "name": "Remko Pasveer",
+    "teamId": "vitesse-2020-21",
+    "club": "Vitesse",
+    "season": "2020/21",
+    "positions": [
+      "gk"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "eli-dasa-vitesse-2020-21",
+    "name": "Eli Dasa",
+    "teamId": "vitesse-2020-21",
+    "club": "Vitesse",
+    "season": "2020/21",
+    "positions": [
+      "rb"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "danilho-doekhi-vitesse-2020-21",
+    "name": "Danilho Doekhi",
+    "teamId": "vitesse-2020-21",
+    "club": "Vitesse",
+    "season": "2020/21",
+    "positions": [
+      "cb"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "riechedly-bazoer-vitesse-2020-21",
+    "name": "Riechedly Bazoer",
+    "teamId": "vitesse-2020-21",
+    "club": "Vitesse",
+    "season": "2020/21",
+    "positions": [
+      "cb",
+      "cm"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "jacob-rasmussen-vitesse-2020-21",
+    "name": "Jacob Rasmussen",
+    "teamId": "vitesse-2020-21",
+    "club": "Vitesse",
+    "season": "2020/21",
+    "positions": [
+      "cb",
+      "lb"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "maximilian-wittek-vitesse-2020-21",
+    "name": "Maximilian Wittek",
+    "teamId": "vitesse-2020-21",
+    "club": "Vitesse",
+    "season": "2020/21",
+    "positions": [
+      "lb"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "sondre-tronstad-vitesse-2020-21",
+    "name": "Sondre Tronstad",
+    "teamId": "vitesse-2020-21",
+    "club": "Vitesse",
+    "season": "2020/21",
+    "positions": [
+      "cm"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "matus-bero-vitesse-2020-21",
+    "name": "Matúš Bero",
+    "teamId": "vitesse-2020-21",
+    "club": "Vitesse",
+    "season": "2020/21",
+    "positions": [
+      "cm"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "oussama-tannane-vitesse-2020-21",
+    "name": "Oussama Tannane",
+    "teamId": "vitesse-2020-21",
+    "club": "Vitesse",
+    "season": "2020/21",
+    "positions": [
+      "cm",
+      "rw"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "lois-openda-vitesse-2020-21",
+    "name": "Loïs Openda",
+    "teamId": "vitesse-2020-21",
+    "club": "Vitesse",
+    "season": "2020/21",
+    "positions": [
+      "st",
+      "rw"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "armando-broja-vitesse-2020-21",
+    "name": "Armando Broja",
+    "teamId": "vitesse-2020-21",
+    "club": "Vitesse",
+    "season": "2020/21",
+    "positions": [
+      "st"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "oussama-darfalou-vitesse-2020-21",
+    "name": "Oussama Darfalou",
+    "teamId": "vitesse-2020-21",
+    "club": "Vitesse",
+    "season": "2020/21",
+    "positions": [
+      "st"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "thomas-bruns-vitesse-2020-21",
+    "name": "Thomas Bruns",
+    "teamId": "vitesse-2020-21",
+    "club": "Vitesse",
+    "season": "2020/21",
+    "positions": [
+      "cm"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "daan-huisman-vitesse-2020-21",
+    "name": "Daan Huisman",
+    "teamId": "vitesse-2020-21",
+    "club": "Vitesse",
+    "season": "2020/21",
+    "positions": [
+      "cm"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "million-manhoef-vitesse-2020-21",
+    "name": "Million Manhoef",
+    "teamId": "vitesse-2020-21",
+    "club": "Vitesse",
+    "season": "2020/21",
+    "positions": [
+      "rw",
+      "rb"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "idrissa-toure-vitesse-2020-21",
+    "name": "Idrissa Touré",
+    "teamId": "vitesse-2020-21",
+    "club": "Vitesse",
+    "season": "2020/21",
+    "positions": [
+      "cm"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "geert-de-vlieger-willem-ii-1998-99",
+    "name": "Geert De Vlieger",
+    "teamId": "willem-ii-1998-99",
+    "club": "Willem II",
+    "season": "1998/99",
+    "positions": [
+      "gk"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "arno-arts-willem-ii-1998-99",
+    "name": "Arno Arts",
+    "teamId": "willem-ii-1998-99",
+    "club": "Willem II",
+    "season": "1998/99",
+    "positions": [
+      "cm"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "sami-hyypia-willem-ii-1998-99",
+    "name": "Sami Hyypiä",
+    "teamId": "willem-ii-1998-99",
+    "club": "Willem II",
+    "season": "1998/99",
+    "positions": [
+      "cb"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "denny-landzaat-willem-ii-1998-99",
+    "name": "Denny Landzaat",
+    "teamId": "willem-ii-1998-99",
+    "club": "Willem II",
+    "season": "1998/99",
+    "positions": [
+      "cm"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "joris-mathijsen-willem-ii-1998-99",
+    "name": "Joris Mathijsen",
+    "teamId": "willem-ii-1998-99",
+    "club": "Willem II",
+    "season": "1998/99",
+    "positions": [
+      "cb"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "tom-caluwe-willem-ii-1998-99",
+    "name": "Tom Caluwé",
+    "teamId": "willem-ii-1998-99",
+    "club": "Willem II",
+    "season": "1998/99",
+    "positions": [
+      "cm"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "mariano-bombarda-willem-ii-1998-99",
+    "name": "Mariano Bombarda",
+    "teamId": "willem-ii-1998-99",
+    "club": "Willem II",
+    "season": "1998/99",
+    "positions": [
+      "st"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "gerard-de-nooijer-willem-ii-1998-99",
+    "name": "Gérard de Nooijer",
+    "teamId": "willem-ii-1998-99",
+    "club": "Willem II",
+    "season": "1998/99",
+    "positions": [
+      "lb"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "adil-ramzi-willem-ii-1998-99",
+    "name": "Adil Ramzi",
+    "teamId": "willem-ii-1998-99",
+    "club": "Willem II",
+    "season": "1998/99",
+    "positions": [
+      "rw",
+      "lw"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "bonaventure-kalou-willem-ii-1998-99",
+    "name": "Bonaventure Kalou",
+    "teamId": "willem-ii-1998-99",
+    "club": "Willem II",
+    "season": "1998/99",
+    "positions": [
+      "rw",
+      "st"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "jack-de-gier-willem-ii-1998-99",
+    "name": "Jack de Gier",
+    "teamId": "willem-ii-1998-99",
+    "club": "Willem II",
+    "season": "1998/99",
+    "positions": [
+      "st"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "john-feskens-willem-ii-1998-99",
+    "name": "John Feskens",
+    "teamId": "willem-ii-1998-99",
+    "club": "Willem II",
+    "season": "1998/99",
+    "positions": [
+      "cm"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "mika-vayrynen-willem-ii-1998-99",
+    "name": "Mika Väyrynen",
+    "teamId": "willem-ii-1998-99",
+    "club": "Willem II",
+    "season": "1998/99",
+    "positions": [
+      "cm"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "willem-van-der-ark-willem-ii-1998-99",
+    "name": "Willem van der Ark",
+    "teamId": "willem-ii-1998-99",
+    "club": "Willem II",
+    "season": "1998/99",
+    "positions": [
+      "st"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "dennis-schulp-willem-ii-1998-99",
+    "name": "Dennis Schulp",
+    "teamId": "willem-ii-1998-99",
+    "club": "Willem II",
+    "season": "1998/99",
+    "positions": [
+      "st"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "hans-vonk-sc-heerenveen-1999-00",
+    "name": "Hans Vonk",
+    "teamId": "sc-heerenveen-1999-00",
+    "club": "SC Heerenveen",
+    "season": "1999/00",
+    "positions": [
+      "gk"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "tieme-klompe-sc-heerenveen-1999-00",
+    "name": "Tieme Klompe",
+    "teamId": "sc-heerenveen-1999-00",
+    "club": "SC Heerenveen",
+    "season": "1999/00",
+    "positions": [
+      "cb"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "jeffrey-talan-sc-heerenveen-1999-00",
+    "name": "Jeffrey Talan",
+    "teamId": "sc-heerenveen-1999-00",
+    "club": "SC Heerenveen",
+    "season": "1999/00",
+    "positions": [
+      "rw",
+      "st"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "daniel-jensen-sc-heerenveen-1999-00",
+    "name": "Daniel Jensen",
+    "teamId": "sc-heerenveen-1999-00",
+    "club": "SC Heerenveen",
+    "season": "1999/00",
+    "positions": [
+      "cm"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "johan-hansma-sc-heerenveen-1999-00",
+    "name": "Johan Hansma",
+    "teamId": "sc-heerenveen-1999-00",
+    "club": "SC Heerenveen",
+    "season": "1999/00",
+    "positions": [
+      "cb"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "arek-radomski-sc-heerenveen-1999-00",
+    "name": "Arek Radomski",
+    "teamId": "sc-heerenveen-1999-00",
+    "club": "SC Heerenveen",
+    "season": "1999/00",
+    "positions": [
+      "cm",
+      "cb"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "gerald-sibon-sc-heerenveen-1999-00",
+    "name": "Gérald Sibon",
+    "teamId": "sc-heerenveen-1999-00",
+    "club": "SC Heerenveen",
+    "season": "1999/00",
+    "positions": [
+      "st"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "marcus-allback-sc-heerenveen-1999-00",
+    "name": "Marcus Allbäck",
+    "teamId": "sc-heerenveen-1999-00",
+    "club": "SC Heerenveen",
+    "season": "1999/00",
+    "positions": [
+      "st"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "anthony-lurling-sc-heerenveen-1999-00",
+    "name": "Anthony Lurling",
+    "teamId": "sc-heerenveen-1999-00",
+    "club": "SC Heerenveen",
+    "season": "1999/00",
+    "positions": [
+      "lw",
+      "st"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "romano-denneboom-sc-heerenveen-1999-00",
+    "name": "Romano Denneboom",
+    "teamId": "sc-heerenveen-1999-00",
+    "club": "SC Heerenveen",
+    "season": "1999/00",
+    "positions": [
+      "rw",
+      "st"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "erik-edman-sc-heerenveen-1999-00",
+    "name": "Erik Edman",
+    "teamId": "sc-heerenveen-1999-00",
+    "club": "SC Heerenveen",
+    "season": "1999/00",
+    "positions": [
+      "lb"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "said-bakkati-sc-heerenveen-1999-00",
+    "name": "Said Bakkati",
+    "teamId": "sc-heerenveen-1999-00",
+    "club": "SC Heerenveen",
+    "season": "1999/00",
+    "positions": [
+      "rb"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "michael-lamey-sc-heerenveen-1999-00",
+    "name": "Michael Lamey",
+    "teamId": "sc-heerenveen-1999-00",
+    "club": "SC Heerenveen",
+    "season": "1999/00",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "tomas-sedivy-sc-heerenveen-1999-00",
+    "name": "Tomáš Šedivý",
+    "teamId": "sc-heerenveen-1999-00",
+    "club": "SC Heerenveen",
+    "season": "1999/00",
+    "positions": [
+      "cm"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "peter-hansson-sc-heerenveen-1999-00",
+    "name": "Peter Hansson",
+    "teamId": "sc-heerenveen-1999-00",
+    "club": "SC Heerenveen",
+    "season": "1999/00",
+    "positions": [
+      "cb"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "kees-van-wonderen-sc-heerenveen-1999-00",
+    "name": "Kees van Wonderen",
+    "teamId": "sc-heerenveen-1999-00",
+    "club": "SC Heerenveen",
+    "season": "1999/00",
+    "positions": [
+      "cb"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "brian-vandenbussche-sc-heerenveen-2008-09",
+    "name": "Brian Vandenbussche",
+    "teamId": "sc-heerenveen-2008-09",
+    "club": "SC Heerenveen",
+    "season": "2008/09",
+    "positions": [
+      "gk"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "michel-breuer-sc-heerenveen-2008-09",
+    "name": "Michel Breuer",
+    "teamId": "sc-heerenveen-2008-09",
+    "club": "SC Heerenveen",
+    "season": "2008/09",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "goran-popov-sc-heerenveen-2008-09",
+    "name": "Goran Popov",
+    "teamId": "sc-heerenveen-2008-09",
+    "club": "SC Heerenveen",
+    "season": "2008/09",
+    "positions": [
+      "lb"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "kristian-bak-nielsen-sc-heerenveen-2008-09",
+    "name": "Kristian Bak Nielsen",
+    "teamId": "sc-heerenveen-2008-09",
+    "club": "SC Heerenveen",
+    "season": "2008/09",
+    "positions": [
+      "cb"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "daryl-janmaat-sc-heerenveen-2008-09",
+    "name": "Daryl Janmaat",
+    "teamId": "sc-heerenveen-2008-09",
+    "club": "SC Heerenveen",
+    "season": "2008/09",
+    "positions": [
+      "rb"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "viktor-elm-sc-heerenveen-2008-09",
+    "name": "Viktor Elm",
+    "teamId": "sc-heerenveen-2008-09",
+    "club": "SC Heerenveen",
+    "season": "2008/09",
+    "positions": [
+      "cm"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "danijel-pranjic-sc-heerenveen-2008-09",
+    "name": "Danijel Pranjić",
+    "teamId": "sc-heerenveen-2008-09",
+    "club": "SC Heerenveen",
+    "season": "2008/09",
+    "positions": [
+      "lm",
+      "lb",
+      "cm"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "roy-beerens-sc-heerenveen-2008-09",
+    "name": "Roy Beerens",
+    "teamId": "sc-heerenveen-2008-09",
+    "club": "SC Heerenveen",
+    "season": "2008/09",
+    "positions": [
+      "rw"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "gerald-sibon-sc-heerenveen-2008-09",
+    "name": "Gerald Sibon",
+    "teamId": "sc-heerenveen-2008-09",
+    "club": "SC Heerenveen",
+    "season": "2008/09",
+    "positions": [
+      "st"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "paulo-henrique-sc-heerenveen-2008-09",
+    "name": "Paulo Henrique",
+    "teamId": "sc-heerenveen-2008-09",
+    "club": "SC Heerenveen",
+    "season": "2008/09",
+    "positions": [
+      "st"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "tarik-elyounoussi-sc-heerenveen-2008-09",
+    "name": "Tarik Elyounoussi",
+    "teamId": "sc-heerenveen-2008-09",
+    "club": "SC Heerenveen",
+    "season": "2008/09",
+    "positions": [
+      "lw",
+      "st"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "bonifatius-udeh-sc-heerenveen-2008-09",
+    "name": "Bonifatius Udeh",
+    "teamId": "sc-heerenveen-2008-09",
+    "club": "SC Heerenveen",
+    "season": "2008/09",
+    "positions": [
+      "cm"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "christian-grindheim-sc-heerenveen-2008-09",
+    "name": "Christian Grindheim",
+    "teamId": "sc-heerenveen-2008-09",
+    "club": "SC Heerenveen",
+    "season": "2008/09",
+    "positions": [
+      "cm"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "michal-svec-sc-heerenveen-2008-09",
+    "name": "Michal Švec",
+    "teamId": "sc-heerenveen-2008-09",
+    "club": "SC Heerenveen",
+    "season": "2008/09",
+    "positions": [
+      "cm",
+      "cb"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "mika-vayrynen-sc-heerenveen-2008-09",
+    "name": "Mika Väyrynen",
+    "teamId": "sc-heerenveen-2008-09",
+    "club": "SC Heerenveen",
+    "season": "2008/09",
+    "positions": [
+      "cm"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "patrik-ingelsten-sc-heerenveen-2008-09",
+    "name": "Patrik Ingelsten",
+    "teamId": "sc-heerenveen-2008-09",
+    "club": "SC Heerenveen",
+    "season": "2008/09",
+    "positions": [
+      "st"
+    ],
+    "rating": 77,
+    "legendary": false
+  }
+]
