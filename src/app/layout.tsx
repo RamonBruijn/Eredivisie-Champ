@@ -25,7 +25,7 @@ export default function RootLayout({
               rel="noreferrer"
               className="joop-support-link"
             >
-              Joop&apos;s koffiepot
+              Joop&apos;s biertegoed
             </a>
           </div>
         </I18nProvider>
