@@ -505,26 +505,10 @@ export function TeamSelector() {
             slotAssignments={slotAssignments}
             pendingPlayer={pendingPlayer}
             onSlotClick={handleSlotSelection}
+            onStartSeason={() => {
+              document.getElementById("season-simulator")?.scrollIntoView({ behavior: "smooth", block: "start" });
+            }}
           />
-          {selectedPlayers.length === 11 ? (
-            <div className="glass rounded-[1.55rem] p-4 md:hidden">
-              <p className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">
-                {locale === "nl" ? "Team compleet" : "Team complete"}
-              </p>
-              <h3 className="mt-2 text-xl font-semibold text-white">
-                {locale === "nl" ? "Speel direct je seizoen" : "Play your season now"}
-              </h3>
-              <button
-                type="button"
-                onClick={() => {
-                  document.getElementById("season-simulator")?.scrollIntoView({ behavior: "smooth", block: "start" });
-                }}
-                className="mt-4 inline-flex min-h-14 w-full items-center justify-center rounded-[1.25rem] bg-[linear-gradient(180deg,var(--gold-soft),var(--gold))] px-5 py-4 text-base font-bold text-[#171b3a] shadow-[0_16px_36px_rgba(0,0,0,0.22)]"
-              >
-                {locale === "nl" ? "Speel seizoen" : "Play season"}
-              </button>
-            </div>
-          ) : null}
           <div id="season-simulator">
             <SeasonSimulator mode={mode} formation={formation} slotAssignments={slotAssignments} />
           </div>

@@ -6,16 +6,13 @@ import { calculateTeamStrength } from "@/lib/ratings";
 import { validateSlotAssignments } from "@/lib/validation";
 import type { FormationId, GameMode, PlayerRecord } from "@/types/game";
 
-function formatPositions(positions: string[]) {
-  return positions.map((position) => position.toUpperCase()).join(" · ");
-}
-
 interface FormationBuilderProps {
   mode: GameMode;
   formation: FormationId;
   slotAssignments: Array<PlayerRecord | null>;
   pendingPlayer: PlayerRecord | null;
   onSlotClick: (slotIndex: number) => void;
+  onStartSeason?: () => void;
 }
 
 export function FormationBuilder({
@@ -24,6 +21,7 @@ export function FormationBuilder({
   slotAssignments,
   pendingPlayer,
   onSlotClick,
+  onStartSeason,
 }: FormationBuilderProps) {
   const selectedPlayers = slotAssignments.filter((player): player is PlayerRecord => Boolean(player));
   const { locale, t } = useI18n();
@@ -159,37 +157,29 @@ export function FormationBuilder({
         </div>
       ) : null}
 
-      <div className="mt-3 grid gap-2">
-        {selectedPlayers.length === 0 ? (
-          <div className="rounded-[1.5rem] border border-dashed border-[var(--line)] p-4 text-sm text-[var(--muted)]">
-            {t.formationBuilder.startRolling}
-          </div>
-        ) : (
-          slotAssignments.map((player, index) =>
-            player ? (
-            <div
-              key={player.id}
-              className="flex items-center justify-between rounded-[1.2rem] border border-[var(--line)] bg-[rgba(255,255,255,0.02)] px-3 py-3 text-left hover:border-[rgba(217,185,110,0.45)] md:px-4"
-            >
-              <div>
-                <p className="text-sm font-medium text-white md:text-base">
-                  {localizedSlotLabel(formationShape.slots[index], index)} · {player.name}
-                </p>
-                <p className="text-sm text-[var(--muted)]">
-                  {player.club} {player.season}
-                  <span className="ml-2 text-[11px] uppercase tracking-[0.16em] text-[rgba(255,255,255,0.58)]">
-                    {formatPositions(player.positions)}
-                  </span>
-                </p>
-              </div>
-              <span className="shrink-0 pl-3 text-sm text-[var(--gold-soft)]">
-                {revealRatings ? player.rating : "?"}
-              </span>
-            </div>
-            ) : null,
-          )
-        )}
-      </div>
+      {selectedPlayers.length === 0 ? (
+        <div className="mt-3 rounded-[1.5rem] border border-dashed border-[var(--line)] p-4 text-sm text-[var(--muted)]">
+          {t.formationBuilder.startRolling}
+        </div>
+      ) : null}
+
+      {selectedPlayers.length === formationShape.slots.length && onStartSeason ? (
+        <div className="mt-5 rounded-[1.5rem] border border-[rgba(217,185,110,0.3)] bg-[linear-gradient(180deg,rgba(245,228,166,0.12),rgba(217,185,110,0.05))] p-4">
+          <p className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">
+            {locale === "nl" ? "Team compleet" : "Team complete"}
+          </p>
+          <h3 className="mt-2 text-lg font-semibold text-white md:text-xl">
+            {locale === "nl" ? "Start je seizoen" : "Start your season"}
+          </h3>
+          <button
+            type="button"
+            onClick={onStartSeason}
+            className="mt-4 inline-flex min-h-14 w-full items-center justify-center rounded-[1.25rem] bg-[linear-gradient(180deg,var(--gold-soft),var(--gold))] px-5 py-4 text-base font-bold text-[#171b3a] shadow-[0_16px_36px_rgba(0,0,0,0.22)]"
+          >
+            {locale === "nl" ? "Speel seizoen" : "Play season"}
+          </button>
+        </div>
+      ) : null}
 
       {strength ? (
         <div className="mt-5 grid grid-cols-2 gap-2.5 text-sm md:grid-cols-4 md:gap-3">

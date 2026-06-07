@@ -17,7 +17,17 @@ export default function RootLayout({
       <body>
         <I18nProvider>
           {children}
-          <div className="prod-by-joop">ProdByJoopKarnemelk</div>
+          <div className="joop-footer">
+            <div className="prod-by-joop">ProdByJoopKarnemelk</div>
+            <a
+              href="https://ko-fi.com/joopkarnemelk"
+              target="_blank"
+              rel="noreferrer"
+              className="joop-support-link"
+            >
+              Joop&apos;s koffiepot
+            </a>
+          </div>
         </I18nProvider>
       </body>
     </html>
