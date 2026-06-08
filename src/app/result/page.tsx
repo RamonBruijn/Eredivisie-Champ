@@ -157,7 +157,17 @@ export default function ResultPage() {
       {result ? (
         <>
           {seasonFinished ? (
-            <ResultCard result={result} isChampion={isChampion} finalPlacement={finalPlacement >= 0 ? finalPlacement + 1 : undefined} />
+            <>
+              <div className="mb-4 flex justify-center md:mb-5 md:justify-start">
+                <Link
+                  href="/"
+                  className="inline-flex min-h-12 items-center justify-center rounded-[1.25rem] bg-[linear-gradient(180deg,var(--gold-soft),var(--gold))] px-5 py-3 text-sm font-bold text-[#171b3a] shadow-[0_14px_30px_rgba(0,0,0,0.22)] transition hover:translate-y-[-1px] hover:brightness-105"
+                >
+                  {t.result.playAgain}
+                </Link>
+              </div>
+              <ResultCard result={result} isChampion={isChampion} finalPlacement={finalPlacement >= 0 ? finalPlacement + 1 : undefined} />
+            </>
           ) : showHalftimeTable ? (
             <section className="hidden glass rounded-[2rem] p-5 md:block md:p-6">
               <div className="flex items-center justify-between gap-3">
@@ -178,6 +188,53 @@ export default function ResultPage() {
                   <HalftimeRow key={entry.teamId} entry={entry} index={index} locale={locale} />
                 ))}
               </div>
+            </section>
+          ) : null}
+          {seasonFinished ? (
+            <section className="mt-6 grid gap-6 xl:grid-cols-[1.04fr_0.96fr]">
+              <section id="final-standings" className="glass rounded-[2rem] p-5 md:p-6">
+                <div className="flex items-center justify-between gap-3">
+                  <h2 className="text-xl font-semibold text-white">
+                    {locale === "nl" ? "Eindstand" : "Final table"}
+                  </h2>
+                  <p className="text-sm text-[var(--gold-soft)]">
+                    {locale === "nl" ? "Na 34" : "After 34"}
+                  </p>
+                </div>
+                <div className="mt-4 space-y-2">
+                  {finalStandings.map((entry, index) => (
+                    <HalftimeRow key={entry.teamId} entry={entry} index={index} locale={locale} />
+                  ))}
+                </div>
+              </section>
+
+              <section id="topscorers" className="glass rounded-[2rem] p-5 md:p-6">
+                <div className="flex items-center justify-between gap-3">
+                  <h2 className="text-xl font-semibold text-white">
+                    {locale === "nl" ? "Topscorers einde seizoen" : "End-of-season top scorers"}
+                  </h2>
+                </div>
+                <div className="mt-4 space-y-2">
+                  {finalScorers.length > 0 ? (
+                    finalScorers.map((entry, index) => (
+                      <div
+                        key={entry.playerName}
+                        className="grid grid-cols-[2rem_1fr_3rem] items-center gap-2 rounded-2xl bg-[rgba(255,255,255,0.03)] px-3 py-2 text-sm"
+                      >
+                        <span className="text-[var(--muted)]">{index + 1}</span>
+                        <span className="text-white">{entry.playerName}</span>
+                        <span className="font-semibold text-[var(--gold-soft)]">{entry.goals}</span>
+                      </div>
+                    ))
+                  ) : (
+                    <div className="rounded-2xl border border-dashed border-[var(--line)] px-4 py-4 text-sm text-[var(--muted)]">
+                      {locale === "nl"
+                        ? "Geen topscorerslijst beschikbaar."
+                        : "No season scorers list available."}
+                    </div>
+                  )}
+                </div>
+              </section>
             </section>
           ) : null}
           <section className="mt-6 grid gap-6 xl:grid-cols-[0.92fr_1.08fr]">
@@ -617,39 +674,15 @@ export default function ResultPage() {
                 </div>
               </section>
 
-              {seasonFinished ? (
-                <section id="final-standings" className="glass rounded-[2rem] p-5 md:p-6">
-                  <div className="flex items-center justify-between gap-3">
-                    <h2 className="text-xl font-semibold text-white">
-                      {locale === "nl" ? "Eindstand" : "Final table"}
-                    </h2>
-                    <p className="text-sm text-[var(--gold-soft)]">
-                      {locale === "nl" ? "Na 34" : "After 34"}
-                    </p>
-                  </div>
-                  <div className="mt-4 space-y-2">
-                    {finalStandings.map((entry, index) => (
-                      <HalftimeRow key={entry.teamId} entry={entry} index={index} locale={locale} />
-                    ))}
-                  </div>
-                </section>
-              ) : null}
-
               <section id="topscorers" className="glass rounded-[2rem] p-5 md:p-6">
                 <div className="flex items-center justify-between gap-3">
                   <h2 className="text-xl font-semibold text-white">
-                    {seasonFinished
-                      ? locale === "nl"
-                        ? "Topscorers einde seizoen"
-                        : "End-of-season top scorers"
-                      : locale === "nl"
-                        ? "Topscorers van jouw XI"
-                        : "Top scorers from your XI"}
+                    {locale === "nl" ? "Topscorers van jouw XI" : "Top scorers from your XI"}
                   </h2>
                 </div>
                 <div className="mt-4 space-y-2">
-                  {(seasonFinished ? finalScorers : currentScorers).length > 0 ? (
-                    (seasonFinished ? finalScorers : currentScorers).map((entry, index) => (
+                  {currentScorers.length > 0 ? (
+                    currentScorers.map((entry, index) => (
                       <div
                         key={entry.playerName}
                         className="grid grid-cols-[2rem_1fr_3rem] items-center gap-2 rounded-2xl bg-[rgba(255,255,255,0.03)] px-3 py-2 text-sm"
@@ -661,13 +694,9 @@ export default function ResultPage() {
                     ))
                   ) : (
                     <div className="rounded-2xl border border-dashed border-[var(--line)] px-4 py-4 text-sm text-[var(--muted)]">
-                      {seasonFinished
-                        ? locale === "nl"
-                          ? "Geen topscorerslijst beschikbaar."
-                          : "No season scorers list available."
-                        : locale === "nl"
-                          ? "Nog geen doelpuntenmakers zichtbaar."
-                          : "No scorers on the board yet."}
+                      {locale === "nl"
+                        ? "Nog geen doelpuntenmakers zichtbaar."
+                        : "No scorers on the board yet."}
                     </div>
                   )}
                 </div>
