@@ -125,7 +125,7 @@ export default function HomePage() {
                     >
                       <p className="font-semibold text-white">{t.common.fromMemory}</p>
                       <p className="mt-1 text-sm text-[var(--muted)]">
-                        {locale === "nl" ? "Alleen uit gevoel" : "Memory only"}
+                        {locale === "nl" ? "Ratings onzichtbaar" : "Ratings hidden"}
                       </p>
                     </button>
                   </div>
