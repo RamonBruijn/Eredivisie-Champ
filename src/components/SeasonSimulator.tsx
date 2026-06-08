@@ -4,7 +4,7 @@ import { useI18n } from "@/lib/i18n";
 import { simulateSeason } from "@/lib/simulation";
 import { saveResult, saveSelection } from "@/lib/storage";
 import { validateSlotAssignments } from "@/lib/validation";
-import type { FormationId, GameMode, PlayerRecord, SimulationMode } from "@/types/game";
+import type { AutoSimulationSpeed, FormationId, GameMode, PlayerRecord, SimulationMode } from "@/types/game";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
@@ -22,6 +22,7 @@ export function SeasonSimulator({
   const { locale, t } = useI18n();
   const router = useRouter();
   const [loadingMode, setLoadingMode] = useState<SimulationMode | null>(null);
+  const [autoSimulationSpeed, setAutoSimulationSpeed] = useState<AutoSimulationSpeed>("normal");
   const selectedPlayers = slotAssignments.filter((player): player is PlayerRecord => Boolean(player));
   const validation = validateSlotAssignments(slotAssignments, formation, locale);
 
@@ -37,6 +38,7 @@ export function SeasonSimulator({
         formation,
         featuredTeamId: selectedPlayers[0]?.teamId ?? "mixed-draft",
         simulationMode,
+        autoSimulationSpeed,
       });
       saveResult(result);
       router.push("/result");
@@ -53,6 +55,50 @@ export function SeasonSimulator({
       <p className="mt-2 text-sm text-[var(--gold-soft)]">
         {t.season.challenge(formation)}
       </p>
+      <div className="mt-5 rounded-[1.35rem] border border-[rgba(228,197,106,0.2)] bg-[rgba(255,255,255,0.02)] p-4">
+        <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+          <div>
+            <p className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">
+              {locale === "nl" ? "Autosimulatie snelheid" : "Auto simulation speed"}
+            </p>
+            <p className="mt-1 text-sm text-[var(--muted)]">
+              {locale === "nl"
+                ? "Kies hoe snel wedstrijden automatisch doorlopen."
+                : "Choose how quickly matches play out automatically."}
+            </p>
+          </div>
+          <div className="grid grid-cols-3 gap-2">
+            {[
+              {
+                value: "slow",
+                label: locale === "nl" ? "Rustig" : "Slow",
+              },
+              {
+                value: "normal",
+                label: locale === "nl" ? "Normaal" : "Normal",
+              },
+              {
+                value: "fast",
+                label: locale === "nl" ? "Snel" : "Fast",
+              },
+            ].map((option) => (
+              <button
+                key={option.value}
+                type="button"
+                onClick={() => setAutoSimulationSpeed(option.value as AutoSimulationSpeed)}
+                disabled={loadingMode !== null}
+                className={`rounded-full border px-3 py-2 text-sm font-medium transition disabled:cursor-not-allowed disabled:opacity-50 ${
+                  autoSimulationSpeed === option.value
+                    ? "border-[var(--gold)] bg-[rgba(217,185,110,0.14)] text-[var(--gold-soft)]"
+                    : "border-[var(--line)] text-[var(--muted)] hover:bg-[rgba(255,255,255,0.03)]"
+                }`}
+              >
+                {option.label}
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
       <div className="mt-5 grid gap-3 md:grid-cols-2">
         <button
           type="button"
@@ -65,8 +111,8 @@ export function SeasonSimulator({
           </span>
           <span className="mt-1 block text-sm font-normal text-[rgba(23,27,58,0.8)]">
             {locale === "nl"
-              ? "17 wedstrijden in beeld in ongeveer 30 seconden, daarna klik je door naar helft twee."
-              : "17 matches play out in about 30 seconds, then you click into the second half."}
+              ? `17 wedstrijden in beeld op ${autoSimulationSpeed === "slow" ? "rustig" : autoSimulationSpeed === "fast" ? "hoog" : "normaal"} tempo, daarna klik je door naar helft twee.`
+              : `17 matches play out at a ${autoSimulationSpeed === "slow" ? "slow" : autoSimulationSpeed === "fast" ? "fast" : "normal"} pace, then you click into the second half.`}
           </span>
         </button>
         <button

@@ -29,6 +29,7 @@ export type FormationId =
 export type GameMode = "classic" | "from-memory";
 export type Locale = "nl" | "en";
 export type SimulationMode = "auto" | "manual";
+export type AutoSimulationSpeed = "slow" | "normal" | "fast";
 
 export interface DraftSetup {
   mode: GameMode;
@@ -87,6 +88,7 @@ export interface RunContext {
   formation: FormationId;
   featuredTeamId: string;
   simulationMode: SimulationMode;
+  autoSimulationSpeed?: AutoSimulationSpeed;
 }
 
 export interface TeamStrength {

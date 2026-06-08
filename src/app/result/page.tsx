@@ -6,7 +6,13 @@ import { useI18n } from "@/lib/i18n";
 import { loadResult } from "@/lib/storage";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import type { LeagueTableEntry, MatchResult, SeasonSummary } from "@/types/game";
+import type { AutoSimulationSpeed, LeagueTableEntry, MatchResult, SeasonSummary } from "@/types/game";
+
+const AUTO_SIMULATION_DELAYS: Record<AutoSimulationSpeed, number> = {
+  slow: 2400,
+  normal: 1765,
+  fast: 950,
+};
 
 export default function ResultPage() {
   const { locale, t } = useI18n();
@@ -14,6 +20,7 @@ export default function ResultPage() {
   const [matchCursor, setMatchCursor] = useState(0);
   const [secondHalfStarted, setSecondHalfStarted] = useState(false);
   const [autoPaused, setAutoPaused] = useState(false);
+  const [autoSimulationSpeed, setAutoSimulationSpeed] = useState<AutoSimulationSpeed>("normal");
 
   useEffect(() => {
     setResult(loadResult());
@@ -23,6 +30,7 @@ export default function ResultPage() {
     setMatchCursor(0);
     setSecondHalfStarted(false);
     setAutoPaused(false);
+    setAutoSimulationSpeed(result?.context.autoSimulationSpeed ?? "normal");
   }, [result]);
 
   useEffect(() => {
@@ -35,10 +43,10 @@ export default function ResultPage() {
 
     const timer = window.setTimeout(() => {
       setMatchCursor((current) => Math.min(current + 1, result.matches.length));
-    }, 1765);
+    }, AUTO_SIMULATION_DELAYS[autoSimulationSpeed]);
 
     return () => window.clearTimeout(timer);
-  }, [autoPaused, matchCursor, result, secondHalfStarted]);
+  }, [autoPaused, autoSimulationSpeed, matchCursor, result, secondHalfStarted]);
 
   const currentMatch = result && matchCursor > 0 ? result.matches[matchCursor - 1] : null;
   const upcomingMatch = result && matchCursor < result.matches.length ? result.matches[matchCursor] : null;
@@ -92,6 +100,12 @@ export default function ResultPage() {
   function handleToggleAutoPause() {
     setAutoPaused((current) => !current);
   }
+
+  const autoSpeedButtons: Array<{ value: AutoSimulationSpeed; label: string }> = [
+    { value: "slow", label: locale === "nl" ? "Rustig" : "Slow" },
+    { value: "normal", label: locale === "nl" ? "Normaal" : "Normal" },
+    { value: "fast", label: locale === "nl" ? "Snel" : "Fast" },
+  ];
 
   return (
     <main className="page-shell mx-auto max-w-6xl px-4 py-8 md:px-6">
@@ -257,6 +271,22 @@ export default function ResultPage() {
                             ? "Klik om helft twee te starten"
                             : "Click to start the second half"}
                     </div>
+                    <div className="flex flex-wrap gap-2">
+                      {autoSpeedButtons.map((option) => (
+                        <button
+                          key={option.value}
+                          type="button"
+                          onClick={() => setAutoSimulationSpeed(option.value)}
+                          className={`rounded-full border px-4 py-2 text-sm transition ${
+                            autoSimulationSpeed === option.value
+                              ? "border-[var(--gold)] bg-[rgba(217,185,110,0.14)] text-[var(--gold-soft)]"
+                              : "border-[var(--line)] text-[var(--muted)] hover:bg-[rgba(255,255,255,0.03)]"
+                          }`}
+                        >
+                          {option.label}
+                        </button>
+                      ))}
+                    </div>
                     {matchCursor >= 17 && !secondHalfStarted && matchCursor < result.matches.length ? (
                       <button
                         type="button"
@@ -357,6 +387,24 @@ export default function ResultPage() {
                       ) : null}
                     </div>
                     <div className="flex flex-col items-end gap-2">
+                      {result.context.simulationMode === "auto" ? (
+                        <div className="flex flex-wrap justify-end gap-2">
+                          {autoSpeedButtons.map((option) => (
+                            <button
+                              key={`mobile-${option.value}`}
+                              type="button"
+                              onClick={() => setAutoSimulationSpeed(option.value)}
+                              className={`rounded-full border px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] transition ${
+                                autoSimulationSpeed === option.value
+                                  ? "border-[var(--gold)] bg-[rgba(217,185,110,0.14)] text-[var(--gold-soft)]"
+                                  : "border-[var(--line)] text-[var(--muted)]"
+                              }`}
+                            >
+                              {option.label}
+                            </button>
+                          ))}
+                        </div>
+                      ) : null}
                       {result.context.simulationMode === "auto" && matchCursor < result.matches.length ? (
                         <button
                           type="button"
