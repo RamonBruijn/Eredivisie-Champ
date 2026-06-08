@@ -125,13 +125,13 @@ select {
 
 .joop-footer {
   position: fixed;
-  right: 0.85rem;
-  bottom: 0.45rem;
+  right: 0.55rem;
+  bottom: 0.3rem;
   z-index: 20;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 0.1rem;
+  gap: 0.02rem;
 }
 
 .joop-footer-links {
@@ -157,25 +157,25 @@ select {
 }
 
 .prod-by-joop {
-  color: rgba(245, 244, 237, 0.34);
-  padding: 0.12rem 0.2rem;
-  font-size: 0.58rem;
+  color: rgba(245, 244, 237, 0.26);
+  padding: 0.05rem 0.12rem;
+  font-size: 0.5rem;
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   mix-blend-mode: screen;
-  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.28);
   pointer-events: none;
   user-select: none;
 }
 
 .joop-support-link {
-  color: rgba(245, 244, 237, 0.26);
-  padding: 0 0.2rem;
-  font-size: 0.52rem;
+  color: rgba(245, 244, 237, 0.2);
+  padding: 0 0.12rem;
+  font-size: 0.46rem;
   font-weight: 500;
-  letter-spacing: 0.08em;
-  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.26);
+  letter-spacing: 0.07em;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.24);
   transition: color 160ms ease;
 }
 
@@ -185,13 +185,8 @@ select {
 
 @media (max-width: 640px) {
   .joop-footer {
-    right: 0.65rem;
-    left: 0.65rem;
-    align-items: center;
-  }
-
-  .joop-footer-links {
-    justify-content: center;
+    right: 0.45rem;
+    bottom: 0.24rem;
   }
 }
 
