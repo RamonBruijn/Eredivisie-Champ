@@ -473,7 +473,7 @@ function PitchLines() {
   return (
     <>
       <div className="absolute inset-[6%] rounded-[1rem] border border-[rgba(255,255,255,0.12)]" />
-      <div className="absolute left-1/2 top-[6%] h-[88%] w-px -translate-x-1/2 bg-[rgba(255,255,255,0.12)]" />
+      <div className="absolute left-[6%] top-1/2 h-px w-[88%] -translate-y-1/2 bg-[rgba(255,255,255,0.12)]" />
       <div className="absolute left-1/2 top-1/2 h-[20%] w-[20%] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[rgba(255,255,255,0.12)]" />
       <div className="absolute left-1/2 top-1/2 h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[rgba(255,255,255,0.18)]" />
       <div className="absolute left-1/2 top-[6%] h-[15%] w-[46%] -translate-x-1/2 rounded-b-[1rem] border border-t-0 border-[rgba(255,255,255,0.12)]" />
