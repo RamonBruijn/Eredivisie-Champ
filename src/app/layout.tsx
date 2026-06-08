@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { I18nProvider } from "@/lib/i18n";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
-import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -65,14 +64,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="nl">
-      <body>
-        <Script
-          id="google-adsense"
+      <head>
+        <script
           async
-          strategy="afterInteractive"
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6871463419775181"
           crossOrigin="anonymous"
         />
+      </head>
+      <body>
         <I18nProvider>
           {children}
           <div className="joop-footer">
