@@ -1,6 +1,6 @@
 "use client";
 
-import { useI18n } from "@/lib/i18n";
+import { formatPositionLabel, useI18n } from "@/lib/i18n";
 import type { PlayerRecord } from "@/types/game";
 
 interface PlayerCardProps {
@@ -49,7 +49,7 @@ export function PlayerCard({
             key={position}
             className="rounded-full border border-[var(--line)] px-2 py-1 text-xs uppercase tracking-[0.15em] text-[var(--muted)]"
           >
-            {position}
+            {formatPositionLabel(position)}
           </span>
         ))}
         {player.legendary ? (

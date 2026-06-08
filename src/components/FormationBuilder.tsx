@@ -1,7 +1,7 @@
 "use client";
 
 import { getFormation, getFormationLayout } from "@/lib/formations";
-import { localizedModeLabel, localizedSlotLabel, useI18n } from "@/lib/i18n";
+import { formatPositionLabel, localizedModeLabel, localizedSlotLabel, useI18n } from "@/lib/i18n";
 import { calculateTeamStrength } from "@/lib/ratings";
 import { validateSlotAssignments } from "@/lib/validation";
 import type { FormationId, GameMode, PlayerRecord } from "@/types/game";
@@ -74,23 +74,23 @@ export function FormationBuilder({
 
       <div className="mt-2.5 rounded-[1.45rem] border border-[rgba(255,255,255,0.14)] bg-[linear-gradient(180deg,rgba(122,92,255,0.2)_0%,rgba(11,16,38,0.3)_100%)] p-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.12)] md:mt-4 md:rounded-[2rem] md:p-3">
         <div className="pitch relative mx-auto aspect-[4/5] max-w-[22rem] overflow-hidden rounded-[1.25rem] border border-[rgba(255,255,255,0.22)] bg-[linear-gradient(180deg,#32206f_0%,#1a1d57_46%,#111739_100%)] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.05),0_22px_60px_rgba(0,0,0,0.35)] md:max-w-[26rem] md:rounded-[1.5rem]">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_16%,rgba(245,228,166,0.18),transparent_22%),radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.06),transparent_18%),repeating-linear-gradient(180deg,rgba(255,255,255,0.045)_0_10%,rgba(0,0,0,0.1)_10%_20%)]" />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.04),transparent_16%,transparent_84%,rgba(255,255,255,0.04))]" />
-          <div className="absolute inset-0 rounded-[1.5rem] shadow-[inset_0_0_40px_rgba(0,0,0,0.26)]" />
-          <div className="absolute inset-x-[6%] top-[3.5%] h-[93%] rounded-[1.2rem] border border-[rgba(255,255,255,0.14)]" />
-          <div className="absolute left-[2%] top-[2%] h-6 w-6 rounded-tl-[1rem] border-l-2 border-t-2 border-[rgba(255,255,255,0.35)]" />
-          <div className="absolute right-[2%] top-[2%] h-6 w-6 rounded-tr-[1rem] border-r-2 border-t-2 border-[rgba(255,255,255,0.35)]" />
-          <div className="absolute bottom-[2%] left-[2%] h-6 w-6 rounded-bl-[1rem] border-b-2 border-l-2 border-[rgba(255,255,255,0.35)]" />
-          <div className="absolute bottom-[2%] right-[2%] h-6 w-6 rounded-br-[1rem] border-b-2 border-r-2 border-[rgba(255,255,255,0.35)]" />
-          <div className="absolute inset-x-[18%] top-[2%] h-[13%] rounded-b-[1.25rem] border-x-2 border-b-2 border-[rgba(255,255,255,0.35)]" />
-          <div className="absolute inset-x-[33%] top-[2%] h-[6%] border-x-2 border-b-2 border-[rgba(255,255,255,0.35)]" />
-          <div className="absolute left-1/2 top-[22%] h-[22%] w-[34%] -translate-x-1/2 rounded-b-full border-2 border-t-0 border-[rgba(255,255,255,0.28)]" />
-          <div className="absolute left-1/2 top-1/2 h-0.5 w-full -translate-x-1/2 bg-[rgba(255,255,255,0.28)]" />
-          <div className="absolute left-1/2 top-1/2 h-[22%] w-[34%] -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-[rgba(255,255,255,0.24)]" />
-          <div className="absolute left-1/2 top-1/2 h-2.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[rgba(255,255,255,0.35)]" />
-          <div className="absolute inset-x-[18%] bottom-[2%] h-[13%] rounded-t-[1.25rem] border-x-2 border-t-2 border-[rgba(255,255,255,0.35)]" />
-          <div className="absolute inset-x-[33%] bottom-[2%] h-[6%] border-x-2 border-t-2 border-[rgba(255,255,255,0.35)]" />
-          <div className="absolute left-1/2 bottom-[22%] h-[22%] w-[34%] -translate-x-1/2 rounded-t-full border-2 border-b-0 border-[rgba(255,255,255,0.28)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_14%,rgba(245,228,166,0.12),transparent_20%),radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.045),transparent_18%),repeating-linear-gradient(180deg,rgba(255,255,255,0.035)_0_11%,rgba(10,16,38,0.08)_11%_22%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.03),transparent_18%,transparent_82%,rgba(255,255,255,0.03))]" />
+          <div className="absolute inset-0 rounded-[1.5rem] shadow-[inset_0_0_40px_rgba(0,0,0,0.24)]" />
+          <div className="absolute inset-x-[6%] inset-y-[3.5%] rounded-[1.2rem] border border-[rgba(255,255,255,0.24)]" />
+          <div className="absolute left-1/2 top-[3.5%] h-[3%] w-[16%] -translate-x-1/2 rounded-b-[0.7rem] border border-t-0 border-[rgba(255,255,255,0.24)]" />
+          <div className="absolute left-1/2 bottom-[3.5%] h-[3%] w-[16%] -translate-x-1/2 rounded-t-[0.7rem] border border-b-0 border-[rgba(255,255,255,0.24)]" />
+          <div className="absolute inset-x-[18%] top-[3.5%] h-[12.5%] border border-t-0 border-[rgba(255,255,255,0.24)]" />
+          <div className="absolute inset-x-[33%] top-[3.5%] h-[5.7%] border border-t-0 border-[rgba(255,255,255,0.24)]" />
+          <div className="absolute left-1/2 top-[14.6%] h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[rgba(255,255,255,0.3)]" />
+          <div className="absolute left-1/2 top-[16.2%] h-[10%] w-[24%] -translate-x-1/2 rounded-b-full border border-t-0 border-[rgba(255,255,255,0.24)]" />
+          <div className="absolute left-1/2 top-1/2 h-px w-[88%] -translate-x-1/2 -translate-y-1/2 bg-[rgba(255,255,255,0.24)]" />
+          <div className="absolute left-1/2 top-1/2 h-[18%] w-[28%] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[rgba(255,255,255,0.22)]" />
+          <div className="absolute left-1/2 top-1/2 h-2.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[rgba(255,255,255,0.3)]" />
+          <div className="absolute inset-x-[18%] bottom-[3.5%] h-[12.5%] border border-b-0 border-[rgba(255,255,255,0.24)]" />
+          <div className="absolute inset-x-[33%] bottom-[3.5%] h-[5.7%] border border-b-0 border-[rgba(255,255,255,0.24)]" />
+          <div className="absolute left-1/2 bottom-[14.6%] h-2 w-2 -translate-x-1/2 translate-y-1/2 rounded-full bg-[rgba(255,255,255,0.3)]" />
+          <div className="absolute left-1/2 bottom-[16.2%] h-[10%] w-[24%] -translate-x-1/2 rounded-t-full border border-b-0 border-[rgba(255,255,255,0.24)]" />
 
           {formationShape.slots.map((slot, index) => {
             const point = formationLayout[index];
@@ -120,10 +120,10 @@ export function FormationBuilder({
                   >
                     {pickedPlayer ? (
                       <span className="absolute -top-1.5 right-0 rounded-full bg-[var(--gold)] px-1.5 py-0.5 text-[8px] font-bold leading-none text-[#171b3a] md:text-[9px]">
-                        {slot.toUpperCase()}
+                        {formatPositionLabel(slot)}
                       </span>
                     ) : null}
-                    {pickedPlayer ? (revealRatings ? pickedPlayer.rating : "?") : slot.toUpperCase()}
+                    {pickedPlayer ? (revealRatings ? pickedPlayer.rating : "?") : formatPositionLabel(slot)}
                   </div>
                   <p className="mt-1.5 max-w-[4.7rem] text-[9px] font-semibold uppercase tracking-[0.12em] text-[rgba(255,255,255,0.96)] drop-shadow-[0_1px_2px_rgba(0,0,0,0.55)] md:mt-2 md:max-w-[5.8rem] md:text-[10px] md:tracking-[0.14em]">
                     {pickedPlayer ? pickedPlayer.name : localizedSlotLabel(slot, index)}

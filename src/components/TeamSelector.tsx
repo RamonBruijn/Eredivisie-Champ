@@ -4,7 +4,7 @@ import { FormationBuilder } from "@/components/FormationBuilder";
 import { SeasonSimulator } from "@/components/SeasonSimulator";
 import { players, teams } from "@/data";
 import { getFormation } from "@/lib/formations";
-import { useI18n } from "@/lib/i18n";
+import { formatPositionLabel, useI18n } from "@/lib/i18n";
 import { loadDraftSetup, loadSelection, saveSelection } from "@/lib/storage";
 import type {
   FormationId,
@@ -38,7 +38,7 @@ function getPrimaryPositionOrder(player: PlayerRecord) {
 }
 
 function formatPositions(positions: string[]) {
-  return positions.map((position) => position.toUpperCase()).join(" · ");
+  return positions.map((position) => formatPositionLabel(position as Position)).join(" · ");
 }
 
 function getNextOpenSlotIndex(assignments: Array<PlayerRecord | null>) {
@@ -239,6 +239,17 @@ export function TeamSelector() {
     runRollAnimation(rolledTeam?.id, true);
   }
 
+  function handleNewDraft() {
+    const confirmed = window.confirm(
+      locale === "nl"
+        ? "Weet je het zeker? Je huidige draft en voortgang verdwijnen dan."
+        : "Are you sure? Your current draft and progress will be lost.",
+    );
+
+    if (!confirmed) return;
+    resetDraft();
+  }
+
   function handlePick(player: PlayerRecord) {
     if (isRolling) return;
     setPendingPlayer(player);
@@ -344,7 +355,7 @@ export function TeamSelector() {
                 </button>
                 <button
                   type="button"
-                  onClick={() => resetDraft()}
+                  onClick={handleNewDraft}
                   className="min-h-12 rounded-[1rem] border border-[rgba(255,123,114,0.4)] bg-[linear-gradient(180deg,rgba(255,123,114,0.18),rgba(255,123,114,0.08))] px-4 py-2 text-sm font-semibold text-[#ffd3cf] shadow-[0_12px_28px_rgba(0,0,0,0.18)] transition hover:border-[rgba(255,123,114,0.6)] hover:bg-[linear-gradient(180deg,rgba(255,123,114,0.24),rgba(255,123,114,0.12))]"
                 >
                   {t.common.newDraft}
@@ -416,7 +427,7 @@ export function TeamSelector() {
                           {locale === "nl" ? "Vrije positie" : "Open position"}
                         </p>
                         <p className="mt-2 text-lg font-semibold text-white">
-                          {slotIndex + 1}. {slot.toUpperCase()}
+                          {slotIndex + 1}. {formatPositionLabel(slot)}
                         </p>
                       </button>
                     ))}

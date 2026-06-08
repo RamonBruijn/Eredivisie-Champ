@@ -438,6 +438,10 @@ export function localizedModeLabel(locale: Locale, mode: GameMode) {
   return mode === "classic" ? t.result.classic : t.result.fromMemory;
 }
 
+export function formatPositionLabel(position: Position) {
+  return position.toUpperCase();
+}
+
 export function localizedSlotLabel(position: Position, index: number) {
-  return `${index + 1}. ${position}`;
+  return `${index + 1}. ${formatPositionLabel(position)}`;
 }

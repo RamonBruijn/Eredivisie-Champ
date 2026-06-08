@@ -1,7 +1,7 @@
 "use client";
 
 import { getFormation } from "@/lib/formations";
-import { localizedModeLabel, useI18n } from "@/lib/i18n";
+import { formatPositionLabel, localizedModeLabel, useI18n } from "@/lib/i18n";
 import { loadSelection } from "@/lib/storage";
 import type { PlayerRecord, Position, SeasonSummary } from "@/types/game";
 import Link from "next/link";
@@ -140,7 +140,7 @@ export function ResultCard({ result, isChampion = false, finalPlacement }: Resul
                 className="grid grid-cols-[auto_minmax(0,1fr)_auto_auto] items-center gap-3 rounded-[1.25rem] border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.03)] px-3 py-3"
               >
                 <span className={`inline-flex min-w-12 items-center justify-center rounded-xl px-2.5 py-1 text-xs font-bold tracking-[0.18em] ${positionChipClass(slot)}`}>
-                  {slot.toUpperCase()}
+                  {formatPositionLabel(slot)}
                 </span>
                 <div className="min-w-0">
                   <p className="truncate text-base font-semibold text-white">{player?.name ?? t.common.empty}</p>
