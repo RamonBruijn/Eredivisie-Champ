@@ -52,39 +52,44 @@ export default function HomePage() {
 
   return (
     <main className="page-shell">
-      <section className="mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-4 py-8 sm:px-6 md:py-16">
-        <div className="glass rounded-[2rem] p-5 sm:p-8 md:rounded-[2.5rem] md:p-12">
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <p className="text-sm uppercase tracking-[0.28em] text-[var(--gold-soft)]">{t.home.eyebrow}</p>
-            <LanguageToggle />
+      <section className="mx-auto flex min-h-screen max-w-6xl flex-col justify-start px-4 py-5 sm:px-6 sm:py-8 md:justify-center md:py-16">
+        <div className="glass rounded-[2rem] p-4 sm:p-8 md:rounded-[2.5rem] md:p-12">
+          <div className="flex items-center justify-center md:justify-between">
+            <p className="text-center text-[11px] uppercase tracking-[0.24em] text-[var(--gold-soft)] sm:text-sm sm:tracking-[0.28em] md:text-left">
+              {t.home.eyebrow}
+            </p>
+            <LanguageToggle className="hidden md:inline-flex" />
           </div>
 
-          <div className="mt-5 flex items-center gap-4 sm:gap-5">
-            <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-full border border-[rgba(228,197,106,0.26)] bg-[rgba(255,255,255,0.03)] p-1.5 shadow-[0_12px_30px_rgba(0,0,0,0.22)] sm:h-20 sm:w-20">
+          <div className="mt-4 flex flex-col items-center text-center md:mt-5 md:flex-row md:items-center md:gap-5 md:text-left">
+            <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-full border border-[rgba(228,197,106,0.26)] bg-[rgba(255,255,255,0.03)] p-1.5 shadow-[0_12px_30px_rgba(0,0,0,0.22)] sm:h-24 sm:w-24 md:h-20 md:w-20">
               <Image
                 src="/voetbaldraft-logo.png"
                 alt="VoetbalDraft logo"
                 fill
-                sizes="(max-width: 640px) 64px, 80px"
+                sizes="(max-width: 767px) 96px, 80px"
                 className="object-contain p-1 opacity-90"
                 priority
               />
             </div>
-            <span className="text-4xl font-bold uppercase tracking-[0.16em] text-[var(--gold-soft)] sm:text-6xl">
+            <span className="mt-3 max-w-full text-3xl font-bold uppercase tracking-[0.12em] text-[var(--gold-soft)] sm:text-4xl md:mt-0 md:text-6xl md:tracking-[0.16em]">
               VoetbalDraft
             </span>
           </div>
 
-          <h1 className="mt-4 max-w-3xl text-balance text-3xl font-bold leading-[1.02] text-white sm:text-4xl md:text-5xl">
+          <h1 className="mt-3 max-w-3xl text-balance text-center text-[1.9rem] font-bold leading-[1.04] text-white sm:text-4xl md:mt-4 md:text-left md:text-5xl">
             {t.home.title}
           </h1>
-          <p className="mt-4 max-w-2xl text-base leading-7 text-[var(--muted)] md:mt-6 md:text-lg">
+          <p className="mx-auto mt-3 max-w-2xl text-center text-[0.95rem] leading-6 text-[var(--muted)] md:mx-0 md:mt-6 md:text-left md:text-lg md:leading-7">
             {locale === "nl"
               ? "Kies je draftinstellingen en druk op play. Daarna begint direct de echte draftflow."
               : "Choose your draft settings and hit play. Then the real draft starts immediately."}
           </p>
+          <div className="mt-4 flex justify-center md:hidden">
+            <LanguageToggle compact />
+          </div>
 
-          <div className="mt-8 grid gap-4 xl:grid-cols-[0.95fr_1.05fr]">
+          <div className="mt-6 grid gap-4 xl:grid-cols-[0.95fr_1.05fr]">
             <section className="rounded-[1.75rem] border border-[var(--line)] bg-[rgba(255,255,255,0.03)] p-5">
               <p className="text-sm uppercase tracking-[0.2em] text-[var(--muted)]">
                 {locale === "nl" ? "Bouw je kampioensteam" : "Build your title team"}
