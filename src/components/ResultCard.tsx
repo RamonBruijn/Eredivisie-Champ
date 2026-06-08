@@ -296,11 +296,6 @@ function MiniFormation({
           <p className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">
             {locale === "nl" ? "Mini-opstelling" : "Mini formation"}
           </p>
-          <p className="mt-1 text-sm text-[var(--muted)]">
-            {locale === "nl"
-              ? "Compact veld voor screenshots en shares."
-              : "Compact pitch for screenshots and shares."}
-          </p>
         </div>
         <span className="rounded-full border border-[rgba(255,255,255,0.1)] px-3 py-1 text-xs uppercase tracking-[0.16em] text-[var(--muted)]">
           XI
