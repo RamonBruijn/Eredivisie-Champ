@@ -2,10 +2,11 @@
 
 import { LanguageToggle } from "@/components/LanguageToggle";
 import { ResultCard } from "@/components/ResultCard";
+import { SecondHalfAdGateModal } from "@/components/SecondHalfAdGateModal";
 import { useI18n } from "@/lib/i18n";
-import { loadResult } from "@/lib/storage";
+import { loadResult, loadSeasonRunCount } from "@/lib/storage";
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { AutoSimulationSpeed, LeagueTableEntry, MatchResult, SeasonSummary } from "@/types/game";
 
 const AUTO_SIMULATION_DELAYS: Record<AutoSimulationSpeed, number> = {
@@ -21,9 +22,14 @@ export default function ResultPage() {
   const [secondHalfStarted, setSecondHalfStarted] = useState(false);
   const [autoPaused, setAutoPaused] = useState(false);
   const [autoSimulationSpeed, setAutoSimulationSpeed] = useState<AutoSimulationSpeed>("normal");
+  const [seasonRunCount, setSeasonRunCount] = useState(0);
+  const [isSecondHalfAdGateOpen, setIsSecondHalfAdGateOpen] = useState(false);
+  const [isSecondHalfGatePending, setIsSecondHalfGatePending] = useState(false);
+  const secondHalfAdGateResolverRef = useRef<(() => void) | null>(null);
 
   useEffect(() => {
     setResult(loadResult());
+    setSeasonRunCount(loadSeasonRunCount());
   }, []);
 
   useEffect(() => {
@@ -92,9 +98,45 @@ export default function ResultPage() {
     setMatchCursor((current) => Math.min(current + 1, result.matches.length));
   }
 
-  function handleStartSecondHalf() {
+  function startSecondHalfSimulation() {
     setSecondHalfStarted(true);
     setAutoPaused(false);
+  }
+
+  function shouldShowSecondHalfAdGate() {
+    return seasonRunCount >= 2;
+  }
+
+  function resolveSecondHalfAdGate() {
+    const resolver = secondHalfAdGateResolverRef.current;
+    secondHalfAdGateResolverRef.current = null;
+    setIsSecondHalfAdGateOpen(false);
+    resolver?.();
+  }
+
+  function showSecondHalfAdGate() {
+    return new Promise<void>((resolve) => {
+      secondHalfAdGateResolverRef.current = resolve;
+      setIsSecondHalfAdGateOpen(true);
+    });
+  }
+
+  async function handleStartSecondHalf() {
+    if (secondHalfStarted || isSecondHalfGatePending) return;
+
+    setIsSecondHalfGatePending(true);
+
+    try {
+      if (shouldShowSecondHalfAdGate()) {
+        await showSecondHalfAdGate();
+      }
+    } catch {
+      // If a future ad provider fails, the second half should still continue.
+    } finally {
+      setIsSecondHalfGatePending(false);
+    }
+
+    startSecondHalfSimulation();
   }
 
   function handleToggleAutoPause() {
@@ -291,9 +333,16 @@ export default function ResultPage() {
                       <button
                         type="button"
                         onClick={handleStartSecondHalf}
-                        className="rounded-full bg-[var(--gold)] px-5 py-3 font-semibold text-[#171b3a]"
+                        disabled={isSecondHalfGatePending}
+                        className="rounded-full bg-[var(--gold)] px-5 py-3 font-semibold text-[#171b3a] disabled:cursor-not-allowed disabled:opacity-60"
                       >
-                        {locale === "nl" ? "Start tweede seizoenshelft" : "Start second half"}
+                        {isSecondHalfGatePending
+                          ? locale === "nl"
+                            ? "Advertentie laden..."
+                            : "Loading ad..."
+                          : locale === "nl"
+                            ? "Start tweede seizoenshelft"
+                            : "Start second half"}
                       </button>
                     ) : null}
                   </div>
@@ -433,9 +482,16 @@ export default function ResultPage() {
                         <button
                           type="button"
                           onClick={handleStartSecondHalf}
-                          className="rounded-full bg-[var(--gold)] px-4 py-2.5 text-sm font-semibold text-[#171b3a]"
+                          disabled={isSecondHalfGatePending}
+                          className="rounded-full bg-[var(--gold)] px-4 py-2.5 text-sm font-semibold text-[#171b3a] disabled:cursor-not-allowed disabled:opacity-60"
                         >
-                          {locale === "nl" ? "Start helft 2" : "Start half 2"}
+                          {isSecondHalfGatePending
+                            ? locale === "nl"
+                              ? "Advertentie laden..."
+                              : "Loading ad..."
+                            : locale === "nl"
+                              ? "Start helft 2"
+                              : "Start half 2"}
                         </button>
                       ) : null}
                     </div>
@@ -636,6 +692,10 @@ export default function ResultPage() {
           {t.result.backToBuilder}
         </Link>
       </div>
+
+      {isSecondHalfAdGateOpen ? (
+        <SecondHalfAdGateModal locale={locale} onContinue={resolveSecondHalfAdGate} />
+      ) : null}
     </main>
   );
 }

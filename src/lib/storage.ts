@@ -3,6 +3,7 @@ import type { DraftSetup, PlayerRecord, SeasonSummary } from "@/types/game";
 const SELECTION_KEY = "eredivisie-champ-selection";
 const RESULT_KEY = "eredivisie-champ-result";
 const DRAFT_SETUP_KEY = "eredivisie-champ-draft-setup";
+const SEASON_RUN_COUNT_KEY = "eredivisie-champ-season-run-count";
 
 type StoredSelection = Array<PlayerRecord | null>;
 
@@ -59,4 +60,22 @@ export function loadDraftSetup(): DraftSetup | null {
   } catch {
     return null;
   }
+}
+
+export function incrementSeasonRunCount() {
+  if (!hasWindow()) return 0;
+
+  const nextCount = loadSeasonRunCount() + 1;
+  window.localStorage.setItem(SEASON_RUN_COUNT_KEY, String(nextCount));
+  return nextCount;
+}
+
+export function loadSeasonRunCount() {
+  if (!hasWindow()) return 0;
+
+  const raw = window.localStorage.getItem(SEASON_RUN_COUNT_KEY);
+  if (!raw) return 0;
+
+  const parsed = Number.parseInt(raw, 10);
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : 0;
 }

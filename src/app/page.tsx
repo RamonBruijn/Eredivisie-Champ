@@ -6,8 +6,9 @@ import { FORMATIONS } from "@/lib/formations";
 import { saveDraftSetup, saveSelection } from "@/lib/storage";
 import { useI18n } from "@/lib/i18n";
 import type { DraftSetup, FormationId, GameMode, TeamRecord } from "@/types/game";
-import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { useMemo, useState } from "react";
 
 function getTeamDecade(team: TeamRecord) {
   const startYear = Number.parseInt(team.season.slice(0, 4), 10);
@@ -57,10 +58,9 @@ export default function HomePage() {
             <LanguageToggle />
           </div>
 
-          <div className="mt-5 flex items-end gap-2 sm:gap-3">
-            <span className="text-5xl font-bold leading-none text-white sm:text-7xl">XI</span>
-            <span className="mb-1 text-3xl font-semibold uppercase tracking-[0.22em] text-[var(--gold-soft)] sm:text-5xl">
-              {locale === "nl" ? "titel" : "title"}
+          <div className="mt-5">
+            <span className="text-4xl font-bold uppercase tracking-[0.16em] text-[var(--gold-soft)] sm:text-6xl">
+              VoetbalDraft
             </span>
           </div>
 
@@ -189,6 +189,21 @@ export default function HomePage() {
                 PLAY
               </button>
             </section>
+          </div>
+
+          <div className="mt-8 flex flex-wrap gap-x-5 gap-y-3 border-t border-[rgba(255,255,255,0.08)] pt-5 text-xs uppercase tracking-[0.12em] text-[var(--muted)]">
+            <Link href="/about" className="transition hover:text-white">
+              About
+            </Link>
+            <Link href="/contact" className="transition hover:text-white">
+              Contact
+            </Link>
+            <Link href="/privacybeleid" className="transition hover:text-white">
+              Privacybeleid
+            </Link>
+            <Link href="/algemene-voorwaarden" className="transition hover:text-white">
+              Algemene voorwaarden
+            </Link>
           </div>
         </div>
       </section>

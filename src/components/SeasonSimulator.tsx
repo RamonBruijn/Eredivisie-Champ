@@ -2,7 +2,7 @@
 
 import { useI18n } from "@/lib/i18n";
 import { simulateSeason } from "@/lib/simulation";
-import { saveResult, saveSelection } from "@/lib/storage";
+import { incrementSeasonRunCount, saveResult, saveSelection } from "@/lib/storage";
 import { validateSlotAssignments } from "@/lib/validation";
 import type { AutoSimulationSpeed, FormationId, GameMode, PlayerRecord, SimulationMode } from "@/types/game";
 import { useRouter } from "next/navigation";
@@ -40,6 +40,7 @@ export function SeasonSimulator({
         simulationMode,
         autoSimulationSpeed,
       });
+      incrementSeasonRunCount();
       saveResult(result);
       router.push("/result");
     }, 250);
