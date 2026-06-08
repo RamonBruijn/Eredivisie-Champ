@@ -1,5 +1,27 @@
 [
   {
+    "id": "ado-den-haag-1970-71",
+    "club": "ADO Den Haag",
+    "season": "1970/71",
+    "teamRating": 79,
+    "description": "FC Den Haag-basis met Mansveld, Schoenmaker en sterke Haagse identiteit.",
+    "tags": [
+      "ado-den-haag",
+      "historic"
+    ]
+  },
+  {
+    "id": "ado-den-haag-1974-75",
+    "club": "ADO Den Haag",
+    "season": "1974/75",
+    "teamRating": 78,
+    "description": "Bekerwinnende Haagse ploeg, met Mansveld en Schoenmaker als ankers.",
+    "tags": [
+      "ado-den-haag",
+      "historic"
+    ]
+  },
+  {
     "id": "ado-den-haag-2010-11",
     "club": "ADO Den Haag",
     "season": "2010/11",
@@ -11,15 +33,40 @@
     ]
   },
   {
+    "id": "ado-den-haag-2020-21",
+    "club": "ADO Den Haag",
+    "season": "2020/21",
+    "teamRating": 72,
+    "description": "Modern Eredivisie-seizoen, vooral toegevoegd voor databasebreedte en herkenbare namen.",
+    "tags": [
+      "ado-den-haag",
+      "historic",
+      "modern"
+    ]
+  },
+  {
+    "id": "az-1977-78",
+    "club": "AZ",
+    "season": "1977/78",
+    "teamRating": 83,
+    "description": "Subtopvoorloper van de latere kampioensploeg, met Kist, Nygaard en Van Hanegem.",
+    "tags": [
+      "az",
+      "historic",
+      "title"
+    ]
+  },
+  {
     "id": "az-1980-81",
     "club": "AZ",
     "season": "1980/81",
     "teamRating": 85,
     "description": "Titelploeg en UEFA Cup-finalist.",
     "tags": [
-      "title",
       "az",
-      "historic"
+      "historic",
+      "title",
+      "uefa-cup"
     ]
   },
   {
@@ -30,7 +77,8 @@
     "description": "Co Adriaanse-ploeg, UEFA Cup halve finale.",
     "tags": [
       "az",
-      "historic"
+      "historic",
+      "uefa-cup"
     ]
   },
   {
@@ -40,9 +88,21 @@
     "teamRating": 83,
     "description": "Van Gaal-kampioen.",
     "tags": [
-      "title",
       "az",
-      "historic"
+      "historic",
+      "title"
+    ]
+  },
+  {
+    "id": "az-2020-21",
+    "club": "AZ",
+    "season": "2020/21",
+    "teamRating": 80,
+    "description": "Sterke moderne AZ-lichting met Koopmeiners, Wijndal, Stengs, Karlsson en Boadu.",
+    "tags": [
+      "az",
+      "historic",
+      "modern"
     ]
   },
   {
@@ -53,7 +113,8 @@
     "description": "Conference League halvefinalist.",
     "tags": [
       "az",
-      "historic"
+      "historic",
+      "modern"
     ]
   },
   {
@@ -63,10 +124,9 @@
     "teamRating": 85,
     "description": "Kampioensploeg met jonge Cruijff en 122 competitiegoals.",
     "tags": [
-      "title",
-      "attacking",
       "ajax",
-      "historic"
+      "historic",
+      "title"
     ]
   },
   {
@@ -87,10 +147,11 @@
     "teamRating": 91,
     "description": "Ongeslagen kampioen en Champions League-winnaar.",
     "tags": [
-      "champions-league",
-      "unbeaten",
+      "ajax",
+      "historic",
       "title",
-      "ajax"
+      "champions-league",
+      "unbeaten"
     ]
   },
   {
@@ -101,7 +162,8 @@
     "description": "Dominante dubbelploeg onder Morten Olsen.",
     "tags": [
       "ajax",
-      "historic"
+      "historic",
+      "title"
     ]
   },
   {
@@ -111,10 +173,11 @@
     "teamRating": 88,
     "description": "Champions League-halvefinalist en kampioen.",
     "tags": [
-      "champions-league",
-      "title",
       "ajax",
-      "historic"
+      "historic",
+      "modern",
+      "title",
+      "champions-league"
     ]
   },
   {
@@ -124,8 +187,19 @@
     "teamRating": 84,
     "description": "Sterke Ten Hag-ploeg met brede aanval en veel diepte.",
     "tags": [
-      "attacking",
       "ajax",
+      "historic",
+      "modern"
+    ]
+  },
+  {
+    "id": "fc-groningen-1988-89",
+    "club": "FC Groningen",
+    "season": "1988/89",
+    "teamRating": 77,
+    "description": "Sterke noordelijke subtopbasis met Eijkelkamp, Meijer en veel club-DNA.",
+    "tags": [
+      "fc-groningen",
       "historic"
     ]
   },
@@ -135,6 +209,17 @@
     "season": "1990/91",
     "teamRating": 75,
     "description": "Sterk klassiek subtopseizoen.",
+    "tags": [
+      "fc-groningen",
+      "historic"
+    ]
+  },
+  {
+    "id": "fc-groningen-2006-07",
+    "club": "FC Groningen",
+    "season": "2006/07",
+    "teamRating": 77,
+    "description": "Suárez/Nevland-seizoen, goede moderne subtopselectie.",
     "tags": [
       "fc-groningen",
       "historic"
@@ -152,11 +237,46 @@
     ]
   },
   {
+    "id": "fc-groningen-2024-25",
+    "club": "FC Groningen",
+    "season": "2024/25",
+    "teamRating": 73,
+    "description": "Promovendus terug op Eredivisie-niveau, met jong talent en stabiele as.",
+    "tags": [
+      "fc-groningen",
+      "historic",
+      "modern"
+    ]
+  },
+  {
+    "id": "fc-twente-1971-72",
+    "club": "FC Twente",
+    "season": "1971/72",
+    "teamRating": 81,
+    "description": "Klassieke Twente-topploeg uit de jaren zeventig, sterk in as en aanval.",
+    "tags": [
+      "fc-twente",
+      "historic"
+    ]
+  },
+  {
     "id": "fc-twente-1974-75",
     "club": "FC Twente",
     "season": "1974/75",
     "teamRating": 82,
     "description": "UEFA Cup-finalist.",
+    "tags": [
+      "fc-twente",
+      "historic",
+      "uefa-cup"
+    ]
+  },
+  {
+    "id": "fc-twente-1976-77",
+    "club": "FC Twente",
+    "season": "1976/77",
+    "teamRating": 80,
+    "description": "Laat-jarenzeventig Twente, Europees herkenbaar en nog altijd bovengemiddeld sterk.",
     "tags": [
       "fc-twente",
       "historic"
@@ -169,9 +289,22 @@
     "teamRating": 82,
     "description": "Kampioensselectie.",
     "tags": [
-      "title",
       "fc-twente",
-      "historic"
+      "historic",
+      "title"
+    ]
+  },
+  {
+    "id": "fc-twente-2011-12",
+    "club": "FC Twente",
+    "season": "2011/12",
+    "teamRating": 80,
+    "description": "Beker- en titelcontender kort na het kampioensjaar, met veel aanvallende kwaliteit.",
+    "tags": [
+      "fc-twente",
+      "historic",
+      "title",
+      "attacking"
     ]
   },
   {
@@ -181,8 +314,30 @@
     "teamRating": 78,
     "description": "Moderne top-3 ploeg.",
     "tags": [
-      "modern",
       "fc-twente",
+      "historic",
+      "modern"
+    ]
+  },
+  {
+    "id": "fc-utrecht-1980-81",
+    "club": "FC Utrecht",
+    "season": "1980/81",
+    "teamRating": 79,
+    "description": "Top-3 ploeg met Van Breukelen, Van Hanegem en een sterke Utrechtse as.",
+    "tags": [
+      "fc-utrecht",
+      "historic"
+    ]
+  },
+  {
+    "id": "fc-utrecht-2002-03",
+    "club": "FC Utrecht",
+    "season": "2002/03",
+    "teamRating": 77,
+    "description": "Bekerwinnende Utrecht-ploeg met Kuyt, Gluscevic en een sterke mentaliteit.",
+    "tags": [
+      "fc-utrecht",
       "historic"
     ]
   },
@@ -193,9 +348,21 @@
     "teamRating": 75,
     "description": "Sterke moderne subtopselectie.",
     "tags": [
-      "modern",
       "fc-utrecht",
-      "historic"
+      "historic",
+      "modern"
+    ]
+  },
+  {
+    "id": "fc-utrecht-2020-21",
+    "club": "FC Utrecht",
+    "season": "2020/21",
+    "teamRating": 76,
+    "description": "Moderne Utrecht-selectie met veel creativiteit en breedte.",
+    "tags": [
+      "fc-utrecht",
+      "historic",
+      "modern"
     ]
   },
   {
@@ -205,8 +372,19 @@
     "teamRating": 74,
     "description": "Sterk modern seizoen met Europees ticket.",
     "tags": [
-      "modern",
       "fc-utrecht",
+      "historic",
+      "modern"
+    ]
+  },
+  {
+    "id": "fc-volendam-2008-09",
+    "club": "FC Volendam",
+    "season": "2008/09",
+    "teamRating": 71,
+    "description": "Eredivisiejaar met Jack Tuyp, Verhoeven en veel Volendams DNA.",
+    "tags": [
+      "fc-volendam",
       "historic"
     ]
   },
@@ -217,9 +395,21 @@
     "teamRating": 70,
     "description": "Promovendus die zich handhaafde, moderne selectie makkelijker te controleren.",
     "tags": [
-      "modern",
       "fc-volendam",
-      "historic"
+      "historic",
+      "modern"
+    ]
+  },
+  {
+    "id": "fc-volendam-2023-24",
+    "club": "FC Volendam",
+    "season": "2023/24",
+    "teamRating": 71,
+    "description": "Recente Eredivisie-selectie, laagste teamrange maar bruikbaar voor variatie.",
+    "tags": [
+      "fc-volendam",
+      "historic",
+      "modern"
     ]
   },
   {
@@ -229,9 +419,9 @@
     "teamRating": 89,
     "description": "Europa Cup I-winnaar.",
     "tags": [
-      "european-cup",
       "feyenoord",
-      "historic"
+      "historic",
+      "european-cup"
     ]
   },
   {
@@ -242,7 +432,8 @@
     "description": "UEFA Cup-winnaar.",
     "tags": [
       "feyenoord",
-      "historic"
+      "historic",
+      "uefa-cup"
     ]
   },
   {
@@ -253,7 +444,8 @@
     "description": "Dubbel met Cruijff en Gullit.",
     "tags": [
       "feyenoord",
-      "historic"
+      "historic",
+      "title"
     ]
   },
   {
@@ -263,9 +455,9 @@
     "teamRating": 83,
     "description": "Sterke titelploeg onder Leo Beenhakker.",
     "tags": [
-      "title",
       "feyenoord",
-      "historic"
+      "historic",
+      "title"
     ]
   },
   {
@@ -275,9 +467,10 @@
     "teamRating": 82,
     "description": "Kampioen na 18 jaar.",
     "tags": [
-      "title",
       "feyenoord",
-      "historic"
+      "historic",
+      "modern",
+      "title"
     ]
   },
   {
@@ -287,9 +480,20 @@
     "teamRating": 83,
     "description": "Moderne pressingkampioen onder Arne Slot.",
     "tags": [
-      "title",
-      "modern",
       "feyenoord",
+      "historic",
+      "modern",
+      "title"
+    ]
+  },
+  {
+    "id": "fortuna-sittard-1995-96",
+    "club": "Fortuna Sittard",
+    "season": "1995/96",
+    "teamRating": 77,
+    "description": "Fortuna met jonge Van Bommel, Ricksen, Hofland en Bouma-generatie.",
+    "tags": [
+      "fortuna-sittard",
       "historic"
     ]
   },
@@ -305,15 +509,74 @@
     ]
   },
   {
+    "id": "fortuna-sittard-2018-19",
+    "club": "Fortuna Sittard",
+    "season": "2018/19",
+    "teamRating": 72,
+    "description": "Terugkeer in de Eredivisie met Diemers, Semedo, Lamprou en Novakovich.",
+    "tags": [
+      "fortuna-sittard",
+      "historic",
+      "modern"
+    ]
+  },
+  {
+    "id": "go-ahead-eagles-2013-14",
+    "club": "Go Ahead Eagles",
+    "season": "2013/14",
+    "teamRating": 72,
+    "description": "Terugkeer op Eredivisie-niveau, compact en herkenbaar Deventer-team.",
+    "tags": [
+      "go-ahead-eagles",
+      "historic"
+    ]
+  },
+  {
+    "id": "go-ahead-eagles-2021-22",
+    "club": "Go Ahead Eagles",
+    "season": "2021/22",
+    "teamRating": 72,
+    "description": "Nieuwe Eredivisie-periode met Noppert, Idzes en Brouwers.",
+    "tags": [
+      "go-ahead-eagles",
+      "historic",
+      "modern"
+    ]
+  },
+  {
+    "id": "go-ahead-eagles-2023-24",
+    "club": "Go Ahead Eagles",
+    "season": "2023/24",
+    "teamRating": 73,
+    "description": "Sterk recent seizoen, hoog pressingniveau en veel spelplezier.",
+    "tags": [
+      "go-ahead-eagles",
+      "historic",
+      "modern"
+    ]
+  },
+  {
     "id": "go-ahead-eagles-2024-25",
     "club": "Go Ahead Eagles",
     "season": "2024/25",
     "teamRating": 73,
     "description": "Bekerwinnaar, moderne cultselectie.",
     "tags": [
-      "modern",
       "go-ahead-eagles",
-      "historic"
+      "historic",
+      "modern"
+    ]
+  },
+  {
+    "id": "heracles-almelo-2011-12",
+    "club": "Heracles Almelo",
+    "season": "2011/12",
+    "teamRating": 75,
+    "description": "Bosz/Overtoom/Armenteros-era, leuk aanvallend Heracles.",
+    "tags": [
+      "heracles-almelo",
+      "historic",
+      "attacking"
     ]
   },
   {
@@ -324,6 +587,41 @@
     "description": "Zesde plaats en Europees ticket via play-offs.",
     "tags": [
       "heracles-almelo",
+      "historic",
+      "modern"
+    ]
+  },
+  {
+    "id": "heracles-almelo-2023-24",
+    "club": "Heracles Almelo",
+    "season": "2023/24",
+    "teamRating": 72,
+    "description": "Recente Eredivisie-selectie met Hornkamp, Limbombe en Hoogma.",
+    "tags": [
+      "heracles-almelo",
+      "historic",
+      "modern"
+    ]
+  },
+  {
+    "id": "nac-breda-1993-94",
+    "club": "NAC Breda",
+    "season": "1993/94",
+    "teamRating": 76,
+    "description": "NAC met Van Hooijdonk, Stewart en Lokhoff, herkenbare jaren-negentigbasis.",
+    "tags": [
+      "nac-breda",
+      "historic"
+    ]
+  },
+  {
+    "id": "nac-breda-2003-04",
+    "club": "NAC Breda",
+    "season": "2003/04",
+    "teamRating": 77,
+    "description": "Sterke moderne NAC-ploeg met Babos, Penders, Slot en Engelaar.",
+    "tags": [
+      "nac-breda",
       "historic"
     ]
   },
@@ -339,15 +637,61 @@
     ]
   },
   {
+    "id": "nac-breda-2017-18",
+    "club": "NAC Breda",
+    "season": "2017/18",
+    "teamRating": 73,
+    "description": "Manchester City-huurlingen en een herkenbare moderne Eredivisie-selectie.",
+    "tags": [
+      "nac-breda",
+      "historic",
+      "modern"
+    ]
+  },
+  {
+    "id": "nec-2002-03",
+    "club": "NEC",
+    "season": "2002/03",
+    "teamRating": 76,
+    "description": "Sterk NEC-seizoen met Gentenaar, Pothuizen, De Gier en Denneboom.",
+    "tags": [
+      "nec",
+      "historic"
+    ]
+  },
+  {
+    "id": "nec-2007-08",
+    "club": "NEC",
+    "season": "2007/08",
+    "teamRating": 76,
+    "description": "Mario Been-eindsprint, Schöne/Lens/Holman en veel cultwaarde.",
+    "tags": [
+      "nec",
+      "historic"
+    ]
+  },
+  {
+    "id": "nec-2021-22",
+    "club": "NEC",
+    "season": "2021/22",
+    "teamRating": 73,
+    "description": "Terugkeer in Eredivisie, met Schöne, Tavsan, Okita en Proper.",
+    "tags": [
+      "nec",
+      "historic",
+      "modern"
+    ]
+  },
+  {
     "id": "nec-2023-24",
     "club": "NEC",
     "season": "2023/24",
     "teamRating": 75,
     "description": "Bekerfinalist en sterk modern seizoen.",
     "tags": [
-      "modern",
       "nec",
-      "historic"
+      "historic",
+      "modern"
     ]
   },
   {
@@ -362,15 +706,39 @@
     ]
   },
   {
+    "id": "pec-zwolle-2014-15",
+    "club": "PEC Zwolle",
+    "season": "2014/15",
+    "teamRating": 76,
+    "description": "Na de bekerwinst, met Van Polen, Thomas, Saymak en Necid.",
+    "tags": [
+      "pec-zwolle",
+      "historic"
+    ]
+  },
+  {
+    "id": "pec-zwolle-2017-18",
+    "club": "PEC Zwolle",
+    "season": "2017/18",
+    "teamRating": 75,
+    "description": "Stabiel PEC-jaar met Namli, Sandler, Ehizibue en Parzyszek.",
+    "tags": [
+      "pec-zwolle",
+      "historic",
+      "modern"
+    ]
+  },
+  {
     "id": "psv-1977-78",
     "club": "PSV",
     "season": "1977/78",
     "teamRating": 86,
     "description": "UEFA Cup-winnaar en kampioenwaardig Europees PSV.",
     "tags": [
-      "title",
       "psv",
-      "historic"
+      "historic",
+      "title",
+      "uefa-cup"
     ]
   },
   {
@@ -380,10 +748,10 @@
     "teamRating": 91,
     "description": "Trebleploeg, Europa Cup I-winnaar.",
     "tags": [
-      "european-cup",
-      "treble",
       "psv",
-      "historic"
+      "historic",
+      "title",
+      "european-cup"
     ]
   },
   {
@@ -393,9 +761,9 @@
     "teamRating": 82,
     "description": "Ronaldo-seizoen, extreem aanvallend talent.",
     "tags": [
-      "attacking",
       "psv",
-      "historic"
+      "historic",
+      "attacking"
     ]
   },
   {
@@ -405,9 +773,9 @@
     "teamRating": 88,
     "description": "Hiddink-ploeg, halve finale Champions League.",
     "tags": [
-      "champions-league",
       "psv",
-      "historic"
+      "historic",
+      "champions-league"
     ]
   },
   {
@@ -417,9 +785,10 @@
     "teamRating": 83,
     "description": "Kampioensploeg met Guardado, Moreno en Luuk de Jong.",
     "tags": [
-      "title",
       "psv",
-      "historic"
+      "historic",
+      "modern",
+      "title"
     ]
   },
   {
@@ -430,7 +799,8 @@
     "description": "Extreem dominante Bosz-ploeg.",
     "tags": [
       "psv",
-      "historic"
+      "historic",
+      "modern"
     ]
   },
   {
@@ -445,14 +815,174 @@
     ]
   },
   {
+    "id": "roda-jc-1995-96",
+    "club": "Roda JC",
+    "season": "1995/96",
+    "teamRating": 77,
+    "description": "Sterke Roda-jaren met Van der Luer, Senden en veel fysieke kwaliteit.",
+    "tags": [
+      "roda-jc",
+      "historic"
+    ]
+  },
+  {
+    "id": "roda-jc-1996-97",
+    "club": "Roda JC",
+    "season": "1996/97",
+    "teamRating": 76,
+    "description": "Bekerwinnende Roda-selectie, compact en lastig te verslaan.",
+    "tags": [
+      "roda-jc",
+      "historic"
+    ]
+  },
+  {
+    "id": "roda-jc-1999-00",
+    "club": "Roda JC",
+    "season": "1999/00",
+    "teamRating": 76,
+    "description": "Subtop-Roda rond Kalac, Van der Luer, Soetaers en Peeters.",
+    "tags": [
+      "roda-jc",
+      "historic"
+    ]
+  },
+  {
+    "id": "sc-heerenveen-1999-00",
+    "club": "SC Heerenveen",
+    "season": "1999/00",
+    "teamRating": 78,
+    "description": "Tweede plaats, Champions League-ticket.",
+    "tags": [
+      "sc-heerenveen",
+      "historic",
+      "champions-league"
+    ]
+  },
+  {
+    "id": "sc-heerenveen-2000-01",
+    "club": "SC Heerenveen",
+    "season": "2000/01",
+    "teamRating": 78,
+    "description": "Champions League-najaar en aanvallende kwaliteit na het topjaar 1999/00.",
+    "tags": [
+      "sc-heerenveen",
+      "historic",
+      "champions-league",
+      "attacking"
+    ]
+  },
+  {
+    "id": "sc-heerenveen-2006-07",
+    "club": "SC Heerenveen",
+    "season": "2006/07",
+    "teamRating": 77,
+    "description": "Afonso Alves-topjaar en een sterke aanvallende Friese selectie.",
+    "tags": [
+      "sc-heerenveen",
+      "historic",
+      "attacking"
+    ]
+  },
+  {
+    "id": "sc-heerenveen-2008-09",
+    "club": "SC Heerenveen",
+    "season": "2008/09",
+    "teamRating": 78,
+    "description": "Bekerwinnaar.",
+    "tags": [
+      "sc-heerenveen",
+      "historic"
+    ]
+  },
+  {
+    "id": "sc-heerenveen-2011-12",
+    "club": "SC Heerenveen",
+    "season": "2011/12",
+    "teamRating": 78,
+    "description": "Aanvalsjaar met Dost, Narsingh, Assaidi, Djuricic en Janmaat.",
+    "tags": [
+      "sc-heerenveen",
+      "historic"
+    ]
+  },
+  {
+    "id": "sparta-rotterdam-1985-86",
+    "club": "Sparta Rotterdam",
+    "season": "1985/86",
+    "teamRating": 77,
+    "description": "Klassiek sterk Sparta, met Van Gaal en Blind als herkenbare ankers.",
+    "tags": [
+      "sparta-rotterdam",
+      "historic"
+    ]
+  },
+  {
+    "id": "sparta-rotterdam-2016-17",
+    "club": "Sparta Rotterdam",
+    "season": "2016/17",
+    "teamRating": 72,
+    "description": "Terugkeer onder Pastoor, met Dumfries, Floranus en Kortsmit.",
+    "tags": [
+      "sparta-rotterdam",
+      "historic",
+      "modern"
+    ]
+  },
+  {
     "id": "sparta-rotterdam-2022-23",
     "club": "Sparta Rotterdam",
     "season": "2022/23",
     "teamRating": 73,
     "description": "Zesde plaats, moderne overperformer.",
     "tags": [
-      "modern",
       "sparta-rotterdam",
+      "historic",
+      "modern"
+    ]
+  },
+  {
+    "id": "sparta-rotterdam-2023-24",
+    "club": "Sparta Rotterdam",
+    "season": "2023/24",
+    "teamRating": 73,
+    "description": "Sterke moderne Sparta, compact en met veel bruikbare gameprofielen.",
+    "tags": [
+      "sparta-rotterdam",
+      "historic",
+      "modern"
+    ]
+  },
+  {
+    "id": "vitesse-1992-93",
+    "club": "Vitesse",
+    "season": "1992/93",
+    "teamRating": 78,
+    "description": "Vitesse in opmars, met Van der Gouw, Cocu en clubiconen Bos/Sturing.",
+    "tags": [
+      "vitesse",
+      "historic"
+    ]
+  },
+  {
+    "id": "vitesse-1998-99",
+    "club": "Vitesse",
+    "season": "1998/99",
+    "teamRating": 78,
+    "description": "Nikos Machlas-topjaar en een van de beste Vitesse-selecties ooit.",
+    "tags": [
+      "vitesse",
+      "historic"
+    ]
+  },
+  {
+    "id": "vitesse-2012-13",
+    "club": "Vitesse",
+    "season": "2012/13",
+    "teamRating": 79,
+    "description": "Bony, Van Ginkel, Kalas en Van Aanholt, een sterk modern Vitesse.",
+    "tags": [
+      "vitesse",
       "historic"
     ]
   },
@@ -464,7 +994,8 @@
     "description": "Bekerwinnaar.",
     "tags": [
       "vitesse",
-      "historic"
+      "historic",
+      "modern"
     ]
   },
   {
@@ -475,7 +1006,20 @@
     "description": "Vierde plaats en bekerfinale onder Thomas Letsch.",
     "tags": [
       "vitesse",
-      "historic"
+      "historic",
+      "modern"
+    ]
+  },
+  {
+    "id": "willem-ii-1997-98",
+    "club": "Willem II",
+    "season": "1997/98",
+    "teamRating": 77,
+    "description": "Voorbode van het Champions League-ticket, met Hyypiä en sterke as.",
+    "tags": [
+      "willem-ii",
+      "historic",
+      "champions-league"
     ]
   },
   {
@@ -485,31 +1029,31 @@
     "teamRating": 76,
     "description": "Tweede plaats en Champions League-kwalificatie.",
     "tags": [
-      "champions-league",
       "willem-ii",
-      "historic"
+      "historic",
+      "champions-league"
     ]
   },
   {
-    "id": "sc-heerenveen-1999-00",
-    "club": "SC Heerenveen",
+    "id": "willem-ii-1999-00",
+    "club": "Willem II",
     "season": "1999/00",
-    "teamRating": 78,
-    "description": "Tweede plaats, Champions League-ticket.",
+    "teamRating": 76,
+    "description": "Champions League-periode van Willem II, meer Europees dan breed.",
     "tags": [
-      "champions-league",
-      "sc-heerenveen",
-      "historic"
+      "willem-ii",
+      "historic",
+      "champions-league"
     ]
   },
   {
-    "id": "sc-heerenveen-2008-09",
-    "club": "SC Heerenveen",
-    "season": "2008/09",
-    "teamRating": 78,
-    "description": "Bekerwinnaar.",
+    "id": "willem-ii-2004-05",
+    "club": "Willem II",
+    "season": "2004/05",
+    "teamRating": 76,
+    "description": "Bekerfinale- en Europees-ticketjaar, met Reuser, Jaliens en Bobson.",
     "tags": [
-      "sc-heerenveen",
+      "willem-ii",
       "historic"
     ]
   }

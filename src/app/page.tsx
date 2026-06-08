@@ -6,8 +6,9 @@ import { FORMATIONS } from "@/lib/formations";
 import { saveDraftSetup, saveSelection } from "@/lib/storage";
 import { useI18n } from "@/lib/i18n";
 import type { DraftSetup, FormationId, GameMode, TeamRecord } from "@/types/game";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
 
 function getTeamDecade(team: TeamRecord) {
@@ -58,7 +59,17 @@ export default function HomePage() {
             <LanguageToggle />
           </div>
 
-          <div className="mt-5">
+          <div className="mt-5 flex items-center gap-4 sm:gap-5">
+            <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-full border border-[rgba(228,197,106,0.26)] bg-[rgba(255,255,255,0.03)] p-1.5 shadow-[0_12px_30px_rgba(0,0,0,0.22)] sm:h-20 sm:w-20">
+              <Image
+                src="/voetbaldraft-logo.png"
+                alt="VoetbalDraft logo"
+                fill
+                sizes="(max-width: 640px) 64px, 80px"
+                className="object-contain p-1 opacity-90"
+                priority
+              />
+            </div>
             <span className="text-4xl font-bold uppercase tracking-[0.16em] text-[var(--gold-soft)] sm:text-6xl">
               VoetbalDraft
             </span>

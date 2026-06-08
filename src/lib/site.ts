@@ -1,4 +1,4 @@
-export const SITE_NAME = "Eredivisie Champ";
+export const SITE_NAME = "VoetbalDraft";
 export const SITE_DESCRIPTION =
   "Draft een historisch Eredivisie-elftal, simuleer een volledig seizoen en kijk of jouw XI de schaal pakt.";
 
