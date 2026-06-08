@@ -143,7 +143,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     },
     home: {
       eyebrow: "Eredivisie Champ",
-      title: "Bouw je kampioensteam uit historische Eredivisie-grootheden.",
+      title: "Bouw je kampioensteam met de grootste Eredivisie-helden en pak die schaal!",
       description: "Kies uit legendarische Eredivisie-teams, draft je droomelftal en simuleer een volledig seizoen volledig in de browser.",
       start: "Start spel",
       subtitle: "Kun jij kampioen worden?",
