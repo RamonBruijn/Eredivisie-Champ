@@ -55,6 +55,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="nl">
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6871463419775181"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body>
         <I18nProvider>
           {children}

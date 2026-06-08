@@ -64,7 +64,7 @@ export default function HomePage() {
             </span>
           </div>
 
-          <h1 className="mt-4 max-w-3xl text-balance text-4xl font-bold leading-[0.96] text-white sm:text-5xl md:text-7xl">
+          <h1 className="mt-4 max-w-3xl text-balance text-3xl font-bold leading-[1.02] text-white sm:text-4xl md:text-5xl">
             {t.home.title}
           </h1>
           <p className="mt-4 max-w-2xl text-base leading-7 text-[var(--muted)] md:mt-6 md:text-lg">

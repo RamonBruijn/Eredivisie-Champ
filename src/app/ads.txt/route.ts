@@ -1,16 +1,6 @@
-import { SITE_URL } from "@/lib/site";
-
 export const dynamic = "force-static";
 
 export function GET() {
-  const hostname = new URL(SITE_URL).hostname;
-  const body = [
-    "# ads.txt for Eredivisie Champ",
-    `# Host: ${hostname}`,
-    "# No advertising seller accounts configured yet.",
-    "# Update this file before enabling ad monetization.",
-  ].join("\n");
-
   return new Response(body, {
     headers: {
       "Content-Type": "text/plain; charset=utf-8",
@@ -18,3 +8,5 @@ export function GET() {
     },
   });
 }
+
+const body = "google.com, pub-6871463419775181, DIRECT, f08c47fec0942fa0";
