@@ -1,5 +1,7 @@
 import { SITE_URL } from "@/lib/site";
 
+export const dynamic = "force-static";
+
 export function GET() {
   const hostname = new URL(SITE_URL).hostname;
   const body = [
