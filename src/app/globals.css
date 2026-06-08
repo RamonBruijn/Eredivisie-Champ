@@ -134,6 +134,28 @@ select {
   gap: 0.1rem;
 }
 
+.joop-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem 0.8rem;
+  max-width: min(32rem, calc(100vw - 2rem));
+  padding: 0.2rem 0.2rem 0.05rem;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.joop-footer-links a {
+  color: rgba(245, 244, 237, 0.34);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.26);
+  transition: color 160ms ease;
+}
+
+.joop-footer-links a:hover {
+  color: rgba(245, 244, 237, 0.58);
+}
+
 .prod-by-joop {
   color: rgba(245, 244, 237, 0.34);
   padding: 0.12rem 0.2rem;
@@ -159,6 +181,18 @@ select {
 
 .joop-support-link:hover {
   color: rgba(245, 244, 237, 0.48);
+}
+
+@media (max-width: 640px) {
+  .joop-footer {
+    right: 0.65rem;
+    left: 0.65rem;
+    align-items: center;
+  }
+
+  .joop-footer-links {
+    justify-content: center;
+  }
 }
 
 @keyframes feed-in {
