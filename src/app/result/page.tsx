@@ -25,6 +25,7 @@ export default function ResultPage() {
   const [seasonRunCount, setSeasonRunCount] = useState(0);
   const [isSecondHalfAdGateOpen, setIsSecondHalfAdGateOpen] = useState(false);
   const [isSecondHalfGatePending, setIsSecondHalfGatePending] = useState(false);
+  const [shareFeedback, setShareFeedback] = useState<"idle" | "copied" | "shared">("idle");
   const secondHalfAdGateResolverRef = useRef<(() => void) | null>(null);
 
   useEffect(() => {
@@ -38,6 +39,13 @@ export default function ResultPage() {
     setAutoPaused(false);
     setAutoSimulationSpeed(result?.context.autoSimulationSpeed ?? "normal");
   }, [result]);
+
+  useEffect(() => {
+    if (shareFeedback === "idle") return;
+
+    const timer = window.setTimeout(() => setShareFeedback("idle"), 2200);
+    return () => window.clearTimeout(timer);
+  }, [shareFeedback]);
 
   useEffect(() => {
     if (!result || result.context.simulationMode !== "auto") return;
@@ -143,6 +151,43 @@ export default function ResultPage() {
     setAutoPaused((current) => !current);
   }
 
+  async function handleShareResult() {
+    if (!result) return;
+
+    try {
+      if (navigator.share) {
+        await navigator.share({
+          title: "VoetbalDraft.app",
+          text: result.shareText,
+          url: "https://voetbaldraft.app",
+        });
+        setShareFeedback("shared");
+        return;
+      }
+
+      await navigator.clipboard.writeText(result.shareText);
+      setShareFeedback("copied");
+    } catch {
+      try {
+        await navigator.clipboard.writeText(result.shareText);
+        setShareFeedback("copied");
+      } catch {
+        setShareFeedback("idle");
+      }
+    }
+  }
+
+  async function handleDownloadResultImage() {
+    if (!result) return;
+
+    try {
+      await navigator.clipboard.writeText(result.shareText);
+      setShareFeedback("copied");
+    } catch {
+      setShareFeedback("idle");
+    }
+  }
+
   const autoSpeedButtons: Array<{ value: AutoSimulationSpeed; label: string }> = [
     { value: "slow", label: locale === "nl" ? "Rustig" : "Slow" },
     { value: "normal", label: locale === "nl" ? "Normaal" : "Normal" },
@@ -158,13 +203,40 @@ export default function ResultPage() {
         <>
           {seasonFinished ? (
             <>
-              <div className="mb-4 flex justify-center md:mb-5 md:justify-start">
-                <Link
-                  href="/"
-                  className="inline-flex min-h-12 items-center justify-center rounded-[1.25rem] bg-[linear-gradient(180deg,var(--gold-soft),var(--gold))] px-5 py-3 text-sm font-bold text-[#171b3a] shadow-[0_14px_30px_rgba(0,0,0,0.22)] transition hover:translate-y-[-1px] hover:brightness-105"
-                >
-                  {t.result.playAgain}
-                </Link>
+              <div className="mb-4 flex flex-col gap-3 md:mb-5">
+                <div className="flex flex-wrap justify-center gap-3 md:justify-start">
+                  <Link
+                    href="/"
+                    className="inline-flex min-h-12 items-center justify-center rounded-[1.25rem] bg-[linear-gradient(180deg,var(--gold-soft),var(--gold))] px-5 py-3 text-sm font-bold text-[#171b3a] shadow-[0_14px_30px_rgba(0,0,0,0.22)] transition hover:translate-y-[-1px] hover:brightness-105"
+                  >
+                    {t.result.playAgain}
+                  </Link>
+                  <button
+                    type="button"
+                    onClick={handleDownloadResultImage}
+                    className="inline-flex min-h-12 items-center justify-center rounded-[1.25rem] border border-[rgba(255,255,255,0.12)] bg-[rgba(255,255,255,0.04)] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[rgba(255,255,255,0.08)]"
+                  >
+                    {locale === "nl" ? "Download afbeelding" : "Download image"}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleShareResult}
+                    className="inline-flex min-h-12 items-center justify-center rounded-[1.25rem] border border-[rgba(228,197,106,0.4)] bg-[rgba(228,197,106,0.08)] px-5 py-3 text-sm font-semibold text-[var(--gold-soft)] transition hover:bg-[rgba(228,197,106,0.14)]"
+                  >
+                    {locale === "nl" ? "Deel resultaat" : "Share result"}
+                  </button>
+                </div>
+                {shareFeedback !== "idle" ? (
+                  <p className="text-center text-xs text-[var(--muted)] md:text-left">
+                    {shareFeedback === "shared"
+                      ? locale === "nl"
+                        ? "Resultaat gedeeld."
+                        : "Result shared."
+                      : locale === "nl"
+                        ? "Deeltekst gekopieerd. PNG-export volgt later."
+                        : "Share text copied. PNG export can come later."}
+                  </p>
+                ) : null}
               </div>
               <ResultCard result={result} isChampion={isChampion} finalPlacement={finalPlacement >= 0 ? finalPlacement + 1 : undefined} />
             </>
