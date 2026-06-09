@@ -197,17 +197,6 @@ export default function ResultPage() {
     }
   }
 
-  async function handleDownloadResultImage() {
-    if (!result) return;
-
-    try {
-      await navigator.clipboard.writeText(result.shareText);
-      setShareFeedback("copied");
-    } catch {
-      setShareFeedback("idle");
-    }
-  }
-
   const autoSpeedButtons: Array<{ value: AutoSimulationSpeed; label: string }> = [
     { value: "slow", label: locale === "nl" ? "Rustig" : "Slow" },
     { value: "normal", label: locale === "nl" ? "Normaal" : "Normal" },
@@ -231,13 +220,6 @@ export default function ResultPage() {
                   >
                     {t.result.playAgain}
                   </Link>
-                  <button
-                    type="button"
-                    onClick={handleDownloadResultImage}
-                    className="inline-flex min-h-12 items-center justify-center rounded-[1.25rem] border border-[rgba(255,255,255,0.12)] bg-[rgba(255,255,255,0.04)] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[rgba(255,255,255,0.08)]"
-                  >
-                    {locale === "nl" ? "Download afbeelding" : "Download image"}
-                  </button>
                   <button
                     type="button"
                     onClick={handleShareResult}

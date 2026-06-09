@@ -14,6 +14,11 @@ interface ResultCardProps {
 }
 
 type BadgeTone = "king" | "invincible" | "champion" | "neutral" | "danger";
+type ResultContext = {
+  label: string;
+  sublabel?: string;
+  tone: BadgeTone;
+};
 
 export function ResultCard({ result, isChampion = false, finalPlacement }: ResultCardProps) {
   const { locale } = useI18n();
@@ -28,7 +33,7 @@ export function ResultCard({ result, isChampion = false, finalPlacement }: Resul
   const formation = getFormation(result.context.formation);
   const formationLayout = getFormationLayout(result.context.formation);
   const topScorers = useMemo(() => createTopScorers(result), [result]);
-  const badge = getPerformanceBadge({
+  const resultContext = getResultContext({
     locale,
     finalPlacement,
     isChampion,
@@ -46,8 +51,6 @@ export function ResultCard({ result, isChampion = false, finalPlacement }: Resul
   }));
   const bestPlayerRecord = savedSelection.find((player) => player?.name === result.bestPlayer) ?? null;
   const bestPlayerGoals = topScorers.find((entry) => entry.playerName === result.bestPlayer)?.goals;
-  const degradationNote =
-    finalPlacement === 17 || finalPlacement === 18 ? "Op naar Oss, Helmond en Emmen!" : null;
   const runLabel =
     seasonRunCount > 0
       ? `${locale === "nl" ? "Run" : "Run"} ${seasonRunCount}`
@@ -98,23 +101,16 @@ export function ResultCard({ result, isChampion = false, finalPlacement }: Resul
                   </p>
                 </div>
               </div>
+              <p className={`mt-3 text-lg font-bold sm:text-xl ${contextLabelClassName(resultContext.tone)}`}>
+                {resultContext.label}
+              </p>
+              {resultContext.sublabel ? (
+                <p className="mt-1 text-sm text-[var(--muted)] sm:text-base">{resultContext.sublabel}</p>
+              ) : null}
               <p className="mt-3 text-base font-semibold text-white sm:text-lg">
                 {pointsLabel} <span className="text-[var(--muted)]">·</span> {placementLabel}
               </p>
-              {degradationNote ? (
-                <p className="mt-2 text-sm font-bold text-[#ffb380] sm:text-base">{degradationNote}</p>
-              ) : null}
             </section>
-
-            <section className="mt-4 flex justify-center">
-              <span className={`inline-flex rounded-full border px-4 py-2 text-sm font-bold uppercase tracking-[0.18em] ${badgeClassName(badge.tone)}`}>
-                {badge.label}
-              </span>
-            </section>
-
-            {badge.description ? (
-              <p className="mt-2 text-center text-xs text-[var(--muted)] sm:text-sm">{badge.description}</p>
-            ) : null}
 
             <section className="mt-5 rounded-[1.45rem] border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.035)] p-3.5 md:p-4.5">
               <div className="flex items-center justify-between gap-3">
@@ -288,7 +284,7 @@ function calculateAverageRating(selection: Array<PlayerRecord | null>) {
   return Math.round(ratedPlayers.reduce((sum, player) => sum + player.rating, 0) / ratedPlayers.length);
 }
 
-function getPerformanceBadge({
+function getResultContext({
   locale,
   finalPlacement,
   isChampion,
@@ -302,11 +298,11 @@ function getPerformanceBadge({
   wins: number;
   draws: number;
   losses: number;
-}) {
+}): ResultContext {
   if (wins === 34 && draws === 0 && losses === 0) {
     return {
       label: locale === "nl" ? "Absolute koning" : "Absolute king",
-      description: locale === "nl" ? "Perfect seizoen" : "Perfect season",
+      sublabel: locale === "nl" ? "Perfect seizoen" : "Perfect season",
       tone: "king" as BadgeTone,
     };
   }
@@ -314,7 +310,7 @@ function getPerformanceBadge({
   if ((isChampion || finalPlacement === 1) && losses === 0) {
     return {
       label: locale === "nl" ? "Ongeslagen kampioen" : "Invincible champion",
-      description: locale === "nl" ? "Geen nederlaag te bekennen." : "Not a single defeat.",
+      sublabel: locale === "nl" ? "Geen nederlaag te bekennen" : "Not a single defeat",
       tone: "invincible" as BadgeTone,
     };
   }
@@ -322,44 +318,100 @@ function getPerformanceBadge({
   if (isChampion || finalPlacement === 1) {
     return {
       label: locale === "nl" ? "Kampioen" : "Champion",
-      description: locale === "nl" ? "De schaal is binnen." : "The title is yours.",
+      sublabel: locale === "nl" ? "De schaal is binnen" : "The title is yours",
       tone: "champion" as BadgeTone,
+    };
+  }
+
+  if (finalPlacement === 2) {
+    return {
+      label: locale === "nl" ? "2e plek, Champions League voetbal!" : "2nd place, Champions League football!",
+      sublabel: locale === "nl" ? "Net niet, maar wel elite" : "Close, but still elite",
+      tone: "champion" as BadgeTone,
+    };
+  }
+
+  if (finalPlacement && [3, 4, 5].includes(finalPlacement)) {
+    return {
+      label: locale === "nl" ? "Europees voetbal" : "European football",
+      sublabel: placementToSublabel(locale, finalPlacement),
+      tone: "neutral" as BadgeTone,
+    };
+  }
+
+  if (finalPlacement && [6, 7, 8].includes(finalPlacement)) {
+    return {
+      label: locale === "nl" ? "Play-offs" : "Play-offs",
+      sublabel: placementToSublabel(locale, finalPlacement),
+      tone: "neutral" as BadgeTone,
+    };
+  }
+
+  const midTableLabels: Record<number, string> = {
+    9: locale === "nl" ? "Net buiten de gezelligheid" : "Just outside the party",
+    10: locale === "nl" ? "Middenmoot met praatjes" : "Mid-table with attitude",
+    11: locale === "nl" ? "Geen Europees voetbal, wel excuses" : "No Europe, plenty of excuses",
+    12: locale === "nl" ? "Matig seizoen" : "Average season",
+    13: locale === "nl" ? "Minder dan gehoopt" : "Less than hoped for",
+    14: locale === "nl" ? "Niet best" : "Not great",
+    15: locale === "nl" ? "Nog net boven de streep" : "Just above the line",
+  };
+
+  if (finalPlacement && finalPlacement >= 9 && finalPlacement <= 15) {
+    return {
+      label: midTableLabels[finalPlacement],
+      sublabel: placementToSublabel(locale, finalPlacement),
+      tone: "neutral" as BadgeTone,
+    };
+  }
+
+  if (finalPlacement === 16) {
+    return {
+      label: locale === "nl" ? "Play-offs degradatie" : "Relegation play-offs",
+      sublabel: locale === "nl" ? "Awaydays naar Oss en Helmond dreigen..." : "Oss and Helmond away days are looming...",
+      tone: "danger" as BadgeTone,
     };
   }
 
   if (finalPlacement === 17 || finalPlacement === 18) {
     return {
-      label: locale === "nl" ? "Drama" : "Disaster",
-      description: locale === "nl" ? "Een screenshot voor de verkeerde redenen." : "Shareable for all the wrong reasons.",
+      label: locale === "nl" ? "Gedegradeerd!!!" : "Relegated!!!",
+      sublabel: locale === "nl" ? "Op naar Oss, Helmond en Emmen!" : "Next stop: Oss, Helmond and Emmen!",
       tone: "danger" as BadgeTone,
     };
   }
 
   return {
     label: getPlacementLabel(locale, finalPlacement, false),
-    description: locale === "nl" ? "Geen kampioensrun, wel een verhaal." : "Not a title run, still a story.",
+    sublabel: locale === "nl" ? "Seizoen afgerond" : "Season complete",
     tone: "neutral" as BadgeTone,
   };
 }
 
-function badgeClassName(tone: BadgeTone) {
+function contextLabelClassName(tone: BadgeTone) {
   if (tone === "king") {
-    return "border-[rgba(228,197,106,0.4)] bg-[rgba(228,197,106,0.14)] text-[var(--gold-soft)]";
+    return "text-[var(--gold-soft)]";
   }
 
   if (tone === "invincible") {
-    return "border-[rgba(95,237,171,0.38)] bg-[rgba(95,237,171,0.12)] text-[#8df3c3]";
+    return "text-[#8df3c3]";
   }
 
   if (tone === "champion") {
-    return "border-[rgba(122,92,255,0.38)] bg-[rgba(122,92,255,0.14)] text-[#ded6ff]";
+    return "text-[#ded6ff]";
   }
 
   if (tone === "danger") {
-    return "border-[rgba(255,123,143,0.32)] bg-[rgba(255,123,143,0.12)] text-[#ffb0be]";
+    return "text-[#ffb0be]";
   }
 
-  return "border-[rgba(255,255,255,0.14)] bg-[rgba(255,255,255,0.05)] text-white";
+  return "text-white";
+}
+
+function placementToSublabel(locale: "nl" | "en", finalPlacement: number) {
+  return locale === "nl"
+    ? `${formatDutchOrdinal(finalPlacement)} plaats`
+    : `${finalPlacement}${getOrdinalSuffix(finalPlacement)} place`;
 }
 
 function getPlacementLabel(locale: "nl" | "en", finalPlacement?: number, isChampion?: boolean) {
