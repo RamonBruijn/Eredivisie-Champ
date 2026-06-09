@@ -16,8 +16,24 @@ export default function ContactPage() {
         <h2 className="text-2xl font-semibold text-white">Algemeen</h2>
         <p className="mt-2 text-[var(--muted)]">
           Stuur een bericht naar{" "}
-          <a className="text-[var(--gold-soft)] hover:text-white" href="mailto:hello@eredivisiechamp.nl">
-            hello@eredivisiechamp.nl
+          <a className="text-[var(--gold-soft)] hover:text-white" href="mailto:voetbaldraft@gmail.com">
+            voetbaldraft@gmail.com
+          </a>
+          .
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-semibold text-white">Support</h2>
+        <p className="mt-2 text-[var(--muted)]">
+          Wil je het project steunen, dan kan dat ook via{" "}
+          <a
+            className="text-[var(--gold-soft)] hover:text-white"
+            href="https://ko-fi.com/joopkarnemelk"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ko-fi
           </a>
           .
         </p>
