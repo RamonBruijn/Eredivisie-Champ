@@ -82,8 +82,8 @@ export default function HomePage() {
           </h1>
           <p className="mx-auto mt-3 max-w-2xl text-center text-[0.95rem] leading-6 text-[var(--muted)] md:mx-0 md:mt-6 md:text-left md:text-lg md:leading-7">
             {locale === "nl"
-              ? "Kies je draftinstellingen en druk op play. Daarna begint direct de echte draftflow."
-              : "Choose your draft settings and hit play. Then the real draft starts immediately."}
+              ? "Kies je instelling en start het spel met jouw gekozen opstelling en of je de spelersratings kan zien of juist niet."
+              : "Choose your setup and start the game with your selected formation and whether you want to see player ratings or not."}
           </p>
           <div className="mt-4 flex justify-center md:hidden">
             <LanguageToggle compact />
@@ -109,9 +109,9 @@ export default function HomePage() {
                           : "border-[var(--line)] bg-[rgba(255,255,255,0.02)]"
                       }`}
                     >
-                      <p className="font-semibold text-white">{t.common.withRating}</p>
+                      <p className="font-semibold text-white">{locale === "nl" ? "Met rating" : t.common.withRating}</p>
                       <p className="mt-1 text-sm text-[var(--muted)]">
-                        {locale === "nl" ? "Ratings zichtbaar" : "Ratings visible"}
+                        {locale === "nl" ? "Je ziet hoe goed spelers zijn" : "You can see how good players are"}
                       </p>
                     </button>
                     <button
@@ -123,9 +123,9 @@ export default function HomePage() {
                           : "border-[var(--line)] bg-[rgba(255,255,255,0.02)]"
                       }`}
                     >
-                      <p className="font-semibold text-white">{t.common.fromMemory}</p>
+                      <p className="font-semibold text-white">{locale === "nl" ? "Zonder rating" : "Without ratings"}</p>
                       <p className="mt-1 text-sm text-[var(--muted)]">
-                        {locale === "nl" ? "Ratings onzichtbaar" : "Ratings hidden"}
+                        {locale === "nl" ? "Op eigen kennis en expertise." : "Based on your own knowledge and expertise."}
                       </p>
                     </button>
                   </div>
