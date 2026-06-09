@@ -17322,5 +17322,230 @@
     ],
     "rating": 71,
     "legendary": false
+  },
+  {
+    "id": "andre-onana-ajax-2016-17",
+    "name": "André Onana",
+    "teamId": "ajax-2016-17",
+    "club": "Ajax",
+    "season": "2016/17",
+    "positions": [
+      "gk"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "joel-veltman-ajax-2016-17",
+    "name": "Joël Veltman",
+    "teamId": "ajax-2016-17",
+    "club": "Ajax",
+    "season": "2016/17",
+    "positions": [
+      "rb"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "matthijs-de-ligt-ajax-2016-17",
+    "name": "Matthijs de Ligt",
+    "teamId": "ajax-2016-17",
+    "club": "Ajax",
+    "season": "2016/17",
+    "positions": [
+      "cb"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "davinson-sanchez-ajax-2016-17",
+    "name": "Davinson Sánchez",
+    "teamId": "ajax-2016-17",
+    "club": "Ajax",
+    "season": "2016/17",
+    "positions": [
+      "cb"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "jairo-riedewald-ajax-2016-17",
+    "name": "Jairo Riedewald",
+    "teamId": "ajax-2016-17",
+    "club": "Ajax",
+    "season": "2016/17",
+    "positions": [
+      "lb"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "lasse-schone-ajax-2016-17",
+    "name": "Lasse Schöne",
+    "teamId": "ajax-2016-17",
+    "club": "Ajax",
+    "season": "2016/17",
+    "positions": [
+      "cm"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "davy-klaassen-ajax-2016-17",
+    "name": "Davy Klaassen",
+    "teamId": "ajax-2016-17",
+    "club": "Ajax",
+    "season": "2016/17",
+    "positions": [
+      "cm"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "hakim-ziyech-ajax-2016-17",
+    "name": "Hakim Ziyech",
+    "teamId": "ajax-2016-17",
+    "club": "Ajax",
+    "season": "2016/17",
+    "positions": [
+      "cm",
+      "rm",
+      "rw"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "bertrand-traore-ajax-2016-17",
+    "name": "Bertrand Traoré",
+    "teamId": "ajax-2016-17",
+    "club": "Ajax",
+    "season": "2016/17",
+    "positions": [
+      "rw",
+      "rm",
+      "st"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "kasper-dolberg-ajax-2016-17",
+    "name": "Kasper Dolberg",
+    "teamId": "ajax-2016-17",
+    "club": "Ajax",
+    "season": "2016/17",
+    "positions": [
+      "st"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "amin-younes-ajax-2016-17",
+    "name": "Amin Younes",
+    "teamId": "ajax-2016-17",
+    "club": "Ajax",
+    "season": "2016/17",
+    "positions": [
+      "lw",
+      "lm"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "frenkie-de-jong-ajax-2016-17",
+    "name": "Frenkie de Jong",
+    "teamId": "ajax-2016-17",
+    "club": "Ajax",
+    "season": "2016/17",
+    "positions": [
+      "cm"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "donny-van-de-beek-ajax-2016-17",
+    "name": "Donny van de Beek",
+    "teamId": "ajax-2016-17",
+    "club": "Ajax",
+    "season": "2016/17",
+    "positions": [
+      "cm"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "david-neres-ajax-2016-17",
+    "name": "David Neres",
+    "teamId": "ajax-2016-17",
+    "club": "Ajax",
+    "season": "2016/17",
+    "positions": [
+      "rw",
+      "rm",
+      "lw"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "justin-kluivert-ajax-2016-17",
+    "name": "Justin Kluivert",
+    "teamId": "ajax-2016-17",
+    "club": "Ajax",
+    "season": "2016/17",
+    "positions": [
+      "lw",
+      "lm",
+      "rw"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "kenny-tete-ajax-2016-17",
+    "name": "Kenny Tete",
+    "teamId": "ajax-2016-17",
+    "club": "Ajax",
+    "season": "2016/17",
+    "positions": [
+      "rb"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "heiko-westermann-ajax-2016-17",
+    "name": "Heiko Westermann",
+    "teamId": "ajax-2016-17",
+    "club": "Ajax",
+    "season": "2016/17",
+    "positions": [
+      "cb"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "diederik-boer-ajax-2016-17",
+    "name": "Diederik Boer",
+    "teamId": "ajax-2016-17",
+    "club": "Ajax",
+    "season": "2016/17",
+    "positions": [
+      "gk"
+    ],
+    "rating": 71,
+    "legendary": false
   }
 ]

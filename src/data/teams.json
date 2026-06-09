@@ -1069,5 +1069,18 @@
       "willem-ii",
       "historic"
     ]
+  },
+  {
+    "id": "ajax-2016-17",
+    "club": "Ajax",
+    "season": "2016/17",
+    "teamRating": 83,
+    "description": "Europa League-finalist tegen Manchester United, met een jonge kern rond De Ligt, Onana en Ziyech.",
+    "tags": [
+      "ajax",
+      "historic",
+      "modern",
+      "europa-league"
+    ]
   }
 ]
