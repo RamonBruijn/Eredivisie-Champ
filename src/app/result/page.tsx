@@ -101,8 +101,33 @@ export default function ResultPage() {
             ? "Klaar voor helft 2"
             : "Ready for half two";
 
-  function handleNextMatch() {
+  async function handleNextMatch() {
     if (!result) return;
+
+    const isManualSecondHalfStart =
+      result.context.simulationMode === "manual" &&
+      matchCursor >= 17 &&
+      !secondHalfStarted &&
+      matchCursor < result.matches.length;
+
+    if (isManualSecondHalfStart) {
+      if (isSecondHalfGatePending) return;
+
+      setIsSecondHalfGatePending(true);
+
+      try {
+        if (shouldShowSecondHalfAdGate()) {
+          await showSecondHalfAdGate();
+        }
+      } catch {
+        // If a future ad provider fails, the second half should still continue.
+      } finally {
+        setIsSecondHalfGatePending(false);
+      }
+
+      startSecondHalfSimulation();
+    }
+
     setMatchCursor((current) => Math.min(current + 1, result.matches.length));
   }
 
