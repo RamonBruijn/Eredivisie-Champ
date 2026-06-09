@@ -1,6 +1,6 @@
 "use client";
 
-import { getFormation } from "@/lib/formations";
+import { getFormation, getFormationLayout } from "@/lib/formations";
 import { formatPositionLabel, localizedModeLabel, useI18n } from "@/lib/i18n";
 import { loadSeasonRunCount, loadSelection } from "@/lib/storage";
 import type { PlayerRecord, Position, SeasonSummary, TeamScorerEntry } from "@/types/game";
@@ -26,6 +26,7 @@ export function ResultCard({ result, isChampion = false, finalPlacement }: Resul
   }, []);
 
   const formation = getFormation(result.context.formation);
+  const formationLayout = getFormationLayout(result.context.formation);
   const topScorers = useMemo(() => createTopScorers(result), [result]);
   const badge = getPerformanceBadge({
     locale,
@@ -41,6 +42,7 @@ export function ResultCard({ result, isChampion = false, finalPlacement }: Resul
   const squadRows = formation.slots.map((slot, index) => ({
     slot,
     player: savedSelection[index] ?? null,
+    point: formationLayout[index],
   }));
   const bestPlayerRecord = savedSelection.find((player) => player?.name === result.bestPlayer) ?? null;
   const bestPlayerGoals = topScorers.find((entry) => entry.playerName === result.bestPlayer)?.goals;
@@ -70,12 +72,32 @@ export function ResultCard({ result, isChampion = false, finalPlacement }: Resul
             />
 
             <section className="mt-5 text-center">
-              <p className="text-[3.7rem] font-black leading-none tracking-[-0.08em] text-white sm:text-[5rem]">
-                {result.wins}-{result.draws}-{result.losses}
-              </p>
-              <p className="mt-2 text-[0.72rem] font-semibold uppercase tracking-[0.36em] text-[var(--gold-soft)]">
-                {locale === "nl" ? "Winst · Gelijk · Verlies" : "Win · Draw · Loss"}
-              </p>
+              <div className="mx-auto grid max-w-[20rem] grid-cols-3 gap-2 sm:max-w-[24rem] sm:gap-4">
+                <div className="rounded-[1.1rem] border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.03)] px-2 py-3">
+                  <p className="text-[2.95rem] font-black leading-none tracking-[-0.08em] text-white sm:text-[4.4rem]">
+                    {result.wins}
+                  </p>
+                  <p className="mt-2 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-[var(--gold-soft)] sm:text-[0.72rem]">
+                    {locale === "nl" ? "Winst" : "Win"}
+                  </p>
+                </div>
+                <div className="rounded-[1.1rem] border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.03)] px-2 py-3">
+                  <p className="text-[2.95rem] font-black leading-none tracking-[-0.08em] text-white sm:text-[4.4rem]">
+                    {result.draws}
+                  </p>
+                  <p className="mt-2 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-[var(--gold-soft)] sm:text-[0.72rem]">
+                    {locale === "nl" ? "Gelijk" : "Draw"}
+                  </p>
+                </div>
+                <div className="rounded-[1.1rem] border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.03)] px-2 py-3">
+                  <p className="text-[2.95rem] font-black leading-none tracking-[-0.08em] text-white sm:text-[4.4rem]">
+                    {result.losses}
+                  </p>
+                  <p className="mt-2 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-[var(--gold-soft)] sm:text-[0.72rem]">
+                    {locale === "nl" ? "Verlies" : "Loss"}
+                  </p>
+                </div>
+              </div>
               <p className="mt-3 text-base font-semibold text-white sm:text-lg">
                 {pointsLabel} <span className="text-[var(--muted)]">·</span> {placementLabel}
               </p>
@@ -106,19 +128,31 @@ export function ResultCard({ result, isChampion = false, finalPlacement }: Resul
                   XI
                 </span>
               </div>
-              <div className="mt-3 grid gap-2 sm:grid-cols-2">
-                {squadRows.map(({ slot, player }, index) => (
-                  <div
-                    key={`${slot}-${index}-${player?.id ?? "empty"}`}
-                    className="grid grid-cols-[2.3rem_minmax(0,1fr)_2rem] items-center gap-2 rounded-[0.95rem] border border-[rgba(255,255,255,0.08)] bg-[rgba(8,12,30,0.74)] px-2.5 py-2"
-                  >
-                    <span className={`inline-flex h-8 w-9 items-center justify-center rounded-[0.8rem] border text-[0.62rem] font-bold tracking-[0.12em] ${positionChipClass(slot)}`}>
-                      {formatPositionLabel(slot)}
-                    </span>
-                    <p className="truncate text-[0.82rem] font-semibold text-white">{formatShortPlayerName(player?.name)}</p>
-                    <p className="text-right text-[0.8rem] font-bold text-[var(--gold-soft)]">{player?.rating ?? "—"}</p>
-                  </div>
-                ))}
+              <div className="mt-3 rounded-[1.25rem] border border-[rgba(228,197,106,0.12)] bg-[linear-gradient(180deg,rgba(13,18,46,0.98),rgba(10,14,34,0.95))] p-2.5">
+                <div className="relative aspect-[0.84] overflow-hidden rounded-[1rem] border border-[rgba(255,255,255,0.08)] bg-[linear-gradient(180deg,rgba(27,36,82,0.75),rgba(15,22,51,0.9))]">
+                  <PitchLines />
+                  {squadRows.map(({ slot, player, point }, index) => (
+                    <div
+                      key={`${slot}-${index}-${player?.id ?? "empty"}`}
+                      className="absolute flex -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-1"
+                      style={{ left: `${point.x}%`, top: `${point.y}%` }}
+                    >
+                      <span
+                        className={`inline-flex h-7 min-w-7 items-center justify-center rounded-full border px-1.5 text-[0.55rem] font-bold tracking-[0.06em] shadow-[0_8px_18px_rgba(0,0,0,0.28)] ${positionChipClass(slot)}`}
+                      >
+                        {formatPositionLabel(slot)}
+                      </span>
+                      <div className="min-w-[3.65rem] max-w-[4.5rem] rounded-[0.8rem] border border-[rgba(255,255,255,0.09)] bg-[rgba(8,12,30,0.9)] px-1.5 py-1 text-center shadow-[0_10px_20px_rgba(0,0,0,0.22)]">
+                        <p className="truncate text-[0.56rem] font-semibold leading-tight text-white">
+                          {formatShortPlayerName(player?.name)}
+                        </p>
+                        <p className="mt-0.5 text-[0.52rem] font-bold leading-none text-[var(--gold-soft)]">
+                          {player?.rating ?? "—"}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </section>
 
@@ -383,4 +417,23 @@ function positionChipClass(position: Position) {
   }
 
   return "border-[rgba(104,142,255,0.24)] bg-[rgba(104,142,255,0.13)] text-[#8fb4ff]";
+}
+
+function PitchLines() {
+  return (
+    <>
+      <div className="absolute inset-[6%] rounded-[0.95rem] border border-[rgba(255,255,255,0.12)]" />
+      <div className="absolute left-[6%] top-1/2 h-px w-[88%] -translate-y-1/2 bg-[rgba(255,255,255,0.12)]" />
+      <div className="absolute left-1/2 top-1/2 h-[20%] w-[20%] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[rgba(255,255,255,0.12)]" />
+      <div className="absolute left-1/2 top-1/2 h-1 w-1 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[rgba(255,255,255,0.18)]" />
+      <div className="absolute left-1/2 top-[6%] h-[15%] w-[46%] -translate-x-1/2 rounded-b-[0.95rem] border border-t-0 border-[rgba(255,255,255,0.12)]" />
+      <div className="absolute left-1/2 top-[6%] h-[7%] w-[22%] -translate-x-1/2 rounded-b-[0.65rem] border border-t-0 border-[rgba(255,255,255,0.12)]" />
+      <div className="absolute left-1/2 top-[18.5%] h-1 w-1 -translate-x-1/2 rounded-full bg-[rgba(255,255,255,0.18)]" />
+      <div className="absolute left-1/2 top-[16.5%] h-[11%] w-[14%] -translate-x-1/2 rounded-full border border-[rgba(255,255,255,0.12)] [clip-path:inset(0_0_50%_0)]" />
+      <div className="absolute left-1/2 bottom-[6%] h-[15%] w-[46%] -translate-x-1/2 rounded-t-[0.95rem] border border-b-0 border-[rgba(255,255,255,0.12)]" />
+      <div className="absolute left-1/2 bottom-[6%] h-[7%] w-[22%] -translate-x-1/2 rounded-t-[0.65rem] border border-b-0 border-[rgba(255,255,255,0.12)]" />
+      <div className="absolute left-1/2 bottom-[18.5%] h-1 w-1 -translate-x-1/2 rounded-full bg-[rgba(255,255,255,0.18)]" />
+      <div className="absolute left-1/2 bottom-[16.5%] h-[11%] w-[14%] -translate-x-1/2 rounded-full border border-[rgba(255,255,255,0.12)] [clip-path:inset(50%_0_0_0)]" />
+    </>
+  );
 }
