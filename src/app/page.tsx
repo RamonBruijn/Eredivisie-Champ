@@ -1,228 +1,79 @@
-"use client";
+import { HomePageClient } from "@/components/HomePageClient";
+import { SITE_URL } from "@/lib/site";
+import type { Metadata } from "next";
 
-import { LanguageToggle } from "@/components/LanguageToggle";
-import { teams } from "@/data";
-import { FORMATIONS } from "@/lib/formations";
-import { saveDraftSetup, saveSelection } from "@/lib/storage";
-import { useI18n } from "@/lib/i18n";
-import type { DraftSetup, FormationId, GameMode, TeamRecord } from "@/types/game";
-import Link from "next/link";
-import Image from "next/image";
-import { useRouter } from "next/navigation";
-import { useMemo, useState } from "react";
+const title = "Voetbaldraft.app | Bouw je ultieme Eredivisie XI";
+const description =
+  "Speel Voetbaldraft.app, draft historische Eredivisie-spelers, bouw je ultieme XI en simuleer het seizoen. Pak jij de schaal of ga je zelfs 34-0-0?";
+const ogDescription =
+  "Draft historische Eredivisie-spelers, bouw je droomelftal en simuleer het seizoen. Kan jouw XI 34-0-0 gaan?";
+const twitterDescription =
+  "Draft historische Eredivisie-spelers en simuleer het seizoen. Pak jij de schaal of ga je 34-0-0?";
 
-function getTeamDecade(team: TeamRecord) {
-  const startYear = Number.parseInt(team.season.slice(0, 4), 10);
-  const decadeStart = Math.floor(startYear / 10) * 10;
-  return `${decadeStart}s`;
-}
+export const metadata: Metadata = {
+  title,
+  description,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title,
+    description: ogDescription,
+    type: "website",
+    url: SITE_URL,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.png`,
+        width: 1200,
+        height: 630,
+        alt: "VoetbalDraft social preview",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description: twitterDescription,
+    images: [`${SITE_URL}/og-image.png`],
+  },
+};
+
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Voetbaldraft.app",
+    url: SITE_URL,
+    inLanguage: "nl-NL",
+    description:
+      "Voetbaldraft.app is een historische Eredivisie draftgame waarin je spelers draft, een ultieme XI bouwt en een seizoen simuleert.",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "Voetbaldraft.app",
+    applicationCategory: "GameApplication",
+    operatingSystem: "Web",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "EUR",
+    },
+    url: SITE_URL,
+    inLanguage: "nl-NL",
+    description:
+      "Gratis browsergame waarin je historische Eredivisie-spelers draft, een droomelftal bouwt en jaagt op een perfect 34-0-0 seizoen.",
+  },
+];
 
 export default function HomePage() {
-  const { locale, t } = useI18n();
-  const router = useRouter();
-  const availableDecades = useMemo(
-    () => [...new Set(teams.map(getTeamDecade))].sort((a, b) => a.localeCompare(b)),
-    [],
-  );
-  const [mode, setMode] = useState<GameMode>("classic");
-  const [formation, setFormation] = useState<FormationId>("4-3-3");
-  const [selectedDecades, setSelectedDecades] = useState<string[]>(availableDecades);
-
-  function handleToggleDecade(decade: string) {
-    setSelectedDecades((current) => {
-      const next = current.includes(decade)
-        ? current.filter((entry) => entry !== decade)
-        : [...current, decade].sort((a, b) => a.localeCompare(b));
-
-      return next.length > 0 ? next : current;
-    });
-  }
-
-  function handlePlay() {
-    const setup: DraftSetup = {
-      mode,
-      formation,
-      decades: selectedDecades,
-    };
-
-    saveDraftSetup(setup);
-    saveSelection(Array.from({ length: 11 }, () => null));
-    router.push("/game");
-  }
-
   return (
-    <main className="page-shell">
-      <section className="mx-auto flex min-h-screen max-w-6xl flex-col justify-start px-4 py-5 sm:px-6 sm:py-8 md:justify-center md:py-16">
-        <div className="glass rounded-[2rem] p-4 sm:p-8 md:rounded-[2.5rem] md:p-12">
-          <div className="flex items-center justify-center md:justify-between">
-            <p className="text-center text-[11px] uppercase tracking-[0.24em] text-[var(--gold-soft)] sm:text-sm sm:tracking-[0.28em] md:text-left">
-              {t.home.eyebrow}
-            </p>
-            <LanguageToggle className="hidden md:inline-flex" />
-          </div>
-
-          <div className="mt-4 flex flex-col items-center text-center md:mt-5 md:flex-row md:items-center md:gap-5 md:text-left">
-            <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-full border border-[rgba(228,197,106,0.26)] bg-[rgba(255,255,255,0.03)] p-1.5 shadow-[0_12px_30px_rgba(0,0,0,0.22)] sm:h-24 sm:w-24 md:h-20 md:w-20">
-              <Image
-                src="/voetbaldraft-logo.png"
-                alt="VoetbalDraft logo"
-                fill
-                sizes="(max-width: 767px) 96px, 80px"
-                className="object-contain p-1 opacity-90"
-                priority
-              />
-            </div>
-            <span className="mt-3 max-w-full text-3xl font-bold uppercase tracking-[0.12em] text-[var(--gold-soft)] sm:text-4xl md:mt-0 md:text-6xl md:tracking-[0.16em]">
-              VoetbalDraft
-            </span>
-          </div>
-
-          <h1 className="mt-3 max-w-3xl text-balance text-center text-[1.9rem] font-bold leading-[1.04] text-white sm:text-4xl md:mt-4 md:text-left md:text-5xl">
-            {t.home.title}
-          </h1>
-          <p className="mx-auto mt-3 max-w-2xl text-center text-[0.95rem] leading-6 text-[var(--muted)] md:mx-0 md:mt-6 md:text-left md:text-lg md:leading-7">
-            {locale === "nl"
-              ? "Kies je instelling en start het spel met jouw gekozen opstelling en of je de spelersratings kan zien of juist niet."
-              : "Choose your setup and start the game with your selected formation and whether you want to see player ratings or not."}
-          </p>
-          <div className="mt-4 flex justify-center md:hidden">
-            <LanguageToggle compact />
-          </div>
-
-          <div className="mt-6 grid gap-4 xl:grid-cols-[0.95fr_1.05fr]">
-            <section className="rounded-[1.75rem] border border-[var(--line)] bg-[rgba(255,255,255,0.03)] p-5">
-              <p className="text-sm uppercase tracking-[0.2em] text-[var(--muted)]">
-                {locale === "nl" ? "Bouw je kampioensteam" : "Build your title team"}
-              </p>
-              <div className="mt-5 space-y-5">
-                <div>
-                  <p className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">
-                    {locale === "nl" ? "Modus" : "Mode"}
-                  </p>
-                  <div className="mt-3 grid grid-cols-2 gap-3">
-                    <button
-                      type="button"
-                      onClick={() => setMode("classic")}
-                      className={`rounded-[1.2rem] border px-4 py-4 text-left transition ${
-                        mode === "classic"
-                          ? "border-[var(--gold)] bg-[rgba(217,185,110,0.12)]"
-                          : "border-[var(--line)] bg-[rgba(255,255,255,0.02)]"
-                      }`}
-                    >
-                      <p className="font-semibold text-white">{locale === "nl" ? "Met rating" : t.common.withRating}</p>
-                      <p className="mt-1 text-sm text-[var(--muted)]">
-                        {locale === "nl" ? "Je ziet hoe goed spelers zijn" : "You can see how good players are"}
-                      </p>
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setMode("from-memory")}
-                      className={`rounded-[1.2rem] border px-4 py-4 text-left transition ${
-                        mode === "from-memory"
-                          ? "border-[var(--gold)] bg-[rgba(217,185,110,0.12)]"
-                          : "border-[var(--line)] bg-[rgba(255,255,255,0.02)]"
-                      }`}
-                    >
-                      <p className="font-semibold text-white">{locale === "nl" ? "Zonder rating" : "Without ratings"}</p>
-                      <p className="mt-1 text-sm text-[var(--muted)]">
-                        {locale === "nl" ? "Op eigen kennis en expertise." : "Based on your own knowledge and expertise."}
-                      </p>
-                    </button>
-                  </div>
-                </div>
-
-                <div>
-                  <p className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">
-                    {locale === "nl" ? "Formatie" : "Formation"}
-                  </p>
-                  <div className="mt-3 flex flex-wrap gap-2">
-                    {FORMATIONS.map((formationOption) => (
-                      <button
-                        key={formationOption.id}
-                        type="button"
-                        onClick={() => setFormation(formationOption.id)}
-                        className={`rounded-full border px-4 py-2 text-sm transition ${
-                          formation === formationOption.id
-                            ? "border-[var(--gold)] bg-[rgba(217,185,110,0.12)] text-[var(--gold-soft)]"
-                            : "border-[var(--line)] text-[var(--muted)]"
-                        }`}
-                      >
-                        {formationOption.label}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex items-center justify-between gap-3">
-                    <p className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">
-                      {locale === "nl" ? "Decennia" : "Decades"}
-                    </p>
-                    <p className="text-xs text-[var(--muted)]">
-                      {selectedDecades.length}/{availableDecades.length}
-                    </p>
-                  </div>
-                  <div className="mt-3 flex flex-wrap gap-2">
-                    {availableDecades.map((decade) => {
-                      const active = selectedDecades.includes(decade);
-                      return (
-                        <button
-                          key={decade}
-                          type="button"
-                          onClick={() => handleToggleDecade(decade)}
-                          className={`rounded-full border px-4 py-2 text-sm transition ${
-                            active
-                              ? "border-[var(--gold)] bg-[rgba(217,185,110,0.12)] text-[var(--gold-soft)]"
-                              : "border-[var(--line)] text-[var(--muted)]"
-                          }`}
-                        >
-                          {decade}
-                        </button>
-                      );
-                    })}
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section className="rounded-[1.75rem] border border-[rgba(228,197,106,0.18)] bg-[linear-gradient(180deg,rgba(74,54,156,0.18),rgba(17,23,57,0.24))] p-5 md:p-6">
-              <p className="text-sm uppercase tracking-[0.2em] text-[var(--gold-soft)]">
-                {locale === "nl" ? "Klaar voor de draft?" : "Ready to draft?"}
-              </p>
-              <h2 className="mt-3 text-3xl font-semibold leading-tight text-white md:text-4xl">
-                {locale === "nl" ? "Druk op play en bouw richting de titel." : "Hit play and draft your way to the title."}
-              </h2>
-              <div className="mt-6 grid gap-3 text-sm text-[var(--muted)]">
-                <p>{locale === "nl" ? `Modus: ${mode === "classic" ? "met rating" : "uit het hoofd"}` : `Mode: ${mode === "classic" ? "with ratings" : "from memory"}`}</p>
-                <p>{locale === "nl" ? `Formatie: ${formation}` : `Formation: ${formation}`}</p>
-                <p>{locale === "nl" ? `${selectedDecades.length} decennia actief` : `${selectedDecades.length} decades active`}</p>
-              </div>
-              <button
-                type="button"
-                onClick={handlePlay}
-                className="mt-8 flex min-h-18 w-full items-center justify-center rounded-[1.6rem] bg-[linear-gradient(180deg,var(--gold-soft),var(--gold))] px-6 py-5 text-center text-2xl font-bold tracking-[0.08em] text-[#171b3a] shadow-[0_20px_48px_rgba(0,0,0,0.24)] transition hover:translate-y-[-1px] hover:brightness-105"
-              >
-                PLAY
-              </button>
-            </section>
-          </div>
-
-          <div className="mt-8 flex flex-wrap gap-x-5 gap-y-3 border-t border-[rgba(255,255,255,0.08)] pt-5 text-xs uppercase tracking-[0.12em] text-[var(--muted)]">
-            <Link href="/about" className="transition hover:text-white">
-              About
-            </Link>
-            <Link href="/contact" className="transition hover:text-white">
-              Contact
-            </Link>
-            <Link href="/privacybeleid" className="transition hover:text-white">
-              Privacybeleid
-            </Link>
-            <Link href="/algemene-voorwaarden" className="transition hover:text-white">
-              Algemene voorwaarden
-            </Link>
-          </div>
-        </div>
-      </section>
-    </main>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <HomePageClient />
+    </>
   );
 }

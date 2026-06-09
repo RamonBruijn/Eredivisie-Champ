@@ -9,8 +9,6 @@ const routes = [
   "/contact",
   "/privacybeleid",
   "/algemene-voorwaarden",
-  "/game",
-  "/result",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -20,6 +18,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${SITE_URL}${route}`,
     lastModified,
     changeFrequency: route === "" ? "weekly" : "monthly",
-    priority: route === "" ? 1 : route === "/game" ? 0.9 : 0.7,
+    priority: route === "" ? 1 : 0.7,
   }));
 }
