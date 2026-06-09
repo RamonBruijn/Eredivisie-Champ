@@ -442,6 +442,6 @@ export function formatPositionLabel(position: Position) {
   return position.toUpperCase();
 }
 
-export function localizedSlotLabel(position: Position, index: number) {
-  return `${index + 1}. ${formatPositionLabel(position)}`;
+export function localizedSlotLabel(position: Position, index: number, shirtNumber?: number) {
+  return `${shirtNumber ?? index + 1}. ${formatPositionLabel(position)}`;
 }

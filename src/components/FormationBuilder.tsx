@@ -1,6 +1,6 @@
 "use client";
 
-import { getFormation, getFormationLayout } from "@/lib/formations";
+import { getFormation, getFormationLayout, getFormationSlotNumber } from "@/lib/formations";
 import { formatPositionLabel, localizedModeLabel, localizedSlotLabel, useI18n } from "@/lib/i18n";
 import { calculateTeamStrength } from "@/lib/ratings";
 import { validateSlotAssignments } from "@/lib/validation";
@@ -97,6 +97,7 @@ export function FormationBuilder({
             const pickedPlayer = slotAssignments[index];
             const isAssignable =
               !!pendingPlayer && !pickedPlayer && pendingPlayer.positions.includes(slot);
+            const shirtNumber = getFormationSlotNumber(formation, index);
 
             return (
               <div
@@ -118,6 +119,9 @@ export function FormationBuilder({
                             : "border-[rgba(255,255,255,0.22)] bg-[linear-gradient(180deg,rgba(31,40,93,0.9),rgba(17,23,57,0.86))] text-[rgba(255,255,255,0.82)]"
                     }`}
                   >
+                    <span className="absolute -left-1.5 -top-1.5 inline-flex min-w-5 items-center justify-center rounded-full bg-[rgba(9,13,31,0.92)] px-1.5 py-0.5 text-[8px] font-bold leading-none text-white ring-1 ring-[rgba(255,255,255,0.14)] md:min-w-6 md:text-[9px]">
+                      {shirtNumber}
+                    </span>
                     {pickedPlayer ? (
                       <span className="absolute -top-1.5 right-0 rounded-full bg-[var(--gold)] px-1.5 py-0.5 text-[8px] font-bold leading-none text-[#171b3a] md:text-[9px]">
                         {formatPositionLabel(slot)}
@@ -126,7 +130,7 @@ export function FormationBuilder({
                     {pickedPlayer ? (revealRatings ? pickedPlayer.rating : "?") : formatPositionLabel(slot)}
                   </div>
                   <p className="mt-1.5 max-w-[4.7rem] text-[9px] font-semibold uppercase tracking-[0.12em] text-[rgba(255,255,255,0.96)] drop-shadow-[0_1px_2px_rgba(0,0,0,0.55)] md:mt-2 md:max-w-[5.8rem] md:text-[10px] md:tracking-[0.14em]">
-                    {pickedPlayer ? pickedPlayer.name : localizedSlotLabel(slot, index)}
+                    {pickedPlayer ? pickedPlayer.name : localizedSlotLabel(slot, index, shirtNumber)}
                   </p>
                 </button>
               </div>
@@ -150,7 +154,7 @@ export function FormationBuilder({
                   disabled
                   className="rounded-full border border-[rgba(217,185,110,0.45)] px-3 py-2 text-sm text-[var(--gold-soft)]"
                 >
-                  {localizedSlotLabel(slot, slotIndex)}
+                  {localizedSlotLabel(slot, slotIndex, getFormationSlotNumber(formation, slotIndex))}
                 </button>
               ))}
           </div>

@@ -131,12 +131,27 @@ const FORMATION_LAYOUTS: Record<FormationId, FormationPoint[]> = {
   ],
 };
 
+const FORMATION_SLOT_NUMBERS: Record<FormationId, number[]> = {
+  "4-3-3": [1, 2, 3, 4, 5, 6, 8, 10, 7, 9, 11],
+  "4-4-2": [1, 2, 3, 4, 5, 7, 6, 8, 11, 9, 10],
+  "4-2-3-1": [1, 2, 3, 4, 5, 6, 8, 7, 10, 11, 9],
+  "4-2-4": [1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 11],
+  "3-5-2": [1, 2, 3, 4, 7, 8, 10, 6, 5, 9, 18],
+  "5-3-2": [1, 2, 3, 4, 6, 5, 8, 19, 10, 9, 11],
+  "4-5-1": [1, 2, 3, 4, 5, 7, 6, 8, 10, 11, 9],
+  "3-4-3": [1, 2, 3, 4, 7, 8, 10, 17, 27, 9, 11],
+};
+
 export function getFormation(formationId: FormationId): FormationDefinition {
   return FORMATIONS.find((formation) => formation.id === formationId) ?? FORMATIONS[0];
 }
 
 export function getFormationLayout(formationId: FormationId): FormationPoint[] {
   return FORMATION_LAYOUTS[formationId] ?? FORMATION_LAYOUTS["4-3-3"];
+}
+
+export function getFormationSlotNumber(formationId: FormationId, slotIndex: number) {
+  return FORMATION_SLOT_NUMBERS[formationId]?.[slotIndex] ?? slotIndex + 1;
 }
 
 function getPlayerFlexScore(player: PlayerRecord) {

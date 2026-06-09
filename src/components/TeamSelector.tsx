@@ -3,7 +3,7 @@
 import { FormationBuilder } from "@/components/FormationBuilder";
 import { SeasonSimulator } from "@/components/SeasonSimulator";
 import { players, teams } from "@/data";
-import { getFormation } from "@/lib/formations";
+import { getFormation, getFormationSlotNumber } from "@/lib/formations";
 import { formatPositionLabel, useI18n } from "@/lib/i18n";
 import { loadDraftSetup, loadSelection, saveSelection } from "@/lib/storage";
 import type {
@@ -427,7 +427,7 @@ export function TeamSelector() {
                           {locale === "nl" ? "Vrije positie" : "Open position"}
                         </p>
                         <p className="mt-2 text-lg font-semibold text-white">
-                          {slotIndex + 1}. {formatPositionLabel(slot)}
+                          {getFormationSlotNumber(formation, slotIndex)}. {formatPositionLabel(slot)}
                         </p>
                       </button>
                     ))}
