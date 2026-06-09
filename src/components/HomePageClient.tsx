@@ -22,27 +22,27 @@ const faqItems = {
     {
       question: "Wat is Voetbaldraft?",
       answer:
-        "Voetbaldraft is een gratis browsergame waarin je historische Eredivisie-spelers draft, een elftal samenstelt en daarna een volledig seizoen simuleert.",
+        "Voetbaldraft is een gratis Eredivisie draftgame voor je browser. Je kiest historische spelers uit verschillende teams en seizoenen, bouwt een ultieme XI en laat daarna een volledig seizoen simuleren. Zo probeer je kampioen te worden of zelfs de 34-0-0 challenge te halen.",
     },
     {
       question: "Hoe werkt de draft?",
       answer:
-        "Je kiest eerst je modus en formatie, selecteert daarna spelers per positie uit historische teams en laat vervolgens je seizoen simuleren.",
+        "De draft werkt door eerst een modus en formatie te kiezen. Daarna selecteer je historische spelers positie voor positie uit de beschikbare teams en bouw je jouw elftal op. Als je XI klaar is, laat je het seizoen simuleren en zie je hoe ver jouw team komt.",
     },
     {
       question: "Kan ik 34-0-0 halen?",
       answer:
-        "Ja, maar dat moet zeldzaam blijven. Je hebt een sterke selectie, goede balans tussen linies en ook een beetje geluk nodig.",
+        "Ja, je kunt in Voetbaldraft 34-0-0 halen. Dat moet alleen zeldzaam en moeilijk blijven, want je hebt sterke historische spelers, balans tussen aanval en verdediging en ook een beetje geluk nodig om een perfect seizoen te simuleren.",
     },
     {
       question: "Welke clubs zitten erin?",
       answer:
-        "De database groeit door en bevat historische teams van clubs zoals Ajax, PSV, Feyenoord, AZ, FC Twente, NEC, FC Groningen en meer.",
+        "De database bevat historische Eredivisie-teams van meerdere clubs en groeit verder door. Je kunt onder meer spelers draften uit teams van Ajax, PSV, Feyenoord, AZ, FC Twente, NEC, FC Groningen en meer, verspreid over klassieke seizoenen en modernere selecties.",
     },
     {
       question: "Is Voetbaldraft officieel verbonden aan de Eredivisie?",
       answer:
-        "Voetbaldraft.app is een onafhankelijk fanproject en is niet gelieerd aan, goedgekeurd door of verbonden met voetbalclubs, spelers, de KNVB of Eredivisie CV.",
+        "Nee, Voetbaldraft is geen officieel Eredivisie-spel. Voetbaldraft.app is een onafhankelijk fanproject en is niet gelieerd aan, goedgekeurd door of verbonden met voetbalclubs, spelers, de KNVB of Eredivisie CV.",
     },
   ],
   en: [
@@ -304,6 +304,9 @@ export function HomePageClient() {
 
           <section className="mt-8 rounded-[1.75rem] border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.03)] p-5 md:p-6">
             <h2 className="text-2xl font-semibold text-white md:text-3xl">FAQ</h2>
+            <p className="mt-4 max-w-3xl text-sm leading-6 text-[var(--muted)]">
+              Voetbaldraft.app is een gratis browsergame waarin je historische Eredivisie-spelers draft, een ultieme XI bouwt en een volledig seizoen simuleert. Het doel is om kampioen te worden of zelfs 34-0-0 te gaan.
+            </p>
             <div className="mt-5 grid gap-3">
               {faq.map((item) => (
                 <details
