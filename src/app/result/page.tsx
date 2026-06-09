@@ -27,6 +27,8 @@ export default function ResultPage() {
   const [isSecondHalfGatePending, setIsSecondHalfGatePending] = useState(false);
   const [shareFeedback, setShareFeedback] = useState<"idle" | "copied" | "shared">("idle");
   const secondHalfAdGateResolverRef = useRef<(() => void) | null>(null);
+  const hasSecondHalfGateCompletedRef = useRef(false);
+  const hasSecondHalfStartedRef = useRef(false);
 
   useEffect(() => {
     setResult(loadResult());
@@ -38,6 +40,8 @@ export default function ResultPage() {
     setSecondHalfStarted(false);
     setAutoPaused(false);
     setAutoSimulationSpeed(result?.context.autoSimulationSpeed ?? "normal");
+    hasSecondHalfGateCompletedRef.current = false;
+    hasSecondHalfStartedRef.current = false;
   }, [result]);
 
   useEffect(() => {
@@ -111,27 +115,15 @@ export default function ResultPage() {
       matchCursor < result.matches.length;
 
     if (isManualSecondHalfStart) {
-      if (isSecondHalfGatePending) return;
-
-      setIsSecondHalfGatePending(true);
-
-      try {
-        if (shouldShowSecondHalfAdGate()) {
-          await showSecondHalfAdGate();
-        }
-      } catch {
-        // If a future ad provider fails, the second half should still continue.
-      } finally {
-        setIsSecondHalfGatePending(false);
-      }
-
-      startSecondHalfSimulation();
+      await requestStartSecondHalf();
     }
 
     setMatchCursor((current) => Math.min(current + 1, result.matches.length));
   }
 
   function startSecondHalfSimulation() {
+    if (hasSecondHalfStartedRef.current) return;
+    hasSecondHalfStartedRef.current = true;
     setSecondHalfStarted(true);
     setAutoPaused(false);
   }
@@ -144,6 +136,7 @@ export default function ResultPage() {
     const resolver = secondHalfAdGateResolverRef.current;
     secondHalfAdGateResolverRef.current = null;
     setIsSecondHalfAdGateOpen(false);
+    hasSecondHalfGateCompletedRef.current = true;
     resolver?.();
   }
 
@@ -154,14 +147,16 @@ export default function ResultPage() {
     });
   }
 
-  async function handleStartSecondHalf() {
-    if (secondHalfStarted || isSecondHalfGatePending) return;
+  async function requestStartSecondHalf() {
+    if (secondHalfStarted || hasSecondHalfStartedRef.current || isSecondHalfGatePending) return;
 
     setIsSecondHalfGatePending(true);
 
     try {
-      if (shouldShowSecondHalfAdGate()) {
+      if (!hasSecondHalfGateCompletedRef.current && shouldShowSecondHalfAdGate()) {
         await showSecondHalfAdGate();
+      } else {
+        hasSecondHalfGateCompletedRef.current = true;
       }
     } catch {
       // If a future ad provider fails, the second half should still continue.
@@ -486,7 +481,7 @@ export default function ResultPage() {
                     {matchCursor >= 17 && !secondHalfStarted && matchCursor < result.matches.length ? (
                       <button
                         type="button"
-                        onClick={handleStartSecondHalf}
+                        onClick={requestStartSecondHalf}
                         disabled={isSecondHalfGatePending}
                         className="rounded-full bg-[var(--gold)] px-5 py-3 font-semibold text-[#171b3a] disabled:cursor-not-allowed disabled:opacity-60"
                       >
@@ -635,7 +630,7 @@ export default function ResultPage() {
                       ) : matchCursor >= 17 && !secondHalfStarted && matchCursor < result.matches.length ? (
                         <button
                           type="button"
-                          onClick={handleStartSecondHalf}
+                          onClick={requestStartSecondHalf}
                           disabled={isSecondHalfGatePending}
                           className="rounded-full bg-[var(--gold)] px-4 py-2.5 text-sm font-semibold text-[#171b3a] disabled:cursor-not-allowed disabled:opacity-60"
                         >
