@@ -26,17 +26,16 @@ export default function ContactPage() {
       <section>
         <h2 className="text-2xl font-semibold text-white">Support</h2>
         <p className="mt-2 text-[var(--muted)]">
-          Wil je het project steunen, dan kan dat ook via{" "}
-          <a
-            className="text-[var(--gold-soft)] hover:text-white"
-            href="https://ko-fi.com/joopkarnemelk"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Ko-fi
-          </a>
-          .
+          Wil je het project steunen, dan kan dat via de knop hieronder.
         </p>
+        <a
+          className="mt-4 inline-flex min-h-12 items-center justify-center rounded-full border border-[rgba(228,197,106,0.35)] bg-[linear-gradient(135deg,rgba(228,197,106,0.18),rgba(255,255,255,0.06))] px-5 py-3 text-sm font-semibold text-[var(--gold-soft)] shadow-[0_12px_32px_rgba(0,0,0,0.22)] transition hover:border-[rgba(228,197,106,0.55)] hover:text-white"
+          href="https://ko-fi.com/joopkarnemelk"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Support via Ko-fi
+        </a>
       </section>
 
       <section>
