@@ -17,12 +17,31 @@ export function SecondHalfAdGateModal({
   locale,
   onContinue,
 }: SecondHalfAdGateModalProps) {
-  const [canContinue, setCanContinue] = useState(false);
+  const [countdown, setCountdown] = useState(3);
 
   useEffect(() => {
-    const timer = window.setTimeout(() => setCanContinue(true), 1200);
-    return () => window.clearTimeout(timer);
+    const interval = window.setInterval(() => {
+      setCountdown((current) => {
+        if (current <= 1) {
+          window.clearInterval(interval);
+          return 0;
+        }
+
+        return current - 1;
+      });
+    }, 1000);
+
+    return () => window.clearInterval(interval);
   }, []);
+
+  const canContinue = countdown === 0;
+  const continueLabel = canContinue
+    ? locale === "nl"
+      ? "Verder naar tweede seizoenshelft"
+      : "Continue to the second half"
+    : locale === "nl"
+      ? `Verder over ${countdown}...`
+      : `Continue in ${countdown}...`;
 
   return (
     <div className="fixed inset-0 z-50 flex items-end justify-center bg-[rgba(4,8,20,0.78)] p-4 sm:items-center">
@@ -44,7 +63,8 @@ export function SecondHalfAdGateModal({
           <button
             type="button"
             onClick={onContinue}
-            className="rounded-full border border-[var(--line)] px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--muted)] transition hover:text-white"
+            disabled={!canContinue}
+            className="rounded-full border border-[var(--line)] px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--muted)] transition hover:text-white disabled:cursor-not-allowed disabled:opacity-45"
           >
             {locale === "nl" ? "Sluiten" : "Close"}
           </button>
@@ -59,9 +79,9 @@ export function SecondHalfAdGateModal({
             type="button"
             onClick={onContinue}
             disabled={!canContinue}
-            className="rounded-full bg-[linear-gradient(180deg,var(--gold-soft),var(--gold))] px-5 py-3 text-sm font-semibold text-[#171b3a] transition hover:brightness-105"
+            className="rounded-full bg-[linear-gradient(180deg,var(--gold-soft),var(--gold))] px-5 py-3 text-sm font-semibold text-[#171b3a] transition hover:brightness-105 disabled:cursor-not-allowed disabled:opacity-65"
           >
-            {locale === "nl" ? "Verder naar tweede seizoenshelft" : "Continue to the second half"}
+            {continueLabel}
           </button>
         </div>
       </div>
@@ -72,12 +92,12 @@ export function SecondHalfAdGateModal({
 function SecondHalfAdSenseSlot({ locale }: { locale: "nl" | "en" }) {
   const containerRef = useRef<HTMLModElement | null>(null);
   const hasPushedRef = useRef(false);
-  const [adState, setAdState] = useState<"loading" | "ready" | "fallback">("loading");
+  const [adState, setAdState] = useState<"loading" | "fallback">("loading");
 
   useEffect(() => {
     const fallbackTimer = window.setTimeout(() => {
-      setAdState((current) => (current === "loading" ? "fallback" : current));
-    }, 1800);
+      setAdState("fallback");
+    }, 5000);
 
     try {
       if (!hasPushedRef.current && containerRef.current) {
@@ -85,7 +105,6 @@ function SecondHalfAdSenseSlot({ locale }: { locale: "nl" | "en" }) {
         window.adsbygoogle = window.adsbygoogle || [];
         window.adsbygoogle.push({});
       }
-      setAdState("ready");
     } catch {
       setAdState("fallback");
     }
@@ -102,8 +121,8 @@ function SecondHalfAdSenseSlot({ locale }: { locale: "nl" | "en" }) {
         <p className="text-[11px] text-[var(--muted)]">
           {adState === "fallback"
             ? locale === "nl"
-              ? "Geen advertentie beschikbaar"
-              : "No ad available"
+              ? "Je kunt verder"
+              : "You can continue"
             : locale === "nl"
               ? "Laden..."
               : "Loading..."}
@@ -122,19 +141,11 @@ function SecondHalfAdSenseSlot({ locale }: { locale: "nl" | "en" }) {
         />
       </div>
 
-      {adState === "fallback" ? (
-        <p className="mt-3 text-sm leading-6 text-[var(--muted)]">
-          {locale === "nl"
-            ? "Als Google nu niets vult, kun je nog steeds veilig verder naar de tweede seizoenshelft."
-            : "If Google does not fill an ad right now, you can still safely continue to the second half."}
-        </p>
-      ) : (
-        <p className="mt-3 text-xs leading-5 text-[var(--muted)]">
-          {locale === "nl"
-            ? "Zodra dit blok geladen is, kun je verder naar de tweede seizoenshelft."
-            : "As soon as this block has loaded, you can continue to the second half."}
-        </p>
-      )}
+      <p className="mt-3 text-sm leading-6 text-[var(--muted)]">
+        {locale === "nl"
+          ? "Een korte pauze voor helft twee. Daarna gaat je seizoensrun direct verder."
+          : "A short break before the second half. Then your season run continues immediately."}
+      </p>
     </div>
   );
 }
