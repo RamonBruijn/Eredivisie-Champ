@@ -2748,6 +2748,234 @@
     "legendary": false
   },
   {
+    "id": "bogdan-lobont-ajax-2003-04",
+    "name": "Bogdan Lobonț",
+    "teamId": "ajax-2003-04",
+    "club": "Ajax",
+    "season": "2003/04",
+    "positions": [
+      "gk"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "anthony-obodai-ajax-2003-04",
+    "name": "Anthony Obodai",
+    "teamId": "ajax-2003-04",
+    "club": "Ajax",
+    "season": "2003/04",
+    "positions": [
+      "rb"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "john-heitinga-ajax-2003-04",
+    "name": "John Heitinga",
+    "teamId": "ajax-2003-04",
+    "club": "Ajax",
+    "season": "2003/04",
+    "positions": [
+      "cb"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "julien-escude-ajax-2003-04",
+    "name": "Julien Escudé",
+    "teamId": "ajax-2003-04",
+    "club": "Ajax",
+    "season": "2003/04",
+    "positions": [
+      "cb"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "maxwell-ajax-2003-04",
+    "name": "Maxwell",
+    "teamId": "ajax-2003-04",
+    "club": "Ajax",
+    "season": "2003/04",
+    "positions": [
+      "lb"
+    ],
+    "rating": 85,
+    "legendary": false
+  },
+  {
+    "id": "tomas-galasek-ajax-2003-04",
+    "name": "Tomáš Galásek",
+    "teamId": "ajax-2003-04",
+    "club": "Ajax",
+    "season": "2003/04",
+    "positions": [
+      "cm"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "nigel-de-jong-ajax-2003-04",
+    "name": "Nigel de Jong",
+    "teamId": "ajax-2003-04",
+    "club": "Ajax",
+    "season": "2003/04",
+    "positions": [
+      "cm"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "abubakari-yakubu-ajax-2003-04",
+    "name": "Abubakari Yakubu",
+    "teamId": "ajax-2003-04",
+    "club": "Ajax",
+    "season": "2003/04",
+    "positions": [
+      "rm"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "wesley-sneijder-ajax-2003-04",
+    "name": "Wesley Sneijder",
+    "teamId": "ajax-2003-04",
+    "club": "Ajax",
+    "season": "2003/04",
+    "positions": [
+      "cm"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "nicolae-mitea-ajax-2003-04",
+    "name": "Nicolae Mitea",
+    "teamId": "ajax-2003-04",
+    "club": "Ajax",
+    "season": "2003/04",
+    "positions": [
+      "lw"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "zlatan-ibrahimovic-ajax-2003-04",
+    "name": "Zlatan Ibrahimović",
+    "teamId": "ajax-2003-04",
+    "club": "Ajax",
+    "season": "2003/04",
+    "positions": [
+      "st"
+    ],
+    "rating": 88,
+    "legendary": false
+  },
+  {
+    "id": "rafael-van-der-vaart-ajax-2003-04",
+    "name": "Rafael van der Vaart",
+    "teamId": "ajax-2003-04",
+    "club": "Ajax",
+    "season": "2003/04",
+    "positions": [
+      "cm"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "sander-boschker-ajax-2003-04",
+    "name": "Sander Boschker",
+    "teamId": "ajax-2003-04",
+    "club": "Ajax",
+    "season": "2003/04",
+    "positions": [
+      "gk"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "jelle-van-damme-ajax-2003-04",
+    "name": "Jelle Van Damme",
+    "teamId": "ajax-2003-04",
+    "club": "Ajax",
+    "season": "2003/04",
+    "positions": [
+      "cb"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "petri-pasanen-ajax-2003-04",
+    "name": "Petri Pasanen",
+    "teamId": "ajax-2003-04",
+    "club": "Ajax",
+    "season": "2003/04",
+    "positions": [
+      "cb"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "jari-litmanen-ajax-2003-04",
+    "name": "Jari Litmanen",
+    "teamId": "ajax-2003-04",
+    "club": "Ajax",
+    "season": "2003/04",
+    "positions": [
+      "cm"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "tom-soetaers-ajax-2003-04",
+    "name": "Tom Soetaers",
+    "teamId": "ajax-2003-04",
+    "club": "Ajax",
+    "season": "2003/04",
+    "positions": [
+      "lw"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "victor-sikora-ajax-2003-04",
+    "name": "Victor Sikora",
+    "teamId": "ajax-2003-04",
+    "club": "Ajax",
+    "season": "2003/04",
+    "positions": [
+      "rw"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "wamberto-ajax-2003-04",
+    "name": "Wamberto",
+    "teamId": "ajax-2003-04",
+    "club": "Ajax",
+    "season": "2003/04",
+    "positions": [
+      "rw"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
     "id": "frenkie-de-jong-ajax-2018-19",
     "name": "Frenkie de Jong",
     "teamId": "ajax-2018-19",

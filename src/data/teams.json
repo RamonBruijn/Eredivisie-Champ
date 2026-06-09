@@ -167,6 +167,19 @@
     ]
   },
   {
+    "id": "ajax-2003-04",
+    "club": "Ajax",
+    "season": "2003/04",
+    "teamRating": 82,
+    "description": "Champions League-avond tegen Milan als basis, met Sneijder, Zlatan, Maxwell en Van der Vaart in de seizoenscontext.",
+    "tags": [
+      "ajax",
+      "historic",
+      "modern",
+      "champions-league"
+    ]
+  },
+  {
     "id": "ajax-2018-19",
     "club": "Ajax",
     "season": "2018/19",
