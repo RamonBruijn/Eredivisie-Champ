@@ -129,10 +129,10 @@ function SecondHalfAdSenseSlot({ locale }: { locale: "nl" | "en" }) {
         </p>
       </div>
 
-      <div className="flex min-h-[260px] items-center justify-center overflow-hidden rounded-[0.95rem] border border-[rgba(255,255,255,0.08)] bg-[linear-gradient(180deg,rgba(10,14,34,0.86),rgba(7,10,26,0.92))] px-3">
+      <div className="flex min-h-[210px] items-center justify-center overflow-hidden rounded-[0.95rem] border border-[rgba(255,255,255,0.08)] bg-[linear-gradient(180deg,rgba(10,14,34,0.86),rgba(7,10,26,0.92))] px-2 sm:min-h-[260px] sm:px-3">
         <ins
           ref={containerRef}
-          className="adsbygoogle block min-h-[250px] w-full"
+          className="adsbygoogle mx-auto block min-h-[180px] w-full max-w-[320px] sm:min-h-[250px] sm:max-w-full"
           style={{ display: "block" }}
           data-ad-client="ca-pub-6871463419775181"
           data-ad-slot="4033371088"
