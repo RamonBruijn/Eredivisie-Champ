@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { I18nProvider } from "@/lib/i18n";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
+import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -66,6 +67,20 @@ export default function RootLayout({
     <html lang="nl">
       <head>
         <meta name="google-adsense-account" content="ca-pub-6871463419775181" />
+        <Script
+          id="google-analytics"
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-DPZYT4PLV7"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics-config" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-DPZYT4PLV7');
+          `}
+        </Script>
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6871463419775181"

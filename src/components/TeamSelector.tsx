@@ -5,7 +5,7 @@ import { SeasonSimulator } from "@/components/SeasonSimulator";
 import { players, teams } from "@/data";
 import { getFormation, getFormationSlotNumber } from "@/lib/formations";
 import { formatPositionLabel, useI18n } from "@/lib/i18n";
-import { loadDraftSetup, loadSelection, saveSelection } from "@/lib/storage";
+import { clearSelection, isDraftLocked, loadDraftSetup, loadSelection, saveSelection, unlockDraft } from "@/lib/storage";
 import type {
   FormationId,
   GameMode,
@@ -137,14 +137,21 @@ export function TeamSelector() {
   }, [openSlots, rolledTeam, selectedPlayerIds, selectedPlayerNames]);
 
   useEffect(() => {
-    const saved = loadSelection();
     const savedSetup = loadDraftSetup();
+    const draftLocked = isDraftLocked();
+
+    if (draftLocked) {
+      clearSelection();
+      unlockDraft();
+    }
 
     if (savedSetup) {
       setMode(savedSetup.mode);
       setFormation(savedSetup.formation);
       setSelectedDecades(savedSetup.decades.length > 0 ? savedSetup.decades : availableDecades);
     }
+
+    const saved = draftLocked ? [] : loadSelection();
 
     if (saved.length > 0) {
       const padded = Array.from({ length: 11 }, (_, index) => saved[index] ?? null);
@@ -216,6 +223,8 @@ export function TeamSelector() {
   }
 
   function resetDraft(nextFormation = formation, nextMode = mode) {
+    unlockDraft();
+    clearSelection();
     const emptyAssignments = Array.from({ length: 11 }, () => null);
     setSlotAssignments(emptyAssignments);
     setFormation(nextFormation);

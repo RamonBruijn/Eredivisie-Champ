@@ -2,7 +2,7 @@
 
 import { useI18n } from "@/lib/i18n";
 import { simulateSeason } from "@/lib/simulation";
-import { incrementSeasonRunCount, saveResult, saveSelection } from "@/lib/storage";
+import { incrementSeasonRunCount, lockDraft, saveResult, saveSelection } from "@/lib/storage";
 import { validateSlotAssignments } from "@/lib/validation";
 import type { AutoSimulationSpeed, FormationId, GameMode, PlayerRecord, SimulationMode } from "@/types/game";
 import { useRouter } from "next/navigation";
@@ -30,6 +30,7 @@ export function SeasonSimulator({
     if (!validation.valid) return;
     setLoadingMode(simulationMode);
     saveSelection(slotAssignments);
+    lockDraft();
 
     window.setTimeout(() => {
       const result = simulateSeason(selectedPlayers, {

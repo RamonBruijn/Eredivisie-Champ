@@ -4,7 +4,7 @@ import { LanguageToggle } from "@/components/LanguageToggle";
 import { teams } from "@/data";
 import { FORMATIONS } from "@/lib/formations";
 import { useI18n } from "@/lib/i18n";
-import { saveDraftSetup, saveSelection } from "@/lib/storage";
+import { saveDraftSetup, saveSelection, unlockDraft } from "@/lib/storage";
 import type { DraftSetup, FormationId, GameMode, TeamRecord } from "@/types/game";
 import Image from "next/image";
 import Link from "next/link";
@@ -104,6 +104,7 @@ export function HomePageClient() {
 
     saveDraftSetup(setup);
     saveSelection(Array.from({ length: 11 }, () => null));
+    unlockDraft();
     router.push("/game");
   }
 

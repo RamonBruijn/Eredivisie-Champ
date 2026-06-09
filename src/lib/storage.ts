@@ -4,6 +4,7 @@ const SELECTION_KEY = "eredivisie-champ-selection";
 const RESULT_KEY = "eredivisie-champ-result";
 const DRAFT_SETUP_KEY = "eredivisie-champ-draft-setup";
 const SEASON_RUN_COUNT_KEY = "eredivisie-champ-season-run-count";
+const DRAFT_LOCK_KEY = "eredivisie-champ-draft-locked";
 
 type StoredSelection = Array<PlayerRecord | null>;
 
@@ -14,6 +15,11 @@ function hasWindow() {
 export function saveSelection(players: StoredSelection) {
   if (!hasWindow()) return;
   window.localStorage.setItem(SELECTION_KEY, JSON.stringify(players));
+}
+
+export function clearSelection() {
+  if (!hasWindow()) return;
+  window.localStorage.removeItem(SELECTION_KEY);
 }
 
 export function loadSelection(): StoredSelection {
@@ -78,4 +84,19 @@ export function loadSeasonRunCount() {
 
   const parsed = Number.parseInt(raw, 10);
   return Number.isFinite(parsed) && parsed > 0 ? parsed : 0;
+}
+
+export function lockDraft() {
+  if (!hasWindow()) return;
+  window.localStorage.setItem(DRAFT_LOCK_KEY, "1");
+}
+
+export function unlockDraft() {
+  if (!hasWindow()) return;
+  window.localStorage.removeItem(DRAFT_LOCK_KEY);
+}
+
+export function isDraftLocked() {
+  if (!hasWindow()) return false;
+  return window.localStorage.getItem(DRAFT_LOCK_KEY) === "1";
 }
