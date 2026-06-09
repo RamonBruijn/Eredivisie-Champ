@@ -17547,5 +17547,431 @@
     ],
     "rating": 71,
     "legendary": false
+  },
+  {
+    "id": "ronald-koeman-jr-telstar-2025-26",
+    "name": "Ronald Koeman Jr.",
+    "teamId": "telstar-2025-26",
+    "club": "Telstar",
+    "season": "2025/26",
+    "positions": [
+      "gk"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "daan-reiziger-telstar-2025-26",
+    "name": "Daan Reiziger",
+    "teamId": "telstar-2025-26",
+    "club": "Telstar",
+    "season": "2025/26",
+    "positions": [
+      "gk"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "jeff-hardeveld-telstar-2025-26",
+    "name": "Jeff Hardeveld",
+    "teamId": "telstar-2025-26",
+    "club": "Telstar",
+    "season": "2025/26",
+    "positions": [
+      "lb"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "gerald-alders-telstar-2025-26",
+    "name": "Gerald Alders",
+    "teamId": "telstar-2025-26",
+    "club": "Telstar",
+    "season": "2025/26",
+    "positions": [
+      "rb"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "guus-offerhaus-telstar-2025-26",
+    "name": "Guus Offerhaus",
+    "teamId": "telstar-2025-26",
+    "club": "Telstar",
+    "season": "2025/26",
+    "positions": [
+      "cb"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "danny-bakker-telstar-2025-26",
+    "name": "Danny Bakker",
+    "teamId": "telstar-2025-26",
+    "club": "Telstar",
+    "season": "2025/26",
+    "positions": [
+      "cb",
+      "cm"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "dion-malone-telstar-2025-26",
+    "name": "Dion Malone",
+    "teamId": "telstar-2025-26",
+    "club": "Telstar",
+    "season": "2025/26",
+    "positions": [
+      "cb",
+      "rb"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "tyrese-noslin-telstar-2025-26",
+    "name": "Tyrese Noslin",
+    "teamId": "telstar-2025-26",
+    "club": "Telstar",
+    "season": "2025/26",
+    "positions": [
+      "lb",
+      "lm"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "tyrone-owusu-telstar-2025-26",
+    "name": "Tyrone Owusu",
+    "teamId": "telstar-2025-26",
+    "club": "Telstar",
+    "season": "2025/26",
+    "positions": [
+      "cm"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "dylan-mertens-telstar-2025-26",
+    "name": "Dylan Mertens",
+    "teamId": "telstar-2025-26",
+    "club": "Telstar",
+    "season": "2025/26",
+    "positions": [
+      "cm"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "cedric-hatenboer-telstar-2025-26",
+    "name": "Cedric Hatenboer",
+    "teamId": "telstar-2025-26",
+    "club": "Telstar",
+    "season": "2025/26",
+    "positions": [
+      "cm"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "jochem-ritmeester-van-de-kamp-telstar-2025-26",
+    "name": "Jochem Ritmeester van de Kamp",
+    "teamId": "telstar-2025-26",
+    "club": "Telstar",
+    "season": "2025/26",
+    "positions": [
+      "cm"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "soufiane-hetli-telstar-2025-26",
+    "name": "Soufiane Hetli",
+    "teamId": "telstar-2025-26",
+    "club": "Telstar",
+    "season": "2025/26",
+    "positions": [
+      "lw",
+      "lm"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "nokvi-thorisson-telstar-2025-26",
+    "name": "Nökkvi Thórisson",
+    "teamId": "telstar-2025-26",
+    "club": "Telstar",
+    "season": "2025/26",
+    "positions": [
+      "st",
+      "rw"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "kay-tejan-telstar-2025-26",
+    "name": "Kay Tejan",
+    "teamId": "telstar-2025-26",
+    "club": "Telstar",
+    "season": "2025/26",
+    "positions": [
+      "st",
+      "lw"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "sem-van-duijn-telstar-2025-26",
+    "name": "Sem van Duijn",
+    "teamId": "telstar-2025-26",
+    "club": "Telstar",
+    "season": "2025/26",
+    "positions": [
+      "st",
+      "lw"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "patrick-brouwer-telstar-2025-26",
+    "name": "Patrick Brouwer",
+    "teamId": "telstar-2025-26",
+    "club": "Telstar",
+    "season": "2025/26",
+    "positions": [
+      "rw",
+      "rm"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "gonzalo-crettaz-nec-2025-26",
+    "name": "Gonzalo Crettaz",
+    "teamId": "nec-2025-26",
+    "club": "NEC",
+    "season": "2025/26",
+    "positions": [
+      "gk"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "jasper-cillessen-nec-2025-26",
+    "name": "Jasper Cillessen",
+    "teamId": "nec-2025-26",
+    "club": "NEC",
+    "season": "2025/26",
+    "positions": [
+      "gk"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "ahmetcan-kaplan-nec-2025-26",
+    "name": "Ahmetcan Kaplan",
+    "teamId": "nec-2025-26",
+    "club": "NEC",
+    "season": "2025/26",
+    "positions": [
+      "cb",
+      "lb"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "philippe-sandler-nec-2025-26",
+    "name": "Philippe Sandler",
+    "teamId": "nec-2025-26",
+    "club": "NEC",
+    "season": "2025/26",
+    "positions": [
+      "cb"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "deveron-fonville-nec-2025-26",
+    "name": "Deveron Fonville",
+    "teamId": "nec-2025-26",
+    "club": "NEC",
+    "season": "2025/26",
+    "positions": [
+      "cb",
+      "lb"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "thomas-ouwejan-nec-2025-26",
+    "name": "Thomas Ouwejan",
+    "teamId": "nec-2025-26",
+    "club": "NEC",
+    "season": "2025/26",
+    "positions": [
+      "lb",
+      "lm"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "eli-dasa-nec-2025-26",
+    "name": "Eli Dasa",
+    "teamId": "nec-2025-26",
+    "club": "NEC",
+    "season": "2025/26",
+    "positions": [
+      "rb"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "darko-nejasmic-nec-2025-26",
+    "name": "Darko Nejašmić",
+    "teamId": "nec-2025-26",
+    "club": "NEC",
+    "season": "2025/26",
+    "positions": [
+      "cm"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "dirk-proper-nec-2025-26",
+    "name": "Dirk Proper",
+    "teamId": "nec-2025-26",
+    "club": "NEC",
+    "season": "2025/26",
+    "positions": [
+      "cm"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "kodai-sano-nec-2025-26",
+    "name": "Kodai Sano",
+    "teamId": "nec-2025-26",
+    "club": "NEC",
+    "season": "2025/26",
+    "positions": [
+      "cm"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "tjaronn-chery-nec-2025-26",
+    "name": "Tjaronn Chery",
+    "teamId": "nec-2025-26",
+    "club": "NEC",
+    "season": "2025/26",
+    "positions": [
+      "cm",
+      "rm"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "sami-ouaissa-nec-2025-26",
+    "name": "Sami Ouaissa",
+    "teamId": "nec-2025-26",
+    "club": "NEC",
+    "season": "2025/26",
+    "positions": [
+      "rm",
+      "cm",
+      "rw"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "basar-onal-nec-2025-26",
+    "name": "Başar Önal",
+    "teamId": "nec-2025-26",
+    "club": "NEC",
+    "season": "2025/26",
+    "positions": [
+      "lm",
+      "lw",
+      "cm"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "noe-lebreton-nec-2025-26",
+    "name": "Noé Lebreton",
+    "teamId": "nec-2025-26",
+    "club": "NEC",
+    "season": "2025/26",
+    "positions": [
+      "cm"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "virgil-misidjan-nec-2025-26",
+    "name": "Virgil Misidjan",
+    "teamId": "nec-2025-26",
+    "club": "NEC",
+    "season": "2025/26",
+    "positions": [
+      "lw",
+      "lm",
+      "rw"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "koki-ogawa-nec-2025-26",
+    "name": "Koki Ogawa",
+    "teamId": "nec-2025-26",
+    "club": "NEC",
+    "season": "2025/26",
+    "positions": [
+      "st"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "bryan-linssen-nec-2025-26",
+    "name": "Bryan Linssen",
+    "teamId": "nec-2025-26",
+    "club": "NEC",
+    "season": "2025/26",
+    "positions": [
+      "st"
+    ],
+    "rating": 78,
+    "legendary": false
   }
 ]

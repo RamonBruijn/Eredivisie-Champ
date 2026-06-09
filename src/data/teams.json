@@ -1082,5 +1082,29 @@
       "modern",
       "europa-league"
     ]
+  },
+  {
+    "id": "telstar-2025-26",
+    "club": "Telstar",
+    "season": "2025/26",
+    "teamRating": 72,
+    "description": "Compacte Eredivisie 2025/26-selectie van Telstar, ingericht voor de draftdatabase.",
+    "tags": [
+      "telstar",
+      "modern",
+      "eredivisie"
+    ]
+  },
+  {
+    "id": "nec-2025-26",
+    "club": "NEC",
+    "season": "2025/26",
+    "teamRating": 78,
+    "description": "Compacte Eredivisie 2025/26-selectie van NEC, ingericht voor de draftdatabase.",
+    "tags": [
+      "nec",
+      "modern",
+      "eredivisie"
+    ]
   }
 ]
