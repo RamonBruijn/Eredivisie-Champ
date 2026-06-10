@@ -12,6 +12,7 @@ interface FormationBuilderProps {
   slotAssignments: Array<PlayerRecord | null>;
   pendingPlayer: PlayerRecord | null;
   onSlotClick: (slotIndex: number) => void;
+  onCancelPlacement?: () => void;
   onStartSeason?: () => void;
 }
 
@@ -21,6 +22,7 @@ export function FormationBuilder({
   slotAssignments,
   pendingPlayer,
   onSlotClick,
+  onCancelPlacement,
   onStartSeason,
 }: FormationBuilderProps) {
   const selectedPlayers = slotAssignments.filter((player): player is PlayerRecord => Boolean(player));
@@ -97,6 +99,8 @@ export function FormationBuilder({
             const pickedPlayer = slotAssignments[index];
             const isAssignable =
               !!pendingPlayer && !pickedPlayer && pendingPlayer.positions.includes(slot);
+            const isPlacementMode = !!pendingPlayer;
+            const isUnavailableWhilePlacing = isPlacementMode && !isAssignable;
             const shirtNumber = getFormationSlotNumber(formation, index);
 
             return (
@@ -108,7 +112,9 @@ export function FormationBuilder({
                 <button
                   type="button"
                   onClick={() => onSlotClick(index)}
-                  className={`flex min-w-[4.7rem] flex-col items-center text-center transition ${isAssignable ? "scale-105" : ""}`}
+                  className={`flex min-w-[4.7rem] flex-col items-center text-center transition ${
+                    isAssignable ? "scale-105" : ""
+                  } ${isUnavailableWhilePlacing ? "opacity-55" : ""}`}
                 >
                   <div
                     className={`relative flex h-10 w-10 items-center justify-center rounded-full border-2 text-xs font-bold shadow-lg transition md:h-12 md:w-12 md:text-sm ${
@@ -116,12 +122,19 @@ export function FormationBuilder({
                         ? "border-[var(--gold)] bg-[rgba(245,228,166,0.98)] text-[#261b57] shadow-[0_0_0_6px_rgba(245,228,166,0.12)]"
                         : pickedPlayer
                             ? "border-[rgba(0,0,0,0.55)] bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(236,230,247,0.94))] text-[#171b3a]"
-                            : "border-[rgba(255,255,255,0.22)] bg-[linear-gradient(180deg,rgba(31,40,93,0.9),rgba(17,23,57,0.86))] text-[rgba(255,255,255,0.82)]"
+                            : isPlacementMode
+                              ? "border-[rgba(255,255,255,0.16)] bg-[linear-gradient(180deg,rgba(25,34,76,0.88),rgba(13,18,42,0.82))] text-[rgba(255,255,255,0.74)]"
+                              : "border-[rgba(255,255,255,0.22)] bg-[linear-gradient(180deg,rgba(31,40,93,0.9),rgba(17,23,57,0.86))] text-[rgba(255,255,255,0.82)]"
                     }`}
                   >
                     <span className="absolute -left-1.5 -top-1.5 inline-flex min-w-5 items-center justify-center rounded-full bg-[rgba(9,13,31,0.92)] px-1.5 py-0.5 text-[8px] font-bold leading-none text-white ring-1 ring-[rgba(255,255,255,0.14)] md:min-w-6 md:text-[9px]">
                       {shirtNumber}
                     </span>
+                    {isAssignable ? (
+                      <span className="absolute -bottom-1.5 -right-1 inline-flex h-4 min-w-4 items-center justify-center rounded-full bg-[var(--gold)] px-1 text-[9px] font-bold leading-none text-[#171b3a] shadow-[0_6px_12px_rgba(0,0,0,0.2)] md:h-5 md:min-w-5 md:text-[10px]">
+                        +
+                      </span>
+                    ) : null}
                     {pickedPlayer ? (
                       <span className="absolute -top-1.5 right-0 rounded-full bg-[var(--gold)] px-1.5 py-0.5 text-[8px] font-bold leading-none text-[#171b3a] md:text-[9px]">
                         {formatPositionLabel(slot)}
@@ -141,22 +154,26 @@ export function FormationBuilder({
 
       {pendingPlayer ? (
         <div className="mt-4 rounded-[1.5rem] border border-[rgba(217,185,110,0.35)] bg-[rgba(217,185,110,0.08)] p-4">
-            <p className="text-sm font-semibold text-white">
-              {locale === "nl" ? `Kies positie voor ${pendingPlayer.name}` : `Choose a position for ${pendingPlayer.name}`}
-            </p>
-          <div className="mt-3 flex flex-wrap gap-2">
-            {openSlots
-              .filter(({ slot }) => pendingPlayer.positions.includes(slot))
-              .map(({ slot, index: slotIndex }) => (
-                <button
-                  key={`${slot}-${slotIndex}-assign`}
-                  type="button"
-                  disabled
-                  className="rounded-full border border-[rgba(217,185,110,0.45)] px-3 py-2 text-sm text-[var(--gold-soft)]"
-                >
-                  {localizedSlotLabel(slot, slotIndex, getFormationSlotNumber(formation, slotIndex))}
-                </button>
-              ))}
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p className="text-sm font-semibold text-white">
+                {locale === "nl" ? `Zet ${pendingPlayer.name} in je opstelling` : `Place ${pendingPlayer.name} in your XI`}
+              </p>
+              <p className="mt-1 text-xs text-[var(--muted)]">
+                {locale === "nl"
+                  ? "Tik op een oplichtende vrije positie om deze speler vast te zetten."
+                  : "Tap any highlighted open slot to lock this player into your formation."}
+              </p>
+            </div>
+            {onCancelPlacement ? (
+              <button
+                type="button"
+                onClick={onCancelPlacement}
+                className="inline-flex min-h-10 items-center justify-center rounded-full border border-[rgba(255,255,255,0.14)] px-4 py-2 text-sm text-[var(--muted)] transition hover:border-[rgba(255,255,255,0.22)] hover:text-white"
+              >
+                {locale === "nl" ? "Andere speler kiezen" : "Pick another player"}
+              </button>
+            ) : null}
           </div>
         </div>
       ) : null}

@@ -3,7 +3,7 @@
 import { FormationBuilder } from "@/components/FormationBuilder";
 import { SeasonSimulator } from "@/components/SeasonSimulator";
 import { players, teams } from "@/data";
-import { getFormation, getFormationSlotNumber } from "@/lib/formations";
+import { getFormation } from "@/lib/formations";
 import { formatPositionLabel, useI18n } from "@/lib/i18n";
 import { clearSelection, isDraftLocked, loadDraftSetup, loadSelection, saveSelection, unlockDraft } from "@/lib/storage";
 import type {
@@ -70,6 +70,8 @@ function getEligibleTeamIdsForState(
 
 export function TeamSelector() {
   const { locale, t } = useI18n();
+  const clubRollRef = useRef<HTMLDivElement | null>(null);
+  const clubRollListRef = useRef<HTMLDivElement | null>(null);
   const formationSectionRef = useRef<HTMLDivElement | null>(null);
   const completionScrolledRef = useRef(false);
   const [mode, setMode] = useState<GameMode>("classic");
@@ -193,6 +195,27 @@ export function TeamSelector() {
     setIsRolling(false);
   }, [eligibleTeamIds, filteredTeams, openSlots.length, rolledTeam]);
 
+  function scrollSectionIntoView(ref: { current: HTMLDivElement | null }) {
+    const element = ref.current;
+    if (!element) return;
+
+    const rect = element.getBoundingClientRect();
+    const viewportHeight = window.innerHeight;
+    const isMostlyVisible = rect.top >= 0 && rect.top < viewportHeight * 0.45 && rect.bottom <= viewportHeight;
+
+    if (!isMostlyVisible) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }
+
+  function scrollBackToClubRoll() {
+    if (clubRollListRef.current) {
+      clubRollListRef.current.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    clubRollRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
   function runRollAnimationWithIds(teamIds: string[], previousId?: string, consumeReroll = false) {
     if (teamIds.length === 0) return;
 
@@ -262,10 +285,16 @@ export function TeamSelector() {
   function handlePick(player: PlayerRecord) {
     if (isRolling) return;
     setPendingPlayer(player);
+    scrollSectionIntoView(formationSectionRef);
   }
 
   function handleAssignToSlot(slotIndex: number) {
     if (!pendingPlayer) return;
+    if (slotAssignments[slotIndex]) return;
+
+    const slot = formationShape.slots[slotIndex];
+    if (!pendingPlayer.positions.includes(slot)) return;
+
     const assignedPlayer = pendingPlayer;
     const nextAssignments = [...slotAssignments];
     nextAssignments[slotIndex] = assignedPlayer;
@@ -312,6 +341,8 @@ export function TeamSelector() {
       setIsRolling(false);
       setRolledTeam(null);
     }
+
+    scrollBackToClubRoll();
   }
 
   function handleSlotSelection(slotIndex: number) {
@@ -324,11 +355,16 @@ export function TeamSelector() {
     }
   }
 
+  function handleCancelPendingPlayer() {
+    setPendingPlayer(null);
+    scrollBackToClubRoll();
+  }
+
   return (
     <div className="space-y-4">
       <section className="grid gap-4 xl:grid-cols-[1.05fr_0.95fr]">
         <div className="space-y-4">
-          <section className="glass rounded-[1.55rem] p-4 md:rounded-[2rem] md:p-6">
+          <section ref={clubRollRef} className="glass rounded-[1.55rem] p-4 md:rounded-[2rem] md:p-6">
             <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <div>
                 <p className="text-sm uppercase tracking-[0.22em] text-[var(--muted)]">{t.teamSelector.currentRoll}</p>
@@ -421,29 +457,15 @@ export function TeamSelector() {
                       {formatPositions(pendingPlayer.positions)}
                     </span>
                   </p>
-                </div>
-                <div className="grid gap-3 md:grid-cols-2">
-                  {openSlots
-                    .filter(({ slot }) => pendingPlayer.positions.includes(slot))
-                    .map(({ slot, index: slotIndex }) => (
-                      <button
-                        key={`${slot}-${slotIndex}-assign-card`}
-                        type="button"
-                        onClick={() => handleAssignToSlot(slotIndex)}
-                        className="min-h-20 rounded-[1.35rem] border border-[var(--line)] px-4 py-4 text-left transition hover:border-[rgba(217,185,110,0.45)] hover:bg-[rgba(255,255,255,0.03)]"
-                      >
-                        <p className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">
-                          {locale === "nl" ? "Vrije positie" : "Open position"}
-                        </p>
-                        <p className="mt-2 text-lg font-semibold text-white">
-                          {getFormationSlotNumber(formation, slotIndex)}. {formatPositionLabel(slot)}
-                        </p>
-                      </button>
-                    ))}
+                  <p className="mt-3 text-sm text-[var(--gold-soft)]">
+                    {locale === "nl"
+                      ? "Kies nu in je opstelling een passende vrije positie."
+                      : "Now choose a matching open slot in your formation."}
+                  </p>
                 </div>
                 <button
                   type="button"
-                  onClick={() => setPendingPlayer(null)}
+                  onClick={handleCancelPendingPlayer}
                   className="rounded-full border border-[var(--line)] px-4 py-2 text-sm text-[var(--muted)]"
                 >
                   {locale === "nl" ? "Andere speler kiezen" : "Pick another player"}
@@ -470,7 +492,10 @@ export function TeamSelector() {
                     </div>
                   </div>
                 ) : rolledCandidates.length > 0 ? (
-                  <div className="max-h-[18.5rem] overflow-y-auto rounded-[1.15rem] border border-[rgba(122,92,255,0.18)] bg-[linear-gradient(180deg,rgba(61,46,128,0.34),rgba(13,18,42,0.5))] p-1.5 pr-1">
+                  <div
+                    ref={clubRollListRef}
+                    className="max-h-[18.5rem] overflow-y-auto rounded-[1.15rem] border border-[rgba(122,92,255,0.18)] bg-[linear-gradient(180deg,rgba(61,46,128,0.34),rgba(13,18,42,0.5))] p-1.5 pr-1"
+                  >
                     <div className="space-y-1.5">
                       {rolledCandidates.map(({ player, assignableSlotIndexes }) => (
                         <button
@@ -525,6 +550,7 @@ export function TeamSelector() {
             slotAssignments={slotAssignments}
             pendingPlayer={pendingPlayer}
             onSlotClick={handleSlotSelection}
+            onCancelPlacement={pendingPlayer ? handleCancelPendingPlayer : undefined}
             onStartSeason={() => {
               document.getElementById("season-simulator")?.scrollIntoView({ behavior: "smooth", block: "start" });
             }}
