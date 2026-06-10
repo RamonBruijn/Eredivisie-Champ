@@ -77,13 +77,13 @@ export function getRolledTeamCardTheme(club?: string | null) {
 
   return {
     cardStyle: {
-      borderColor: toRgba(accentColor, 0.34),
+      borderColor: toRgba(accentColor, 0.26),
       backgroundImage: [
-        `radial-gradient(circle at top right, ${toRgba(accentColor, 0.22)} 0%, transparent 42%)`,
-        `linear-gradient(135deg, ${toRgba(primaryColor, 0.76)} 0%, ${toRgba(primaryColor, 0.58)} 48%, ${toRgba(HOME_DARK, 0.92)} 100%)`,
-        "linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02))",
+        `radial-gradient(circle at top right, ${toRgba(accentColor, 0.14)} 0%, transparent 42%)`,
+        `linear-gradient(135deg, ${toRgba(primaryColor, 0.6)} 0%, ${toRgba(primaryColor, 0.42)} 48%, ${toRgba(HOME_DARK, 0.96)} 100%)`,
+        "linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02))",
       ].join(", "),
-      boxShadow: `inset 0 1px 0 ${toRgba("#FFFFFF", 0.08)}`,
+      boxShadow: `inset 0 1px 0 ${toRgba("#FFFFFF", 0.06)}`,
     } as const,
     eyebrowStyle: {
       color: toRgba("#FFFFFF", 0.74),
