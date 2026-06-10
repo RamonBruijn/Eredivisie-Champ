@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { I18nProvider } from "@/lib/i18n";
+import { shouldLoadAdScripts } from "@/lib/ads";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
 import Script from "next/script";
 import "./globals.css";
@@ -63,6 +64,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const adsEnabled = shouldLoadAdScripts();
+
   return (
     <html lang="nl">
       <head>
@@ -81,11 +84,13 @@ export default function RootLayout({
             gtag('config', 'G-DPZYT4PLV7');
           `}
         </Script>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6871463419775181"
-          crossOrigin="anonymous"
-        />
+        {adsEnabled ? (
+          <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6871463419775181"
+            crossOrigin="anonymous"
+          />
+        ) : null}
       </head>
       <body>
         <I18nProvider>

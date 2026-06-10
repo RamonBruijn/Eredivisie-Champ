@@ -3,6 +3,7 @@
 import { LanguageToggle } from "@/components/LanguageToggle";
 import { ResultCard } from "@/components/ResultCard";
 import { SecondHalfAdGateModal } from "@/components/SecondHalfAdGateModal";
+import { shouldUseSecondHalfAdGate } from "@/lib/ads";
 import { useI18n } from "@/lib/i18n";
 import { loadResult, loadSeasonRunCount } from "@/lib/storage";
 import Link from "next/link";
@@ -17,6 +18,7 @@ const AUTO_SIMULATION_DELAYS: Record<AutoSimulationSpeed, number> = {
 
 export default function ResultPage() {
   const { locale, t } = useI18n();
+  const secondHalfAdGateEnabled = shouldUseSecondHalfAdGate();
   const [result, setResult] = useState<SeasonSummary | null>(null);
   const [matchCursor, setMatchCursor] = useState(0);
   const [secondHalfStarted, setSecondHalfStarted] = useState(false);
@@ -129,7 +131,7 @@ export default function ResultPage() {
   }
 
   function shouldShowSecondHalfAdGate() {
-    return seasonRunCount >= 2;
+    return secondHalfAdGateEnabled && seasonRunCount >= 2;
   }
 
   function resolveSecondHalfAdGate() {
@@ -796,7 +798,7 @@ export default function ResultPage() {
         </Link>
       </div>
 
-      {isSecondHalfAdGateOpen ? (
+      {secondHalfAdGateEnabled && isSecondHalfAdGateOpen ? (
         <SecondHalfAdGateModal locale={locale} onContinue={resolveSecondHalfAdGate} />
       ) : null}
     </main>
