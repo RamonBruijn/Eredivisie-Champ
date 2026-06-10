@@ -3,6 +3,7 @@
 import { FormationBuilder } from "@/components/FormationBuilder";
 import { SeasonSimulator } from "@/components/SeasonSimulator";
 import { players, teams } from "@/data";
+import { getRolledTeamCardTheme } from "@/lib/clubTheme";
 import { getFormation } from "@/lib/formations";
 import { formatPositionLabel, useI18n } from "@/lib/i18n";
 import { clearSelection, isDraftLocked, loadDraftSetup, loadSelection, saveSelection, unlockDraft } from "@/lib/storage";
@@ -115,6 +116,7 @@ export function TeamSelector() {
     () => getEligibleTeamIdsForState(filteredTeams, openSlots, selectedPlayerIds, selectedPlayerNames),
     [filteredTeams, openSlots, selectedPlayerIds, selectedPlayerNames],
   );
+  const rolledTeamTheme = useMemo(() => getRolledTeamCardTheme(rolledTeam?.club), [rolledTeam?.club]);
 
   const rolledCandidates = useMemo(() => {
     if (!rolledTeam) return [];
@@ -409,9 +411,17 @@ export function TeamSelector() {
             </div>
 
             {rolledTeam ? (
-              <div className="mt-4 rounded-[1.35rem] border border-[var(--line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.02))] p-4 md:rounded-[1.75rem] md:p-5">
+              <div
+                className="mt-4 rounded-[1.35rem] border border-[var(--line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.02))] p-4 md:rounded-[1.75rem] md:p-5"
+                style={rolledTeamTheme.cardStyle}
+              >
                 <div className="flex items-start justify-between gap-3">
-                  <p className="text-sm uppercase tracking-[0.18em] text-[var(--muted)]">{t.teamSelector.rolledTeam}</p>
+                  <p
+                    className="text-sm uppercase tracking-[0.18em] text-[var(--muted)]"
+                    style={rolledTeamTheme.eyebrowStyle}
+                  >
+                    {t.teamSelector.rolledTeam}
+                  </p>
                   {isRolling ? (
                     <div className="roll-dice flex items-center gap-1.5 rounded-full border border-[rgba(228,197,106,0.24)] bg-[rgba(228,197,106,0.08)] px-3 py-1 text-[11px] uppercase tracking-[0.16em] text-[var(--gold-soft)]">
                       <span className="roll-pip h-1.5 w-1.5 rounded-full bg-[var(--gold-soft)]" />
@@ -423,7 +433,7 @@ export function TeamSelector() {
                 <h3 className="mt-2 text-2xl font-semibold text-white md:text-3xl">
                   {rolledTeam.club} {rolledTeam.season}
                 </h3>
-                <p className="mt-4 text-sm text-[var(--gold-soft)]">
+                <p className="mt-4 text-sm text-[var(--gold-soft)]" style={rolledTeamTheme.noteStyle}>
                   {isRolling
                     ? locale === "nl"
                       ? "Teams rollen..."
