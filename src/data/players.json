@@ -17973,5 +17973,1771 @@
     ],
     "rating": 78,
     "legendary": false
+  },
+  {
+    "id": "stijn-van-gassel-excelsior-2022-23",
+    "name": "Stijn van Gassel",
+    "teamId": "excelsior-2022-23",
+    "club": "Excelsior",
+    "season": "2022/23",
+    "positions": [
+      "gk"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "norbert-alblas-excelsior-2022-23",
+    "name": "Norbert Alblas",
+    "teamId": "excelsior-2022-23",
+    "club": "Excelsior",
+    "season": "2022/23",
+    "positions": [
+      "gk"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "siebe-horemans-excelsior-2022-23",
+    "name": "Siebe Horemans",
+    "teamId": "excelsior-2022-23",
+    "club": "Excelsior",
+    "season": "2022/23",
+    "positions": [
+      "rb",
+      "rm"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "nathan-markelo-excelsior-2022-23",
+    "name": "Nathan Markelo",
+    "teamId": "excelsior-2022-23",
+    "club": "Excelsior",
+    "season": "2022/23",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "redouan-el-yaakoubi-excelsior-2022-23",
+    "name": "Redouan El Yaakoubi",
+    "teamId": "excelsior-2022-23",
+    "club": "Excelsior",
+    "season": "2022/23",
+    "positions": [
+      "cb"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "serano-seymor-excelsior-2022-23",
+    "name": "Serano Seymor",
+    "teamId": "excelsior-2022-23",
+    "club": "Excelsior",
+    "season": "2022/23",
+    "positions": [
+      "cb",
+      "lb"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "maxime-awoudja-excelsior-2022-23",
+    "name": "Maxime Awoudja",
+    "teamId": "excelsior-2022-23",
+    "club": "Excelsior",
+    "season": "2022/23",
+    "positions": [
+      "cb"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "kik-pierie-excelsior-2022-23",
+    "name": "Kik Pierie",
+    "teamId": "excelsior-2022-23",
+    "club": "Excelsior",
+    "season": "2022/23",
+    "positions": [
+      "cb",
+      "lb"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "nathan-tjoe-a-on-excelsior-2022-23",
+    "name": "Nathan Tjoe-A-On",
+    "teamId": "excelsior-2022-23",
+    "club": "Excelsior",
+    "season": "2022/23",
+    "positions": [
+      "lb",
+      "lm"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "arthur-zagre-excelsior-2022-23",
+    "name": "Arthur Zagre",
+    "teamId": "excelsior-2022-23",
+    "club": "Excelsior",
+    "season": "2022/23",
+    "positions": [
+      "lb",
+      "lm"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "julian-baas-excelsior-2022-23",
+    "name": "Julian Baas",
+    "teamId": "excelsior-2022-23",
+    "club": "Excelsior",
+    "season": "2022/23",
+    "positions": [
+      "cm",
+      "cb"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "kenzo-goudmijn-excelsior-2022-23",
+    "name": "Kenzo Goudmijn",
+    "teamId": "excelsior-2022-23",
+    "club": "Excelsior",
+    "season": "2022/23",
+    "positions": [
+      "cm",
+      "rm"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "peer-koopmeiners-excelsior-2022-23",
+    "name": "Peer Koopmeiners",
+    "teamId": "excelsior-2022-23",
+    "club": "Excelsior",
+    "season": "2022/23",
+    "positions": [
+      "cm"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "noah-naujoks-excelsior-2022-23",
+    "name": "Noah Naujoks",
+    "teamId": "excelsior-2022-23",
+    "club": "Excelsior",
+    "season": "2022/23",
+    "positions": [
+      "cm",
+      "rm"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "yassin-ayoub-excelsior-2022-23",
+    "name": "Yassin Ayoub",
+    "teamId": "excelsior-2022-23",
+    "club": "Excelsior",
+    "season": "2022/23",
+    "positions": [
+      "lm",
+      "cm"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "jacky-donkor-excelsior-2022-23",
+    "name": "Jacky Donkor",
+    "teamId": "excelsior-2022-23",
+    "club": "Excelsior",
+    "season": "2022/23",
+    "positions": [
+      "rm",
+      "rw"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "marouan-azarkan-excelsior-2022-23",
+    "name": "Marouan Azarkan",
+    "teamId": "excelsior-2022-23",
+    "club": "Excelsior",
+    "season": "2022/23",
+    "positions": [
+      "rw",
+      "lw",
+      "rm"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "couhaib-driouech-excelsior-2022-23",
+    "name": "Couhaib Driouech",
+    "teamId": "excelsior-2022-23",
+    "club": "Excelsior",
+    "season": "2022/23",
+    "positions": [
+      "lw",
+      "rw"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "lazaros-lamprou-excelsior-2022-23",
+    "name": "Lazaros Lamprou",
+    "teamId": "excelsior-2022-23",
+    "club": "Excelsior",
+    "season": "2022/23",
+    "positions": [
+      "lw",
+      "rw",
+      "st"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "reda-kharchouch-excelsior-2022-23",
+    "name": "Reda Kharchouch",
+    "teamId": "excelsior-2022-23",
+    "club": "Excelsior",
+    "season": "2022/23",
+    "positions": [
+      "st"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "nikolas-agrafiotis-excelsior-2022-23",
+    "name": "Nikolas Agrafiotis",
+    "teamId": "excelsior-2022-23",
+    "club": "Excelsior",
+    "season": "2022/23",
+    "positions": [
+      "st"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "mike-van-duinen-excelsior-2022-23",
+    "name": "Mike van Duinen",
+    "teamId": "excelsior-2022-23",
+    "club": "Excelsior",
+    "season": "2022/23",
+    "positions": [
+      "st",
+      "lw"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "sonny-stevens-sc-cambuur-2021-22",
+    "name": "Sonny Stevens",
+    "teamId": "sc-cambuur-2021-22",
+    "club": "SC Cambuur",
+    "season": "2021/22",
+    "positions": [
+      "gk"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "brett-minnema-sc-cambuur-2021-22",
+    "name": "Brett Minnema",
+    "teamId": "sc-cambuur-2021-22",
+    "club": "SC Cambuur",
+    "season": "2021/22",
+    "positions": [
+      "gk"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "doke-schmidt-sc-cambuur-2021-22",
+    "name": "Doke Schmidt",
+    "teamId": "sc-cambuur-2021-22",
+    "club": "SC Cambuur",
+    "season": "2021/22",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "calvin-mac-intosch-sc-cambuur-2021-22",
+    "name": "Calvin Mac-Intosch",
+    "teamId": "sc-cambuur-2021-22",
+    "club": "SC Cambuur",
+    "season": "2021/22",
+    "positions": [
+      "cb",
+      "rb"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "marco-tol-sc-cambuur-2021-22",
+    "name": "Marco Tol",
+    "teamId": "sc-cambuur-2021-22",
+    "club": "SC Cambuur",
+    "season": "2021/22",
+    "positions": [
+      "cb"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "erik-schouten-sc-cambuur-2021-22",
+    "name": "Erik Schouten",
+    "teamId": "sc-cambuur-2021-22",
+    "club": "SC Cambuur",
+    "season": "2021/22",
+    "positions": [
+      "cb",
+      "cm"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "alex-bangura-sc-cambuur-2021-22",
+    "name": "Alex Bangura",
+    "teamId": "sc-cambuur-2021-22",
+    "club": "SC Cambuur",
+    "season": "2021/22",
+    "positions": [
+      "lb",
+      "lm"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "jhondly-van-der-meer-sc-cambuur-2021-22",
+    "name": "Jhondly van der Meer",
+    "teamId": "sc-cambuur-2021-22",
+    "club": "SC Cambuur",
+    "season": "2021/22",
+    "positions": [
+      "lb",
+      "lm"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "mees-hoedemakers-sc-cambuur-2021-22",
+    "name": "Mees Hoedemakers",
+    "teamId": "sc-cambuur-2021-22",
+    "club": "SC Cambuur",
+    "season": "2021/22",
+    "positions": [
+      "cm"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "jamie-jacobs-sc-cambuur-2021-22",
+    "name": "Jamie Jacobs",
+    "teamId": "sc-cambuur-2021-22",
+    "club": "SC Cambuur",
+    "season": "2021/22",
+    "positions": [
+      "cm",
+      "rm"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "robin-maulun-sc-cambuur-2021-22",
+    "name": "Robin Maulun",
+    "teamId": "sc-cambuur-2021-22",
+    "club": "SC Cambuur",
+    "season": "2021/22",
+    "positions": [
+      "cm"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "filip-krastev-sc-cambuur-2021-22",
+    "name": "Filip Krastev",
+    "teamId": "sc-cambuur-2021-22",
+    "club": "SC Cambuur",
+    "season": "2021/22",
+    "positions": [
+      "cm",
+      "lm"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "michael-breij-sc-cambuur-2021-22",
+    "name": "Michael Breij",
+    "teamId": "sc-cambuur-2021-22",
+    "club": "SC Cambuur",
+    "season": "2021/22",
+    "positions": [
+      "rm",
+      "cm",
+      "rw"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "tamas-kiss-sc-cambuur-2021-22",
+    "name": "Tamás Kiss",
+    "teamId": "sc-cambuur-2021-22",
+    "club": "SC Cambuur",
+    "season": "2021/22",
+    "positions": [
+      "lm",
+      "lw",
+      "rw"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "david-sambissa-sc-cambuur-2021-22",
+    "name": "David Sambissa",
+    "teamId": "sc-cambuur-2021-22",
+    "club": "SC Cambuur",
+    "season": "2021/22",
+    "positions": [
+      "rw",
+      "rm"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "issa-kallon-sc-cambuur-2021-22",
+    "name": "Issa Kallon",
+    "teamId": "sc-cambuur-2021-22",
+    "club": "SC Cambuur",
+    "season": "2021/22",
+    "positions": [
+      "lw",
+      "rw",
+      "st"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "roberts-uldrikis-sc-cambuur-2021-22",
+    "name": "Roberts Uldrikis",
+    "teamId": "sc-cambuur-2021-22",
+    "club": "SC Cambuur",
+    "season": "2021/22",
+    "positions": [
+      "st"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "tom-boere-sc-cambuur-2021-22",
+    "name": "Tom Boere",
+    "teamId": "sc-cambuur-2021-22",
+    "club": "SC Cambuur",
+    "season": "2021/22",
+    "positions": [
+      "st"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "sam-hendriks-sc-cambuur-2021-22",
+    "name": "Sam Hendriks",
+    "teamId": "sc-cambuur-2021-22",
+    "club": "SC Cambuur",
+    "season": "2021/22",
+    "positions": [
+      "st"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "maxim-gullit-sc-cambuur-2021-22",
+    "name": "Maxim Gullit",
+    "teamId": "sc-cambuur-2021-22",
+    "club": "SC Cambuur",
+    "season": "2021/22",
+    "positions": [
+      "lb",
+      "cb"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "ron-olyslager-de-graafschap-1997-98",
+    "name": "Ron Olyslager",
+    "teamId": "de-graafschap-1997-98",
+    "club": "De Graafschap",
+    "season": "1997/98",
+    "positions": [
+      "gk"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "martijn-besselink-de-graafschap-1997-98",
+    "name": "Martijn Besselink",
+    "teamId": "de-graafschap-1997-98",
+    "club": "De Graafschap",
+    "season": "1997/98",
+    "positions": [
+      "gk"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "maarten-kerkhof-de-graafschap-1997-98",
+    "name": "Maarten Kerkhof",
+    "teamId": "de-graafschap-1997-98",
+    "club": "De Graafschap",
+    "season": "1997/98",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "reinder-hendriks-de-graafschap-1997-98",
+    "name": "Reinder Hendriks",
+    "teamId": "de-graafschap-1997-98",
+    "club": "De Graafschap",
+    "season": "1997/98",
+    "positions": [
+      "cb"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "jan-vreman-de-graafschap-1997-98",
+    "name": "Jan Vreman",
+    "teamId": "de-graafschap-1997-98",
+    "club": "De Graafschap",
+    "season": "1997/98",
+    "positions": [
+      "cb",
+      "cm"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "daniel-voigt-de-graafschap-1997-98",
+    "name": "Daniel Voigt",
+    "teamId": "de-graafschap-1997-98",
+    "club": "De Graafschap",
+    "season": "1997/98",
+    "positions": [
+      "cb"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "milan-berck-beelenkamp-de-graafschap-1997-98",
+    "name": "Milan Berck Beelenkamp",
+    "teamId": "de-graafschap-1997-98",
+    "club": "De Graafschap",
+    "season": "1997/98",
+    "positions": [
+      "lb",
+      "lm"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "patrick-redeker-de-graafschap-1997-98",
+    "name": "Patrick Redeker",
+    "teamId": "de-graafschap-1997-98",
+    "club": "De Graafschap",
+    "season": "1997/98",
+    "positions": [
+      "lb",
+      "cb"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "robert-fuchs-de-graafschap-1997-98",
+    "name": "Robert Fuchs",
+    "teamId": "de-graafschap-1997-98",
+    "club": "De Graafschap",
+    "season": "1997/98",
+    "positions": [
+      "cm"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "raymond-victoria-de-graafschap-1997-98",
+    "name": "Raymond Victoria",
+    "teamId": "de-graafschap-1997-98",
+    "club": "De Graafschap",
+    "season": "1997/98",
+    "positions": [
+      "cm",
+      "lm"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "rogier-meijer-de-graafschap-1997-98",
+    "name": "Rogier Meijer",
+    "teamId": "de-graafschap-1997-98",
+    "club": "De Graafschap",
+    "season": "1997/98",
+    "positions": [
+      "rm",
+      "cm"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "dennis-te-braak-de-graafschap-1997-98",
+    "name": "Dennis te Braak",
+    "teamId": "de-graafschap-1997-98",
+    "club": "De Graafschap",
+    "season": "1997/98",
+    "positions": [
+      "cm"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "edwin-godee-de-graafschap-1997-98",
+    "name": "Edwin Godee",
+    "teamId": "de-graafschap-1997-98",
+    "club": "De Graafschap",
+    "season": "1997/98",
+    "positions": [
+      "lm",
+      "lw"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "virgil-breetveld-de-graafschap-1997-98",
+    "name": "Virgil Breetveld",
+    "teamId": "de-graafschap-1997-98",
+    "club": "De Graafschap",
+    "season": "1997/98",
+    "positions": [
+      "rw",
+      "st"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "hans-van-de-haar-de-graafschap-1997-98",
+    "name": "Hans van de Haar",
+    "teamId": "de-graafschap-1997-98",
+    "club": "De Graafschap",
+    "season": "1997/98",
+    "positions": [
+      "lw",
+      "st"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "eric-viscaal-de-graafschap-1997-98",
+    "name": "Eric Viscaal",
+    "teamId": "de-graafschap-1997-98",
+    "club": "De Graafschap",
+    "season": "1997/98",
+    "positions": [
+      "st",
+      "lw"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "dennis-gerritsen-de-graafschap-1997-98",
+    "name": "Dennis Gerritsen",
+    "teamId": "de-graafschap-1997-98",
+    "club": "De Graafschap",
+    "season": "1997/98",
+    "positions": [
+      "st"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "erik-heijblok-de-graafschap-2008-09",
+    "name": "Erik Heijblok",
+    "teamId": "de-graafschap-2008-09",
+    "club": "De Graafschap",
+    "season": "2008/09",
+    "positions": [
+      "gk"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "stefan-postma-de-graafschap-2008-09",
+    "name": "Stefan Postma",
+    "teamId": "de-graafschap-2008-09",
+    "club": "De Graafschap",
+    "season": "2008/09",
+    "positions": [
+      "gk"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "resit-schuurman-de-graafschap-2008-09",
+    "name": "Resit Schuurman",
+    "teamId": "de-graafschap-2008-09",
+    "club": "De Graafschap",
+    "season": "2008/09",
+    "positions": [
+      "rb",
+      "rm"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "michael-timisela-de-graafschap-2008-09",
+    "name": "Michael Timisela",
+    "teamId": "de-graafschap-2008-09",
+    "club": "De Graafschap",
+    "season": "2008/09",
+    "positions": [
+      "rb",
+      "rm"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "purrel-frankel-de-graafschap-2008-09",
+    "name": "Purrel Fränkel",
+    "teamId": "de-graafschap-2008-09",
+    "club": "De Graafschap",
+    "season": "2008/09",
+    "positions": [
+      "lb",
+      "cb"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "geert-van-der-heiden-de-graafschap-2008-09",
+    "name": "Geert van der Heiden",
+    "teamId": "de-graafschap-2008-09",
+    "club": "De Graafschap",
+    "season": "2008/09",
+    "positions": [
+      "lb"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "stephan-keller-de-graafschap-2008-09",
+    "name": "Stephan Keller",
+    "teamId": "de-graafschap-2008-09",
+    "club": "De Graafschap",
+    "season": "2008/09",
+    "positions": [
+      "cb"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "joost-volmer-de-graafschap-2008-09",
+    "name": "Joost Volmer",
+    "teamId": "de-graafschap-2008-09",
+    "club": "De Graafschap",
+    "season": "2008/09",
+    "positions": [
+      "cb"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "henrico-drost-de-graafschap-2008-09",
+    "name": "Henrico Drost",
+    "teamId": "de-graafschap-2008-09",
+    "club": "De Graafschap",
+    "season": "2008/09",
+    "positions": [
+      "cb",
+      "rb"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "leon-hese-de-graafschap-2008-09",
+    "name": "Léon Hese",
+    "teamId": "de-graafschap-2008-09",
+    "club": "De Graafschap",
+    "season": "2008/09",
+    "positions": [
+      "cb",
+      "cm"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "jordy-buijs-de-graafschap-2008-09",
+    "name": "Jordy Buijs",
+    "teamId": "de-graafschap-2008-09",
+    "club": "De Graafschap",
+    "season": "2008/09",
+    "positions": [
+      "cb",
+      "cm"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "muslu-nalbantoglu-de-graafschap-2008-09",
+    "name": "Muslu Nalbantoglu",
+    "teamId": "de-graafschap-2008-09",
+    "club": "De Graafschap",
+    "season": "2008/09",
+    "positions": [
+      "cm",
+      "rb"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "rogier-meijer-de-graafschap-2008-09",
+    "name": "Rogier Meijer",
+    "teamId": "de-graafschap-2008-09",
+    "club": "De Graafschap",
+    "season": "2008/09",
+    "positions": [
+      "cm",
+      "rm"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "peter-jungschlager-de-graafschap-2008-09",
+    "name": "Peter Jungschläger",
+    "teamId": "de-graafschap-2008-09",
+    "club": "De Graafschap",
+    "season": "2008/09",
+    "positions": [
+      "cm"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "reinier-robbemond-de-graafschap-2008-09",
+    "name": "Reinier Robbemond",
+    "teamId": "de-graafschap-2008-09",
+    "club": "De Graafschap",
+    "season": "2008/09",
+    "positions": [
+      "cm"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "stijn-wuytens-de-graafschap-2008-09",
+    "name": "Stijn Wuytens",
+    "teamId": "de-graafschap-2008-09",
+    "club": "De Graafschap",
+    "season": "2008/09",
+    "positions": [
+      "lm",
+      "cm",
+      "lw"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "steve-de-ridder-de-graafschap-2008-09",
+    "name": "Steve De Ridder",
+    "teamId": "de-graafschap-2008-09",
+    "club": "De Graafschap",
+    "season": "2008/09",
+    "positions": [
+      "rw",
+      "rm",
+      "st"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "jason-oost-de-graafschap-2008-09",
+    "name": "Jason Oost",
+    "teamId": "de-graafschap-2008-09",
+    "club": "De Graafschap",
+    "season": "2008/09",
+    "positions": [
+      "rm",
+      "rw",
+      "cm"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "ben-sahar-de-graafschap-2008-09",
+    "name": "Ben Sahar",
+    "teamId": "de-graafschap-2008-09",
+    "club": "De Graafschap",
+    "season": "2008/09",
+    "positions": [
+      "st",
+      "lw",
+      "rw"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "luuk-de-jong-de-graafschap-2008-09",
+    "name": "Luuk de Jong",
+    "teamId": "de-graafschap-2008-09",
+    "club": "De Graafschap",
+    "season": "2008/09",
+    "positions": [
+      "st"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "geert-den-ouden-de-graafschap-2008-09",
+    "name": "Geert den Ouden",
+    "teamId": "de-graafschap-2008-09",
+    "club": "De Graafschap",
+    "season": "2008/09",
+    "positions": [
+      "st"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "nicolas-alejandro-cinalli-de-graafschap-2008-09",
+    "name": "Nicolás Alejandro Cinalli",
+    "teamId": "de-graafschap-2008-09",
+    "club": "De Graafschap",
+    "season": "2008/09",
+    "positions": [
+      "lw",
+      "rw",
+      "st"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "melvin-kolf-de-graafschap-2008-09",
+    "name": "Melvin Kolf",
+    "teamId": "de-graafschap-2008-09",
+    "club": "De Graafschap",
+    "season": "2008/09",
+    "positions": [
+      "lw",
+      "st"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "jeroen-zoet-rkc-waalwijk-2011-12",
+    "name": "Jeroen Zoet",
+    "teamId": "rkc-waalwijk-2011-12",
+    "club": "RKC Waalwijk",
+    "season": "2011/12",
+    "positions": [
+      "gk"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "arjan-van-dijk-rkc-waalwijk-2011-12",
+    "name": "Arjan van Dijk",
+    "teamId": "rkc-waalwijk-2011-12",
+    "club": "RKC Waalwijk",
+    "season": "2011/12",
+    "positions": [
+      "gk"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "cuco-martina-rkc-waalwijk-2011-12",
+    "name": "Cuco Martina",
+    "teamId": "rkc-waalwijk-2011-12",
+    "club": "RKC Waalwijk",
+    "season": "2011/12",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "sigourney-bandjar-rkc-waalwijk-2011-12",
+    "name": "Sigourney Bandjar",
+    "teamId": "rkc-waalwijk-2011-12",
+    "club": "RKC Waalwijk",
+    "season": "2011/12",
+    "positions": [
+      "rb",
+      "rm"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "frank-van-mosselveld-rkc-waalwijk-2011-12",
+    "name": "Frank van Mosselveld",
+    "teamId": "rkc-waalwijk-2011-12",
+    "club": "RKC Waalwijk",
+    "season": "2011/12",
+    "positions": [
+      "cb"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "henrico-drost-rkc-waalwijk-2011-12",
+    "name": "Henrico Drost",
+    "teamId": "rkc-waalwijk-2011-12",
+    "club": "RKC Waalwijk",
+    "season": "2011/12",
+    "positions": [
+      "cb",
+      "rb"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "guy-ramos-rkc-waalwijk-2011-12",
+    "name": "Guy Ramos",
+    "teamId": "rkc-waalwijk-2011-12",
+    "club": "RKC Waalwijk",
+    "season": "2011/12",
+    "positions": [
+      "cb"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "ard-van-peppen-rkc-waalwijk-2011-12",
+    "name": "Ard van Peppen",
+    "teamId": "rkc-waalwijk-2011-12",
+    "club": "RKC Waalwijk",
+    "season": "2011/12",
+    "positions": [
+      "lb",
+      "lm"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "aaron-meijers-rkc-waalwijk-2011-12",
+    "name": "Aaron Meijers",
+    "teamId": "rkc-waalwijk-2011-12",
+    "club": "RKC Waalwijk",
+    "season": "2011/12",
+    "positions": [
+      "lm",
+      "lb",
+      "cm"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "sander-duits-rkc-waalwijk-2011-12",
+    "name": "Sander Duits",
+    "teamId": "rkc-waalwijk-2011-12",
+    "club": "RKC Waalwijk",
+    "season": "2011/12",
+    "positions": [
+      "cm"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "evander-sno-rkc-waalwijk-2011-12",
+    "name": "Evander Sno",
+    "teamId": "rkc-waalwijk-2011-12",
+    "club": "RKC Waalwijk",
+    "season": "2011/12",
+    "positions": [
+      "cm"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "robert-braber-rkc-waalwijk-2011-12",
+    "name": "Robert Braber",
+    "teamId": "rkc-waalwijk-2011-12",
+    "club": "RKC Waalwijk",
+    "season": "2011/12",
+    "positions": [
+      "cm",
+      "st"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "jeff-stans-rkc-waalwijk-2011-12",
+    "name": "Jeff Stans",
+    "teamId": "rkc-waalwijk-2011-12",
+    "club": "RKC Waalwijk",
+    "season": "2011/12",
+    "positions": [
+      "rm",
+      "cm"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "florian-jozefzoon-rkc-waalwijk-2011-12",
+    "name": "Florian Jozefzoon",
+    "teamId": "rkc-waalwijk-2011-12",
+    "club": "RKC Waalwijk",
+    "season": "2011/12",
+    "positions": [
+      "rw",
+      "lw"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "teddy-chevalier-rkc-waalwijk-2011-12",
+    "name": "Teddy Chevalier",
+    "teamId": "rkc-waalwijk-2011-12",
+    "club": "RKC Waalwijk",
+    "season": "2011/12",
+    "positions": [
+      "lw",
+      "st"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "rick-ten-voorde-rkc-waalwijk-2011-12",
+    "name": "Rick ten Voorde",
+    "teamId": "rkc-waalwijk-2011-12",
+    "club": "RKC Waalwijk",
+    "season": "2011/12",
+    "positions": [
+      "st"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "geoffrey-castillion-rkc-waalwijk-2011-12",
+    "name": "Geoffrey Castillion",
+    "teamId": "rkc-waalwijk-2011-12",
+    "club": "RKC Waalwijk",
+    "season": "2011/12",
+    "positions": [
+      "st"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "donny-de-groot-rkc-waalwijk-2011-12",
+    "name": "Donny de Groot",
+    "teamId": "rkc-waalwijk-2011-12",
+    "club": "RKC Waalwijk",
+    "season": "2011/12",
+    "positions": [
+      "st"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "dennis-gentenaar-vvv-venlo-2009-10",
+    "name": "Dennis Gentenaar",
+    "teamId": "vvv-venlo-2009-10",
+    "club": "VVV-Venlo",
+    "season": "2009/10",
+    "positions": [
+      "gk"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "kevin-begois-vvv-venlo-2009-10",
+    "name": "Kevin Begois",
+    "teamId": "vvv-venlo-2009-10",
+    "club": "VVV-Venlo",
+    "season": "2009/10",
+    "positions": [
+      "gk"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "michael-timisela-vvv-venlo-2009-10",
+    "name": "Michael Timisela",
+    "teamId": "vvv-venlo-2009-10",
+    "club": "VVV-Venlo",
+    "season": "2009/10",
+    "positions": [
+      "rb",
+      "rm"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "niels-fleuren-vvv-venlo-2009-10",
+    "name": "Niels Fleuren",
+    "teamId": "vvv-venlo-2009-10",
+    "club": "VVV-Venlo",
+    "season": "2009/10",
+    "positions": [
+      "lb",
+      "lm"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "alex-nkume-vvv-venlo-2009-10",
+    "name": "Alex Nkume",
+    "teamId": "vvv-venlo-2009-10",
+    "club": "VVV-Venlo",
+    "season": "2009/10",
+    "positions": [
+      "lb"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "maya-yoshida-vvv-venlo-2009-10",
+    "name": "Maya Yoshida",
+    "teamId": "vvv-venlo-2009-10",
+    "club": "VVV-Venlo",
+    "season": "2009/10",
+    "positions": [
+      "cb"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "patrick-paauwe-vvv-venlo-2009-10",
+    "name": "Patrick Paauwe",
+    "teamId": "vvv-venlo-2009-10",
+    "club": "VVV-Venlo",
+    "season": "2009/10",
+    "positions": [
+      "cb",
+      "cm"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "adil-auassar-vvv-venlo-2009-10",
+    "name": "Adil Auassar",
+    "teamId": "vvv-venlo-2009-10",
+    "club": "VVV-Venlo",
+    "season": "2009/10",
+    "positions": [
+      "cb",
+      "cm",
+      "lb"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "frank-van-kouwen-vvv-venlo-2009-10",
+    "name": "Frank van Kouwen",
+    "teamId": "vvv-venlo-2009-10",
+    "club": "VVV-Venlo",
+    "season": "2009/10",
+    "positions": [
+      "cb"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "ken-leemans-vvv-venlo-2009-10",
+    "name": "Ken Leemans",
+    "teamId": "vvv-venlo-2009-10",
+    "club": "VVV-Venlo",
+    "season": "2009/10",
+    "positions": [
+      "cm"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "jasar-takak-vvv-venlo-2009-10",
+    "name": "Jasar Takak",
+    "teamId": "vvv-venlo-2009-10",
+    "club": "VVV-Venlo",
+    "season": "2009/10",
+    "positions": [
+      "cm"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "kevin-van-dessel-vvv-venlo-2009-10",
+    "name": "Kevin Van Dessel",
+    "teamId": "vvv-venlo-2009-10",
+    "club": "VVV-Venlo",
+    "season": "2009/10",
+    "positions": [
+      "lm",
+      "cm"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "keisuke-honda-vvv-venlo-2009-10",
+    "name": "Keisuke Honda",
+    "teamId": "vvv-venlo-2009-10",
+    "club": "VVV-Venlo",
+    "season": "2009/10",
+    "positions": [
+      "cm",
+      "rm",
+      "rw"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "diogo-viana-vvv-venlo-2009-10",
+    "name": "Diogo Viana",
+    "teamId": "vvv-venlo-2009-10",
+    "club": "VVV-Venlo",
+    "season": "2009/10",
+    "positions": [
+      "rm",
+      "rw",
+      "lw"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "ruben-schaken-vvv-venlo-2009-10",
+    "name": "Ruben Schaken",
+    "teamId": "vvv-venlo-2009-10",
+    "club": "VVV-Venlo",
+    "season": "2009/10",
+    "positions": [
+      "rw",
+      "rm",
+      "lw"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "achmed-ahahaoui-vvv-venlo-2009-10",
+    "name": "Achmed Ahahaoui",
+    "teamId": "vvv-venlo-2009-10",
+    "club": "VVV-Venlo",
+    "season": "2009/10",
+    "positions": [
+      "lw",
+      "st"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "gonzalo-garcia-vvv-venlo-2009-10",
+    "name": "Gonzalo García",
+    "teamId": "vvv-venlo-2009-10",
+    "club": "VVV-Venlo",
+    "season": "2009/10",
+    "positions": [
+      "st",
+      "cm",
+      "lw"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "sandro-calabro-vvv-venlo-2009-10",
+    "name": "Sandro Calabro",
+    "teamId": "vvv-venlo-2009-10",
+    "club": "VVV-Venlo",
+    "season": "2009/10",
+    "positions": [
+      "st"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "ruud-boymans-vvv-venlo-2009-10",
+    "name": "Ruud Boymans",
+    "teamId": "vvv-venlo-2009-10",
+    "club": "VVV-Venlo",
+    "season": "2009/10",
+    "positions": [
+      "st"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "kjell-scherpen-fc-emmen-2018-19",
+    "name": "Kjell Scherpen",
+    "teamId": "fc-emmen-2018-19",
+    "club": "FC Emmen",
+    "season": "2018/19",
+    "positions": [
+      "gk"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "dennis-telgenkamp-fc-emmen-2018-19",
+    "name": "Dennis Telgenkamp",
+    "teamId": "fc-emmen-2018-19",
+    "club": "FC Emmen",
+    "season": "2018/19",
+    "positions": [
+      "gk"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "peter-van-der-vlag-fc-emmen-2018-19",
+    "name": "Peter van der Vlag",
+    "teamId": "fc-emmen-2018-19",
+    "club": "FC Emmen",
+    "season": "2018/19",
+    "positions": [
+      "gk"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "glenn-bijl-fc-emmen-2018-19",
+    "name": "Glenn Bijl",
+    "teamId": "fc-emmen-2018-19",
+    "club": "FC Emmen",
+    "season": "2018/19",
+    "positions": [
+      "rb",
+      "rm"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "gersom-klok-fc-emmen-2018-19",
+    "name": "Gersom Klok",
+    "teamId": "fc-emmen-2018-19",
+    "club": "FC Emmen",
+    "season": "2018/19",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "caner-cavlan-fc-emmen-2018-19",
+    "name": "Caner Cavlan",
+    "teamId": "fc-emmen-2018-19",
+    "club": "FC Emmen",
+    "season": "2018/19",
+    "positions": [
+      "lb",
+      "lm"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "nick-bakker-fc-emmen-2018-19",
+    "name": "Nick Bakker",
+    "teamId": "fc-emmen-2018-19",
+    "club": "FC Emmen",
+    "season": "2018/19",
+    "positions": [
+      "cb"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "nick-kuipers-fc-emmen-2018-19",
+    "name": "Nick Kuipers",
+    "teamId": "fc-emmen-2018-19",
+    "club": "FC Emmen",
+    "season": "2018/19",
+    "positions": [
+      "cb"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "andrej-lukic-fc-emmen-2018-19",
+    "name": "Andrej Lukić",
+    "teamId": "fc-emmen-2018-19",
+    "club": "FC Emmen",
+    "season": "2018/19",
+    "positions": [
+      "cb"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "tim-siekman-fc-emmen-2018-19",
+    "name": "Tim Siekman",
+    "teamId": "fc-emmen-2018-19",
+    "club": "FC Emmen",
+    "season": "2018/19",
+    "positions": [
+      "cb"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "michael-chacon-fc-emmen-2018-19",
+    "name": "Michael Chacón",
+    "teamId": "fc-emmen-2018-19",
+    "club": "FC Emmen",
+    "season": "2018/19",
+    "positions": [
+      "cm"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "keziah-veendorp-fc-emmen-2018-19",
+    "name": "Keziah Veendorp",
+    "teamId": "fc-emmen-2018-19",
+    "club": "FC Emmen",
+    "season": "2018/19",
+    "positions": [
+      "cm",
+      "cb"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "hilal-ben-moussa-fc-emmen-2018-19",
+    "name": "Hilal Ben Moussa",
+    "teamId": "fc-emmen-2018-19",
+    "club": "FC Emmen",
+    "season": "2018/19",
+    "positions": [
+      "cm"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "reuven-niemeijer-fc-emmen-2018-19",
+    "name": "Reuven Niemeijer",
+    "teamId": "fc-emmen-2018-19",
+    "club": "FC Emmen",
+    "season": "2018/19",
+    "positions": [
+      "cm",
+      "rm"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "jason-bourdouxhe-fc-emmen-2018-19",
+    "name": "Jason Bourdouxhe",
+    "teamId": "fc-emmen-2018-19",
+    "club": "FC Emmen",
+    "season": "2018/19",
+    "positions": [
+      "lm",
+      "lb"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "jafar-arias-fc-emmen-2018-19",
+    "name": "Jafar Arias",
+    "teamId": "fc-emmen-2018-19",
+    "club": "FC Emmen",
+    "season": "2018/19",
+    "positions": [
+      "rm",
+      "st"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "luciano-slagveer-fc-emmen-2018-19",
+    "name": "Luciano Slagveer",
+    "teamId": "fc-emmen-2018-19",
+    "club": "FC Emmen",
+    "season": "2018/19",
+    "positions": [
+      "rw",
+      "lw",
+      "rm"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "anco-jansen-fc-emmen-2018-19",
+    "name": "Anco Jansen",
+    "teamId": "fc-emmen-2018-19",
+    "club": "FC Emmen",
+    "season": "2018/19",
+    "positions": [
+      "lw",
+      "st",
+      "cm"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "michael-de-leeuw-fc-emmen-2018-19",
+    "name": "Michael de Leeuw",
+    "teamId": "fc-emmen-2018-19",
+    "club": "FC Emmen",
+    "season": "2018/19",
+    "positions": [
+      "st",
+      "cm"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "sven-braken-fc-emmen-2018-19",
+    "name": "Sven Braken",
+    "teamId": "fc-emmen-2018-19",
+    "club": "FC Emmen",
+    "season": "2018/19",
+    "positions": [
+      "st"
+    ],
+    "rating": 68,
+    "legendary": false
   }
 ]

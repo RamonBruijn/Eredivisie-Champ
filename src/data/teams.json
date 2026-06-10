@@ -1106,5 +1106,89 @@
       "modern",
       "eredivisie"
     ]
+  },
+  {
+    "id": "excelsior-2022-23",
+    "club": "Excelsior",
+    "season": "2022/23",
+    "teamRating": 70,
+    "description": "Moderne Excelsior-selectie met Azarkan, Driouech, Goudmijn en Lamprou als draftwaardige kern.",
+    "tags": [
+      "excelsior",
+      "modern",
+      "eredivisie"
+    ]
+  },
+  {
+    "id": "sc-cambuur-2021-22",
+    "club": "SC Cambuur",
+    "season": "2021/22",
+    "teamRating": 71,
+    "description": "Negende plaats in de Eredivisie, met Uldrikis, Hoedemakers, Kallon en Bangura als dragende namen.",
+    "tags": [
+      "sc-cambuur",
+      "modern",
+      "eredivisie"
+    ]
+  },
+  {
+    "id": "de-graafschap-1997-98",
+    "club": "De Graafschap",
+    "season": "1997/98",
+    "teamRating": 70,
+    "description": "Historisch interessante Superboeren-selectie met Viscaal, Fuchs, Victoria en clubicoon Jan Vreman.",
+    "tags": [
+      "de-graafschap",
+      "historic",
+      "eredivisie"
+    ]
+  },
+  {
+    "id": "de-graafschap-2008-09",
+    "club": "De Graafschap",
+    "season": "2008/09",
+    "teamRating": 70,
+    "description": "Herkenbare De Graafschap-selectie met Ben Sahar, Luuk de Jong, Steve De Ridder en Joost Volmer.",
+    "tags": [
+      "de-graafschap",
+      "modern",
+      "eredivisie"
+    ]
+  },
+  {
+    "id": "rkc-waalwijk-2011-12",
+    "club": "RKC Waalwijk",
+    "season": "2011/12",
+    "teamRating": 71,
+    "description": "Sterke RKC-keuze met Zoet, Meijers, Duits, Sno, Braber, Jozefzoon en Castillion.",
+    "tags": [
+      "rkc-waalwijk",
+      "modern",
+      "eredivisie"
+    ]
+  },
+  {
+    "id": "vvv-venlo-2009-10",
+    "club": "VVV-Venlo",
+    "season": "2009/10",
+    "teamRating": 72,
+    "description": "De Honda-selectie van VVV, met Yoshida, Schaken, Paauwe, Auassar en Calabro.",
+    "tags": [
+      "vvv-venlo",
+      "modern",
+      "eredivisie"
+    ]
+  },
+  {
+    "id": "fc-emmen-2018-19",
+    "club": "FC Emmen",
+    "season": "2018/19",
+    "teamRating": 70,
+    "description": "Het eerste Eredivisiejaar van FC Emmen, met Scherpen, Bijl, Cavlan, Anco Jansen en De Leeuw.",
+    "tags": [
+      "fc-emmen",
+      "modern",
+      "eredivisie"
+    ]
   }
 ]
