@@ -423,7 +423,6 @@ export function TeamSelector() {
                 <h3 className="mt-2 text-2xl font-semibold text-white md:text-3xl">
                   {rolledTeam.club} {rolledTeam.season}
                 </h3>
-                <p className="mt-2 text-sm text-[var(--muted)]">{rolledTeam.description}</p>
                 <p className="mt-4 text-sm text-[var(--gold-soft)]">
                   {isRolling
                     ? locale === "nl"
