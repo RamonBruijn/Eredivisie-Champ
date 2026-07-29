@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #0a1026;
-  --bg-soft: #161c43;
-  --panel: rgba(18, 24, 58, 0.78);
-  --panel-strong: rgba(24, 29, 72, 0.94);
+  --bg: #02216e;
+  --bg-soft: #032b8d;
+  --panel: rgba(2, 33, 110, 0.82);
+  --panel-strong: rgba(2, 33, 110, 0.94);
   --line: rgba(255, 255, 255, 0.12);
   --text: #f7f4ed;
-  --muted: #b7bdd8;
-  --gold: #e4c56a;
-  --gold-soft: #f5e4a6;
-  --accent: #7a5cff;
-  --danger: #ff7b72;
+  --muted: #c2cdf4;
+  --gold: #e4af0d;
+  --gold-soft: #f4d56b;
+  --accent: #0600ff;
+  --danger: #e5004d;
   --shadow: 0 28px 80px rgba(0, 0, 0, 0.42);
 }
 
@@ -27,10 +27,11 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    radial-gradient(circle at top left, rgba(122, 92, 255, 0.22), transparent 28%),
-    radial-gradient(circle at top right, rgba(228, 197, 106, 0.12), transparent 26%),
-    radial-gradient(circle at bottom, rgba(94, 63, 211, 0.18), transparent 32%),
-    linear-gradient(180deg, #11183a 0%, #0a1026 100%);
+    radial-gradient(circle at top left, rgba(6, 0, 255, 0.2), transparent 28%),
+    radial-gradient(circle at top right, rgba(228, 175, 13, 0.12), transparent 26%),
+    radial-gradient(circle at 82% 18%, rgba(0, 216, 190, 0.12), transparent 20%),
+    radial-gradient(circle at bottom, rgba(146, 30, 148, 0.16), transparent 32%),
+    linear-gradient(180deg, #04308f 0%, #02216e 56%, #01164a 100%);
   color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -67,7 +68,7 @@ select {
   left: -5rem;
   width: 16rem;
   height: 16rem;
-  background: rgba(122, 92, 255, 0.18);
+  background: rgba(6, 0, 255, 0.18);
 }
 
 .page-shell::after {
@@ -75,7 +76,7 @@ select {
   bottom: 10%;
   width: 18rem;
   height: 18rem;
-  background: rgba(228, 197, 106, 0.12);
+  background: rgba(0, 216, 190, 0.14);
 }
 
 .card-grid {
@@ -111,9 +112,9 @@ select {
 
 .champion-burst {
   background:
-    radial-gradient(circle at top center, rgba(245, 228, 166, 0.28), transparent 42%),
-    radial-gradient(circle at 20% 20%, rgba(255, 123, 143, 0.16), transparent 24%),
-    radial-gradient(circle at 78% 18%, rgba(122, 92, 255, 0.2), transparent 24%);
+    radial-gradient(circle at top center, rgba(228, 175, 13, 0.28), transparent 42%),
+    radial-gradient(circle at 20% 20%, rgba(229, 0, 77, 0.16), transparent 24%),
+    radial-gradient(circle at 78% 18%, rgba(6, 0, 255, 0.2), transparent 24%);
 }
 
 .champion-confetti {
