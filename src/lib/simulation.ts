@@ -1,5 +1,6 @@
 import configData from "@/data/config.json";
 import { players, teams } from "@/data";
+import { filterTeamsForGamePool } from "@/lib/gamePools";
 import {
   calculateTeamStrength as baseCalculateTeamStrength,
 } from "@/lib/ratings";
@@ -231,9 +232,16 @@ function buildOpponentProfile(teamId: string): OpponentProfile {
   };
 }
 
-function selectSeasonOpponents(): OpponentProfile[] {
+function getTeamDecade(team: { season: string }) {
+  const startYear = Number.parseInt(team.season.slice(0, 4), 10);
+  const decadeStart = Math.floor(startYear / 10) * 10;
+  return `${decadeStart}s`;
+}
+
+function selectSeasonOpponents(context: RunContext): OpponentProfile[] {
+  const poolTeams = filterTeamsForGamePool(teams, context.pool, [], getTeamDecade);
   const teamsByClub = new Map<string, typeof teams>();
-  for (const team of teams) {
+  for (const team of poolTeams) {
     const existing = teamsByClub.get(team.club) ?? [];
     teamsByClub.set(team.club, [...existing, team]);
   }
@@ -375,7 +383,7 @@ export function simulateMatch(
 
 export function simulateSeason(selectedPlayers: PlayerRecord[], context: RunContext): SeasonSummary {
   const t = getDictionary(context.locale);
-  const opponents = selectSeasonOpponents();
+  const opponents = selectSeasonOpponents(context);
   const schedule = createLeagueSchedule(opponents);
   const matches: MatchResult[] = [];
   const snapshots: MatchSnapshot[] = [];

@@ -19739,5 +19739,5895 @@
     ],
     "rating": 68,
     "legendary": false
+  },
+  {
+    "id": "veerman-psv-2026-27",
+    "name": "Veerman",
+    "teamId": "psv-2026-27",
+    "club": "PSV",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 87,
+    "legendary": false
+  },
+  {
+    "id": "perisic-psv-2026-27",
+    "name": "Perišic",
+    "teamId": "psv-2026-27",
+    "club": "PSV",
+    "season": "2026/27",
+    "positions": [
+      "lw",
+      "rw",
+      "lm"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "pepi-psv-2026-27",
+    "name": "Pepi",
+    "teamId": "psv-2026-27",
+    "club": "PSV",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "dest-psv-2026-27",
+    "name": "Dest",
+    "teamId": "psv-2026-27",
+    "club": "PSV",
+    "season": "2026/27",
+    "positions": [
+      "rb",
+      "lb",
+      "rw"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "psv-schouten-psv-2026-27",
+    "name": "PSV Schouten",
+    "teamId": "psv-2026-27",
+    "club": "PSV",
+    "season": "2026/27",
+    "positions": [
+      "cb",
+      "cm"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "mauro-junior-psv-2026-27",
+    "name": "Mauro Júnior",
+    "teamId": "psv-2026-27",
+    "club": "PSV",
+    "season": "2026/27",
+    "positions": [
+      "lb",
+      "cm",
+      "rb"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "til-psv-2026-27",
+    "name": "Til",
+    "teamId": "psv-2026-27",
+    "club": "PSV",
+    "season": "2026/27",
+    "positions": [
+      "st",
+      "cm"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "wanner-psv-2026-27",
+    "name": "Wanner",
+    "teamId": "psv-2026-27",
+    "club": "PSV",
+    "season": "2026/27",
+    "positions": [
+      "cm",
+      "rm"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "man-psv-2026-27",
+    "name": "Man",
+    "teamId": "psv-2026-27",
+    "club": "PSV",
+    "season": "2026/27",
+    "positions": [
+      "rw",
+      "rm"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "mijnans-psv-2026-27",
+    "name": "Mijnans",
+    "teamId": "psv-2026-27",
+    "club": "PSV",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "kovar-psv-2026-27",
+    "name": "Kovár",
+    "teamId": "psv-2026-27",
+    "club": "PSV",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "gasiorowski-psv-2026-27",
+    "name": "Gasiorowski",
+    "teamId": "psv-2026-27",
+    "club": "PSV",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "plea-psv-2026-27",
+    "name": "Pléa",
+    "teamId": "psv-2026-27",
+    "club": "PSV",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "van-bommel-psv-2026-27",
+    "name": "Van Bommel",
+    "teamId": "psv-2026-27",
+    "club": "PSV",
+    "season": "2026/27",
+    "positions": [
+      "lw"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "drommel-psv-2026-27",
+    "name": "Drommel",
+    "teamId": "psv-2026-27",
+    "club": "PSV",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "flamingo-psv-2026-27",
+    "name": "Flamingo",
+    "teamId": "psv-2026-27",
+    "club": "PSV",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "olij-psv-2026-27",
+    "name": "Olij",
+    "teamId": "psv-2026-27",
+    "club": "PSV",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "sildillia-psv-2026-27",
+    "name": "Sildillia",
+    "teamId": "psv-2026-27",
+    "club": "PSV",
+    "season": "2026/27",
+    "positions": [
+      "rb"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "bajraktarevic-psv-2026-27",
+    "name": "Bajraktarevic",
+    "teamId": "psv-2026-27",
+    "club": "PSV",
+    "season": "2026/27",
+    "positions": [
+      "rw",
+      "rm",
+      "st"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "driouech-psv-2026-27",
+    "name": "Driouech",
+    "teamId": "psv-2026-27",
+    "club": "PSV",
+    "season": "2026/27",
+    "positions": [
+      "lw",
+      "lm"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "obispo-psv-2026-27",
+    "name": "Obispo",
+    "teamId": "psv-2026-27",
+    "club": "PSV",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "babadi-psv-2026-27",
+    "name": "Babadi",
+    "teamId": "psv-2026-27",
+    "club": "PSV",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "fernandez-psv-2026-27",
+    "name": "Fernandez",
+    "teamId": "psv-2026-27",
+    "club": "PSV",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "merien-psv-2026-27",
+    "name": "Merién",
+    "teamId": "psv-2026-27",
+    "club": "PSV",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "nagalo-psv-2026-27",
+    "name": "Nagalo",
+    "teamId": "psv-2026-27",
+    "club": "PSV",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "smolenaars-psv-2026-27",
+    "name": "Smolenaars",
+    "teamId": "psv-2026-27",
+    "club": "PSV",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "psv-van-den-berg-psv-2026-27",
+    "name": "PSV Van den Berg",
+    "teamId": "psv-2026-27",
+    "club": "PSV",
+    "season": "2026/27",
+    "positions": [
+      "cm",
+      "st"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "ueda-feyenoord-2026-27",
+    "name": "Ueda",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 84,
+    "legendary": false
+  },
+  {
+    "id": "hadj-moussa-feyenoord-2026-27",
+    "name": "Hadj Moussa",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "rw"
+    ],
+    "rating": 82,
+    "legendary": false
+  },
+  {
+    "id": "feyenoord-bos-feyenoord-2026-27",
+    "name": "Feyenoord Bos",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "lb",
+      "lw",
+      "rb"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "targhalline-feyenoord-2026-27",
+    "name": "Targhalline",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "valente-feyenoord-2026-27",
+    "name": "Valente",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "steijn-feyenoord-2026-27",
+    "name": "Steijn",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "ahmedhodzic-feyenoord-2026-27",
+    "name": "Ahmedhodzic",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "watanabe-feyenoord-2026-27",
+    "name": "Watanabe",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "zechiel-feyenoord-2026-27",
+    "name": "Zechiël",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "deijl-feyenoord-2026-27",
+    "name": "Deijl",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "rb"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "marmol-feyenoord-2026-27",
+    "name": "Mármol",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "cb",
+      "lb"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "read-feyenoord-2026-27",
+    "name": "Read",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "rb"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "sauer-feyenoord-2026-27",
+    "name": "Sauer",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "lw"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "st-juste-feyenoord-2026-27",
+    "name": "St. Juste",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "moder-feyenoord-2026-27",
+    "name": "Moder",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "borges-feyenoord-2026-27",
+    "name": "Borges",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "lw",
+      "rw"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "feyenoord-tengstedt-feyenoord-2026-27",
+    "name": "Feyenoord Tengstedt",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "ferri-feyenoord-2026-27",
+    "name": "Ferri",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "smal-feyenoord-2026-27",
+    "name": "Smal",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "lb",
+      "cb"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "lotomba-feyenoord-2026-27",
+    "name": "Lotomba",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "rb",
+      "lb"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "sliti-feyenoord-2026-27",
+    "name": "Sliti",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "lw"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "beelen-feyenoord-2026-27",
+    "name": "Beelen",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "berger-feyenoord-2026-27",
+    "name": "Berger",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "bossin-feyenoord-2026-27",
+    "name": "Bossin",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "carrillo-feyenoord-2026-27",
+    "name": "Carrillo",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "diarra-feyenoord-2026-27",
+    "name": "Diarra",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "lw"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "ernst-feyenoord-2026-27",
+    "name": "Ernst",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "ivanusec-feyenoord-2026-27",
+    "name": "Ivanušec",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "cm",
+      "lw"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "kasanwirjo-feyenoord-2026-27",
+    "name": "Kasanwirjo",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "cb",
+      "rb",
+      "lb"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "kraaijeveld-feyenoord-2026-27",
+    "name": "Kraaijeveld",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "cb",
+      "cm"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "nieuwkoop-feyenoord-2026-27",
+    "name": "Nieuwkoop",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "rb"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "van-den-elshout-feyenoord-2026-27",
+    "name": "Van den Elshout",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "lw"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "van-persie-feyenoord-2026-27",
+    "name": "Van Persie",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "vanhoutte-feyenoord-2026-27",
+    "name": "Vanhoutte",
+    "teamId": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "godts-ajax-2026-27",
+    "name": "Godts",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "lw",
+      "lm"
+    ],
+    "rating": 86,
+    "legendary": false
+  },
+  {
+    "id": "marcos-leonardo-ajax-2026-27",
+    "name": "Marcos Leonardo",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "caio-henrique-ajax-2026-27",
+    "name": "Caio Henrique",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "lb",
+      "cb",
+      "lm"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "gloukh-ajax-2026-27",
+    "name": "Gloukh",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "cm",
+      "st",
+      "rw"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "berghuis-ajax-2026-27",
+    "name": "Berghuis",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "rw",
+      "cm",
+      "rm"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "itakura-ajax-2026-27",
+    "name": "Itakura",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "cb",
+      "cm"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "blind-ajax-2026-27",
+    "name": "Blind",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "cb",
+      "lb"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "dolberg-ajax-2026-27",
+    "name": "Dolberg",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "klaassen-ajax-2026-27",
+    "name": "Klaassen",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "ajax-baas-ajax-2026-27",
+    "name": "Ajax Baas",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "cb",
+      "lb"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "kaplan-ajax-2026-27",
+    "name": "Kaplan",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "paes-ajax-2026-27",
+    "name": "Paes",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "rosa-ajax-2026-27",
+    "name": "Rosa",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "rb",
+      "lb"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "sutalo-ajax-2026-27",
+    "name": "Sutalo",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "bounida-ajax-2026-27",
+    "name": "Bounida",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "rw",
+      "cm"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "gaaei-ajax-2026-27",
+    "name": "Gaaei",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "rb"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "mokio-ajax-2026-27",
+    "name": "Mokio",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "cm",
+      "lb",
+      "cb"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "regeer-ajax-2026-27",
+    "name": "Regeer",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "cm",
+      "rb"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "bouwman-ajax-2026-27",
+    "name": "Bouwman",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "wijndal-ajax-2026-27",
+    "name": "Wijndal",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "lb"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "gooijer-ajax-2026-27",
+    "name": "Gooijer",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "abdalla-ajax-2026-27",
+    "name": "Abdalla",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "carrizo-ajax-2026-27",
+    "name": "Carrizo",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "rw"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "ajax-edvardsen-ajax-2026-27",
+    "name": "Ajax Edvardsen",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "rw"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "fitz-jim-ajax-2026-27",
+    "name": "Fitz-Jim",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "heerkens-ajax-2026-27",
+    "name": "Heerkens",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "ajax-janse-ajax-2026-27",
+    "name": "Ajax Janse",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "johnson-ajax-2026-27",
+    "name": "Johnson",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "cb",
+      "cm"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "konadu-ajax-2026-27",
+    "name": "Konadu",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "nash-ajax-2026-27",
+    "name": "Nash",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "lw"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "ouazane-ajax-2026-27",
+    "name": "Ouazane",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "reverson-ajax-2026-27",
+    "name": "Reverson",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "rijkhoff-ajax-2026-27",
+    "name": "Rijkhoff",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "van-axel-dongen-ajax-2026-27",
+    "name": "Van Axel Dongen",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "parrott-az-2026-27",
+    "name": "Parrott",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 83,
+    "legendary": false
+  },
+  {
+    "id": "stengs-az-2026-27",
+    "name": "Stengs",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "rw",
+      "cm"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "meerdink-az-2026-27",
+    "name": "Meerdink",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "goes-az-2026-27",
+    "name": "Goes",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "kasius-az-2026-27",
+    "name": "Kasius",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "rb"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "az-de-wit-az-2026-27",
+    "name": "AZ De Wit",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "lb",
+      "rb"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "penetra-az-2026-27",
+    "name": "Penetra",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "smit-az-2026-27",
+    "name": "Smit",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "hornkamp-az-2026-27",
+    "name": "Hornkamp",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "koopmeiners-az-2026-27",
+    "name": "Koopmeiners",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "maikuma-az-2026-27",
+    "name": "Maikuma",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "rb"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "chavez-az-2026-27",
+    "name": "Chávez",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "lb"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "daal-az-2026-27",
+    "name": "Daal",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "lw",
+      "rw"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "owusu-oduro-az-2026-27",
+    "name": "Owusu-Oduro",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "dijkstra-az-2026-27",
+    "name": "Dijkstra",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "rb"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "oufkir-az-2026-27",
+    "name": "Oufkir",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "rw",
+      "lw"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "sadiq-az-2026-27",
+    "name": "Sadiq",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "rw",
+      "lw"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "az-boogaard-az-2026-27",
+    "name": "AZ Boogaard",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "bouziane-az-2026-27",
+    "name": "Bouziane",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "lw"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "clasie-az-2026-27",
+    "name": "Clasie",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "de-busser-az-2026-27",
+    "name": "De Busser",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "de-grand-az-2026-27",
+    "name": "De Grand",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "cb",
+      "lb"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "dekker-az-2026-27",
+    "name": "Dekker",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "ichihara-az-2026-27",
+    "name": "Ichihara",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "az-jensen-az-2026-27",
+    "name": "AZ Jensen",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "lw",
+      "rw",
+      "rm"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "kwakman-az-2026-27",
+    "name": "Kwakman",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "lahdo-az-2026-27",
+    "name": "Lahdo",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "rw",
+      "lw"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "patati-az-2026-27",
+    "name": "Patati",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "rw",
+      "lw"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "az-schouten-az-2026-27",
+    "name": "AZ Schouten",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "sin-az-2026-27",
+    "name": "Sin",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "cm",
+      "rw"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "van-duijl-az-2026-27",
+    "name": "Van Duijl",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "cb",
+      "lb"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "van-duijn-az-2026-27",
+    "name": "Van Duijn",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "verhulst-az-2026-27",
+    "name": "Verhulst",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "zoet-az-2026-27",
+    "name": "Zoet",
+    "teamId": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "sano-nec-2026-27",
+    "name": "Sano",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 81,
+    "legendary": false
+  },
+  {
+    "id": "chery-nec-2026-27",
+    "name": "Chery",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "cm",
+      "rw",
+      "st"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "tadic-nec-2026-27",
+    "name": "Tadic",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "lw",
+      "rw",
+      "st"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "nejasmic-nec-2026-27",
+    "name": "Nejašmic",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "ouaissa-nec-2026-27",
+    "name": "Ouaissa",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "rb",
+      "cm",
+      "rm"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "linssen-nec-2026-27",
+    "name": "Linssen",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "st",
+      "cm",
+      "lw"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "schuurs-nec-2026-27",
+    "name": "Schuurs",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "mor-nec-2026-27",
+    "name": "Mor",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "rw",
+      "lw",
+      "cm"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "lebreton-nec-2026-27",
+    "name": "Lebreton",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "sierhuis-nec-2026-27",
+    "name": "Sierhuis",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "monteiro-nec-2026-27",
+    "name": "Monteiro",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "cm",
+      "rw"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "crettaz-nec-2026-27",
+    "name": "Crettaz",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "ogawa-nec-2026-27",
+    "name": "Ogawa",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "ouwejan-nec-2026-27",
+    "name": "Ouwejan",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "lb",
+      "lw",
+      "cb"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "sandler-nec-2026-27",
+    "name": "Sandler",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "fonville-nec-2026-27",
+    "name": "Fonville",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "cb",
+      "lb"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "proper-nec-2026-27",
+    "name": "Proper",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "cm",
+      "rw",
+      "cb"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "van-crooij-nec-2026-27",
+    "name": "Van Crooij",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "rw",
+      "lw",
+      "st"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "nec-willumsson-nec-2026-27",
+    "name": "NEC Willumsson",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "cm",
+      "rw",
+      "rm"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "bischoff-nec-2026-27",
+    "name": "Bischoff",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "lw",
+      "rw"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "de-laat-nec-2026-27",
+    "name": "De Laat",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "entius-nec-2026-27",
+    "name": "Entius",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "hansen-aar-en-nec-2026-27",
+    "name": "Hansen-Aarøen",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "kers-nec-2026-27",
+    "name": "Kers",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "nuytinck-nec-2026-27",
+    "name": "Nuytinck",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "pereira-nec-2026-27",
+    "name": "Pereira",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "cb",
+      "rb"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "sbai-nec-2026-27",
+    "name": "Sbai",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "storm-nec-2026-27",
+    "name": "Storm",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "tahaui-nec-2026-27",
+    "name": "Tahaui",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "van-de-wiel-nec-2026-27",
+    "name": "Van de Wiel",
+    "teamId": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "van-rooij-fc-twente-2026-27",
+    "name": "Van Rooij",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "rb"
+    ],
+    "rating": 80,
+    "legendary": false
+  },
+  {
+    "id": "lammers-fc-twente-2026-27",
+    "name": "Lammers",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "weghorst-fc-twente-2026-27",
+    "name": "Weghorst",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 79,
+    "legendary": false
+  },
+  {
+    "id": "rjas-ter-fc-twente-2026-27",
+    "name": "Ørjasæter",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "lw"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "hlynsson-fc-twente-2026-27",
+    "name": "Hlynsson",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "cm",
+      "lw",
+      "lm"
+    ],
+    "rating": 78,
+    "legendary": false
+  },
+  {
+    "id": "rots-fc-twente-2026-27",
+    "name": "Rots",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "rw",
+      "cm"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "unnerstall-fc-twente-2026-27",
+    "name": "Unnerstall",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "zerrouki-fc-twente-2026-27",
+    "name": "Zerrouki",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "taha-fc-twente-2026-27",
+    "name": "Taha",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "cm",
+      "rw",
+      "st"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "hilgers-fc-twente-2026-27",
+    "name": "Hilgers",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "rb"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "propper-fc-twente-2026-27",
+    "name": "Pröpper",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "van-den-belt-fc-twente-2026-27",
+    "name": "Van den Belt",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "lemkin-fc-twente-2026-27",
+    "name": "Lemkin",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "nijstad-fc-twente-2026-27",
+    "name": "Nijstad",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "pjaca-fc-twente-2026-27",
+    "name": "Pjaca",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "rw",
+      "lw"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "adelgaard-fc-twente-2026-27",
+    "name": "Adelgaard",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "lb",
+      "rb"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "unuvar-fc-twente-2026-27",
+    "name": "Ünüvar",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "lw",
+      "cm"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "verschueren-fc-twente-2026-27",
+    "name": "Verschueren",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "besselink-fc-twente-2026-27",
+    "name": "Besselink",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "booth-fc-twente-2026-27",
+    "name": "Booth",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "lw"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "bruns-fc-twente-2026-27",
+    "name": "Bruns",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "el-maach-fc-twente-2026-27",
+    "name": "El Maach",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "gerritsen-fc-twente-2026-27",
+    "name": "Gerritsen",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "kj-l-fc-twente-2026-27",
+    "name": "Kjølø",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "kurowski-fc-twente-2026-27",
+    "name": "Kurowski",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "lb"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "ltaief-fc-twente-2026-27",
+    "name": "Ltaief",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "lw",
+      "st",
+      "rw"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "mesbahi-fc-twente-2026-27",
+    "name": "Mesbahi",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "pasveer-fc-twente-2026-27",
+    "name": "Pasveer",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "peixoto-fc-twente-2026-27",
+    "name": "Peixoto",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "titulaer-fc-twente-2026-27",
+    "name": "Titulaer",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "vennegoor-of-hesselink-fc-twente-2026-27",
+    "name": "Vennegoor of Hesselink",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "weidmann-fc-twente-2026-27",
+    "name": "Weidmann",
+    "teamId": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "fc-utrecht-de-wit-fc-utrecht-2026-27",
+    "name": "FC Utrecht De Wit",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "cm",
+      "st"
+    ],
+    "rating": 77,
+    "legendary": false
+  },
+  {
+    "id": "fc-utrecht-jensen-fc-utrecht-2026-27",
+    "name": "FC Utrecht Jensen",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "van-overeem-fc-utrecht-2026-27",
+    "name": "Van Overeem",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "cm",
+      "cb"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "barkas-fc-utrecht-2026-27",
+    "name": "Barkas",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 74,
+    "legendary": false
+  },
+  {
+    "id": "cathline-fc-utrecht-2026-27",
+    "name": "Cathline",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "lw",
+      "rw",
+      "lm"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "engwanda-fc-utrecht-2026-27",
+    "name": "Engwanda",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "didden-fc-utrecht-2026-27",
+    "name": "Didden",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "cb",
+      "rb"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "horemans-fc-utrecht-2026-27",
+    "name": "Horemans",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "rb"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "stepanov-fc-utrecht-2026-27",
+    "name": "Stepanov",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "alarcon-fc-utrecht-2026-27",
+    "name": "Alarcón",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "offerhaus-fc-utrecht-2026-27",
+    "name": "Offerhaus",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "cb",
+      "cm"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "blake-fc-utrecht-2026-27",
+    "name": "Blake",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "lw",
+      "rw"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "rodriguez-fc-utrecht-2026-27",
+    "name": "Rodríguez",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "rw",
+      "lw"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "min-fc-utrecht-2026-27",
+    "name": "Min",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "st",
+      "lw"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "adiele-fc-utrecht-2026-27",
+    "name": "Adiele",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "lb",
+      "lw",
+      "lm"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "agougil-fc-utrecht-2026-27",
+    "name": "Agougil",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "fc-utrecht-brouwer-fc-utrecht-2026-27",
+    "name": "FC Utrecht Brouwer",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "chigozie-owen-fc-utrecht-2026-27",
+    "name": "Chigozie Owen",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "eerdhuijzen-fc-utrecht-2026-27",
+    "name": "Eerdhuijzen",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "el-arguioui-fc-utrecht-2026-27",
+    "name": "El Arguioui",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "cm",
+      "st"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "gadellaa-fc-utrecht-2026-27",
+    "name": "Gadellaa",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "iqbal-fc-utrecht-2026-27",
+    "name": "Iqbal",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "jonathans-fc-utrecht-2026-27",
+    "name": "Jonathans",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "rw",
+      "rm"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "fc-utrecht-ogidi-nwankwo-fc-utrecht-2026-27",
+    "name": "FC Utrecht Ogidi Nwankwo",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "ohio-fc-utrecht-2026-27",
+    "name": "Ohio",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "paredes-fc-utrecht-2026-27",
+    "name": "Paredes",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "lw"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "pohl-fc-utrecht-2026-27",
+    "name": "Pohl",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "schuldes-fc-utrecht-2026-27",
+    "name": "Schuldes",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "fc-utrecht-van-den-berg-fc-utrecht-2026-27",
+    "name": "FC Utrecht Van den Berg",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "van-ommeren-fc-utrecht-2026-27",
+    "name": "Van Ommeren",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "vesterlund-fc-utrecht-2026-27",
+    "name": "Vesterlund",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "rb",
+      "rw"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "zagre-fc-utrecht-2026-27",
+    "name": "Zagré",
+    "teamId": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "positions": [
+      "lb"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "meulensteen-go-ahead-eagles-2026-27",
+    "name": "Meulensteen",
+    "teamId": "go-ahead-eagles-2026-27",
+    "club": "Go Ahead Eagles",
+    "season": "2026/27",
+    "positions": [
+      "cm",
+      "cb"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "suray-go-ahead-eagles-2026-27",
+    "name": "Suray",
+    "teamId": "go-ahead-eagles-2026-27",
+    "club": "Go Ahead Eagles",
+    "season": "2026/27",
+    "positions": [
+      "lw",
+      "cm",
+      "rw"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "go-ahead-eagles-edvardsen-go-ahead-eagles-2026-27",
+    "name": "Go Ahead Eagles Edvardsen",
+    "teamId": "go-ahead-eagles-2026-27",
+    "club": "Go Ahead Eagles",
+    "season": "2026/27",
+    "positions": [
+      "st",
+      "cm"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "go-ahead-eagles-kramer-go-ahead-eagles-2026-27",
+    "name": "Go Ahead Eagles Kramer",
+    "teamId": "go-ahead-eagles-2026-27",
+    "club": "Go Ahead Eagles",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "nauber-go-ahead-eagles-2026-27",
+    "name": "Nauber",
+    "teamId": "go-ahead-eagles-2026-27",
+    "club": "Go Ahead Eagles",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "sampsted-go-ahead-eagles-2026-27",
+    "name": "Sampsted",
+    "teamId": "go-ahead-eagles-2026-27",
+    "club": "Go Ahead Eagles",
+    "season": "2026/27",
+    "positions": [
+      "rb"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "go-ahead-eagles-tengstedt-go-ahead-eagles-2026-27",
+    "name": "Go Ahead Eagles Tengstedt",
+    "teamId": "go-ahead-eagles-2026-27",
+    "club": "Go Ahead Eagles",
+    "season": "2026/27",
+    "positions": [
+      "rw"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "haug-go-ahead-eagles-2026-27",
+    "name": "Haug",
+    "teamId": "go-ahead-eagles-2026-27",
+    "club": "Go Ahead Eagles",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "james-go-ahead-eagles-2026-27",
+    "name": "James",
+    "teamId": "go-ahead-eagles-2026-27",
+    "club": "Go Ahead Eagles",
+    "season": "2026/27",
+    "positions": [
+      "lb"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "linthorst-go-ahead-eagles-2026-27",
+    "name": "Linthorst",
+    "teamId": "go-ahead-eagles-2026-27",
+    "club": "Go Ahead Eagles",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "margaret-go-ahead-eagles-2026-27",
+    "name": "Margaret",
+    "teamId": "go-ahead-eagles-2026-27",
+    "club": "Go Ahead Eagles",
+    "season": "2026/27",
+    "positions": [
+      "lw",
+      "rw",
+      "st"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "baeten-go-ahead-eagles-2026-27",
+    "name": "Baeten",
+    "teamId": "go-ahead-eagles-2026-27",
+    "club": "Go Ahead Eagles",
+    "season": "2026/27",
+    "positions": [
+      "st",
+      "rw",
+      "lw"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "boakye-go-ahead-eagles-2026-27",
+    "name": "Boakye",
+    "teamId": "go-ahead-eagles-2026-27",
+    "club": "Go Ahead Eagles",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "dirksen-go-ahead-eagles-2026-27",
+    "name": "Dirksen",
+    "teamId": "go-ahead-eagles-2026-27",
+    "club": "Go Ahead Eagles",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "flataker-go-ahead-eagles-2026-27",
+    "name": "Flataker",
+    "teamId": "go-ahead-eagles-2026-27",
+    "club": "Go Ahead Eagles",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "galvez-go-ahead-eagles-2026-27",
+    "name": "Galvez",
+    "teamId": "go-ahead-eagles-2026-27",
+    "club": "Go Ahead Eagles",
+    "season": "2026/27",
+    "positions": [
+      "lb"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "marsman-go-ahead-eagles-2026-27",
+    "name": "Marsman",
+    "teamId": "go-ahead-eagles-2026-27",
+    "club": "Go Ahead Eagles",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "saathof-go-ahead-eagles-2026-27",
+    "name": "Saathof",
+    "teamId": "go-ahead-eagles-2026-27",
+    "club": "Go Ahead Eagles",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "salah-rahmouni-go-ahead-eagles-2026-27",
+    "name": "Salah Rahmouni",
+    "teamId": "go-ahead-eagles-2026-27",
+    "club": "Go Ahead Eagles",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "sigurdarson-go-ahead-eagles-2026-27",
+    "name": "Sigurdarson",
+    "teamId": "go-ahead-eagles-2026-27",
+    "club": "Go Ahead Eagles",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "sivertsen-go-ahead-eagles-2026-27",
+    "name": "Sivertsen",
+    "teamId": "go-ahead-eagles-2026-27",
+    "club": "Go Ahead Eagles",
+    "season": "2026/27",
+    "positions": [
+      "rw"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "tijman-go-ahead-eagles-2026-27",
+    "name": "Tijman",
+    "teamId": "go-ahead-eagles-2026-27",
+    "club": "Go Ahead Eagles",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "twigt-go-ahead-eagles-2026-27",
+    "name": "Twigt",
+    "teamId": "go-ahead-eagles-2026-27",
+    "club": "Go Ahead Eagles",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "van-zwam-go-ahead-eagles-2026-27",
+    "name": "Van Zwam",
+    "teamId": "go-ahead-eagles-2026-27",
+    "club": "Go Ahead Eagles",
+    "season": "2026/27",
+    "positions": [
+      "cb",
+      "rb"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "verdoni-go-ahead-eagles-2026-27",
+    "name": "Verdoni",
+    "teamId": "go-ahead-eagles-2026-27",
+    "club": "Go Ahead Eagles",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "waayers-go-ahead-eagles-2026-27",
+    "name": "Waayers",
+    "teamId": "go-ahead-eagles-2026-27",
+    "club": "Go Ahead Eagles",
+    "season": "2026/27",
+    "positions": [
+      "rb",
+      "lb"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "weijenberg-go-ahead-eagles-2026-27",
+    "name": "Weijenberg",
+    "teamId": "go-ahead-eagles-2026-27",
+    "club": "Go Ahead Eagles",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "resink-fc-groningen-2026-27",
+    "name": "Resink",
+    "teamId": "fc-groningen-2026-27",
+    "club": "FC Groningen",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 76,
+    "legendary": false
+  },
+  {
+    "id": "rente-fc-groningen-2026-27",
+    "name": "Rente",
+    "teamId": "fc-groningen-2026-27",
+    "club": "FC Groningen",
+    "season": "2026/27",
+    "positions": [
+      "rb"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "van-der-werff-fc-groningen-2026-27",
+    "name": "Van der Werff",
+    "teamId": "fc-groningen-2026-27",
+    "club": "FC Groningen",
+    "season": "2026/27",
+    "positions": [
+      "rw",
+      "rm",
+      "cm"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "vaessen-fc-groningen-2026-27",
+    "name": "Vaessen",
+    "teamId": "fc-groningen-2026-27",
+    "club": "FC Groningen",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "fc-groningen-van-bergen-fc-groningen-2026-27",
+    "name": "FC Groningen Van Bergen",
+    "teamId": "fc-groningen-2026-27",
+    "club": "FC Groningen",
+    "season": "2026/27",
+    "positions": [
+      "st",
+      "cm",
+      "rw"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "blokzijl-fc-groningen-2026-27",
+    "name": "Blokzijl",
+    "teamId": "fc-groningen-2026-27",
+    "club": "FC Groningen",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "fc-groningen-schreuders-fc-groningen-2026-27",
+    "name": "FC Groningen Schreuders",
+    "teamId": "fc-groningen-2026-27",
+    "club": "FC Groningen",
+    "season": "2026/27",
+    "positions": [
+      "cm",
+      "rw"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "de-jonge-fc-groningen-2026-27",
+    "name": "De Jonge",
+    "teamId": "fc-groningen-2026-27",
+    "club": "FC Groningen",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "land-fc-groningen-2026-27",
+    "name": "Land",
+    "teamId": "fc-groningen-2026-27",
+    "club": "FC Groningen",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "clement-fc-groningen-2026-27",
+    "name": "Clement",
+    "teamId": "fc-groningen-2026-27",
+    "club": "FC Groningen",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "mercera-fc-groningen-2026-27",
+    "name": "Mercera",
+    "teamId": "fc-groningen-2026-27",
+    "club": "FC Groningen",
+    "season": "2026/27",
+    "positions": [
+      "rb"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "bouland-fc-groningen-2026-27",
+    "name": "Bouland",
+    "teamId": "fc-groningen-2026-27",
+    "club": "FC Groningen",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "brandis-fc-groningen-2026-27",
+    "name": "Brandis",
+    "teamId": "fc-groningen-2026-27",
+    "club": "FC Groningen",
+    "season": "2026/27",
+    "positions": [
+      "lb"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "eggens-fc-groningen-2026-27",
+    "name": "Eggens",
+    "teamId": "fc-groningen-2026-27",
+    "club": "FC Groningen",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "emeran-fc-groningen-2026-27",
+    "name": "Emeran",
+    "teamId": "fc-groningen-2026-27",
+    "club": "FC Groningen",
+    "season": "2026/27",
+    "positions": [
+      "lm",
+      "rb"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "hernes-fc-groningen-2026-27",
+    "name": "Hernes",
+    "teamId": "fc-groningen-2026-27",
+    "club": "FC Groningen",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "hoekstra-fc-groningen-2026-27",
+    "name": "Hoekstra",
+    "teamId": "fc-groningen-2026-27",
+    "club": "FC Groningen",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "holder-fc-groningen-2026-27",
+    "name": "Holder",
+    "teamId": "fc-groningen-2026-27",
+    "club": "FC Groningen",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "fc-groningen-janse-fc-groningen-2026-27",
+    "name": "FC Groningen Janse",
+    "teamId": "fc-groningen-2026-27",
+    "club": "FC Groningen",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "metu-fc-groningen-2026-27",
+    "name": "Metu",
+    "teamId": "fc-groningen-2026-27",
+    "club": "FC Groningen",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "prins-fc-groningen-2026-27",
+    "name": "Prins",
+    "teamId": "fc-groningen-2026-27",
+    "club": "FC Groningen",
+    "season": "2026/27",
+    "positions": [
+      "lb"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "stubljar-fc-groningen-2026-27",
+    "name": "Stubljar",
+    "teamId": "fc-groningen-2026-27",
+    "club": "FC Groningen",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "van-der-laan-fc-groningen-2026-27",
+    "name": "Van der Laan",
+    "teamId": "fc-groningen-2026-27",
+    "club": "FC Groningen",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "fc-groningen-willumsson-fc-groningen-2026-27",
+    "name": "FC Groningen Willumsson",
+    "teamId": "fc-groningen-2026-27",
+    "club": "FC Groningen",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "zawada-fc-groningen-2026-27",
+    "name": "Zawada",
+    "teamId": "fc-groningen-2026-27",
+    "club": "FC Groningen",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "pec-zwolle-thomas-pec-zwolle-2026-27",
+    "name": "PEC Zwolle Thomas",
+    "teamId": "pec-zwolle-2026-27",
+    "club": "PEC Zwolle",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "namli-pec-zwolle-2026-27",
+    "name": "Namli",
+    "teamId": "pec-zwolle-2026-27",
+    "club": "PEC Zwolle",
+    "season": "2026/27",
+    "positions": [
+      "rw"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "kostons-pec-zwolle-2026-27",
+    "name": "Kostons",
+    "teamId": "pec-zwolle-2026-27",
+    "club": "PEC Zwolle",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "graves-pec-zwolle-2026-27",
+    "name": "Graves",
+    "teamId": "pec-zwolle-2026-27",
+    "club": "PEC Zwolle",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "oosting-pec-zwolle-2026-27",
+    "name": "Oosting",
+    "teamId": "pec-zwolle-2026-27",
+    "club": "PEC Zwolle",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "de-graaff-pec-zwolle-2026-27",
+    "name": "De Graaff",
+    "teamId": "pec-zwolle-2026-27",
+    "club": "PEC Zwolle",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "schendelaar-pec-zwolle-2026-27",
+    "name": "Schendelaar",
+    "teamId": "pec-zwolle-2026-27",
+    "club": "PEC Zwolle",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "s-rensen-pec-zwolle-2026-27",
+    "name": "Sørensen",
+    "teamId": "pec-zwolle-2026-27",
+    "club": "PEC Zwolle",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "aertssen-pec-zwolle-2026-27",
+    "name": "Aertssen",
+    "teamId": "pec-zwolle-2026-27",
+    "club": "PEC Zwolle",
+    "season": "2026/27",
+    "positions": [
+      "rb"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "floranus-pec-zwolle-2026-27",
+    "name": "Floranus",
+    "teamId": "pec-zwolle-2026-27",
+    "club": "PEC Zwolle",
+    "season": "2026/27",
+    "positions": [
+      "lb",
+      "rb"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "velanas-pec-zwolle-2026-27",
+    "name": "Velanas",
+    "teamId": "pec-zwolle-2026-27",
+    "club": "PEC Zwolle",
+    "season": "2026/27",
+    "positions": [
+      "lw",
+      "rw"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "viergever-pec-zwolle-2026-27",
+    "name": "Viergever",
+    "teamId": "pec-zwolle-2026-27",
+    "club": "PEC Zwolle",
+    "season": "2026/27",
+    "positions": [
+      "cb",
+      "lb"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "fichtinger-pec-zwolle-2026-27",
+    "name": "Fichtinger",
+    "teamId": "pec-zwolle-2026-27",
+    "club": "PEC Zwolle",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "cissoko-pec-zwolle-2026-27",
+    "name": "Cissoko",
+    "teamId": "pec-zwolle-2026-27",
+    "club": "PEC Zwolle",
+    "season": "2026/27",
+    "positions": [
+      "lw",
+      "rw"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "mbayo-pec-zwolle-2026-27",
+    "name": "Mbayo",
+    "teamId": "pec-zwolle-2026-27",
+    "club": "PEC Zwolle",
+    "season": "2026/27",
+    "positions": [
+      "rw",
+      "lw"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "pereira-da-gama-pec-zwolle-2026-27",
+    "name": "Pereira da Gama",
+    "teamId": "pec-zwolle-2026-27",
+    "club": "PEC Zwolle",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "rahajaan-pec-zwolle-2026-27",
+    "name": "Rahajaän",
+    "teamId": "pec-zwolle-2026-27",
+    "club": "PEC Zwolle",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "pec-zwolle-reiziger-pec-zwolle-2026-27",
+    "name": "PEC Zwolle Reiziger",
+    "teamId": "pec-zwolle-2026-27",
+    "club": "PEC Zwolle",
+    "season": "2026/27",
+    "positions": [
+      "rw"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "sommer-pec-zwolle-2026-27",
+    "name": "Sommer",
+    "teamId": "pec-zwolle-2026-27",
+    "club": "PEC Zwolle",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "van-der-haar-pec-zwolle-2026-27",
+    "name": "Van der Haar",
+    "teamId": "pec-zwolle-2026-27",
+    "club": "PEC Zwolle",
+    "season": "2026/27",
+    "positions": [
+      "lb"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "velthuis-pec-zwolle-2026-27",
+    "name": "Velthuis",
+    "teamId": "pec-zwolle-2026-27",
+    "club": "PEC Zwolle",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "verduin-pec-zwolle-2026-27",
+    "name": "Verduin",
+    "teamId": "pec-zwolle-2026-27",
+    "club": "PEC Zwolle",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "trenskow-sc-heerenveen-2026-27",
+    "name": "Trenskow",
+    "teamId": "sc-heerenveen-2026-27",
+    "club": "SC Heerenveen",
+    "season": "2026/27",
+    "positions": [
+      "rw",
+      "cm"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "meerveld-sc-heerenveen-2026-27",
+    "name": "Meerveld",
+    "teamId": "sc-heerenveen-2026-27",
+    "club": "SC Heerenveen",
+    "season": "2026/27",
+    "positions": [
+      "lw",
+      "cm",
+      "st"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "zagaritis-sc-heerenveen-2026-27",
+    "name": "Zagaritis",
+    "teamId": "sc-heerenveen-2026-27",
+    "club": "SC Heerenveen",
+    "season": "2026/27",
+    "positions": [
+      "lb"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "braude-sc-heerenveen-2026-27",
+    "name": "Braude",
+    "teamId": "sc-heerenveen-2026-27",
+    "club": "SC Heerenveen",
+    "season": "2026/27",
+    "positions": [
+      "rb",
+      "lb"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "linday-sc-heerenveen-2026-27",
+    "name": "Linday",
+    "teamId": "sc-heerenveen-2026-27",
+    "club": "SC Heerenveen",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "brouwers-sc-heerenveen-2026-27",
+    "name": "Brouwers",
+    "teamId": "sc-heerenveen-2026-27",
+    "club": "SC Heerenveen",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "rivera-sc-heerenveen-2026-27",
+    "name": "Rivera",
+    "teamId": "sc-heerenveen-2026-27",
+    "club": "SC Heerenveen",
+    "season": "2026/27",
+    "positions": [
+      "lw",
+      "cm",
+      "rw"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "klaverboer-sc-heerenveen-2026-27",
+    "name": "Klaverboer",
+    "teamId": "sc-heerenveen-2026-27",
+    "club": "SC Heerenveen",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "noppert-sc-heerenveen-2026-27",
+    "name": "Noppert",
+    "teamId": "sc-heerenveen-2026-27",
+    "club": "SC Heerenveen",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "vente-sc-heerenveen-2026-27",
+    "name": "Vente",
+    "teamId": "sc-heerenveen-2026-27",
+    "club": "SC Heerenveen",
+    "season": "2026/27",
+    "positions": [
+      "st",
+      "cm"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "kersten-sc-heerenveen-2026-27",
+    "name": "Kersten",
+    "teamId": "sc-heerenveen-2026-27",
+    "club": "SC Heerenveen",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "sc-heerenveen-ahmed-sc-heerenveen-2026-27",
+    "name": "SC Heerenveen Ahmed",
+    "teamId": "sc-heerenveen-2026-27",
+    "club": "SC Heerenveen",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "bladi-sc-heerenveen-2026-27",
+    "name": "Bladi",
+    "teamId": "sc-heerenveen-2026-27",
+    "club": "SC Heerenveen",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "courtens-sc-heerenveen-2026-27",
+    "name": "Courtens",
+    "teamId": "sc-heerenveen-2026-27",
+    "club": "SC Heerenveen",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "egbring-sc-heerenveen-2026-27",
+    "name": "Egbring",
+    "teamId": "sc-heerenveen-2026-27",
+    "club": "SC Heerenveen",
+    "season": "2026/27",
+    "positions": [
+      "rb",
+      "lb"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "hopland-sc-heerenveen-2026-27",
+    "name": "Hopland",
+    "teamId": "sc-heerenveen-2026-27",
+    "club": "SC Heerenveen",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "oyen-sc-heerenveen-2026-27",
+    "name": "Oyen",
+    "teamId": "sc-heerenveen-2026-27",
+    "club": "SC Heerenveen",
+    "season": "2026/27",
+    "positions": [
+      "lw",
+      "lm"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "petrov-sc-heerenveen-2026-27",
+    "name": "Petrov",
+    "teamId": "sc-heerenveen-2026-27",
+    "club": "SC Heerenveen",
+    "season": "2026/27",
+    "positions": [
+      "lb",
+      "cb"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "rijssel-sc-heerenveen-2026-27",
+    "name": "Rijssel",
+    "teamId": "sc-heerenveen-2026-27",
+    "club": "SC Heerenveen",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "smans-sc-heerenveen-2026-27",
+    "name": "Smans",
+    "teamId": "sc-heerenveen-2026-27",
+    "club": "SC Heerenveen",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "willemsen-sc-heerenveen-2026-27",
+    "name": "Willemsen",
+    "teamId": "sc-heerenveen-2026-27",
+    "club": "SC Heerenveen",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "hardeveld-telstar-2026-27",
+    "name": "Hardeveld",
+    "teamId": "telstar-2026-27",
+    "club": "Telstar",
+    "season": "2026/27",
+    "positions": [
+      "lb",
+      "lm",
+      "cb"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "owusu-telstar-2026-27",
+    "name": "Owusu",
+    "teamId": "telstar-2026-27",
+    "club": "Telstar",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "rossen-telstar-2026-27",
+    "name": "Rossen",
+    "teamId": "telstar-2026-27",
+    "club": "Telstar",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "telstar-brouwer-telstar-2026-27",
+    "name": "Telstar Brouwer",
+    "teamId": "telstar-2026-27",
+    "club": "Telstar",
+    "season": "2026/27",
+    "positions": [
+      "cm",
+      "lw"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "telstar-ogidi-nwankwo-telstar-2026-27",
+    "name": "Telstar Ogidi Nwankwo",
+    "teamId": "telstar-2026-27",
+    "club": "Telstar",
+    "season": "2026/27",
+    "positions": [
+      "lb"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "koeman-telstar-2026-27",
+    "name": "Koeman",
+    "teamId": "telstar-2026-27",
+    "club": "Telstar",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "peersman-telstar-2026-27",
+    "name": "Peersman",
+    "teamId": "telstar-2026-27",
+    "club": "Telstar",
+    "season": "2026/27",
+    "positions": [
+      "lb",
+      "cb"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "hetli-telstar-2026-27",
+    "name": "Hetli",
+    "teamId": "telstar-2026-27",
+    "club": "Telstar",
+    "season": "2026/27",
+    "positions": [
+      "st",
+      "cm",
+      "lw"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "tejan-telstar-2026-27",
+    "name": "Tejan",
+    "teamId": "telstar-2026-27",
+    "club": "Telstar",
+    "season": "2026/27",
+    "positions": [
+      "st",
+      "cm"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "telstar-ahmed-telstar-2026-27",
+    "name": "Telstar Ahmed",
+    "teamId": "telstar-2026-27",
+    "club": "Telstar",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "alders-telstar-2026-27",
+    "name": "Alders",
+    "teamId": "telstar-2026-27",
+    "club": "Telstar",
+    "season": "2026/27",
+    "positions": [
+      "rb",
+      "lb"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "aning-telstar-2026-27",
+    "name": "Aning",
+    "teamId": "telstar-2026-27",
+    "club": "Telstar",
+    "season": "2026/27",
+    "positions": [
+      "lb"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "benzzine-telstar-2026-27",
+    "name": "Benzzine",
+    "teamId": "telstar-2026-27",
+    "club": "Telstar",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "demircan-telstar-2026-27",
+    "name": "Demircan",
+    "teamId": "telstar-2026-27",
+    "club": "Telstar",
+    "season": "2026/27",
+    "positions": [
+      "lw",
+      "lm",
+      "rw"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "mendes-telstar-2026-27",
+    "name": "Mendes",
+    "teamId": "telstar-2026-27",
+    "club": "Telstar",
+    "season": "2026/27",
+    "positions": [
+      "rw"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "telstar-mulder-telstar-2026-27",
+    "name": "Telstar Mulder",
+    "teamId": "telstar-2026-27",
+    "club": "Telstar",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "olfers-telstar-2026-27",
+    "name": "Olfers",
+    "teamId": "telstar-2026-27",
+    "club": "Telstar",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "oudsten-telstar-2026-27",
+    "name": "Oudsten",
+    "teamId": "telstar-2026-27",
+    "club": "Telstar",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "telstar-reiziger-telstar-2026-27",
+    "name": "Telstar Reiziger",
+    "teamId": "telstar-2026-27",
+    "club": "Telstar",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "rust-telstar-2026-27",
+    "name": "Rust",
+    "teamId": "telstar-2026-27",
+    "club": "Telstar",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "seedorf-telstar-2026-27",
+    "name": "Seedorf",
+    "teamId": "telstar-2026-27",
+    "club": "Telstar",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "shenkman-telstar-2026-27",
+    "name": "Shenkman",
+    "teamId": "telstar-2026-27",
+    "club": "Telstar",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "soualhia-telstar-2026-27",
+    "name": "Soualhia",
+    "teamId": "telstar-2026-27",
+    "club": "Telstar",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "ihattaren-fortuna-sittard-2026-27",
+    "name": "Ihattaren",
+    "teamId": "fortuna-sittard-2026-27",
+    "club": "Fortuna Sittard",
+    "season": "2026/27",
+    "positions": [
+      "cm",
+      "rw",
+      "st"
+    ],
+    "rating": 75,
+    "legendary": false
+  },
+  {
+    "id": "branderhorst-fortuna-sittard-2026-27",
+    "name": "Branderhorst",
+    "teamId": "fortuna-sittard-2026-27",
+    "club": "Fortuna Sittard",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "brittijn-fortuna-sittard-2026-27",
+    "name": "Brittijn",
+    "teamId": "fortuna-sittard-2026-27",
+    "club": "Fortuna Sittard",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "dahlhaus-fortuna-sittard-2026-27",
+    "name": "Dahlhaus",
+    "teamId": "fortuna-sittard-2026-27",
+    "club": "Fortuna Sittard",
+    "season": "2026/27",
+    "positions": [
+      "lb",
+      "lm"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "hubner-fortuna-sittard-2026-27",
+    "name": "Hubner",
+    "teamId": "fortuna-sittard-2026-27",
+    "club": "Fortuna Sittard",
+    "season": "2026/27",
+    "positions": [
+      "cb",
+      "lb"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "romeny-fortuna-sittard-2026-27",
+    "name": "Romeny",
+    "teamId": "fortuna-sittard-2026-27",
+    "club": "Fortuna Sittard",
+    "season": "2026/27",
+    "positions": [
+      "rw",
+      "st",
+      "lw"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "descotte-fortuna-sittard-2026-27",
+    "name": "Descotte",
+    "teamId": "fortuna-sittard-2026-27",
+    "club": "Fortuna Sittard",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "michut-fortuna-sittard-2026-27",
+    "name": "Michut",
+    "teamId": "fortuna-sittard-2026-27",
+    "club": "Fortuna Sittard",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "marquez-fortuna-sittard-2026-27",
+    "name": "Márquez",
+    "teamId": "fortuna-sittard-2026-27",
+    "club": "Fortuna Sittard",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "pinto-fortuna-sittard-2026-27",
+    "name": "Pinto",
+    "teamId": "fortuna-sittard-2026-27",
+    "club": "Fortuna Sittard",
+    "season": "2026/27",
+    "positions": [
+      "rb",
+      "rm"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "peterson-fortuna-sittard-2026-27",
+    "name": "Peterson",
+    "teamId": "fortuna-sittard-2026-27",
+    "club": "Fortuna Sittard",
+    "season": "2026/27",
+    "positions": [
+      "lw",
+      "lm"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "zeefuik-fortuna-sittard-2026-27",
+    "name": "Zeefuik",
+    "teamId": "fortuna-sittard-2026-27",
+    "club": "Fortuna Sittard",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "t-zand-fortuna-sittard-2026-27",
+    "name": "'t Zand",
+    "teamId": "fortuna-sittard-2026-27",
+    "club": "Fortuna Sittard",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "bayram-fortuna-sittard-2026-27",
+    "name": "Bayram",
+    "teamId": "fortuna-sittard-2026-27",
+    "club": "Fortuna Sittard",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "de-groot-fortuna-sittard-2026-27",
+    "name": "De Groot",
+    "teamId": "fortuna-sittard-2026-27",
+    "club": "Fortuna Sittard",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "koopmans-fortuna-sittard-2026-27",
+    "name": "Koopmans",
+    "teamId": "fortuna-sittard-2026-27",
+    "club": "Fortuna Sittard",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "oukili-fortuna-sittard-2026-27",
+    "name": "Oukili",
+    "teamId": "fortuna-sittard-2026-27",
+    "club": "Fortuna Sittard",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "simons-fortuna-sittard-2026-27",
+    "name": "Simons",
+    "teamId": "fortuna-sittard-2026-27",
+    "club": "Fortuna Sittard",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "van-ottele-fortuna-sittard-2026-27",
+    "name": "Van Ottele",
+    "teamId": "fortuna-sittard-2026-27",
+    "club": "Fortuna Sittard",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "wylin-fortuna-sittard-2026-27",
+    "name": "Wylin",
+    "teamId": "fortuna-sittard-2026-27",
+    "club": "Fortuna Sittard",
+    "season": "2026/27",
+    "positions": [
+      "rb"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "santos-sparta-rotterdam-2026-27",
+    "name": "Santos",
+    "teamId": "sparta-rotterdam-2026-27",
+    "club": "Sparta Rotterdam",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "mito-sparta-rotterdam-2026-27",
+    "name": "Mito",
+    "teamId": "sparta-rotterdam-2026-27",
+    "club": "Sparta Rotterdam",
+    "season": "2026/27",
+    "positions": [
+      "lw"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "sparta-rotterdam-van-bergen-sparta-rotterdam-2026-27",
+    "name": "Sparta Rotterdam Van Bergen",
+    "teamId": "sparta-rotterdam-2026-27",
+    "club": "Sparta Rotterdam",
+    "season": "2026/27",
+    "positions": [
+      "rw"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "verschuren-sparta-rotterdam-2026-27",
+    "name": "Verschuren",
+    "teamId": "sparta-rotterdam-2026-27",
+    "club": "Sparta Rotterdam",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "quintero-sparta-rotterdam-2026-27",
+    "name": "Quintero",
+    "teamId": "sparta-rotterdam-2026-27",
+    "club": "Sparta Rotterdam",
+    "season": "2026/27",
+    "positions": [
+      "lb",
+      "cb"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "toornstra-sparta-rotterdam-2026-27",
+    "name": "Toornstra",
+    "teamId": "sparta-rotterdam-2026-27",
+    "club": "Sparta Rotterdam",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "martins-indi-sparta-rotterdam-2026-27",
+    "name": "Martins Indi",
+    "teamId": "sparta-rotterdam-2026-27",
+    "club": "Sparta Rotterdam",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "young-sparta-rotterdam-2026-27",
+    "name": "Young",
+    "teamId": "sparta-rotterdam-2026-27",
+    "club": "Sparta Rotterdam",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "ideho-sparta-rotterdam-2026-27",
+    "name": "Ideho",
+    "teamId": "sparta-rotterdam-2026-27",
+    "club": "Sparta Rotterdam",
+    "season": "2026/27",
+    "positions": [
+      "lw"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "zonneveld-sparta-rotterdam-2026-27",
+    "name": "Zonneveld",
+    "teamId": "sparta-rotterdam-2026-27",
+    "club": "Sparta Rotterdam",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "sparta-rotterdam-baas-sparta-rotterdam-2026-27",
+    "name": "Sparta Rotterdam Baas",
+    "teamId": "sparta-rotterdam-2026-27",
+    "club": "Sparta Rotterdam",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "bednarek-sparta-rotterdam-2026-27",
+    "name": "Bednarek",
+    "teamId": "sparta-rotterdam-2026-27",
+    "club": "Sparta Rotterdam",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "de-ligt-sparta-rotterdam-2026-27",
+    "name": "De Ligt",
+    "teamId": "sparta-rotterdam-2026-27",
+    "club": "Sparta Rotterdam",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "jaber-el-meftahi-sparta-rotterdam-2026-27",
+    "name": "Jaber el Meftahi",
+    "teamId": "sparta-rotterdam-2026-27",
+    "club": "Sparta Rotterdam",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "kleijn-sparta-rotterdam-2026-27",
+    "name": "Kleijn",
+    "teamId": "sparta-rotterdam-2026-27",
+    "club": "Sparta Rotterdam",
+    "season": "2026/27",
+    "positions": [
+      "lb"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "kuiper-sparta-rotterdam-2026-27",
+    "name": "Kuiper",
+    "teamId": "sparta-rotterdam-2026-27",
+    "club": "Sparta Rotterdam",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "kuipers-sparta-rotterdam-2026-27",
+    "name": "Kuipers",
+    "teamId": "sparta-rotterdam-2026-27",
+    "club": "Sparta Rotterdam",
+    "season": "2026/27",
+    "positions": [
+      "lb"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "martes-sparta-rotterdam-2026-27",
+    "name": "Martes",
+    "teamId": "sparta-rotterdam-2026-27",
+    "club": "Sparta Rotterdam",
+    "season": "2026/27",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "reith-sparta-rotterdam-2026-27",
+    "name": "Reith",
+    "teamId": "sparta-rotterdam-2026-27",
+    "club": "Sparta Rotterdam",
+    "season": "2026/27",
+    "positions": [
+      "rb",
+      "lb"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "roalds-y-sparta-rotterdam-2026-27",
+    "name": "Roaldsøy",
+    "teamId": "sparta-rotterdam-2026-27",
+    "club": "Sparta Rotterdam",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "terho-sparta-rotterdam-2026-27",
+    "name": "Terho",
+    "teamId": "sparta-rotterdam-2026-27",
+    "club": "Sparta Rotterdam",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "thorisson-sparta-rotterdam-2026-27",
+    "name": "Thórisson",
+    "teamId": "sparta-rotterdam-2026-27",
+    "club": "Sparta Rotterdam",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "vianello-sparta-rotterdam-2026-27",
+    "name": "Vianello",
+    "teamId": "sparta-rotterdam-2026-27",
+    "club": "Sparta Rotterdam",
+    "season": "2026/27",
+    "positions": [
+      "lb"
+    ],
+    "rating": 62,
+    "legendary": false
+  },
+  {
+    "id": "meissen-excelsior-2026-27",
+    "name": "Meissen",
+    "teamId": "excelsior-2026-27",
+    "club": "Excelsior",
+    "season": "2026/27",
+    "positions": [
+      "cb",
+      "rb"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "van-gassel-excelsior-2026-27",
+    "name": "Van Gassel",
+    "teamId": "excelsior-2026-27",
+    "club": "Excelsior",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "yegoian-excelsior-2026-27",
+    "name": "Yegoian",
+    "teamId": "excelsior-2026-27",
+    "club": "Excelsior",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "naujoks-excelsior-2026-27",
+    "name": "Naujoks",
+    "teamId": "excelsior-2026-27",
+    "club": "Excelsior",
+    "season": "2026/27",
+    "positions": [
+      "cm",
+      "st"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "de-regt-excelsior-2026-27",
+    "name": "De Regt",
+    "teamId": "excelsior-2026-27",
+    "club": "Excelsior",
+    "season": "2026/27",
+    "positions": [
+      "lw",
+      "st",
+      "rw"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "widell-excelsior-2026-27",
+    "name": "Widell",
+    "teamId": "excelsior-2026-27",
+    "club": "Excelsior",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "hartjes-excelsior-2026-27",
+    "name": "Hartjes",
+    "teamId": "excelsior-2026-27",
+    "club": "Excelsior",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "biai-excelsior-2026-27",
+    "name": "Biai",
+    "teamId": "excelsior-2026-27",
+    "club": "Excelsior",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "excelsior-bos-excelsior-2026-27",
+    "name": "Excelsior Bos",
+    "teamId": "excelsior-2026-27",
+    "club": "Excelsior",
+    "season": "2026/27",
+    "positions": [
+      "lb"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "cairo-excelsior-2026-27",
+    "name": "Cairo",
+    "teamId": "excelsior-2026-27",
+    "club": "Excelsior",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "finey-excelsior-2026-27",
+    "name": "Finey",
+    "teamId": "excelsior-2026-27",
+    "club": "Excelsior",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "garden-excelsior-2026-27",
+    "name": "Garden",
+    "teamId": "excelsior-2026-27",
+    "club": "Excelsior",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "groen-excelsior-2026-27",
+    "name": "Groen",
+    "teamId": "excelsior-2026-27",
+    "club": "Excelsior",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "henderikx-excelsior-2026-27",
+    "name": "Henderikx",
+    "teamId": "excelsior-2026-27",
+    "club": "Excelsior",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "holla-excelsior-2026-27",
+    "name": "Holla",
+    "teamId": "excelsior-2026-27",
+    "club": "Excelsior",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "janssen-excelsior-2026-27",
+    "name": "Janssen",
+    "teamId": "excelsior-2026-27",
+    "club": "Excelsior",
+    "season": "2026/27",
+    "positions": [
+      "lb"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "martens-excelsior-2026-27",
+    "name": "Martens",
+    "teamId": "excelsior-2026-27",
+    "club": "Excelsior",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "plug-excelsior-2026-27",
+    "name": "Plug",
+    "teamId": "excelsior-2026-27",
+    "club": "Excelsior",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "silva-timas-excelsior-2026-27",
+    "name": "Silva Timas",
+    "teamId": "excelsior-2026-27",
+    "club": "Excelsior",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "tielemans-excelsior-2026-27",
+    "name": "Tielemans",
+    "teamId": "excelsior-2026-27",
+    "club": "Excelsior",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "van-de-wetering-excelsior-2026-27",
+    "name": "Van de Wetering",
+    "teamId": "excelsior-2026-27",
+    "club": "Excelsior",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "van-vianen-excelsior-2026-27",
+    "name": "Van Vianen",
+    "teamId": "excelsior-2026-27",
+    "club": "Excelsior",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "haen-willem-ii-2026-27",
+    "name": "Haen",
+    "teamId": "willem-ii-2026-27",
+    "club": "Willem II",
+    "season": "2026/27",
+    "positions": [
+      "st",
+      "cm"
+    ],
+    "rating": 71,
+    "legendary": false
+  },
+  {
+    "id": "tjoe-a-on-willem-ii-2026-27",
+    "name": "Tjoe-a-on",
+    "teamId": "willem-ii-2026-27",
+    "club": "Willem II",
+    "season": "2026/27",
+    "positions": [
+      "lb",
+      "lw",
+      "lm"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "didillon-hodl-willem-ii-2026-27",
+    "name": "Didillon-Hödl",
+    "teamId": "willem-ii-2026-27",
+    "club": "Willem II",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "verheydt-willem-ii-2026-27",
+    "name": "Verheydt",
+    "teamId": "willem-ii-2026-27",
+    "club": "Willem II",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "ciranni-willem-ii-2026-27",
+    "name": "Ciranni",
+    "teamId": "willem-ii-2026-27",
+    "club": "Willem II",
+    "season": "2026/27",
+    "positions": [
+      "rb"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "et-taibi-willem-ii-2026-27",
+    "name": "Et-Taïbi",
+    "teamId": "willem-ii-2026-27",
+    "club": "Willem II",
+    "season": "2026/27",
+    "positions": [
+      "rb"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "hoogma-willem-ii-2026-27",
+    "name": "Hoogma",
+    "teamId": "willem-ii-2026-27",
+    "club": "Willem II",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "culum-willem-ii-2026-27",
+    "name": "Culum",
+    "teamId": "willem-ii-2026-27",
+    "club": "Willem II",
+    "season": "2026/27",
+    "positions": [
+      "lw",
+      "cm",
+      "rw"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "van-aalst-willem-ii-2026-27",
+    "name": "Van Aalst",
+    "teamId": "willem-ii-2026-27",
+    "club": "Willem II",
+    "season": "2026/27",
+    "positions": [
+      "cm",
+      "st"
+    ],
+    "rating": 63,
+    "legendary": false
+  },
+  {
+    "id": "abildgaard-willem-ii-2026-27",
+    "name": "Abildgaard",
+    "teamId": "willem-ii-2026-27",
+    "club": "Willem II",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "baartmans-willem-ii-2026-27",
+    "name": "Baartmans",
+    "teamId": "willem-ii-2026-27",
+    "club": "Willem II",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "willem-ii-boogaard-willem-ii-2026-27",
+    "name": "Willem II Boogaard",
+    "teamId": "willem-ii-2026-27",
+    "club": "Willem II",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "de-leeuw-willem-ii-2026-27",
+    "name": "De Leeuw",
+    "teamId": "willem-ii-2026-27",
+    "club": "Willem II",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "gurbuz-willem-ii-2026-27",
+    "name": "Gürbüz",
+    "teamId": "willem-ii-2026-27",
+    "club": "Willem II",
+    "season": "2026/27",
+    "positions": [
+      "rw"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "lachkar-willem-ii-2026-27",
+    "name": "Lachkar",
+    "teamId": "willem-ii-2026-27",
+    "club": "Willem II",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "lemmens-willem-ii-2026-27",
+    "name": "Lemmens",
+    "teamId": "willem-ii-2026-27",
+    "club": "Willem II",
+    "season": "2026/27",
+    "positions": [
+      "cb",
+      "rb"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "mathijsen-willem-ii-2026-27",
+    "name": "Mathijsen",
+    "teamId": "willem-ii-2026-27",
+    "club": "Willem II",
+    "season": "2026/27",
+    "positions": [
+      "lb",
+      "rb"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "scheepens-willem-ii-2026-27",
+    "name": "Scheepens",
+    "teamId": "willem-ii-2026-27",
+    "club": "Willem II",
+    "season": "2026/27",
+    "positions": [
+      "rb"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "willem-ii-schreuders-willem-ii-2026-27",
+    "name": "Willem II Schreuders",
+    "teamId": "willem-ii-2026-27",
+    "club": "Willem II",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "schuurman-willem-ii-2026-27",
+    "name": "Schuurman",
+    "teamId": "willem-ii-2026-27",
+    "club": "Willem II",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "slory-willem-ii-2026-27",
+    "name": "Slory",
+    "teamId": "willem-ii-2026-27",
+    "club": "Willem II",
+    "season": "2026/27",
+    "positions": [
+      "rw"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "stam-willem-ii-2026-27",
+    "name": "Stam",
+    "teamId": "willem-ii-2026-27",
+    "club": "Willem II",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "van-der-steen-willem-ii-2026-27",
+    "name": "Van der Steen",
+    "teamId": "willem-ii-2026-27",
+    "club": "Willem II",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "van-loon-willem-ii-2026-27",
+    "name": "Van Loon",
+    "teamId": "willem-ii-2026-27",
+    "club": "Willem II",
+    "season": "2026/27",
+    "positions": [
+      "lb",
+      "rb"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "zarrouk-willem-ii-2026-27",
+    "name": "Zarrouk",
+    "teamId": "willem-ii-2026-27",
+    "club": "Willem II",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "baouf-sc-cambuur-2026-27",
+    "name": "Baouf",
+    "teamId": "sc-cambuur-2026-27",
+    "club": "SC Cambuur",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "amofa-sc-cambuur-2026-27",
+    "name": "Amofa",
+    "teamId": "sc-cambuur-2026-27",
+    "club": "SC Cambuur",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "jansen-sc-cambuur-2026-27",
+    "name": "Jansen",
+    "teamId": "sc-cambuur-2026-27",
+    "club": "SC Cambuur",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "mulders-sc-cambuur-2026-27",
+    "name": "Mulders",
+    "teamId": "sc-cambuur-2026-27",
+    "club": "SC Cambuur",
+    "season": "2026/27",
+    "positions": [
+      "rb",
+      "lb"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "henstra-sc-cambuur-2026-27",
+    "name": "Henstra",
+    "teamId": "sc-cambuur-2026-27",
+    "club": "SC Cambuur",
+    "season": "2026/27",
+    "positions": [
+      "rw"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "souren-sc-cambuur-2026-27",
+    "name": "Souren",
+    "teamId": "sc-cambuur-2026-27",
+    "club": "SC Cambuur",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 64,
+    "legendary": false
+  },
+  {
+    "id": "berkhout-sc-cambuur-2026-27",
+    "name": "Berkhout",
+    "teamId": "sc-cambuur-2026-27",
+    "club": "SC Cambuur",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 61,
+    "legendary": false
+  },
+  {
+    "id": "apkakou-sc-cambuur-2026-27",
+    "name": "Apkakou",
+    "teamId": "sc-cambuur-2026-27",
+    "club": "SC Cambuur",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "binder-sc-cambuur-2026-27",
+    "name": "Binder",
+    "teamId": "sc-cambuur-2026-27",
+    "club": "SC Cambuur",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "costarelli-sc-cambuur-2026-27",
+    "name": "Costarelli",
+    "teamId": "sc-cambuur-2026-27",
+    "club": "SC Cambuur",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "hamache-sc-cambuur-2026-27",
+    "name": "Hamache",
+    "teamId": "sc-cambuur-2026-27",
+    "club": "SC Cambuur",
+    "season": "2026/27",
+    "positions": [
+      "lw",
+      "rw"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "jetten-sc-cambuur-2026-27",
+    "name": "Jetten",
+    "teamId": "sc-cambuur-2026-27",
+    "club": "SC Cambuur",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "kalisvaart-sc-cambuur-2026-27",
+    "name": "Kalisvaart",
+    "teamId": "sc-cambuur-2026-27",
+    "club": "SC Cambuur",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "kooistra-sc-cambuur-2026-27",
+    "name": "Kooistra",
+    "teamId": "sc-cambuur-2026-27",
+    "club": "SC Cambuur",
+    "season": "2026/27",
+    "positions": [
+      "rb"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "kvam-sc-cambuur-2026-27",
+    "name": "Kvam",
+    "teamId": "sc-cambuur-2026-27",
+    "club": "SC Cambuur",
+    "season": "2026/27",
+    "positions": [
+      "lw",
+      "lb",
+      "rm"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "look-sc-cambuur-2026-27",
+    "name": "Look",
+    "teamId": "sc-cambuur-2026-27",
+    "club": "SC Cambuur",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "meijster-sc-cambuur-2026-27",
+    "name": "Meijster",
+    "teamId": "sc-cambuur-2026-27",
+    "club": "SC Cambuur",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "van-de-pavert-sc-cambuur-2026-27",
+    "name": "Van de Pavert",
+    "teamId": "sc-cambuur-2026-27",
+    "club": "SC Cambuur",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "van-der-heide-sc-cambuur-2026-27",
+    "name": "Van der Heide",
+    "teamId": "sc-cambuur-2026-27",
+    "club": "SC Cambuur",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "vink-sc-cambuur-2026-27",
+    "name": "Vink",
+    "teamId": "sc-cambuur-2026-27",
+    "club": "SC Cambuur",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "visser-sc-cambuur-2026-27",
+    "name": "Visser",
+    "teamId": "sc-cambuur-2026-27",
+    "club": "SC Cambuur",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "kilo-ado-den-haag-2026-27",
+    "name": "Kilo",
+    "teamId": "ado-den-haag-2026-27",
+    "club": "ADO Den Haag",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 73,
+    "legendary": false
+  },
+  {
+    "id": "ado-den-haag-mulder-ado-den-haag-2026-27",
+    "name": "ADO Den Haag Mulder",
+    "teamId": "ado-den-haag-2026-27",
+    "club": "ADO Den Haag",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 72,
+    "legendary": false
+  },
+  {
+    "id": "hokke-ado-den-haag-2026-27",
+    "name": "Hokke",
+    "teamId": "ado-den-haag-2026-27",
+    "club": "ADO Den Haag",
+    "season": "2026/27",
+    "positions": [
+      "cb",
+      "lb"
+    ],
+    "rating": 70,
+    "legendary": false
+  },
+  {
+    "id": "van-mieghem-ado-den-haag-2026-27",
+    "name": "Van Mieghem",
+    "teamId": "ado-den-haag-2026-27",
+    "club": "ADO Den Haag",
+    "season": "2026/27",
+    "positions": [
+      "rw",
+      "lw"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "sylla-ado-den-haag-2026-27",
+    "name": "Sylla",
+    "teamId": "ado-den-haag-2026-27",
+    "club": "ADO Den Haag",
+    "season": "2026/27",
+    "positions": [
+      "lb",
+      "rb"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "waem-ado-den-haag-2026-27",
+    "name": "Waem",
+    "teamId": "ado-den-haag-2026-27",
+    "club": "ADO Den Haag",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 68,
+    "legendary": false
+  },
+  {
+    "id": "de-ruijter-ado-den-haag-2026-27",
+    "name": "De Ruijter",
+    "teamId": "ado-den-haag-2026-27",
+    "club": "ADO Den Haag",
+    "season": "2026/27",
+    "positions": [
+      "rw",
+      "lw"
+    ],
+    "rating": 67,
+    "legendary": false
+  },
+  {
+    "id": "nikiema-ado-den-haag-2026-27",
+    "name": "Nikiema",
+    "teamId": "ado-den-haag-2026-27",
+    "club": "ADO Den Haag",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "peupion-ado-den-haag-2026-27",
+    "name": "Peupion",
+    "teamId": "ado-den-haag-2026-27",
+    "club": "ADO Den Haag",
+    "season": "2026/27",
+    "positions": [
+      "lw",
+      "rw"
+    ],
+    "rating": 66,
+    "legendary": false
+  },
+  {
+    "id": "bal-ado-den-haag-2026-27",
+    "name": "Bal",
+    "teamId": "ado-den-haag-2026-27",
+    "club": "ADO Den Haag",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "jimenez-ado-den-haag-2026-27",
+    "name": "Jimenez",
+    "teamId": "ado-den-haag-2026-27",
+    "club": "ADO Den Haag",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "reischl-ado-den-haag-2026-27",
+    "name": "Reischl",
+    "teamId": "ado-den-haag-2026-27",
+    "club": "ADO Den Haag",
+    "season": "2026/27",
+    "positions": [
+      "st",
+      "cm"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "rottier-ado-den-haag-2026-27",
+    "name": "Rottier",
+    "teamId": "ado-den-haag-2026-27",
+    "club": "ADO Den Haag",
+    "season": "2026/27",
+    "positions": [
+      "cm",
+      "st",
+      "lw"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "ado-den-haag-thomas-ado-den-haag-2026-27",
+    "name": "ADO Den Haag Thomas",
+    "teamId": "ado-den-haag-2026-27",
+    "club": "ADO Den Haag",
+    "season": "2026/27",
+    "positions": [
+      "lw",
+      "rw"
+    ],
+    "rating": 65,
+    "legendary": false
+  },
+  {
+    "id": "bergtop-ado-den-haag-2026-27",
+    "name": "Bergtop",
+    "teamId": "ado-den-haag-2026-27",
+    "club": "ADO Den Haag",
+    "season": "2026/27",
+    "positions": [
+      "lb"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "barany-ado-den-haag-2026-27",
+    "name": "Bárány",
+    "teamId": "ado-den-haag-2026-27",
+    "club": "ADO Den Haag",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "de-bruin-ado-den-haag-2026-27",
+    "name": "De Bruin",
+    "teamId": "ado-den-haag-2026-27",
+    "club": "ADO Den Haag",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "eduardo-ado-den-haag-2026-27",
+    "name": "Eduardo",
+    "teamId": "ado-den-haag-2026-27",
+    "club": "ADO Den Haag",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "hawkins-ado-den-haag-2026-27",
+    "name": "Hawkins",
+    "teamId": "ado-den-haag-2026-27",
+    "club": "ADO Den Haag",
+    "season": "2026/27",
+    "positions": [
+      "rw"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "ado-den-haag-kramer-ado-den-haag-2026-27",
+    "name": "ADO Den Haag Kramer",
+    "teamId": "ado-den-haag-2026-27",
+    "club": "ADO Den Haag",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "thiede-ado-den-haag-2026-27",
+    "name": "Thiede",
+    "teamId": "ado-den-haag-2026-27",
+    "club": "ADO Den Haag",
+    "season": "2026/27",
+    "positions": [
+      "gk"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "van-loenen-ado-den-haag-2026-27",
+    "name": "Van Loenen",
+    "teamId": "ado-den-haag-2026-27",
+    "club": "ADO Den Haag",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "wilhelm-ado-den-haag-2026-27",
+    "name": "Wilhelm",
+    "teamId": "ado-den-haag-2026-27",
+    "club": "ADO Den Haag",
+    "season": "2026/27",
+    "positions": [
+      "cb"
+    ],
+    "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "zamburek-ado-den-haag-2026-27",
+    "name": "Zamburek",
+    "teamId": "ado-den-haag-2026-27",
+    "club": "ADO Den Haag",
+    "season": "2026/27",
+    "positions": [
+      "cm"
+    ],
+    "rating": 60,
+    "legendary": false
   }
 ]

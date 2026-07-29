@@ -4,17 +4,19 @@ import { useI18n } from "@/lib/i18n";
 import { simulateSeason } from "@/lib/simulation";
 import { incrementSeasonRunCount, lockDraft, saveResult, saveSelection } from "@/lib/storage";
 import { validateSlotAssignments } from "@/lib/validation";
-import type { AutoSimulationSpeed, FormationId, GameMode, PlayerRecord, SimulationMode } from "@/types/game";
+import type { AutoSimulationSpeed, FormationId, GameMode, GamePool, PlayerRecord, SimulationMode } from "@/types/game";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 interface SeasonSimulatorProps {
+  pool: GamePool;
   mode: GameMode;
   formation: FormationId;
   slotAssignments: Array<PlayerRecord | null>;
 }
 
 export function SeasonSimulator({
+  pool,
   mode,
   formation,
   slotAssignments,
@@ -35,6 +37,7 @@ export function SeasonSimulator({
     window.setTimeout(() => {
       const result = simulateSeason(selectedPlayers, {
         locale,
+        pool,
         mode,
         formation,
         featuredTeamId: selectedPlayers[0]?.teamId ?? "mixed-draft",

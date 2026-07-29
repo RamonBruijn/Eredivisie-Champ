@@ -3,9 +3,10 @@
 import { LanguageToggle } from "@/components/LanguageToggle";
 import { teams } from "@/data";
 import { FORMATIONS } from "@/lib/formations";
+import { getGamePoolLabel, isEredivisie202627Team } from "@/lib/gamePools";
 import { useI18n } from "@/lib/i18n";
 import { saveDraftSetup, saveSelection, unlockDraft } from "@/lib/storage";
-import type { DraftSetup, FormationId, GameMode, TeamRecord } from "@/types/game";
+import type { DraftSetup, FormationId, GameMode, GamePool, TeamRecord } from "@/types/game";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -81,6 +82,8 @@ export function HomePageClient() {
     () => [...new Set(teams.map(getTeamDecade))].sort((a, b) => a.localeCompare(b)),
     [],
   );
+  const currentSeasonTeamCount = useMemo(() => teams.filter(isEredivisie202627Team).length, []);
+  const [pool, setPool] = useState<GamePool>("historical");
   const [mode, setMode] = useState<GameMode>("classic");
   const [formation, setFormation] = useState<FormationId>("4-3-3");
   const [selectedDecades, setSelectedDecades] = useState<string[]>(availableDecades);
@@ -97,9 +100,10 @@ export function HomePageClient() {
 
   function handlePlay() {
     const setup: DraftSetup = {
+      pool,
       mode,
       formation,
-      decades: selectedDecades,
+      decades: pool === "historical" ? selectedDecades : [],
     };
 
     saveDraftSetup(setup);
@@ -155,6 +159,46 @@ export function HomePageClient() {
                 {locale === "nl" ? "Bouw je kampioensteam" : "Build your title team"}
               </p>
               <div className="mt-5 space-y-5">
+                <div>
+                  <p className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">
+                    {locale === "nl" ? "Speltype" : "Game type"}
+                  </p>
+                  <div className="mt-3 grid grid-cols-2 gap-3">
+                    <button
+                      type="button"
+                      onClick={() => setPool("historical")}
+                      className={`rounded-[1.2rem] border px-4 py-4 text-left transition ${
+                        pool === "historical"
+                          ? "border-[var(--gold)] bg-[rgba(217,185,110,0.12)]"
+                          : "border-[var(--line)] bg-[rgba(255,255,255,0.02)]"
+                      }`}
+                    >
+                      <p className="font-semibold text-white">{locale === "nl" ? "Historisch" : "Historical"}</p>
+                      <p className="mt-1 text-sm text-[var(--muted)]">
+                        {locale === "nl"
+                          ? "Draft uit klassieke en moderne Eredivisie-seizoenen."
+                          : "Draft from classic and modern Eredivisie seasons."}
+                      </p>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setPool("eredivisie-2026-27")}
+                      className={`rounded-[1.2rem] border px-4 py-4 text-left transition ${
+                        pool === "eredivisie-2026-27"
+                          ? "border-[var(--gold)] bg-[rgba(217,185,110,0.12)]"
+                          : "border-[var(--line)] bg-[rgba(255,255,255,0.02)]"
+                      }`}
+                    >
+                      <p className="font-semibold text-white">Eredivisie 2026/2027</p>
+                      <p className="mt-1 text-sm text-[var(--muted)]">
+                        {locale === "nl"
+                          ? "Alleen huidige Eredivisie-selecties en tegenstanders."
+                          : "Only current Eredivisie squads and opponents."}
+                      </p>
+                    </button>
+                  </div>
+                </div>
+
                 <div>
                   <p className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">
                     {locale === "nl" ? "Modus" : "Mode"}
@@ -213,35 +257,48 @@ export function HomePageClient() {
                   </div>
                 </div>
 
-                <div>
-                  <div className="flex items-center justify-between gap-3">
+                {pool === "historical" ? (
+                  <div>
+                    <div className="flex items-center justify-between gap-3">
+                      <p className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">
+                        {locale === "nl" ? "Decennia" : "Decades"}
+                      </p>
+                      <p className="text-xs text-[var(--muted)]">
+                        {selectedDecades.length}/{availableDecades.length}
+                      </p>
+                    </div>
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {availableDecades.map((decade) => {
+                        const active = selectedDecades.includes(decade);
+                        return (
+                          <button
+                            key={decade}
+                            type="button"
+                            onClick={() => handleToggleDecade(decade)}
+                            className={`rounded-full border px-4 py-2 text-sm transition ${
+                              active
+                                ? "border-[var(--gold)] bg-[rgba(217,185,110,0.12)] text-[var(--gold-soft)]"
+                                : "border-[var(--line)] text-[var(--muted)]"
+                            }`}
+                          >
+                            {decade}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                ) : (
+                  <div className="rounded-[1.2rem] border border-[rgba(228,197,106,0.16)] bg-[rgba(255,255,255,0.03)] px-4 py-4">
                     <p className="text-xs uppercase tracking-[0.18em] text-[var(--muted)]">
-                      {locale === "nl" ? "Decennia" : "Decades"}
+                      {locale === "nl" ? "Competitiepool" : "Competition pool"}
                     </p>
-                    <p className="text-xs text-[var(--muted)]">
-                      {selectedDecades.length}/{availableDecades.length}
+                    <p className="mt-2 text-sm text-white">
+                      {locale === "nl"
+                        ? `Alle ${currentSeasonTeamCount} Eredivisie-clubs uit 2026/27 zijn actief in deze modus.`
+                        : `All ${currentSeasonTeamCount} Eredivisie clubs from 2026/27 are active in this mode.`}
                     </p>
                   </div>
-                  <div className="mt-3 flex flex-wrap gap-2">
-                    {availableDecades.map((decade) => {
-                      const active = selectedDecades.includes(decade);
-                      return (
-                        <button
-                          key={decade}
-                          type="button"
-                          onClick={() => handleToggleDecade(decade)}
-                          className={`rounded-full border px-4 py-2 text-sm transition ${
-                            active
-                              ? "border-[var(--gold)] bg-[rgba(217,185,110,0.12)] text-[var(--gold-soft)]"
-                              : "border-[var(--line)] text-[var(--muted)]"
-                          }`}
-                        >
-                          {decade}
-                        </button>
-                      );
-                    })}
-                  </div>
-                </div>
+                )}
               </div>
             </section>
 
@@ -253,9 +310,18 @@ export function HomePageClient() {
                 {locale === "nl" ? "Druk op play en bouw richting de titel." : "Hit play and draft your way to the title."}
               </h2>
               <div className="mt-6 grid gap-3 text-sm text-[var(--muted)]">
+                <p>{locale === "nl" ? `Speltype: ${getGamePoolLabel(locale, pool)}` : `Game type: ${getGamePoolLabel(locale, pool)}`}</p>
                 <p>{locale === "nl" ? `Modus: ${mode === "classic" ? "met rating" : "zonder rating"}` : `Mode: ${mode === "classic" ? "with ratings" : "without ratings"}`}</p>
                 <p>{locale === "nl" ? `Formatie: ${formation}` : `Formation: ${formation}`}</p>
-                <p>{locale === "nl" ? `${selectedDecades.length} decennia actief` : `${selectedDecades.length} decades active`}</p>
+                <p>
+                  {pool === "historical"
+                    ? locale === "nl"
+                      ? `${selectedDecades.length} decennia actief`
+                      : `${selectedDecades.length} decades active`
+                    : locale === "nl"
+                      ? `${currentSeasonTeamCount} clubs in de 2026/27-pool`
+                      : `${currentSeasonTeamCount} clubs in the 2026/27 pool`}
+                </p>
               </div>
               <button
                 type="button"

@@ -1,4 +1,4 @@
-import type { DraftSetup, PlayerRecord, SeasonSummary } from "@/types/game";
+import type { DraftSetup, GamePool, PlayerRecord, SeasonSummary } from "@/types/game";
 
 const SELECTION_KEY = "eredivisie-champ-selection";
 const RESULT_KEY = "eredivisie-champ-result";
@@ -62,7 +62,17 @@ export function loadDraftSetup(): DraftSetup | null {
   if (!raw) return null;
 
   try {
-    return JSON.parse(raw) as DraftSetup;
+    const parsed = JSON.parse(raw) as Partial<DraftSetup> | null;
+    if (!parsed) return null;
+
+    const pool: GamePool = parsed.pool === "eredivisie-2026-27" ? "eredivisie-2026-27" : "historical";
+
+    return {
+      pool,
+      mode: parsed.mode === "from-memory" ? "from-memory" : "classic",
+      formation: parsed.formation ?? "4-3-3",
+      decades: Array.isArray(parsed.decades) ? parsed.decades : [],
+    };
   } catch {
     return null;
   }

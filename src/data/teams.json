@@ -1190,5 +1190,239 @@
       "modern",
       "eredivisie"
     ]
+  },
+  {
+    "id": "psv-2026-27",
+    "club": "PSV",
+    "season": "2026/27",
+    "teamRating": 81,
+    "description": "PSV 2026/27-selectie voor de aparte Eredivisie 2026/27-modus.",
+    "tags": [
+      "psv",
+      "modern",
+      "eredivisie",
+      "eredivisie-2026-27"
+    ]
+  },
+  {
+    "id": "feyenoord-2026-27",
+    "club": "Feyenoord",
+    "season": "2026/27",
+    "teamRating": 79,
+    "description": "Feyenoord 2026/27-selectie voor de aparte Eredivisie 2026/27-modus.",
+    "tags": [
+      "feyenoord",
+      "modern",
+      "eredivisie",
+      "eredivisie-2026-27"
+    ]
+  },
+  {
+    "id": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "teamRating": 79,
+    "description": "Ajax 2026/27-selectie voor de aparte Eredivisie 2026/27-modus.",
+    "tags": [
+      "ajax",
+      "modern",
+      "eredivisie",
+      "eredivisie-2026-27"
+    ]
+  },
+  {
+    "id": "az-2026-27",
+    "club": "AZ",
+    "season": "2026/27",
+    "teamRating": 76,
+    "description": "AZ 2026/27-selectie voor de aparte Eredivisie 2026/27-modus.",
+    "tags": [
+      "az",
+      "modern",
+      "eredivisie",
+      "eredivisie-2026-27"
+    ]
+  },
+  {
+    "id": "nec-2026-27",
+    "club": "NEC",
+    "season": "2026/27",
+    "teamRating": 77,
+    "description": "NEC 2026/27-selectie voor de aparte Eredivisie 2026/27-modus.",
+    "tags": [
+      "nec",
+      "modern",
+      "eredivisie",
+      "eredivisie-2026-27"
+    ]
+  },
+  {
+    "id": "fc-twente-2026-27",
+    "club": "FC Twente",
+    "season": "2026/27",
+    "teamRating": 76,
+    "description": "FC Twente 2026/27-selectie voor de aparte Eredivisie 2026/27-modus.",
+    "tags": [
+      "fc-twente",
+      "modern",
+      "eredivisie",
+      "eredivisie-2026-27"
+    ]
+  },
+  {
+    "id": "fc-utrecht-2026-27",
+    "club": "FC Utrecht",
+    "season": "2026/27",
+    "teamRating": 72,
+    "description": "FC Utrecht 2026/27-selectie voor de aparte Eredivisie 2026/27-modus.",
+    "tags": [
+      "fc-utrecht",
+      "modern",
+      "eredivisie",
+      "eredivisie-2026-27"
+    ]
+  },
+  {
+    "id": "go-ahead-eagles-2026-27",
+    "club": "Go Ahead Eagles",
+    "season": "2026/27",
+    "teamRating": 70,
+    "description": "Go Ahead Eagles 2026/27-selectie voor de aparte Eredivisie 2026/27-modus.",
+    "tags": [
+      "go-ahead-eagles",
+      "modern",
+      "eredivisie",
+      "eredivisie-2026-27"
+    ]
+  },
+  {
+    "id": "fc-groningen-2026-27",
+    "club": "FC Groningen",
+    "season": "2026/27",
+    "teamRating": 69,
+    "description": "FC Groningen 2026/27-selectie voor de aparte Eredivisie 2026/27-modus.",
+    "tags": [
+      "fc-groningen",
+      "modern",
+      "eredivisie",
+      "eredivisie-2026-27"
+    ]
+  },
+  {
+    "id": "pec-zwolle-2026-27",
+    "club": "PEC Zwolle",
+    "season": "2026/27",
+    "teamRating": 68,
+    "description": "PEC Zwolle 2026/27-selectie voor de aparte Eredivisie 2026/27-modus.",
+    "tags": [
+      "pec-zwolle",
+      "modern",
+      "eredivisie",
+      "eredivisie-2026-27"
+    ]
+  },
+  {
+    "id": "sc-heerenveen-2026-27",
+    "club": "SC Heerenveen",
+    "season": "2026/27",
+    "teamRating": 70,
+    "description": "SC Heerenveen 2026/27-selectie voor de aparte Eredivisie 2026/27-modus.",
+    "tags": [
+      "sc-heerenveen",
+      "modern",
+      "eredivisie",
+      "eredivisie-2026-27"
+    ]
+  },
+  {
+    "id": "telstar-2026-27",
+    "club": "Telstar",
+    "season": "2026/27",
+    "teamRating": 66,
+    "description": "Telstar 2026/27-selectie voor de aparte Eredivisie 2026/27-modus.",
+    "tags": [
+      "telstar",
+      "modern",
+      "eredivisie",
+      "eredivisie-2026-27"
+    ]
+  },
+  {
+    "id": "fortuna-sittard-2026-27",
+    "club": "Fortuna Sittard",
+    "season": "2026/27",
+    "teamRating": 68,
+    "description": "Fortuna Sittard 2026/27-selectie voor de aparte Eredivisie 2026/27-modus.",
+    "tags": [
+      "fortuna-sittard",
+      "modern",
+      "eredivisie",
+      "eredivisie-2026-27"
+    ]
+  },
+  {
+    "id": "sparta-rotterdam-2026-27",
+    "club": "Sparta Rotterdam",
+    "season": "2026/27",
+    "teamRating": 67,
+    "description": "Sparta Rotterdam 2026/27-selectie voor de aparte Eredivisie 2026/27-modus.",
+    "tags": [
+      "sparta-rotterdam",
+      "modern",
+      "eredivisie",
+      "eredivisie-2026-27"
+    ]
+  },
+  {
+    "id": "excelsior-2026-27",
+    "club": "Excelsior",
+    "season": "2026/27",
+    "teamRating": 64,
+    "description": "Excelsior 2026/27-selectie voor de aparte Eredivisie 2026/27-modus.",
+    "tags": [
+      "excelsior",
+      "modern",
+      "eredivisie",
+      "eredivisie-2026-27"
+    ]
+  },
+  {
+    "id": "willem-ii-2026-27",
+    "club": "Willem II",
+    "season": "2026/27",
+    "teamRating": 65,
+    "description": "Willem II 2026/27-selectie voor de aparte Eredivisie 2026/27-modus.",
+    "tags": [
+      "willem-ii",
+      "modern",
+      "eredivisie",
+      "eredivisie-2026-27"
+    ]
+  },
+  {
+    "id": "sc-cambuur-2026-27",
+    "club": "SC Cambuur",
+    "season": "2026/27",
+    "teamRating": 64,
+    "description": "SC Cambuur 2026/27-selectie voor de aparte Eredivisie 2026/27-modus.",
+    "tags": [
+      "sc-cambuur",
+      "modern",
+      "eredivisie",
+      "eredivisie-2026-27"
+    ]
+  },
+  {
+    "id": "ado-den-haag-2026-27",
+    "club": "ADO Den Haag",
+    "season": "2026/27",
+    "teamRating": 68,
+    "description": "ADO Den Haag 2026/27-selectie voor de aparte Eredivisie 2026/27-modus.",
+    "tags": [
+      "ado-den-haag",
+      "modern",
+      "eredivisie",
+      "eredivisie-2026-27"
+    ]
   }
 ]

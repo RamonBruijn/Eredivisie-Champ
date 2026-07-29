@@ -5,11 +5,13 @@ import { SeasonSimulator } from "@/components/SeasonSimulator";
 import { players, teams } from "@/data";
 import { getRolledTeamCardTheme } from "@/lib/clubTheme";
 import { getFormation } from "@/lib/formations";
+import { filterTeamsForGamePool } from "@/lib/gamePools";
 import { formatPositionLabel, useI18n } from "@/lib/i18n";
 import { clearSelection, isDraftLocked, loadDraftSetup, loadSelection, saveSelection, unlockDraft } from "@/lib/storage";
 import type {
   FormationId,
   GameMode,
+  GamePool,
   PlayerRecord,
   Position,
   TeamRecord,
@@ -88,6 +90,7 @@ export function TeamSelector() {
     () => [...new Set(teams.map(getTeamDecade))].sort((a, b) => a.localeCompare(b)),
     [],
   );
+  const [gamePool, setGamePool] = useState<GamePool>("historical");
   const [selectedDecades, setSelectedDecades] = useState<string[]>(availableDecades);
 
   const formationShape = useMemo(() => getFormation(formation), [formation]);
@@ -108,8 +111,8 @@ export function TeamSelector() {
     [formationShape.slots, slotAssignments],
   );
   const filteredTeams = useMemo(
-    () => teams.filter((team) => selectedDecades.includes(getTeamDecade(team))),
-    [selectedDecades],
+    () => filterTeamsForGamePool(teams, gamePool, selectedDecades, getTeamDecade),
+    [gamePool, selectedDecades],
   );
 
   const eligibleTeamIds = useMemo(
@@ -150,6 +153,7 @@ export function TeamSelector() {
     }
 
     if (savedSetup) {
+      setGamePool(savedSetup.pool);
       setMode(savedSetup.mode);
       setFormation(savedSetup.formation);
       setSelectedDecades(savedSetup.decades.length > 0 ? savedSetup.decades : availableDecades);
@@ -258,14 +262,15 @@ export function TeamSelector() {
     setRerollUsed(false);
     setIsRolling(false);
     const nextSlots = getFormation(nextFormation).slots;
-    const viableTeams = filteredTeams
+    const poolTeams = filterTeamsForGamePool(teams, gamePool, selectedDecades, getTeamDecade);
+    const viableTeams = poolTeams
       .filter((team) =>
         players.some(
           (player) => player.teamId === team.id && nextSlots.some((slot) => player.positions.includes(slot)),
         ),
       )
       .map((team) => team.id);
-    setRolledTeam(filteredTeams.find((team) => team.id === randomTeamIdFrom(viableTeams)) ?? null);
+    setRolledTeam(poolTeams.find((team) => team.id === randomTeamIdFrom(viableTeams)) ?? null);
   }
 
   function handleRoll() {
@@ -565,7 +570,7 @@ export function TeamSelector() {
             }}
           />
           <div id="season-simulator">
-            <SeasonSimulator mode={mode} formation={formation} slotAssignments={slotAssignments} />
+            <SeasonSimulator pool={gamePool} mode={mode} formation={formation} slotAssignments={slotAssignments} />
           </div>
         </div>
       </section>

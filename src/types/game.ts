@@ -27,11 +27,13 @@ export type FormationId =
   | "3-4-3";
 
 export type GameMode = "classic" | "from-memory";
+export type GamePool = "historical" | "eredivisie-2026-27";
 export type Locale = "nl" | "en";
 export type SimulationMode = "auto" | "manual";
 export type AutoSimulationSpeed = "slow" | "normal" | "fast";
 
 export interface DraftSetup {
+  pool: GamePool;
   mode: GameMode;
   formation: FormationId;
   decades: string[];
@@ -84,6 +86,7 @@ export interface AssignedSlot {
 
 export interface RunContext {
   locale: Locale;
+  pool: GamePool;
   mode: GameMode;
   formation: FormationId;
   featuredTeamId: string;
