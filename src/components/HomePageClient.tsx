@@ -183,12 +183,15 @@ export function HomePageClient() {
                     <button
                       type="button"
                       onClick={() => setPool("eredivisie-2026-27")}
-                      className={`rounded-[1.2rem] border px-4 py-4 text-left transition ${
+                      className={`relative rounded-[1.2rem] border-2 px-4 py-4 text-left transition ${
                         pool === "eredivisie-2026-27"
-                          ? "border-[var(--gold)] bg-[rgba(217,185,110,0.12)]"
-                          : "border-[var(--line)] bg-[rgba(255,255,255,0.02)]"
+                          ? "border-[var(--gold)] bg-[linear-gradient(180deg,rgba(228,175,13,0.18),rgba(6,0,255,0.16))] shadow-[0_0_0_1px_rgba(228,175,13,0.22),0_18px_38px_rgba(0,0,0,0.18)]"
+                          : "border-[rgba(228,175,13,0.45)] bg-[linear-gradient(180deg,rgba(228,175,13,0.08),rgba(255,255,255,0.02))] shadow-[0_12px_30px_rgba(0,0,0,0.14)] hover:border-[var(--gold)] hover:bg-[linear-gradient(180deg,rgba(228,175,13,0.14),rgba(6,0,255,0.08))]"
                       }`}
                     >
+                      <span className="absolute right-3 top-3 rounded-full border border-[rgba(255,255,255,0.18)] bg-[var(--danger)] px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-white shadow-[0_10px_22px_rgba(0,0,0,0.18)]">
+                        Nieuw!
+                      </span>
                       <p className="font-semibold text-white">Eredivisie 2026/2027</p>
                       <p className="mt-1 text-sm text-[var(--muted)]">
                         {locale === "nl"
