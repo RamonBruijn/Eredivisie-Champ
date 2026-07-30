@@ -25641,5 +25641,18 @@
     ],
     "rating": 77,
     "legendary": false
+  },
+  {
+    "id": "van-cruijsen-sparta-rotterdam-2026-27",
+    "name": "Van Cruijsen",
+    "teamId": "sparta-rotterdam-2026-27",
+    "club": "Sparta Rotterdam",
+    "season": "2026/27",
+    "positions": [
+      "rm",
+      "cm"
+    ],
+    "rating": 68,
+    "legendary": false
   }
 ]
