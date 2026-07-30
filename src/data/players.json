@@ -25654,5 +25654,17 @@
     ],
     "rating": 67,
     "legendary": false
+  },
+  {
+    "id": "arokodare-ajax-2026-27",
+    "name": "Arokodare",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 77,
+    "legendary": false
   }
 ]

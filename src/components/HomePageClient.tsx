@@ -83,7 +83,7 @@ export function HomePageClient() {
     [],
   );
   const currentSeasonTeamCount = useMemo(() => teams.filter(isEredivisie202627Team).length, []);
-  const [pool, setPool] = useState<GamePool>("historical");
+  const [pool, setPool] = useState<GamePool>("eredivisie-2026-27");
   const [mode, setMode] = useState<GameMode>("classic");
   const [formation, setFormation] = useState<FormationId>("4-3-3");
   const [selectedDecades, setSelectedDecades] = useState<string[]>(availableDecades);
