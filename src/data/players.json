@@ -18097,7 +18097,7 @@
       "lb",
       "lm"
     ],
-    "rating": 67,
+    "rating": 69,
     "legendary": false
   },
   {
@@ -20226,18 +20226,6 @@
     "legendary": false
   },
   {
-    "id": "sauer-feyenoord-2026-27",
-    "name": "Sauer",
-    "teamId": "feyenoord-2026-27",
-    "club": "Feyenoord",
-    "season": "2026/27",
-    "positions": [
-      "lw"
-    ],
-    "rating": 75,
-    "legendary": false
-  },
-  {
     "id": "st-juste-feyenoord-2026-27",
     "name": "St. Juste",
     "teamId": "feyenoord-2026-27",
@@ -20405,7 +20393,7 @@
     "positions": [
       "gk"
     ],
-    "rating": 66,
+    "rating": 74,
     "legendary": false
   },
   {
@@ -20506,7 +20494,7 @@
       "lw",
       "lm"
     ],
-    "rating": 86,
+    "rating": 87,
     "legendary": false
   },
   {
@@ -20573,7 +20561,7 @@
       "cb",
       "cm"
     ],
-    "rating": 79,
+    "rating": 76,
     "legendary": false
   },
   {
@@ -20586,7 +20574,7 @@
       "cb",
       "lb"
     ],
-    "rating": 78,
+    "rating": 82,
     "legendary": false
   },
   {
@@ -20647,7 +20635,7 @@
     "positions": [
       "gk"
     ],
-    "rating": 75,
+    "rating": 73,
     "legendary": false
   },
   {
@@ -20833,7 +20821,7 @@
     "positions": [
       "cb"
     ],
-    "rating": 66,
+    "rating": 69,
     "legendary": false
   },
   {
@@ -20893,18 +20881,6 @@
     "season": "2026/27",
     "positions": [
       "gk"
-    ],
-    "rating": 66,
-    "legendary": false
-  },
-  {
-    "id": "rijkhoff-ajax-2026-27",
-    "name": "Rijkhoff",
-    "teamId": "ajax-2026-27",
-    "club": "Ajax",
-    "season": "2026/27",
-    "positions": [
-      "st"
     ],
     "rating": 66,
     "legendary": false
@@ -21016,7 +20992,7 @@
     "positions": [
       "cm"
     ],
-    "rating": 75,
+    "rating": 78,
     "legendary": false
   },
   {
@@ -21175,7 +21151,7 @@
     "positions": [
       "gk"
     ],
-    "rating": 65,
+    "rating": 72,
     "legendary": false
   },
   {
@@ -21400,9 +21376,8 @@
     "club": "NEC",
     "season": "2026/27",
     "positions": [
-      "rb",
-      "cm",
-      "rm"
+      "rm",
+      "cm"
     ],
     "rating": 77,
     "legendary": false
@@ -21493,7 +21468,7 @@
     "positions": [
       "gk"
     ],
-    "rating": 72,
+    "rating": 75,
     "legendary": false
   },
   {
@@ -21505,7 +21480,7 @@
     "positions": [
       "st"
     ],
-    "rating": 72,
+    "rating": 76,
     "legendary": false
   },
   {
@@ -21531,7 +21506,7 @@
     "positions": [
       "cb"
     ],
-    "rating": 72,
+    "rating": 75,
     "legendary": false
   },
   {
@@ -21544,7 +21519,7 @@
       "cb",
       "lb"
     ],
-    "rating": 71,
+    "rating": 74,
     "legendary": false
   },
   {
@@ -21851,8 +21826,8 @@
   {
     "id": "propper-fc-twente-2026-27",
     "name": "Pröpper",
-    "teamId": "fc-twente-2026-27",
-    "club": "FC Twente",
+    "teamId": "sc-heerenveen-2026-27",
+    "club": "SC Heerenveen",
     "season": "2026/27",
     "positions": [
       "cb"
@@ -21881,7 +21856,7 @@
     "positions": [
       "cb"
     ],
-    "rating": 71,
+    "rating": 73,
     "legendary": false
   },
   {
@@ -21893,7 +21868,7 @@
     "positions": [
       "cb"
     ],
-    "rating": 71,
+    "rating": 75,
     "legendary": false
   },
   {
@@ -22897,7 +22872,7 @@
     "positions": [
       "gk"
     ],
-    "rating": 70,
+    "rating": 73,
     "legendary": false
   },
   {
@@ -23189,7 +23164,7 @@
     "positions": [
       "st"
     ],
-    "rating": 69,
+    "rating": 73,
     "legendary": false
   },
   {
@@ -23386,7 +23361,7 @@
     "positions": [
       "cm"
     ],
-    "rating": 62,
+    "rating": 68,
     "legendary": false
   },
   {
@@ -23435,7 +23410,7 @@
       "rw",
       "cm"
     ],
-    "rating": 75,
+    "rating": 79,
     "legendary": false
   },
   {
@@ -23449,7 +23424,7 @@
       "cm",
       "st"
     ],
-    "rating": 72,
+    "rating": 76,
     "legendary": false
   },
   {
@@ -23498,7 +23473,7 @@
     "positions": [
       "cm"
     ],
-    "rating": 69,
+    "rating": 74,
     "legendary": false
   },
   {
@@ -23549,7 +23524,7 @@
       "st",
       "cm"
     ],
-    "rating": 68,
+    "rating": 71,
     "legendary": false
   },
   {
@@ -23672,7 +23647,7 @@
     "positions": [
       "cm"
     ],
-    "rating": 62,
+    "rating": 68,
     "legendary": false
   },
   {
@@ -23759,7 +23734,7 @@
     "positions": [
       "gk"
     ],
-    "rating": 67,
+    "rating": 69,
     "legendary": false
   },
   {
@@ -23824,7 +23799,7 @@
       "rb",
       "lb"
     ],
-    "rating": 60,
+    "rating": 64,
     "legendary": false
   },
   {
@@ -24122,7 +24097,7 @@
     "positions": [
       "st"
     ],
-    "rating": 63,
+    "rating": 66,
     "legendary": false
   },
   {
@@ -24230,7 +24205,7 @@
     "positions": [
       "cm"
     ],
-    "rating": 71,
+    "rating": 67,
     "legendary": false
   },
   {
@@ -24315,7 +24290,7 @@
     "positions": [
       "cb"
     ],
-    "rating": 66,
+    "rating": 71,
     "legendary": false
   },
   {
@@ -24351,7 +24326,7 @@
     "positions": [
       "cm"
     ],
-    "rating": 62,
+    "rating": 68,
     "legendary": false
   },
   {
@@ -24547,7 +24522,7 @@
       "cm",
       "st"
     ],
-    "rating": 67,
+    "rating": 69,
     "legendary": false
   },
   {
