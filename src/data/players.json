@@ -21163,7 +21163,7 @@
     "positions": [
       "cm"
     ],
-    "rating": 65,
+    "rating": 75,
     "legendary": false
   },
   {
@@ -21550,8 +21550,8 @@
   {
     "id": "proper-nec-2026-27",
     "name": "Proper",
-    "teamId": "nec-2026-27",
-    "club": "NEC",
+    "teamId": "sc-heerenveen-2026-27",
+    "club": "SC Heerenveen",
     "season": "2026/27",
     "positions": [
       "cm",
@@ -25628,6 +25628,31 @@
       "cm"
     ],
     "rating": 60,
+    "legendary": false
+  },
+  {
+    "id": "ter-avest-willem-ii-2026-27",
+    "name": "Ter Avest",
+    "teamId": "willem-ii-2026-27",
+    "club": "Willem II",
+    "season": "2026/27",
+    "positions": [
+      "rb",
+      "cb"
+    ],
+    "rating": 69,
+    "legendary": false
+  },
+  {
+    "id": "machine-sc-heerenveen-2026-27",
+    "name": "Machine",
+    "teamId": "sc-heerenveen-2026-27",
+    "club": "SC Heerenveen",
+    "season": "2026/27",
+    "positions": [
+      "st"
+    ],
+    "rating": 67,
     "legendary": false
   }
 ]

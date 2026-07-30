@@ -266,6 +266,41 @@ export default function ResultPage() {
               </div>
             </section>
           ) : null}
+          {!seasonFinished && matchCursor >= 17 && !secondHalfStarted ? (
+            <section className="mb-6 hidden glass rounded-[2rem] p-5 md:block md:p-6">
+              <div className="flex items-center justify-between gap-4">
+                <div>
+                  <p className="text-sm uppercase tracking-[0.22em] text-[var(--muted)]">
+                    {locale === "nl" ? "Winterstop" : "Mid-season break"}
+                  </p>
+                  <h2 className="mt-2 text-2xl font-semibold text-white">
+                    {locale === "nl"
+                      ? "Start direct de tweede seizoenshelft"
+                      : "Start the second half right away"}
+                  </h2>
+                  <p className="mt-2 text-sm text-[var(--muted)]">
+                    {locale === "nl"
+                      ? "Je zit op 17/34 wedstrijden. Deze snelknop voorkomt extra scrollen door de wedstrijdfeed."
+                      : "You are at 17/34 matches. This shortcut keeps you from scrolling through the match feed first."}
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  onClick={requestStartSecondHalf}
+                  disabled={isSecondHalfGatePending}
+                  className="shrink-0 rounded-full bg-[var(--gold)] px-5 py-3 font-semibold text-[#171b3a] disabled:cursor-not-allowed disabled:opacity-60"
+                >
+                  {isSecondHalfGatePending
+                    ? locale === "nl"
+                      ? "Bezig..."
+                      : "Loading..."
+                    : locale === "nl"
+                      ? "Start tweede seizoenshelft"
+                      : "Start second half"}
+                </button>
+              </div>
+            </section>
+          ) : null}
           {seasonFinished ? (
             <section className="mt-6 grid gap-6 xl:grid-cols-[1.04fr_0.96fr]">
               <section id="final-standings" className="glass rounded-[2rem] p-5 md:p-6">
