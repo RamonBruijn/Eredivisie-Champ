@@ -189,7 +189,7 @@ export function HomePageClient() {
                           : "border-[rgba(228,175,13,0.45)] bg-[linear-gradient(180deg,rgba(228,175,13,0.08),rgba(255,255,255,0.02))] shadow-[0_12px_30px_rgba(0,0,0,0.14)] hover:border-[var(--gold)] hover:bg-[linear-gradient(180deg,rgba(228,175,13,0.14),rgba(6,0,255,0.08))]"
                       }`}
                     >
-                      <span className="absolute right-3 top-3 rounded-full border border-[rgba(255,255,255,0.18)] bg-[var(--danger)] px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-white shadow-[0_10px_22px_rgba(0,0,0,0.18)]">
+                      <span className="absolute -top-2 right-3 rounded-full border border-[rgba(255,255,255,0.18)] bg-[var(--danger)] px-2 py-0.5 text-[9px] font-bold uppercase tracking-[0.16em] text-white shadow-[0_10px_22px_rgba(0,0,0,0.18)]">
                         Nieuw!
                       </span>
                       <p className="font-semibold text-white">Eredivisie 2026/2027</p>
