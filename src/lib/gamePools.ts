@@ -1,6 +1,16 @@
 import type { GamePool, Locale, TeamRecord } from "@/types/game";
 
 export const EREDIVISIE_2026_27_TAG = "eredivisie-2026-27";
+export const EREDIVISIE_2026_27_LOCKED_CLUBS = [
+  "Ajax",
+  "PSV",
+  "Feyenoord",
+  "AZ",
+  "FC Twente",
+  "NEC",
+  "FC Utrecht",
+  "FC Groningen",
+] as const;
 
 export function isEredivisie202627Team(team: TeamRecord) {
   return team.season === "2026/27" && team.tags.includes(EREDIVISIE_2026_27_TAG);
@@ -30,4 +40,12 @@ export function getGamePoolLabel(locale: Locale, pool: GamePool) {
   }
 
   return locale === "nl" ? "Historisch" : "Historical";
+}
+
+export function getLockedGamePoolClubs(pool: GamePool) {
+  if (pool === "eredivisie-2026-27") {
+    return [...EREDIVISIE_2026_27_LOCKED_CLUBS];
+  }
+
+  return [];
 }

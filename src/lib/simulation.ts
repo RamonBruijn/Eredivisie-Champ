@@ -1,6 +1,6 @@
 import configData from "@/data/config.json";
 import { players, teams } from "@/data";
-import { filterTeamsForGamePool } from "@/lib/gamePools";
+import { filterTeamsForGamePool, getLockedGamePoolClubs } from "@/lib/gamePools";
 import {
   calculateTeamStrength as baseCalculateTeamStrength,
 } from "@/lib/ratings";
@@ -246,7 +246,12 @@ function selectSeasonOpponents(context: RunContext): OpponentProfile[] {
     teamsByClub.set(team.club, [...existing, team]);
   }
 
-  const clubs = shuffle([...teamsByClub.keys()]).slice(0, config.seasonMatches / 2);
+  const lockedClubs: string[] = getLockedGamePoolClubs(context.pool).filter((club) => teamsByClub.has(club));
+  const remainingClubs = shuffle(
+    [...teamsByClub.keys()].filter((club) => !lockedClubs.includes(club)),
+  );
+  const clubs = [...lockedClubs, ...remainingClubs].slice(0, config.seasonMatches / 2);
+
   return clubs.map((club) => {
     const clubTeams = teamsByClub.get(club) ?? [];
     const chosenTeam = randomItem(clubTeams);
