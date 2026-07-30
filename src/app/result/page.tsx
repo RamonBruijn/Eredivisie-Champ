@@ -70,9 +70,7 @@ export default function ResultPage() {
 
   const currentMatch = result && matchCursor > 0 ? result.matches[matchCursor - 1] : null;
   const upcomingMatch = result && matchCursor < result.matches.length ? result.matches[matchCursor] : null;
-  const currentSnapshot = result && matchCursor > 0 ? result.snapshots[matchCursor - 1] : null;
   const seasonFinished = !!result && matchCursor >= result.matches.length;
-  const currentScorers = matchCursor > 0 ? currentSnapshot?.teamScorers ?? [] : [];
   const finalStandings = result?.snapshots[result.snapshots.length - 1]?.standings ?? [];
   const finalScorers = result?.snapshots[result.snapshots.length - 1]?.teamScorers ?? [];
   const isChampion = finalStandings[0]?.teamId === "user-xi";
@@ -780,34 +778,6 @@ export default function ResultPage() {
                       {locale === "nl"
                         ? "Nog geen gespeelde wedstrijden in de feed."
                         : "No played matches in the feed yet."}
-                    </div>
-                  )}
-                </div>
-              </section>
-
-              <section id="topscorers" className="glass rounded-[2rem] p-5 md:p-6">
-                <div className="flex items-center justify-between gap-3">
-                  <h2 className="text-xl font-semibold text-white">
-                    {locale === "nl" ? "Topscorers van jouw XI" : "Top scorers from your XI"}
-                  </h2>
-                </div>
-                <div className="mt-4 space-y-2">
-                  {currentScorers.length > 0 ? (
-                    currentScorers.map((entry, index) => (
-                      <div
-                        key={entry.playerName}
-                        className="grid grid-cols-[2rem_1fr_3rem] items-center gap-2 rounded-2xl bg-[rgba(255,255,255,0.03)] px-3 py-2 text-sm"
-                      >
-                        <span className="text-[var(--muted)]">{index + 1}</span>
-                        <span className="text-white">{entry.playerName}</span>
-                        <span className="font-semibold text-[var(--gold-soft)]">{entry.goals}</span>
-                      </div>
-                    ))
-                  ) : (
-                    <div className="rounded-2xl border border-dashed border-[var(--line)] px-4 py-4 text-sm text-[var(--muted)]">
-                      {locale === "nl"
-                        ? "Nog geen doelpuntenmakers zichtbaar."
-                        : "No scorers on the board yet."}
                     </div>
                   )}
                 </div>
