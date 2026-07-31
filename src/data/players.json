@@ -25654,5 +25654,18 @@
     ],
     "rating": 68,
     "legendary": false
+  },
+  {
+    "id": "brandt-ajax-2026-27",
+    "name": "Brandt",
+    "teamId": "ajax-2026-27",
+    "club": "Ajax",
+    "season": "2026/27",
+    "positions": [
+      "cm",
+      "lm"
+    ],
+    "rating": 84,
+    "legendary": false
   }
 ]
